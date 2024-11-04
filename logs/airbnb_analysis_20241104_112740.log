@@ -1,0 +1,38 @@
+2024-11-04 11:27:42,056 [INFO] price_checker.py:28 - Chrome WebDriver 初始化成功
+2024-11-04 11:27:42,056 [INFO] price_checker.py:178 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 11:27:42,056 [INFO] airbnb_calendar_checker.py:54 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 11:27:48,374 [INFO] airbnb_calendar_checker.py:86 - 没有找到需要关闭的模态框或关闭失败
+2024-11-04 11:27:48,465 [INFO] airbnb_calendar_checker.py:97 - 成功打开日历
+2024-11-04 11:27:50,569 [INFO] airbnb_calendar_checker.py:115 - 找到 246 个日期单元格
+2024-11-04 11:27:50,572 [INFO] price_checker.py:37 - 找到第一个可预订日期: 04/11/2024
+2024-11-04 11:27:50,572 [INFO] price_checker.py:52 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 11:27:50,572 [INFO] price_checker.py:57 - 入住日期: 04/11/2024, 退房日期: 06/11/2024
+2024-11-04 11:27:50,572 [INFO] price_checker.py:61 - 访问URL: https://www.airbnb.co.nz/rooms/837352260137971048?check_in=04/11/2024&check_out=06/11/2024&guests=3
+2024-11-04 11:28:16,511 [WARNING] price_checker.py:100 - 未能找到价格元素
+2024-11-04 11:28:21,555 [WARNING] price_checker.py:135 - 获取价格明细失败: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00BD38B3+24035]
+	(No symbol) [0x00B5BC44]
+	(No symbol) [0x00A3C2D3]
+	(No symbol) [0x00A7DC86]
+	(No symbol) [0x00A7DECB]
+	(No symbol) [0x00ABB9D2]
+	(No symbol) [0x00A9FED4]
+	(No symbol) [0x00AB953F]
+	(No symbol) [0x00A9FC26]
+	(No symbol) [0x00A7218C]
+	(No symbol) [0x00A7310D]
+	GetHandleVerifier [0x00E796D3+2800643]
+	GetHandleVerifier [0x00ED428E+3172286]
+	GetHandleVerifier [0x00ECCEA2+3142610]
+	GetHandleVerifier [0x00C76C60+692624]
+	(No symbol) [0x00B64C5D]
+	(No symbol) [0x00B61968]
+	(No symbol) [0x00B61B00]
+	(No symbol) [0x00B53FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-04 11:28:21,735 [INFO] price_checker.py:167 - 价格数据已保存到: data/airbnb_price_837352260137971048_20241104_112821.xlsx
+2024-11-04 11:28:21,735 [INFO] price_checker.py:208 - 价格数据已导出到: data/airbnb_price_837352260137971048_20241104_112821.xlsx

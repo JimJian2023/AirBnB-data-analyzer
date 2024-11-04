@@ -1,0 +1,61 @@
+2024-11-04 12:00:58,795 [INFO] advanced_analyzer.py:75 - === 开始批量分析房源 ===
+2024-11-04 12:01:00,566 [INFO] advanced_analyzer.py:23 - Chrome WebDriver 初始化成功
+2024-11-04 12:01:00,566 [INFO] advanced_analyzer.py:83 - 
+处理第 1/1 个房源
+2024-11-04 12:01:00,566 [INFO] advanced_analyzer.py:29 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 12:01:00,567 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 12:01:07,016 [INFO] airbnb_calendar_checker.py:103 - 没有找到需要关闭的模态框或关闭失败
+2024-11-04 12:01:07,098 [INFO] airbnb_calendar_checker.py:114 - 成功打开日历
+2024-11-04 12:01:09,233 [INFO] airbnb_calendar_checker.py:132 - 找到 246 个日期单元格
+2024-11-04 12:01:09,235 [INFO] airbnb_calendar_checker.py:170 - 收集到 246 条日历数据
+2024-11-04 12:01:09,236 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-04 12:01:09,236 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 837352260137971048
+2024-11-04 12:01:09,236 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_837352260137971048_20241104_120109.xlsx
+2024-11-04 12:01:09,236 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 246 行数据
+2024-11-04 12:01:09,433 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_837352260137971048_20241104_120109.xlsx
+2024-11-04 12:01:09,433 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 12.88 KB
+2024-11-04 12:01:09,433 [INFO] airbnb_calendar_checker.py:173 - 日历数据已成功导出到: data/airbnb_calendar_837352260137971048_20241104_120109.xlsx
+2024-11-04 12:01:09,433 [INFO] advanced_analyzer.py:38 - 成功获取日历数据: 246 条记录
+2024-11-04 12:01:09,433 [INFO] price_checker.py:154 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 12:01:09,433 [INFO] price_checker.py:37 - 找到第一个可预订日期: 04/11/2024
+2024-11-04 12:01:09,433 [INFO] price_checker.py:52 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 12:01:09,433 [INFO] price_checker.py:57 - 入住日期: 04/11/2024, 退房日期: 06/11/2024
+2024-11-04 12:01:09,433 [INFO] price_checker.py:61 - 访问URL: https://www.airbnb.co.nz/rooms/837352260137971048?check_in=04/11/2024&check_out=06/11/2024&guests=3
+2024-11-04 12:01:25,600 [ERROR] price_checker.py:119 - 获取价格信息时发生错误: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00BD38B3+24035]
+	(No symbol) [0x00B5BC44]
+	(No symbol) [0x00A3C2D3]
+	(No symbol) [0x00A7DC86]
+	(No symbol) [0x00A7DECB]
+	(No symbol) [0x00ABB9D2]
+	(No symbol) [0x00A9FED4]
+	(No symbol) [0x00AB953F]
+	(No symbol) [0x00A9FC26]
+	(No symbol) [0x00A7218C]
+	(No symbol) [0x00A7310D]
+	GetHandleVerifier [0x00E796D3+2800643]
+	GetHandleVerifier [0x00ED428E+3172286]
+	GetHandleVerifier [0x00ECCEA2+3142610]
+	GetHandleVerifier [0x00C76C60+692624]
+	(No symbol) [0x00B64C5D]
+	(No symbol) [0x00B61968]
+	(No symbol) [0x00B61B00]
+	(No symbol) [0x00B53FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-04 12:01:25,601 [ERROR] price_checker.py:166 - 获取价格信息失败
+2024-11-04 12:01:25,601 [ERROR] advanced_analyzer.py:43 - 获取价格数据失败: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 12:01:25,601 [INFO] advanced_analyzer.py:61 - 
+=== 日历统计信息 ===
+2024-11-04 12:01:25,601 [INFO] advanced_analyzer.py:64 - 不可预订: 150天 (60.98%)
+2024-11-04 12:01:25,601 [INFO] advanced_analyzer.py:64 - 可预订: 74天 (30.08%)
+2024-11-04 12:01:25,601 [INFO] advanced_analyzer.py:64 - 无法选择退房日期: 22天 (8.94%)
+2024-11-04 12:01:25,601 [INFO] advanced_analyzer.py:87 - 数据已保存到: data/airbnb_calendar_837352260137971048_20241104_120109.xlsx
+2024-11-04 12:01:25,601 [INFO] advanced_analyzer.py:89 - 
+分析完成，成功处理 1/1 个房源
+2024-11-04 12:01:25,612 [INFO] advanced_analyzer.py:113 - 汇总数据已保存到: data/airbnb_summary_20241104_120125.xlsx
+2024-11-04 12:01:27,724 [INFO] advanced_analyzer.py:123 - 浏览器已关闭

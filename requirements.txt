@@ -1,0 +1,13 @@
+selenium
+webdriver-manager
+requests
+beautifulsoup4
+pandas
+matplotlib
+seaborn
+numpy
+scipy
+scikit-learn
+tabulate
+openpyxl
+retrying 

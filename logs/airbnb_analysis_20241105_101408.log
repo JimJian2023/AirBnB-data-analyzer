@@ -1,0 +1,51 @@
+2024-11-05 10:14:08,539 [INFO] advanced_analyzer.py:75 - === 开始批量分析房源 ===
+2024-11-05 10:14:10,254 [INFO] advanced_analyzer.py:23 - Chrome WebDriver 初始化成功
+2024-11-05 10:14:10,255 [INFO] advanced_analyzer.py:83 - 
+处理第 1/1 个房源
+2024-11-05 10:14:10,255 [INFO] advanced_analyzer.py:29 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 10:14:10,255 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 10:14:20,308 [INFO] airbnb_calendar_checker.py:103 - 没有找到需要关闭的模态框或关闭失败
+2024-11-05 10:14:20,395 [INFO] airbnb_calendar_checker.py:114 - 成功打开日历
+2024-11-05 10:14:22,514 [INFO] airbnb_calendar_checker.py:133 - 找到 246 个日期单元格
+2024-11-05 10:14:22,516 [INFO] airbnb_calendar_checker.py:178 - 原始单元格数量: 246
+2024-11-05 10:14:22,516 [INFO] airbnb_calendar_checker.py:179 - 去重后数据条数: 123
+2024-11-05 10:14:22,517 [INFO] airbnb_calendar_checker.py:180 - 处理的唯一日期数: 123
+2024-11-05 10:14:22,517 [INFO] airbnb_calendar_checker.py:184 - 收集到 123 条有效日历数据
+2024-11-05 10:14:22,517 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-05 10:14:22,517 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 830193102361409290
+2024-11-05 10:14:22,517 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_830193102361409290_20241105_101422.xlsx
+2024-11-05 10:14:22,518 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-05 10:14:22,701 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_830193102361409290_20241105_101422.xlsx
+2024-11-05 10:14:22,701 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 8.88 KB
+2024-11-05 10:14:22,701 [INFO] airbnb_calendar_checker.py:187 - 日历数据已成功导出到: data/airbnb_calendar_830193102361409290_20241105_101422.xlsx
+2024-11-05 10:14:22,701 [INFO] advanced_analyzer.py:38 - 成功获取日历数据: 123 条记录
+2024-11-05 10:14:22,702 [INFO] price_checker.py:290 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 10:14:22,702 [INFO] price_checker.py:39 - 找到第一个可预订日期: 10/11/2024
+2024-11-05 10:14:22,702 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 10:14:22,702 [INFO] price_checker.py:86 - 入住日期: 2024-11-10, 退房日期: 2024-11-11
+2024-11-05 10:14:22,702 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-10&check_out=2024-11-11&adults=3&children=0&infants=0
+2024-11-05 10:14:32,990 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 10:14:33,000 [INFO] price_checker.py:62 - 日期区间 10/11/2024 到 11/11/2024 可预订
+2024-11-05 10:14:48,237 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 10:14:48,275 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 10:14:51,281 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 10:14:51,293 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 10:14:51,319 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 10:14:51,334 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 10:14:51,350 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 10:14:51,364 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 10:14:51,373 [INFO] price_checker.py:238 - 获取到总价: 3 guests
+2024-11-05 10:14:51,373 [INFO] price_checker.py:244 - 成功获取价格信息: {'check_in': '10/11/2024', 'check_out': '11/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '3 guests'}
+2024-11-05 10:14:51,385 [INFO] price_checker.py:279 - 价格数据已保存到: data/airbnb_price_830193102361409290_20241105_101451.xlsx
+2024-11-05 10:14:51,385 [INFO] price_checker.py:308 - 价格数据已导出到: data/airbnb_price_830193102361409290_20241105_101451.xlsx
+2024-11-05 10:14:51,385 [INFO] advanced_analyzer.py:45 - 成功获取价格数据
+2024-11-05 10:14:51,385 [INFO] advanced_analyzer.py:61 - 
+=== 日历统计信息 ===
+2024-11-05 10:14:51,385 [INFO] advanced_analyzer.py:64 - 不可预订: 49天 (39.84%)
+2024-11-05 10:14:51,385 [INFO] advanced_analyzer.py:64 - 可预订: 74天 (60.16%)
+2024-11-05 10:14:51,386 [INFO] advanced_analyzer.py:87 - 数据已保存到: data/airbnb_calendar_830193102361409290_20241105_101422.xlsx
+2024-11-05 10:14:51,386 [INFO] advanced_analyzer.py:89 - 
+分析完成，成功处理 1/1 个房源
+2024-11-05 10:14:51,397 [INFO] advanced_analyzer.py:113 - 汇总数据已保存到: data/airbnb_summary_20241105_101451.xlsx
+2024-11-05 10:14:53,532 [INFO] advanced_analyzer.py:123 - 浏览器已关闭

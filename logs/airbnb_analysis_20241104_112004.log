@@ -1,0 +1,9 @@
+2024-11-04 11:20:04,675 [INFO] price_checker.py:113 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 11:20:04,675 [INFO] airbnb_calendar_checker.py:54 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 11:20:06,550 [INFO] airbnb_calendar_checker.py:66 - Chrome WebDriver 初始化成功
+2024-11-04 11:20:13,557 [INFO] airbnb_calendar_checker.py:81 - 没有找到需要关闭的模态框或关闭失败
+2024-11-04 11:20:13,655 [INFO] airbnb_calendar_checker.py:92 - 成功打开日历
+2024-11-04 11:20:15,766 [INFO] airbnb_calendar_checker.py:110 - 找到 246 个日期单元格
+2024-11-04 11:20:17,897 [INFO] airbnb_calendar_checker.py:162 - 浏览器已关闭
+2024-11-04 11:20:21,929 [INFO] price_checker.py:17 - 找到第一个可预订日期: 04/11/2024
+2024-11-04 11:20:21,929 [ERROR] price_checker.py:142 - 检查房间价格时发生错误: name 'driver' is not defined

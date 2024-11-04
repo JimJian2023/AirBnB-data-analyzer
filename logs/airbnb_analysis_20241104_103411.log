@@ -1,0 +1,156 @@
+2024-11-04 10:34:11,001 [INFO] advanced_analyzer.py:102 - === 开始运行数据获取程序 ===
+2024-11-04 10:34:11,001 [INFO] advanced_analyzer.py:112 - 
+处理第 1/1 个URL: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 10:34:11,002 [INFO] advanced_analyzer.py:9 - 开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 10:34:11,002 [INFO] airbnb_calendar_checker.py:54 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 10:34:12,699 [INFO] airbnb_calendar_checker.py:66 - Chrome WebDriver 初始化成功
+2024-11-04 10:34:19,012 [INFO] airbnb_calendar_checker.py:81 - 没有找到需要关闭的模态框或关闭失败
+2024-11-04 10:34:19,097 [INFO] airbnb_calendar_checker.py:92 - 成功打开日历
+2024-11-04 10:34:21,215 [INFO] airbnb_calendar_checker.py:110 - 找到 246 个日期单元格
+2024-11-04 10:34:23,315 [INFO] airbnb_calendar_checker.py:162 - 浏览器已关闭
+2024-11-04 10:34:27,350 [INFO] advanced_analyzer.py:20 - 原始数据总数: 246 条
+2024-11-04 10:34:27,350 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 01/10/2024
+2024-11-04 10:34:27,350 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 02/10/2024
+2024-11-04 10:34:27,350 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 03/10/2024
+2024-11-04 10:34:27,350 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 04/10/2024
+2024-11-04 10:34:27,350 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 05/10/2024
+2024-11-04 10:34:27,350 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 06/10/2024
+2024-11-04 10:34:27,350 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 07/10/2024
+2024-11-04 10:34:27,350 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 08/10/2024
+2024-11-04 10:34:27,350 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 09/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 10/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 11/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 12/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 13/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 14/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 15/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 16/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 17/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 18/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 19/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 20/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 21/10/2024
+2024-11-04 10:34:27,351 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 22/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 23/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 24/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 25/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 26/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 27/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 28/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 29/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 30/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 31/10/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 01/11/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 02/11/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 03/11/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 04/11/2024
+2024-11-04 10:34:27,352 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 05/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 06/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 07/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 08/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 09/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 10/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 11/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 12/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 13/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 14/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 15/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 16/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 17/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 18/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 19/11/2024
+2024-11-04 10:34:27,353 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 20/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 21/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 22/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 23/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 24/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 25/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 26/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 27/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 28/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 29/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 30/11/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 01/12/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 02/12/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 03/12/2024
+2024-11-04 10:34:27,354 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 04/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 05/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 06/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 07/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 08/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 09/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 10/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 11/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 12/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 13/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 14/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 15/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 16/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 17/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 18/12/2024
+2024-11-04 10:34:27,355 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 19/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 20/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 21/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 22/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 23/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 24/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 25/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 26/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 27/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 28/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 29/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 30/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 31/12/2024
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 01/01/2025
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 02/01/2025
+2024-11-04 10:34:27,356 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 03/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 04/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 05/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 06/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 07/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 08/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 09/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 10/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 11/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 12/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 13/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 14/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 15/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 16/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 17/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 18/01/2025
+2024-11-04 10:34:27,357 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 19/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 20/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 21/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 22/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 23/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 24/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 25/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 26/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 27/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 28/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 29/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 30/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:26 - 发现重复日期: 31/01/2025
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:33 - 共发现 123 个重复日期
+2024-11-04 10:34:27,358 [WARNING] advanced_analyzer.py:34 - 重复日期列表: 01/10/2024, 02/10/2024, 03/10/2024, 04/10/2024, 05/10/2024, 06/10/2024, 07/10/2024, 08/10/2024, 09/10/2024, 10/10/2024, 11/10/2024, 12/10/2024, 13/10/2024, 14/10/2024, 15/10/2024, 16/10/2024, 17/10/2024, 18/10/2024, 19/10/2024, 20/10/2024, 21/10/2024, 22/10/2024, 23/10/2024, 24/10/2024, 25/10/2024, 26/10/2024, 27/10/2024, 28/10/2024, 29/10/2024, 30/10/2024, 31/10/2024, 01/11/2024, 02/11/2024, 03/11/2024, 04/11/2024, 05/11/2024, 06/11/2024, 07/11/2024, 08/11/2024, 09/11/2024, 10/11/2024, 11/11/2024, 12/11/2024, 13/11/2024, 14/11/2024, 15/11/2024, 16/11/2024, 17/11/2024, 18/11/2024, 19/11/2024, 20/11/2024, 21/11/2024, 22/11/2024, 23/11/2024, 24/11/2024, 25/11/2024, 26/11/2024, 27/11/2024, 28/11/2024, 29/11/2024, 30/11/2024, 01/12/2024, 02/12/2024, 03/12/2024, 04/12/2024, 05/12/2024, 06/12/2024, 07/12/2024, 08/12/2024, 09/12/2024, 10/12/2024, 11/12/2024, 12/12/2024, 13/12/2024, 14/12/2024, 15/12/2024, 16/12/2024, 17/12/2024, 18/12/2024, 19/12/2024, 20/12/2024, 21/12/2024, 22/12/2024, 23/12/2024, 24/12/2024, 25/12/2024, 26/12/2024, 27/12/2024, 28/12/2024, 29/12/2024, 30/12/2024, 31/12/2024, 01/01/2025, 02/01/2025, 03/01/2025, 04/01/2025, 05/01/2025, 06/01/2025, 07/01/2025, 08/01/2025, 09/01/2025, 10/01/2025, 11/01/2025, 12/01/2025, 13/01/2025, 14/01/2025, 15/01/2025, 16/01/2025, 17/01/2025, 18/01/2025, 19/01/2025, 20/01/2025, 21/01/2025, 22/01/2025, 23/01/2025, 24/01/2025, 25/01/2025, 26/01/2025, 27/01/2025, 28/01/2025, 29/01/2025, 30/01/2025, 31/01/2025
+2024-11-04 10:34:27,359 [INFO] advanced_analyzer.py:36 - 去重后数据总数: 123 条
+2024-11-04 10:34:27,359 [INFO] advanced_analyzer.py:41 - 数据日期范围: 2024-10-01 到 2025-01-31
+2024-11-04 10:34:27,359 [INFO] advanced_analyzer.py:53 - 日期连续性检查通过，无缺失日期
+2024-11-04 10:34:27,360 [INFO] advanced_analyzer.py:68 - 开始生成统计信息
+2024-11-04 10:34:27,360 [INFO] advanced_analyzer.py:76 - === 统计信息 ===
+2024-11-04 10:34:27,360 [INFO] advanced_analyzer.py:77 - 总记录数: 123
+2024-11-04 10:34:27,360 [INFO] advanced_analyzer.py:80 - 不可预订: 75天 (60.98%)
+2024-11-04 10:34:27,360 [INFO] advanced_analyzer.py:80 - 可预订: 37天 (30.08%)
+2024-11-04 10:34:27,360 [INFO] advanced_analyzer.py:80 - 无法选择退房日期: 11天 (8.94%)
+2024-11-04 10:34:27,361 [INFO] advanced_analyzer.py:94 - 
+=== 月度统计 ===
+2024-11-04 10:34:27,361 [INFO] advanced_analyzer.py:97 - 2024-10: 总天数 31, 可预订 0, 可预订率 0.00%
+2024-11-04 10:34:27,361 [INFO] advanced_analyzer.py:97 - 2024-11: 总天数 30, 可预订 8, 可预订率 26.67%
+2024-11-04 10:34:27,361 [INFO] advanced_analyzer.py:97 - 2024-12: 总天数 31, 可预订 15, 可预订率 48.39%
+2024-11-04 10:34:27,361 [INFO] advanced_analyzer.py:97 - 2025-01: 总天数 31, 可预订 14, 可预订率 45.16%
+2024-11-04 10:34:27,595 [INFO] airbnb_calendar_checker.py:47 - 数据已导出到: data/airbnb_calendar_837352260137971048_20241104_103427.xlsx
+2024-11-04 10:34:27,595 [INFO] advanced_analyzer.py:60 - 数据已导出到: data/airbnb_calendar_837352260137971048_20241104_103427.xlsx
+2024-11-04 10:34:27,595 [INFO] advanced_analyzer.py:116 - 成功获取数据: 123 条记录
+2024-11-04 10:34:27,595 [INFO] advanced_analyzer.py:123 - 
+=== 所有数据获取完成 ===

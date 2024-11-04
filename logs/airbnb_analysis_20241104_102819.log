@@ -1,0 +1,16 @@
+2024-11-04 10:28:19,289 [INFO] advanced_analyzer.py:92 - 开始运行高级分析程序
+2024-11-04 10:28:19,289 [INFO] advanced_analyzer.py:102 - 开始处理URL: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 10:28:19,289 [INFO] advanced_analyzer.py:16 - 开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 10:28:19,290 [INFO] advanced_analyzer.py:17 - 分析日期范围: 2024-11-04 到 2024-12-04
+2024-11-04 10:28:19,290 [INFO] airbnb_calendar_checker.py:54 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-04 10:28:21,103 [INFO] airbnb_calendar_checker.py:66 - Chrome WebDriver 初始化成功
+2024-11-04 10:28:27,853 [INFO] airbnb_calendar_checker.py:81 - 没有找到需要关闭的模态框或关闭失败
+2024-11-04 10:28:27,952 [INFO] airbnb_calendar_checker.py:92 - 成功打开日历
+2024-11-04 10:28:30,067 [INFO] airbnb_calendar_checker.py:110 - 找到 246 个日期单元格
+2024-11-04 10:28:32,172 [INFO] airbnb_calendar_checker.py:162 - 浏览器已关闭
+2024-11-04 10:28:36,194 [INFO] advanced_analyzer.py:37 - 生成基本统计信息
+2024-11-04 10:28:36,204 [INFO] advanced_analyzer.py:60 - 开始分析可用性模式
+2024-11-04 10:28:36,400 [INFO] airbnb_calendar_checker.py:47 - 数据已导出到: data/airbnb_calendar_837352260137971048_20241104_102836.xlsx
+2024-11-04 10:28:36,400 [INFO] advanced_analyzer.py:29 - 
+数据已导出到: data/airbnb_calendar_837352260137971048_20241104_102836.xlsx
+2024-11-04 10:28:36,400 [INFO] advanced_analyzer.py:105 - 所有分析完成
