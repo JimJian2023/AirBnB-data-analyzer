@@ -8,6 +8,49 @@ from airbnb_calendar_checker import check_calendar_availability, export_to_excel
 from price_checker import check_room_price
 from logger_config import get_logger
 import re
+import os
+
+def read_room_ids(filename='RoomID.xlsx'):
+    """读取房间ID和最小入住天数"""
+    logger = get_logger()
+    try:
+        if not os.path.exists(filename):
+            logger.error(f"文件不存在: {filename}")
+            return None
+            
+        # 读取Excel文件
+        df = pd.read_excel(filename)
+        
+        # 获取房间ID和最小入住天数
+        room_data = []
+        for _, row in df.iterrows():
+            room_info = {
+                'room_id': str(row.iloc[0]),  # 第一列是房间ID
+                'min_nights': int(row.iloc[1]) # 第二列是最小入住天数
+            }
+            room_data.append(room_info)
+        
+        logger.info(f"成功读取 {len(room_data)} 个房间信息")
+        return room_data
+        
+    except Exception as e:
+        logger.error(f"读取房间信息时发生错误: {str(e)}")
+        return None
+
+def generate_urls(room_data):
+    """根据房间信息生成URL列表"""
+    base_url = "https://www.airbnb.co.nz/rooms/"
+    return [{
+        'url': base_url + str(room['room_id']),
+        'min_nights': room['min_nights']
+    } for room in room_data]
+
+def create_data_directory():
+    """创建数据存储目录"""
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    data_dir = f'data/airbnb_data_{timestamp}'
+    os.makedirs(data_dir, exist_ok=True)
+    return data_dir
 
 def initialize_driver():
     """初始化WebDriver"""
@@ -24,10 +67,12 @@ def initialize_driver():
     logger.info("Chrome WebDriver 初始化成功")
     return driver
 
-def analyze_listing(url, driver):
+def analyze_listing(url_info, driver):
     """分析单个房源"""
     logger = get_logger()
-    logger.info(f"\n开始分析房源: {url}")
+    url = url_info['url']
+    min_nights = url_info['min_nights']
+    logger.info(f"\n开始分析房源: {url} (最小入住: {min_nights}晚)")
     
     try:
         # 1. 获取日历数据
@@ -38,8 +83,8 @@ def analyze_listing(url, driver):
             
         logger.info(f"成功获取日历数据: {len(calendar_data)} 条记录")
         
-        # 2. 获取价格数据
-        price_info = check_room_price(url, calendar_data, driver)
+        # 2. 获取价格数据，传入包含最小入住天数的url_info
+        price_info = check_room_price(url_info, calendar_data, driver)
         if not price_info:
             logger.error(f"获取价格数据失败: {url}")
         else:
@@ -142,29 +187,79 @@ def analyze_multiple_listings(urls):
         driver.quit()
         logger.info("浏览器已关闭")
 
+def main():
+    logger = get_logger()
+    logger.info("=== 开始Airbnb数据收集程序 ===")
+    
+    try:
+        # 1. 读取房间ID
+        room_data = read_room_ids()
+        if not room_data:
+            logger.error("未能读取房间信息，程序退出")
+            return
+            
+        # 2. 生成URL列表
+        urls = generate_urls(room_data)
+        logger.info(f"生成 {len(urls)} 个URL")
+        
+        # 3. 创建数据存储目录
+        data_dir = create_data_directory()
+        logger.info(f"创建数据目录: {data_dir}")
+        
+        # 4. 执行数据收集
+        results = analyze_multiple_listings(urls)
+        
+        # 5. 生成汇总报告
+        if results:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            summary_file = f'{data_dir}/airbnb_summary_{timestamp}.xlsx'
+            
+            # 创建汇总数据
+            summary_data = []
+            for result in results:
+                if result:  # 确保结果有效
+                    room_id = result['url'].split('rooms/')[-1]
+                    
+                    # 基础信息
+                    summary_info = {
+                        'Room ID': room_id,
+                        'URL': result['url'],
+                        '总天数': len(result['calendar_data']),
+                        '可预订天数': sum(1 for d in result['calendar_data'] if d['status'] == "可预订"),
+                        '不可预订天数': sum(1 for d in result['calendar_data'] if d['status'] == "不可预订"),
+                        '数据文件': result['calendar_excel']
+                    }
+                    
+                    # 添加价格统计
+                    if result['price_info'] and isinstance(result['price_info'], list):
+                        prices = [float(re.search(r'\$(\d+)', p['nightly_price']).group(1)) 
+                                for p in result['price_info'] if p['nightly_price']]
+                        if prices:
+                            summary_info.update({
+                                '平均每晚价格': f"${sum(prices)/len(prices):.2f}",
+                                '最高每晚价格': f"${max(prices):.2f}",
+                                '最低每晚价格': f"${min(prices):.2f}",
+                                '价格样本数': len(prices)
+                            })
+                    
+                    summary_data.append(summary_info)
+            
+            # 保存汇总报告
+            if summary_data:
+                pd.DataFrame(summary_data).to_excel(summary_file, index=False)
+                logger.info(f"汇总报告已保存到: {summary_file}")
+                
+                # 打印统计信息
+                print("\n=== 数据收集完成 ===")
+                print(f"总房源数: {len(room_data)}")
+                print(f"成功收集: {len(summary_data)}")
+                print(f"失败数量: {len(room_data) - len(summary_data)}")
+                print(f"汇总报告: {summary_file}")
+        
+    except Exception as e:
+        logger.error(f"程序执行过程中发生错误: {str(e)}")
+    finally:
+        logger.info("=== 程序执行完成 ===")
+
 if __name__ == "__main__":
-    # 测试URL列表
-    test_urls = [
-        'https://www.airbnb.co.nz/rooms/830193102361409290',
-        # 添加更多URL...
-    ]
-    
-    # 执行分析
-    results = analyze_multiple_listings(test_urls)
-    
-    # 输出结果
-    if results:
-        print("\n=== 分析结果 ===")
-        for result in results:
-            print(f"\nURL: {result['url']}")
-            print(f"数据文件: {result['calendar_excel']}")
-            if result['price_info']:
-                print("价格信息:")
-                # 输出价格统计
-                prices = [float(re.search(r'\$(\d+)', p['nightly_price']).group(1)) 
-                         for p in result['price_info'] if p['nightly_price']]
-                if prices:
-                    print(f"  平均每晚价格: ${sum(prices)/len(prices):.2f}")
-                    print(f"  最高每晚价格: ${max(prices):.2f}")
-                    print(f"  最低每晚价格: ${min(prices):.2f}")
-                    print(f"  价格样本数: {len(prices)}")
+    main()

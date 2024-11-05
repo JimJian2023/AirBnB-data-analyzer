@@ -1,0 +1,2621 @@
+2024-11-05 12:44:44,076 [INFO] advanced_analyzer.py:182 - === 开始Airbnb数据收集程序 ===
+2024-11-05 12:44:44,250 [INFO] advanced_analyzer.py:28 - 成功读取 2 个房间ID
+2024-11-05 12:44:44,250 [INFO] advanced_analyzer.py:193 - 生成 2 个URL
+2024-11-05 12:44:44,250 [INFO] advanced_analyzer.py:197 - 创建数据目录: data/airbnb_data_20241105_124444
+2024-11-05 12:44:44,250 [INFO] advanced_analyzer.py:111 - === 开始批量分析房源 ===
+2024-11-05 12:44:45,974 [INFO] advanced_analyzer.py:59 - Chrome WebDriver 初始化成功
+2024-11-05 12:44:45,974 [INFO] advanced_analyzer.py:119 - 
+处理第 1/2 个房源
+2024-11-05 12:44:45,974 [INFO] advanced_analyzer.py:65 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:44:45,975 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:44:55,406 [INFO] airbnb_calendar_checker.py:103 - 没有找到需要关闭的模态框或关闭失败
+2024-11-05 12:44:55,489 [INFO] airbnb_calendar_checker.py:114 - 成功打开日历
+2024-11-05 12:44:57,591 [INFO] airbnb_calendar_checker.py:133 - 找到 246 个日期单元格
+2024-11-05 12:44:57,593 [INFO] airbnb_calendar_checker.py:178 - 原始单元格数量: 246
+2024-11-05 12:44:57,594 [INFO] airbnb_calendar_checker.py:179 - 去重后数据条数: 123
+2024-11-05 12:44:57,594 [INFO] airbnb_calendar_checker.py:180 - 处理的唯一日期数: 123
+2024-11-05 12:44:57,594 [INFO] airbnb_calendar_checker.py:184 - 收集到 123 条有效日历数据
+2024-11-05 12:44:57,594 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-05 12:44:57,594 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 830193102361409290
+2024-11-05 12:44:57,594 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_830193102361409290_20241105_124457.xlsx
+2024-11-05 12:44:57,595 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-05 12:44:57,622 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_830193102361409290_20241105_124457.xlsx
+2024-11-05 12:44:57,622 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 8.88 KB
+2024-11-05 12:44:57,622 [INFO] airbnb_calendar_checker.py:187 - 日历数据已成功导出到: data/airbnb_calendar_830193102361409290_20241105_124457.xlsx
+2024-11-05 12:44:57,622 [INFO] advanced_analyzer.py:74 - 成功获取日历数据: 123 条记录
+2024-11-05 12:44:57,622 [INFO] price_checker.py:329 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:44:57,622 [INFO] price_checker.py:323 - 找到 74 个可预订日期
+2024-11-05 12:44:57,622 [INFO] price_checker.py:343 - 正在处理第 1/74 个日期: 10/11/2024
+2024-11-05 12:44:57,623 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:44:57,623 [INFO] price_checker.py:86 - 入住日期: 2024-11-10, 退房日期: 2024-11-11
+2024-11-05 12:44:57,623 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-10&check_out=2024-11-11&adults=3&children=0&infants=0
+2024-11-05 12:45:07,814 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:45:07,826 [INFO] price_checker.py:62 - 日期区间 10/11/2024 到 11/11/2024 可预订
+2024-11-05 12:45:23,030 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:45:23,066 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:45:26,073 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:45:26,085 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:45:26,111 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:45:26,126 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:45:26,141 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:45:26,155 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:45:26,165 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:45:26,165 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '10/11/2024', 'check_out': '11/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:45:26,165 [INFO] price_checker.py:349 - 成功获取 10/11/2024 的价格信息
+2024-11-05 12:45:26,165 [INFO] price_checker.py:343 - 正在处理第 2/74 个日期: 18/11/2024
+2024-11-05 12:45:26,165 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:45:26,165 [INFO] price_checker.py:86 - 入住日期: 2024-11-18, 退房日期: 2024-11-19
+2024-11-05 12:45:26,165 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-18&check_out=2024-11-19&adults=3&children=0&infants=0
+2024-11-05 12:45:36,344 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:45:36,350 [INFO] price_checker.py:62 - 日期区间 18/11/2024 到 19/11/2024 可预订
+2024-11-05 12:45:51,531 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:45:51,551 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:45:54,556 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:45:54,563 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:45:54,582 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:45:54,597 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:45:54,611 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:45:54,626 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:45:54,633 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:45:54,633 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '18/11/2024', 'check_out': '19/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:45:54,633 [INFO] price_checker.py:349 - 成功获取 18/11/2024 的价格信息
+2024-11-05 12:45:54,634 [INFO] price_checker.py:343 - 正在处理第 3/74 个日期: 19/11/2024
+2024-11-05 12:45:54,634 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:45:54,634 [INFO] price_checker.py:86 - 入住日期: 2024-11-19, 退房日期: 2024-11-20
+2024-11-05 12:45:54,634 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-19&check_out=2024-11-20&adults=3&children=0&infants=0
+2024-11-05 12:46:04,814 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:46:04,821 [INFO] price_checker.py:62 - 日期区间 19/11/2024 到 20/11/2024 可预订
+2024-11-05 12:46:20,007 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:46:20,031 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:46:23,035 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:46:23,043 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:46:23,063 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:46:23,077 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:46:23,092 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:46:23,106 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:46:23,114 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:46:23,114 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '19/11/2024', 'check_out': '20/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:46:23,114 [INFO] price_checker.py:349 - 成功获取 19/11/2024 的价格信息
+2024-11-05 12:46:23,114 [INFO] price_checker.py:343 - 正在处理第 4/74 个日期: 20/11/2024
+2024-11-05 12:46:23,114 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:46:23,114 [INFO] price_checker.py:86 - 入住日期: 2024-11-20, 退房日期: 2024-11-21
+2024-11-05 12:46:23,114 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-20&check_out=2024-11-21&adults=3&children=0&infants=0
+2024-11-05 12:46:33,286 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:46:33,292 [INFO] price_checker.py:62 - 日期区间 20/11/2024 到 21/11/2024 可预订
+2024-11-05 12:46:48,478 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:46:48,500 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:46:51,504 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:46:51,511 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:46:51,531 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:46:51,546 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:46:51,560 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:46:51,575 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:46:51,581 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:46:51,582 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '20/11/2024', 'check_out': '21/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:46:51,582 [INFO] price_checker.py:349 - 成功获取 20/11/2024 的价格信息
+2024-11-05 12:46:51,582 [INFO] price_checker.py:343 - 正在处理第 5/74 个日期: 21/11/2024
+2024-11-05 12:46:51,582 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:46:51,582 [INFO] price_checker.py:86 - 入住日期: 2024-11-21, 退房日期: 2024-11-22
+2024-11-05 12:46:51,582 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-21&check_out=2024-11-22&adults=3&children=0&infants=0
+2024-11-05 12:47:01,766 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:47:01,772 [INFO] price_checker.py:62 - 日期区间 21/11/2024 到 22/11/2024 可预订
+2024-11-05 12:47:16,965 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:47:16,992 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:47:19,996 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:47:20,003 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:47:20,022 [INFO] price_checker.py:227 - 获取到价格项: $129 NZD x 1 night = $129 NZD
+2024-11-05 12:47:20,037 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:47:20,052 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:47:20,067 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 12:47:20,075 [INFO] price_checker.py:241 - 获取到总价: $235 NZD
+2024-11-05 12:47:20,075 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '21/11/2024', 'check_out': '22/11/2024', 'guests': 3, 'nightly_price': '$129 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$27 NZD', 'total': '$235 NZD'}
+2024-11-05 12:47:20,075 [INFO] price_checker.py:349 - 成功获取 21/11/2024 的价格信息
+2024-11-05 12:47:30,076 [INFO] price_checker.py:343 - 正在处理第 6/74 个日期: 22/11/2024
+2024-11-05 12:47:30,076 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:47:30,076 [INFO] price_checker.py:86 - 入住日期: 2024-11-22, 退房日期: 2024-11-23
+2024-11-05 12:47:30,076 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-22&check_out=2024-11-23&adults=3&children=0&infants=0
+2024-11-05 12:47:40,262 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:47:40,274 [INFO] price_checker.py:62 - 日期区间 22/11/2024 到 23/11/2024 可预订
+2024-11-05 12:47:55,466 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:47:55,491 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:47:58,495 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:47:58,502 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:47:58,521 [INFO] price_checker.py:227 - 获取到价格项: $131 NZD x 1 night = $131 NZD
+2024-11-05 12:47:58,535 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:47:58,550 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:47:58,565 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 12:47:58,572 [INFO] price_checker.py:241 - 获取到总价: $237 NZD
+2024-11-05 12:47:58,572 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '22/11/2024', 'check_out': '23/11/2024', 'guests': 3, 'nightly_price': '$131 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$27 NZD', 'total': '$237 NZD'}
+2024-11-05 12:47:58,572 [INFO] price_checker.py:349 - 成功获取 22/11/2024 的价格信息
+2024-11-05 12:47:58,572 [INFO] price_checker.py:343 - 正在处理第 7/74 个日期: 23/11/2024
+2024-11-05 12:47:58,572 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:47:58,573 [INFO] price_checker.py:86 - 入住日期: 2024-11-23, 退房日期: 2024-11-24
+2024-11-05 12:47:58,573 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-23&check_out=2024-11-24&adults=3&children=0&infants=0
+2024-11-05 12:48:08,756 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:48:08,763 [INFO] price_checker.py:62 - 日期区间 23/11/2024 到 24/11/2024 可预订
+2024-11-05 12:48:23,951 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:48:23,976 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:48:26,980 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:48:26,988 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:48:27,007 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:48:27,023 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:48:27,040 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:48:27,057 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:48:27,064 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:48:27,065 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '23/11/2024', 'check_out': '24/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:48:27,065 [INFO] price_checker.py:349 - 成功获取 23/11/2024 的价格信息
+2024-11-05 12:48:27,065 [INFO] price_checker.py:343 - 正在处理第 8/74 个日期: 24/11/2024
+2024-11-05 12:48:27,065 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:48:27,065 [INFO] price_checker.py:86 - 入住日期: 2024-11-24, 退房日期: 2024-11-25
+2024-11-05 12:48:27,065 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-24&check_out=2024-11-25&adults=3&children=0&infants=0
+2024-11-05 12:48:37,247 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:48:37,254 [INFO] price_checker.py:62 - 日期区间 24/11/2024 到 25/11/2024 可预订
+2024-11-05 12:48:52,445 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:48:52,470 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:48:55,475 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:48:55,482 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:48:55,500 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:48:55,515 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:48:55,530 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:48:55,545 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:48:55,552 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:48:55,553 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '24/11/2024', 'check_out': '25/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:48:55,553 [INFO] price_checker.py:349 - 成功获取 24/11/2024 的价格信息
+2024-11-05 12:48:55,553 [INFO] price_checker.py:343 - 正在处理第 9/74 个日期: 25/11/2024
+2024-11-05 12:48:55,553 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:48:55,553 [INFO] price_checker.py:86 - 入住日期: 2024-11-25, 退房日期: 2024-11-26
+2024-11-05 12:48:55,553 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-25&check_out=2024-11-26&adults=3&children=0&infants=0
+2024-11-05 12:49:05,734 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 12:49:10,735 [INFO] price_checker.py:103 - 等待页面就绪，重试 1/3
+2024-11-05 12:49:10,745 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 12:49:15,745 [INFO] price_checker.py:103 - 等待页面就绪，重试 2/3
+2024-11-05 12:49:15,755 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 12:49:20,755 [INFO] price_checker.py:103 - 等待页面就绪，重试 3/3
+2024-11-05 12:49:20,755 [ERROR] price_checker.py:106 - 页面状态检查失败，超过最大重试次数
+2024-11-05 12:49:20,756 [WARNING] price_checker.py:351 - 获取 25/11/2024 的价格信息失败
+2024-11-05 12:49:20,756 [INFO] price_checker.py:343 - 正在处理第 10/74 个日期: 26/11/2024
+2024-11-05 12:49:20,756 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:49:20,756 [INFO] price_checker.py:86 - 入住日期: 2024-11-26, 退房日期: 2024-11-27
+2024-11-05 12:49:20,756 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-26&check_out=2024-11-27&adults=3&children=0&infants=0
+2024-11-05 12:49:30,943 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:49:30,950 [INFO] price_checker.py:62 - 日期区间 26/11/2024 到 27/11/2024 可预订
+2024-11-05 12:49:46,131 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:49:46,158 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:49:49,163 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:49:49,169 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:49:49,188 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:49:49,202 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:49:49,217 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:49:49,232 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:49:49,240 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:49:49,240 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '26/11/2024', 'check_out': '27/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:49:49,240 [INFO] price_checker.py:349 - 成功获取 26/11/2024 的价格信息
+2024-11-05 12:49:59,240 [INFO] price_checker.py:343 - 正在处理第 11/74 个日期: 27/11/2024
+2024-11-05 12:49:59,241 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:49:59,241 [INFO] price_checker.py:86 - 入住日期: 2024-11-27, 退房日期: 2024-11-28
+2024-11-05 12:49:59,241 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-27&check_out=2024-11-28&adults=3&children=0&infants=0
+2024-11-05 12:50:09,425 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:50:09,432 [INFO] price_checker.py:62 - 日期区间 27/11/2024 到 28/11/2024 可预订
+2024-11-05 12:50:24,626 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:50:24,650 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:50:27,654 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:50:27,662 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:50:27,684 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:50:27,699 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:50:27,714 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:50:27,729 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:50:27,736 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:50:27,736 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '27/11/2024', 'check_out': '28/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:50:27,736 [INFO] price_checker.py:349 - 成功获取 27/11/2024 的价格信息
+2024-11-05 12:50:27,736 [INFO] price_checker.py:343 - 正在处理第 12/74 个日期: 28/11/2024
+2024-11-05 12:50:27,736 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:50:27,736 [INFO] price_checker.py:86 - 入住日期: 2024-11-28, 退房日期: 2024-11-29
+2024-11-05 12:50:27,736 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-28&check_out=2024-11-29&adults=3&children=0&infants=0
+2024-11-05 12:50:37,917 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:50:37,923 [INFO] price_checker.py:62 - 日期区间 28/11/2024 到 29/11/2024 可预订
+2024-11-05 12:50:53,112 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:50:53,137 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:50:56,142 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:50:56,150 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:50:56,169 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:50:56,184 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:50:56,199 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:50:56,214 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:50:56,222 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:50:56,222 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '28/11/2024', 'check_out': '29/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:50:56,223 [INFO] price_checker.py:349 - 成功获取 28/11/2024 的价格信息
+2024-11-05 12:50:56,223 [INFO] price_checker.py:343 - 正在处理第 13/74 个日期: 29/11/2024
+2024-11-05 12:50:56,223 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:50:56,223 [INFO] price_checker.py:86 - 入住日期: 2024-11-29, 退房日期: 2024-11-30
+2024-11-05 12:50:56,223 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-29&check_out=2024-11-30&adults=3&children=0&infants=0
+2024-11-05 12:51:06,414 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:51:06,420 [INFO] price_checker.py:62 - 日期区间 29/11/2024 到 30/11/2024 可预订
+2024-11-05 12:51:21,622 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:51:21,648 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:51:24,653 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:51:24,660 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:51:24,682 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:51:24,698 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:51:24,715 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:51:24,731 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:51:24,739 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:51:24,739 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '29/11/2024', 'check_out': '30/11/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:51:24,739 [INFO] price_checker.py:349 - 成功获取 29/11/2024 的价格信息
+2024-11-05 12:51:24,739 [INFO] price_checker.py:343 - 正在处理第 14/74 个日期: 30/11/2024
+2024-11-05 12:51:24,739 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:51:24,739 [INFO] price_checker.py:86 - 入住日期: 2024-11-30, 退房日期: 2024-12-01
+2024-11-05 12:51:24,740 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-11-30&check_out=2024-12-01&adults=3&children=0&infants=0
+2024-11-05 12:51:34,934 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:51:34,941 [INFO] price_checker.py:62 - 日期区间 30/11/2024 到 01/12/2024 可预订
+2024-11-05 12:51:50,133 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:51:50,156 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:51:53,160 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:51:53,167 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:51:53,188 [INFO] price_checker.py:227 - 获取到价格项: $134 NZD x 1 night = $134 NZD
+2024-11-05 12:51:53,202 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:51:53,217 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 12:51:53,232 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 12:51:53,240 [INFO] price_checker.py:241 - 获取到总价: $242 NZD
+2024-11-05 12:51:53,240 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '30/11/2024', 'check_out': '01/12/2024', 'guests': 3, 'nightly_price': '$134 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$242 NZD'}
+2024-11-05 12:51:53,240 [INFO] price_checker.py:349 - 成功获取 30/11/2024 的价格信息
+2024-11-05 12:51:53,240 [INFO] price_checker.py:343 - 正在处理第 15/74 个日期: 01/12/2024
+2024-11-05 12:51:53,240 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:51:53,240 [INFO] price_checker.py:86 - 入住日期: 2024-12-01, 退房日期: 2024-12-02
+2024-11-05 12:51:53,240 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-01&check_out=2024-12-02&adults=3&children=0&infants=0
+2024-11-05 12:52:03,422 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:52:03,429 [INFO] price_checker.py:62 - 日期区间 01/12/2024 到 02/12/2024 可预订
+2024-11-05 12:52:18,618 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:52:18,640 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:52:21,644 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:52:21,651 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:52:21,670 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:52:21,685 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:52:21,699 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:52:21,714 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:52:21,721 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:52:21,721 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '01/12/2024', 'check_out': '02/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:52:21,721 [INFO] price_checker.py:349 - 成功获取 01/12/2024 的价格信息
+2024-11-05 12:52:31,721 [INFO] price_checker.py:343 - 正在处理第 16/74 个日期: 02/12/2024
+2024-11-05 12:52:31,721 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:52:31,721 [INFO] price_checker.py:86 - 入住日期: 2024-12-02, 退房日期: 2024-12-03
+2024-11-05 12:52:31,722 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-02&check_out=2024-12-03&adults=3&children=0&infants=0
+2024-11-05 12:52:41,914 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:52:41,921 [INFO] price_checker.py:62 - 日期区间 02/12/2024 到 03/12/2024 可预订
+2024-11-05 12:52:57,114 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:52:57,136 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:53:00,140 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:53:00,147 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:53:00,167 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:53:00,182 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:53:00,196 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:53:00,212 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:53:00,219 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:53:00,219 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '02/12/2024', 'check_out': '03/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:53:00,219 [INFO] price_checker.py:349 - 成功获取 02/12/2024 的价格信息
+2024-11-05 12:53:00,219 [INFO] price_checker.py:343 - 正在处理第 17/74 个日期: 03/12/2024
+2024-11-05 12:53:00,219 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:53:00,219 [INFO] price_checker.py:86 - 入住日期: 2024-12-03, 退房日期: 2024-12-04
+2024-11-05 12:53:00,219 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-03&check_out=2024-12-04&adults=3&children=0&infants=0
+2024-11-05 12:53:10,402 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:53:10,408 [INFO] price_checker.py:62 - 日期区间 03/12/2024 到 04/12/2024 可预订
+2024-11-05 12:53:25,594 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:53:25,618 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:53:28,623 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:53:28,630 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:53:28,649 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:53:28,663 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:53:28,678 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:53:28,693 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:53:28,699 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:53:28,700 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '03/12/2024', 'check_out': '04/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:53:28,700 [INFO] price_checker.py:349 - 成功获取 03/12/2024 的价格信息
+2024-11-05 12:53:28,700 [INFO] price_checker.py:343 - 正在处理第 18/74 个日期: 04/12/2024
+2024-11-05 12:53:28,700 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:53:28,700 [INFO] price_checker.py:86 - 入住日期: 2024-12-04, 退房日期: 2024-12-05
+2024-11-05 12:53:28,700 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-04&check_out=2024-12-05&adults=3&children=0&infants=0
+2024-11-05 12:53:38,882 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:53:38,888 [INFO] price_checker.py:62 - 日期区间 04/12/2024 到 05/12/2024 可预订
+2024-11-05 12:53:54,085 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:53:54,111 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:53:57,115 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:53:57,123 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:53:57,141 [INFO] price_checker.py:227 - 获取到价格项: $131 NZD x 1 night = $131 NZD
+2024-11-05 12:53:57,156 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:53:57,171 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:53:57,185 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 12:53:57,192 [INFO] price_checker.py:241 - 获取到总价: $237 NZD
+2024-11-05 12:53:57,193 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '04/12/2024', 'check_out': '05/12/2024', 'guests': 3, 'nightly_price': '$131 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$27 NZD', 'total': '$237 NZD'}
+2024-11-05 12:53:57,193 [INFO] price_checker.py:349 - 成功获取 04/12/2024 的价格信息
+2024-11-05 12:53:57,193 [INFO] price_checker.py:343 - 正在处理第 19/74 个日期: 05/12/2024
+2024-11-05 12:53:57,193 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:53:57,193 [INFO] price_checker.py:86 - 入住日期: 2024-12-05, 退房日期: 2024-12-06
+2024-11-05 12:53:57,193 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-05&check_out=2024-12-06&adults=3&children=0&infants=0
+2024-11-05 12:54:07,370 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 12:54:12,370 [INFO] price_checker.py:103 - 等待页面就绪，重试 1/3
+2024-11-05 12:54:12,381 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 12:54:17,381 [INFO] price_checker.py:103 - 等待页面就绪，重试 2/3
+2024-11-05 12:54:17,391 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 12:54:22,392 [INFO] price_checker.py:103 - 等待页面就绪，重试 3/3
+2024-11-05 12:54:22,392 [ERROR] price_checker.py:106 - 页面状态检查失败，超过最大重试次数
+2024-11-05 12:54:22,392 [WARNING] price_checker.py:351 - 获取 05/12/2024 的价格信息失败
+2024-11-05 12:54:22,392 [INFO] price_checker.py:343 - 正在处理第 20/74 个日期: 06/12/2024
+2024-11-05 12:54:22,392 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:54:22,392 [INFO] price_checker.py:86 - 入住日期: 2024-12-06, 退房日期: 2024-12-07
+2024-11-05 12:54:22,392 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-06&check_out=2024-12-07&adults=3&children=0&infants=0
+2024-11-05 12:54:32,585 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:54:32,592 [INFO] price_checker.py:62 - 日期区间 06/12/2024 到 07/12/2024 可预订
+2024-11-05 12:54:47,779 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:54:47,801 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:54:50,806 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:54:50,814 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:54:50,832 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:54:50,847 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:54:50,863 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:54:50,878 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:54:50,885 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:54:50,886 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '06/12/2024', 'check_out': '07/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:54:50,886 [INFO] price_checker.py:349 - 成功获取 06/12/2024 的价格信息
+2024-11-05 12:55:00,886 [INFO] price_checker.py:343 - 正在处理第 21/74 个日期: 07/12/2024
+2024-11-05 12:55:00,886 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:55:00,887 [INFO] price_checker.py:86 - 入住日期: 2024-12-07, 退房日期: 2024-12-08
+2024-11-05 12:55:00,887 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-07&check_out=2024-12-08&adults=3&children=0&infants=0
+2024-11-05 12:55:11,075 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:55:11,081 [INFO] price_checker.py:62 - 日期区间 07/12/2024 到 08/12/2024 可预订
+2024-11-05 12:55:26,266 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:55:26,290 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:55:29,295 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:55:29,302 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:55:29,320 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:55:29,335 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:55:29,350 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:55:29,366 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:55:29,373 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:55:29,373 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '07/12/2024', 'check_out': '08/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:55:29,373 [INFO] price_checker.py:349 - 成功获取 07/12/2024 的价格信息
+2024-11-05 12:55:29,373 [INFO] price_checker.py:343 - 正在处理第 22/74 个日期: 08/12/2024
+2024-11-05 12:55:29,373 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:55:29,373 [INFO] price_checker.py:86 - 入住日期: 2024-12-08, 退房日期: 2024-12-09
+2024-11-05 12:55:29,373 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-08&check_out=2024-12-09&adults=3&children=0&infants=0
+2024-11-05 12:55:39,556 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:55:39,562 [INFO] price_checker.py:62 - 日期区间 08/12/2024 到 09/12/2024 可预订
+2024-11-05 12:55:54,748 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:55:54,773 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:55:57,778 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:55:57,786 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:55:57,805 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:55:57,822 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:55:57,838 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:55:57,854 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:55:57,862 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:55:57,863 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '08/12/2024', 'check_out': '09/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:55:57,863 [INFO] price_checker.py:349 - 成功获取 08/12/2024 的价格信息
+2024-11-05 12:55:57,863 [INFO] price_checker.py:343 - 正在处理第 23/74 个日期: 11/12/2024
+2024-11-05 12:55:57,863 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:55:57,863 [INFO] price_checker.py:86 - 入住日期: 2024-12-11, 退房日期: 2024-12-12
+2024-11-05 12:55:57,863 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-11&check_out=2024-12-12&adults=3&children=0&infants=0
+2024-11-05 12:56:08,050 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:56:08,056 [INFO] price_checker.py:62 - 日期区间 11/12/2024 到 12/12/2024 可预订
+2024-11-05 12:56:23,246 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:56:23,269 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:56:26,273 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:56:26,280 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:56:26,299 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:56:26,315 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:56:26,330 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:56:26,344 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:56:26,352 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:56:26,352 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '11/12/2024', 'check_out': '12/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:56:26,352 [INFO] price_checker.py:349 - 成功获取 11/12/2024 的价格信息
+2024-11-05 12:56:26,352 [INFO] price_checker.py:343 - 正在处理第 24/74 个日期: 12/12/2024
+2024-11-05 12:56:26,352 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:56:26,352 [INFO] price_checker.py:86 - 入住日期: 2024-12-12, 退房日期: 2024-12-13
+2024-11-05 12:56:26,352 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-12&check_out=2024-12-13&adults=3&children=0&infants=0
+2024-11-05 12:56:36,536 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:56:36,553 [INFO] price_checker.py:62 - 日期区间 12/12/2024 到 13/12/2024 可预订
+2024-11-05 12:56:51,742 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:56:51,767 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:56:54,772 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:56:54,778 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:56:54,797 [INFO] price_checker.py:227 - 获取到价格项: $127 NZD x 1 night = $127 NZD
+2024-11-05 12:56:54,811 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:56:54,826 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:56:54,841 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 12:56:54,848 [INFO] price_checker.py:241 - 获取到总价: $233 NZD
+2024-11-05 12:56:54,848 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '12/12/2024', 'check_out': '13/12/2024', 'guests': 3, 'nightly_price': '$127 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$27 NZD', 'total': '$233 NZD'}
+2024-11-05 12:56:54,848 [INFO] price_checker.py:349 - 成功获取 12/12/2024 的价格信息
+2024-11-05 12:56:54,848 [INFO] price_checker.py:343 - 正在处理第 25/74 个日期: 13/12/2024
+2024-11-05 12:56:54,848 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:56:54,849 [INFO] price_checker.py:86 - 入住日期: 2024-12-13, 退房日期: 2024-12-14
+2024-11-05 12:56:54,849 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-13&check_out=2024-12-14&adults=3&children=0&infants=0
+2024-11-05 12:57:05,029 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:57:05,035 [INFO] price_checker.py:62 - 日期区间 13/12/2024 到 14/12/2024 可预订
+2024-11-05 12:57:20,226 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:57:20,251 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:57:23,256 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:57:23,263 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:57:23,283 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:57:23,298 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:57:23,313 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:57:23,327 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:57:23,335 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:57:23,335 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '13/12/2024', 'check_out': '14/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:57:23,335 [INFO] price_checker.py:349 - 成功获取 13/12/2024 的价格信息
+2024-11-05 12:57:33,335 [INFO] price_checker.py:343 - 正在处理第 26/74 个日期: 14/12/2024
+2024-11-05 12:57:33,336 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:57:33,336 [INFO] price_checker.py:86 - 入住日期: 2024-12-14, 退房日期: 2024-12-15
+2024-11-05 12:57:33,336 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-14&check_out=2024-12-15&adults=3&children=0&infants=0
+2024-11-05 12:57:43,520 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:57:43,527 [INFO] price_checker.py:62 - 日期区间 14/12/2024 到 15/12/2024 可预订
+2024-11-05 12:57:58,720 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:57:58,742 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:58:01,747 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:58:01,754 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:58:01,773 [INFO] price_checker.py:227 - 获取到价格项: $129 NZD x 1 night = $129 NZD
+2024-11-05 12:58:01,788 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:58:01,803 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:58:01,818 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 12:58:01,825 [INFO] price_checker.py:241 - 获取到总价: $235 NZD
+2024-11-05 12:58:01,825 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '14/12/2024', 'check_out': '15/12/2024', 'guests': 3, 'nightly_price': '$129 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$27 NZD', 'total': '$235 NZD'}
+2024-11-05 12:58:01,825 [INFO] price_checker.py:349 - 成功获取 14/12/2024 的价格信息
+2024-11-05 12:58:01,825 [INFO] price_checker.py:343 - 正在处理第 27/74 个日期: 15/12/2024
+2024-11-05 12:58:01,825 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:58:01,825 [INFO] price_checker.py:86 - 入住日期: 2024-12-15, 退房日期: 2024-12-16
+2024-11-05 12:58:01,826 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-15&check_out=2024-12-16&adults=3&children=0&infants=0
+2024-11-05 12:58:12,008 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:58:12,015 [INFO] price_checker.py:62 - 日期区间 15/12/2024 到 16/12/2024 可预订
+2024-11-05 12:58:27,197 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:58:27,222 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:58:30,227 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:58:30,234 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:58:30,252 [INFO] price_checker.py:227 - 获取到价格项: $128 NZD x 1 night = $128 NZD
+2024-11-05 12:58:30,267 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:58:30,281 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:58:30,296 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 12:58:30,303 [INFO] price_checker.py:241 - 获取到总价: $234 NZD
+2024-11-05 12:58:30,303 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '15/12/2024', 'check_out': '16/12/2024', 'guests': 3, 'nightly_price': '$128 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$27 NZD', 'total': '$234 NZD'}
+2024-11-05 12:58:30,303 [INFO] price_checker.py:349 - 成功获取 15/12/2024 的价格信息
+2024-11-05 12:58:30,303 [INFO] price_checker.py:343 - 正在处理第 28/74 个日期: 16/12/2024
+2024-11-05 12:58:30,304 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:58:30,304 [INFO] price_checker.py:86 - 入住日期: 2024-12-16, 退房日期: 2024-12-17
+2024-11-05 12:58:30,304 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-16&check_out=2024-12-17&adults=3&children=0&infants=0
+2024-11-05 12:58:40,486 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:58:40,492 [INFO] price_checker.py:62 - 日期区间 16/12/2024 到 17/12/2024 可预订
+2024-11-05 12:58:55,677 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:58:55,702 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:58:58,706 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:58:58,714 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:58:58,734 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:58:58,749 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:58:58,764 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:58:58,778 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:58:58,785 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:58:58,785 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '16/12/2024', 'check_out': '17/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:58:58,786 [INFO] price_checker.py:349 - 成功获取 16/12/2024 的价格信息
+2024-11-05 12:58:58,786 [INFO] price_checker.py:343 - 正在处理第 29/74 个日期: 17/12/2024
+2024-11-05 12:58:58,786 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:58:58,786 [INFO] price_checker.py:86 - 入住日期: 2024-12-17, 退房日期: 2024-12-18
+2024-11-05 12:58:58,786 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-17&check_out=2024-12-18&adults=3&children=0&infants=0
+2024-11-05 12:59:08,973 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:59:08,980 [INFO] price_checker.py:62 - 日期区间 17/12/2024 到 18/12/2024 可预订
+2024-11-05 12:59:24,157 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:59:24,182 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:59:27,186 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:59:27,193 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:59:27,212 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:59:27,227 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:59:27,242 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:59:27,257 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:59:27,264 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:59:27,264 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '17/12/2024', 'check_out': '18/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:59:27,264 [INFO] price_checker.py:349 - 成功获取 17/12/2024 的价格信息
+2024-11-05 12:59:27,264 [INFO] price_checker.py:343 - 正在处理第 30/74 个日期: 18/12/2024
+2024-11-05 12:59:27,265 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 12:59:27,265 [INFO] price_checker.py:86 - 入住日期: 2024-12-18, 退房日期: 2024-12-19
+2024-11-05 12:59:27,265 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-18&check_out=2024-12-19&adults=3&children=0&infants=0
+2024-11-05 12:59:37,447 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 12:59:37,453 [INFO] price_checker.py:62 - 日期区间 18/12/2024 到 19/12/2024 可预订
+2024-11-05 12:59:52,648 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 12:59:52,671 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 12:59:55,675 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 12:59:55,682 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 12:59:55,701 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 12:59:55,716 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 12:59:55,731 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 12:59:55,745 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 12:59:55,753 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 12:59:55,753 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '18/12/2024', 'check_out': '19/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 12:59:55,753 [INFO] price_checker.py:349 - 成功获取 18/12/2024 的价格信息
+2024-11-05 13:00:05,754 [INFO] price_checker.py:343 - 正在处理第 31/74 个日期: 19/12/2024
+2024-11-05 13:00:05,754 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:00:05,754 [INFO] price_checker.py:86 - 入住日期: 2024-12-19, 退房日期: 2024-12-20
+2024-11-05 13:00:05,754 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-19&check_out=2024-12-20&adults=3&children=0&infants=0
+2024-11-05 13:00:15,940 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:00:15,947 [INFO] price_checker.py:62 - 日期区间 19/12/2024 到 20/12/2024 可预订
+2024-11-05 13:00:31,136 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:00:31,161 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:00:34,165 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:00:34,173 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:00:34,191 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 13:00:34,206 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:00:34,221 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 13:00:34,235 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 13:00:34,242 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 13:00:34,243 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '19/12/2024', 'check_out': '20/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 13:00:34,243 [INFO] price_checker.py:349 - 成功获取 19/12/2024 的价格信息
+2024-11-05 13:00:34,243 [INFO] price_checker.py:343 - 正在处理第 32/74 个日期: 20/12/2024
+2024-11-05 13:00:34,243 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:00:34,243 [INFO] price_checker.py:86 - 入住日期: 2024-12-20, 退房日期: 2024-12-21
+2024-11-05 13:00:34,243 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-20&check_out=2024-12-21&adults=3&children=0&infants=0
+2024-11-05 13:00:44,425 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:00:44,431 [INFO] price_checker.py:62 - 日期区间 20/12/2024 到 21/12/2024 可预订
+2024-11-05 13:00:59,617 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:00:59,642 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:01:02,647 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:01:02,655 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:01:02,673 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 13:01:02,687 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:01:02,702 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 13:01:02,718 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 13:01:02,725 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 13:01:02,725 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '20/12/2024', 'check_out': '21/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 13:01:02,725 [INFO] price_checker.py:349 - 成功获取 20/12/2024 的价格信息
+2024-11-05 13:01:02,725 [INFO] price_checker.py:343 - 正在处理第 33/74 个日期: 21/12/2024
+2024-11-05 13:01:02,726 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:01:02,726 [INFO] price_checker.py:86 - 入住日期: 2024-12-21, 退房日期: 2024-12-22
+2024-11-05 13:01:02,726 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-21&check_out=2024-12-22&adults=3&children=0&infants=0
+2024-11-05 13:01:12,911 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:01:12,917 [INFO] price_checker.py:62 - 日期区间 21/12/2024 到 22/12/2024 可预订
+2024-11-05 13:01:28,115 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:01:28,139 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:01:31,144 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:01:31,152 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:01:31,170 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 13:01:31,185 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:01:31,200 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 13:01:31,214 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 13:01:31,221 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 13:01:31,221 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '21/12/2024', 'check_out': '22/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 13:01:31,222 [INFO] price_checker.py:349 - 成功获取 21/12/2024 的价格信息
+2024-11-05 13:01:31,222 [INFO] price_checker.py:343 - 正在处理第 34/74 个日期: 22/12/2024
+2024-11-05 13:01:31,222 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:01:31,222 [INFO] price_checker.py:86 - 入住日期: 2024-12-22, 退房日期: 2024-12-23
+2024-11-05 13:01:31,222 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-22&check_out=2024-12-23&adults=3&children=0&infants=0
+2024-11-05 13:01:41,406 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:01:41,412 [INFO] price_checker.py:62 - 日期区间 22/12/2024 到 23/12/2024 可预订
+2024-11-05 13:01:56,598 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:01:56,623 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:01:59,628 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:01:59,634 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:01:59,653 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 13:01:59,668 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:01:59,683 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 13:01:59,697 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 13:01:59,704 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 13:01:59,704 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '22/12/2024', 'check_out': '23/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 13:01:59,704 [INFO] price_checker.py:349 - 成功获取 22/12/2024 的价格信息
+2024-11-05 13:01:59,704 [INFO] price_checker.py:343 - 正在处理第 35/74 个日期: 23/12/2024
+2024-11-05 13:01:59,705 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:01:59,705 [INFO] price_checker.py:86 - 入住日期: 2024-12-23, 退房日期: 2024-12-24
+2024-11-05 13:01:59,705 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-23&check_out=2024-12-24&adults=3&children=0&infants=0
+2024-11-05 13:02:09,892 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:02:09,899 [INFO] price_checker.py:62 - 日期区间 23/12/2024 到 24/12/2024 可预订
+2024-11-05 13:02:25,079 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:02:25,104 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:02:28,108 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:02:28,115 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:02:28,133 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 13:02:28,148 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:02:28,162 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 13:02:28,177 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 13:02:28,184 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 13:02:28,184 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '23/12/2024', 'check_out': '24/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 13:02:28,184 [INFO] price_checker.py:349 - 成功获取 23/12/2024 的价格信息
+2024-11-05 13:02:38,184 [INFO] price_checker.py:343 - 正在处理第 36/74 个日期: 24/12/2024
+2024-11-05 13:02:38,184 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:02:38,184 [INFO] price_checker.py:86 - 入住日期: 2024-12-24, 退房日期: 2024-12-25
+2024-11-05 13:02:38,185 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-24&check_out=2024-12-25&adults=3&children=0&infants=0
+2024-11-05 13:02:48,386 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:02:48,395 [INFO] price_checker.py:62 - 日期区间 24/12/2024 到 25/12/2024 可预订
+2024-11-05 13:03:03,580 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:03:03,603 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:03:06,608 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:03:06,617 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:03:06,635 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 13:03:06,651 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:03:06,665 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 13:03:06,680 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 13:03:06,687 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 13:03:06,687 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '24/12/2024', 'check_out': '25/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 13:03:06,687 [INFO] price_checker.py:349 - 成功获取 24/12/2024 的价格信息
+2024-11-05 13:03:06,687 [INFO] price_checker.py:343 - 正在处理第 37/74 个日期: 25/12/2024
+2024-11-05 13:03:06,687 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:03:06,687 [INFO] price_checker.py:86 - 入住日期: 2024-12-25, 退房日期: 2024-12-26
+2024-11-05 13:03:06,688 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-25&check_out=2024-12-26&adults=3&children=0&infants=0
+2024-11-05 13:03:16,872 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:03:16,879 [INFO] price_checker.py:62 - 日期区间 25/12/2024 到 26/12/2024 可预订
+2024-11-05 13:03:32,064 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:03:32,090 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:03:35,094 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:03:35,102 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:03:35,120 [INFO] price_checker.py:227 - 获取到价格项: $130 NZD x 1 night = $130 NZD
+2024-11-05 13:03:35,135 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:03:35,149 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 13:03:35,164 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 13:03:35,172 [INFO] price_checker.py:241 - 获取到总价: $236 NZD
+2024-11-05 13:03:35,172 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '25/12/2024', 'check_out': '26/12/2024', 'guests': 3, 'nightly_price': '$130 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$27 NZD', 'total': '$236 NZD'}
+2024-11-05 13:03:35,172 [INFO] price_checker.py:349 - 成功获取 25/12/2024 的价格信息
+2024-11-05 13:03:35,172 [INFO] price_checker.py:343 - 正在处理第 38/74 个日期: 26/12/2024
+2024-11-05 13:03:35,172 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:03:35,173 [INFO] price_checker.py:86 - 入住日期: 2024-12-26, 退房日期: 2024-12-27
+2024-11-05 13:03:35,173 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-26&check_out=2024-12-27&adults=3&children=0&infants=0
+2024-11-05 13:03:45,354 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:03:45,361 [INFO] price_checker.py:62 - 日期区间 26/12/2024 到 27/12/2024 可预订
+2024-11-05 13:04:00,552 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:04:00,578 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:04:03,582 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:04:03,589 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:04:03,608 [INFO] price_checker.py:227 - 获取到价格项: $126 NZD x 1 night = $126 NZD
+2024-11-05 13:04:03,622 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:04:03,637 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 13:04:03,653 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $26 NZD
+2024-11-05 13:04:03,659 [INFO] price_checker.py:241 - 获取到总价: $231 NZD
+2024-11-05 13:04:03,660 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '26/12/2024', 'check_out': '27/12/2024', 'guests': 3, 'nightly_price': '$126 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$26 NZD', 'total': '$231 NZD'}
+2024-11-05 13:04:03,660 [INFO] price_checker.py:349 - 成功获取 26/12/2024 的价格信息
+2024-11-05 13:04:03,660 [INFO] price_checker.py:343 - 正在处理第 39/74 个日期: 27/12/2024
+2024-11-05 13:04:03,660 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:04:03,660 [INFO] price_checker.py:86 - 入住日期: 2024-12-27, 退房日期: 2024-12-28
+2024-11-05 13:04:03,660 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-27&check_out=2024-12-28&adults=3&children=0&infants=0
+2024-11-05 13:04:13,850 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:04:13,856 [INFO] price_checker.py:62 - 日期区间 27/12/2024 到 28/12/2024 可预订
+2024-11-05 13:04:29,039 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:04:29,065 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:04:32,069 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:04:32,076 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:04:32,095 [INFO] price_checker.py:227 - 获取到价格项: $140 NZD x 1 night = $140 NZD
+2024-11-05 13:04:32,109 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:04:32,123 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:04:32,138 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:04:32,145 [INFO] price_checker.py:241 - 获取到总价: $249 NZD
+2024-11-05 13:04:32,145 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '27/12/2024', 'check_out': '28/12/2024', 'guests': 3, 'nightly_price': '$140 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$28 NZD', 'total': '$249 NZD'}
+2024-11-05 13:04:32,145 [INFO] price_checker.py:349 - 成功获取 27/12/2024 的价格信息
+2024-11-05 13:04:32,145 [INFO] price_checker.py:343 - 正在处理第 40/74 个日期: 28/12/2024
+2024-11-05 13:04:32,145 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:04:32,146 [INFO] price_checker.py:86 - 入住日期: 2024-12-28, 退房日期: 2024-12-29
+2024-11-05 13:04:32,146 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-28&check_out=2024-12-29&adults=3&children=0&infants=0
+2024-11-05 13:04:42,329 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:04:42,336 [INFO] price_checker.py:62 - 日期区间 28/12/2024 到 29/12/2024 可预订
+2024-11-05 13:04:57,538 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:04:57,563 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:05:00,567 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:05:00,574 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:05:00,592 [INFO] price_checker.py:227 - 获取到价格项: $141 NZD x 1 night = $141 NZD
+2024-11-05 13:05:00,606 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:05:00,621 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:05:00,635 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $29 NZD
+2024-11-05 13:05:00,643 [INFO] price_checker.py:241 - 获取到总价: $251 NZD
+2024-11-05 13:05:00,643 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '28/12/2024', 'check_out': '29/12/2024', 'guests': 3, 'nightly_price': '$141 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$29 NZD', 'total': '$251 NZD'}
+2024-11-05 13:05:00,643 [INFO] price_checker.py:349 - 成功获取 28/12/2024 的价格信息
+2024-11-05 13:05:10,643 [INFO] price_checker.py:343 - 正在处理第 41/74 个日期: 29/12/2024
+2024-11-05 13:05:10,643 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:05:10,643 [INFO] price_checker.py:86 - 入住日期: 2024-12-29, 退房日期: 2024-12-30
+2024-11-05 13:05:10,643 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-29&check_out=2024-12-30&adults=3&children=0&infants=0
+2024-11-05 13:05:20,831 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:05:20,838 [INFO] price_checker.py:62 - 日期区间 29/12/2024 到 30/12/2024 可预订
+2024-11-05 13:05:36,031 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:05:36,055 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:05:39,060 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:05:39,067 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:05:39,085 [INFO] price_checker.py:227 - 获取到价格项: $138 NZD x 1 night = $138 NZD
+2024-11-05 13:05:39,100 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:05:39,114 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:05:39,128 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:05:39,135 [INFO] price_checker.py:241 - 获取到总价: $247 NZD
+2024-11-05 13:05:39,136 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '29/12/2024', 'check_out': '30/12/2024', 'guests': 3, 'nightly_price': '$138 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$28 NZD', 'total': '$247 NZD'}
+2024-11-05 13:05:39,136 [INFO] price_checker.py:349 - 成功获取 29/12/2024 的价格信息
+2024-11-05 13:05:39,136 [INFO] price_checker.py:343 - 正在处理第 42/74 个日期: 30/12/2024
+2024-11-05 13:05:39,136 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:05:39,136 [INFO] price_checker.py:86 - 入住日期: 2024-12-30, 退房日期: 2024-12-31
+2024-11-05 13:05:39,136 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-30&check_out=2024-12-31&adults=3&children=0&infants=0
+2024-11-05 13:05:49,330 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:05:49,336 [INFO] price_checker.py:62 - 日期区间 30/12/2024 到 31/12/2024 可预订
+2024-11-05 13:06:04,536 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:06:04,562 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:06:07,566 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:06:07,573 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:06:07,592 [INFO] price_checker.py:227 - 获取到价格项: $139 NZD x 1 night = $139 NZD
+2024-11-05 13:06:07,606 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:06:07,620 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:06:07,635 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:06:07,643 [INFO] price_checker.py:241 - 获取到总价: $248 NZD
+2024-11-05 13:06:07,643 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '30/12/2024', 'check_out': '31/12/2024', 'guests': 3, 'nightly_price': '$139 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$28 NZD', 'total': '$248 NZD'}
+2024-11-05 13:06:07,643 [INFO] price_checker.py:349 - 成功获取 30/12/2024 的价格信息
+2024-11-05 13:06:07,643 [INFO] price_checker.py:343 - 正在处理第 43/74 个日期: 31/12/2024
+2024-11-05 13:06:07,643 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:06:07,643 [INFO] price_checker.py:86 - 入住日期: 2024-12-31, 退房日期: 2025-01-01
+2024-11-05 13:06:07,643 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2024-12-31&check_out=2025-01-01&adults=3&children=0&infants=0
+2024-11-05 13:06:17,826 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:06:17,832 [INFO] price_checker.py:62 - 日期区间 31/12/2024 到 01/01/2025 可预订
+2024-11-05 13:06:33,021 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:06:33,046 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:06:36,050 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:06:36,057 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:06:36,076 [INFO] price_checker.py:227 - 获取到价格项: $133 NZD x 1 night = $133 NZD
+2024-11-05 13:06:36,091 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:06:36,105 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:06:36,121 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 13:06:36,128 [INFO] price_checker.py:241 - 获取到总价: $240 NZD
+2024-11-05 13:06:36,128 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '31/12/2024', 'check_out': '01/01/2025', 'guests': 3, 'nightly_price': '$133 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$27 NZD', 'total': '$240 NZD'}
+2024-11-05 13:06:36,128 [INFO] price_checker.py:349 - 成功获取 31/12/2024 的价格信息
+2024-11-05 13:06:36,128 [INFO] price_checker.py:343 - 正在处理第 44/74 个日期: 01/01/2025
+2024-11-05 13:06:36,129 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:06:36,129 [INFO] price_checker.py:86 - 入住日期: 2025-01-01, 退房日期: 2025-01-02
+2024-11-05 13:06:36,129 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-01&check_out=2025-01-02&adults=3&children=0&infants=0
+2024-11-05 13:06:46,313 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:06:46,321 [INFO] price_checker.py:62 - 日期区间 01/01/2025 到 02/01/2025 可预订
+2024-11-05 13:07:01,503 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:07:01,527 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:07:04,532 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:07:04,541 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:07:04,559 [INFO] price_checker.py:227 - 获取到价格项: $133 NZD x 1 night = $133 NZD
+2024-11-05 13:07:04,573 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:07:04,588 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:07:04,603 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 13:07:04,610 [INFO] price_checker.py:241 - 获取到总价: $240 NZD
+2024-11-05 13:07:04,610 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '01/01/2025', 'check_out': '02/01/2025', 'guests': 3, 'nightly_price': '$133 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$27 NZD', 'total': '$240 NZD'}
+2024-11-05 13:07:04,610 [INFO] price_checker.py:349 - 成功获取 01/01/2025 的价格信息
+2024-11-05 13:07:04,610 [INFO] price_checker.py:343 - 正在处理第 45/74 个日期: 02/01/2025
+2024-11-05 13:07:04,610 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:07:04,610 [INFO] price_checker.py:86 - 入住日期: 2025-01-02, 退房日期: 2025-01-03
+2024-11-05 13:07:04,610 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-02&check_out=2025-01-03&adults=3&children=0&infants=0
+2024-11-05 13:07:14,800 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:07:14,806 [INFO] price_checker.py:62 - 日期区间 02/01/2025 到 03/01/2025 可预订
+2024-11-05 13:07:30,001 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:07:30,025 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:07:33,030 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:07:33,037 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:07:33,055 [INFO] price_checker.py:227 - 获取到价格项: $128 NZD x 1 night = $128 NZD
+2024-11-05 13:07:33,070 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:07:33,085 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $29 NZD
+2024-11-05 13:07:33,100 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $27 NZD
+2024-11-05 13:07:33,107 [INFO] price_checker.py:241 - 获取到总价: $234 NZD
+2024-11-05 13:07:33,107 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '02/01/2025', 'check_out': '03/01/2025', 'guests': 3, 'nightly_price': '$128 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$29 NZD', 'taxes': '$27 NZD', 'total': '$234 NZD'}
+2024-11-05 13:07:33,107 [INFO] price_checker.py:349 - 成功获取 02/01/2025 的价格信息
+2024-11-05 13:07:43,107 [INFO] price_checker.py:343 - 正在处理第 46/74 个日期: 03/01/2025
+2024-11-05 13:07:43,107 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:07:43,107 [INFO] price_checker.py:86 - 入住日期: 2025-01-03, 退房日期: 2025-01-04
+2024-11-05 13:07:43,107 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-03&check_out=2025-01-04&adults=3&children=0&infants=0
+2024-11-05 13:07:53,295 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:07:53,301 [INFO] price_checker.py:62 - 日期区间 03/01/2025 到 04/01/2025 可预订
+2024-11-05 13:08:08,495 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: //button[.//span[contains(text(), 'Show price details')]]
+2024-11-05 13:08:08,521 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:08:11,525 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:08:11,533 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:08:11,551 [INFO] price_checker.py:227 - 获取到价格项: $137 NZD x 1 night = $137 NZD
+2024-11-05 13:08:11,565 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:08:11,579 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:08:11,593 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:08:11,600 [INFO] price_checker.py:241 - 获取到总价: $245 NZD
+2024-11-05 13:08:11,600 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '03/01/2025', 'check_out': '04/01/2025', 'guests': 3, 'nightly_price': '$137 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$245 NZD'}
+2024-11-05 13:08:11,600 [INFO] price_checker.py:349 - 成功获取 03/01/2025 的价格信息
+2024-11-05 13:08:11,600 [INFO] price_checker.py:343 - 正在处理第 47/74 个日期: 04/01/2025
+2024-11-05 13:08:11,601 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:08:11,601 [INFO] price_checker.py:86 - 入住日期: 2025-01-04, 退房日期: 2025-01-05
+2024-11-05 13:08:11,601 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-04&check_out=2025-01-05&adults=3&children=0&infants=0
+2024-11-05 13:08:21,773 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:08:26,773 [INFO] price_checker.py:103 - 等待页面就绪，重试 1/3
+2024-11-05 13:08:26,783 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:08:31,784 [INFO] price_checker.py:103 - 等待页面就绪，重试 2/3
+2024-11-05 13:08:31,794 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:08:36,794 [INFO] price_checker.py:103 - 等待页面就绪，重试 3/3
+2024-11-05 13:08:36,794 [ERROR] price_checker.py:106 - 页面状态检查失败，超过最大重试次数
+2024-11-05 13:08:36,794 [WARNING] price_checker.py:351 - 获取 04/01/2025 的价格信息失败
+2024-11-05 13:08:36,794 [INFO] price_checker.py:343 - 正在处理第 48/74 个日期: 05/01/2025
+2024-11-05 13:08:36,794 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:08:36,795 [INFO] price_checker.py:86 - 入住日期: 2025-01-05, 退房日期: 2025-01-06
+2024-11-05 13:08:36,795 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-05&check_out=2025-01-06&adults=3&children=0&infants=0
+2024-11-05 13:08:46,977 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:08:46,984 [INFO] price_checker.py:62 - 日期区间 05/01/2025 到 06/01/2025 可预订
+2024-11-05 13:08:52,038 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:08:52,065 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:08:55,069 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:08:55,086 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:08:55,110 [INFO] price_checker.py:227 - 获取到价格项: $140 NZD x 1 night = $140 NZD
+2024-11-05 13:08:55,128 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:08:55,164 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:08:55,178 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $29 NZD
+2024-11-05 13:08:55,181 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:08:55,185 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:08:55,192 [INFO] price_checker.py:241 - 获取到总价: $250 NZD
+2024-11-05 13:08:55,192 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '05/01/2025', 'check_out': '06/01/2025', 'guests': 3, 'nightly_price': '$140 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$29 NZD', 'total': '$250 NZD'}
+2024-11-05 13:08:55,192 [INFO] price_checker.py:349 - 成功获取 05/01/2025 的价格信息
+2024-11-05 13:08:55,192 [INFO] price_checker.py:343 - 正在处理第 49/74 个日期: 06/01/2025
+2024-11-05 13:08:55,192 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:08:55,192 [INFO] price_checker.py:86 - 入住日期: 2025-01-06, 退房日期: 2025-01-07
+2024-11-05 13:08:55,192 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-06&check_out=2025-01-07&adults=3&children=0&infants=0
+2024-11-05 13:09:05,371 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:09:05,377 [INFO] price_checker.py:62 - 日期区间 06/01/2025 到 07/01/2025 可预订
+2024-11-05 13:09:10,432 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:09:10,457 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:09:13,461 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:09:13,468 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:09:13,487 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:09:13,501 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:09:13,514 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:09:13,529 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:09:13,533 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:09:13,537 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:09:13,544 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:09:13,544 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '06/01/2025', 'check_out': '07/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:09:13,544 [INFO] price_checker.py:349 - 成功获取 06/01/2025 的价格信息
+2024-11-05 13:09:13,544 [INFO] price_checker.py:343 - 正在处理第 50/74 个日期: 07/01/2025
+2024-11-05 13:09:13,544 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:09:13,545 [INFO] price_checker.py:86 - 入住日期: 2025-01-07, 退房日期: 2025-01-08
+2024-11-05 13:09:13,545 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-07&check_out=2025-01-08&adults=3&children=0&infants=0
+2024-11-05 13:09:23,725 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:09:23,731 [INFO] price_checker.py:62 - 日期区间 07/01/2025 到 08/01/2025 可预订
+2024-11-05 13:09:28,785 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:09:28,809 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:09:31,814 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:09:31,831 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:09:31,857 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:09:31,889 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:09:31,914 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:09:31,929 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:09:31,933 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:09:31,937 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:09:31,944 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:09:31,944 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '07/01/2025', 'check_out': '08/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:09:31,944 [INFO] price_checker.py:349 - 成功获取 07/01/2025 的价格信息
+2024-11-05 13:09:41,944 [INFO] price_checker.py:343 - 正在处理第 51/74 个日期: 08/01/2025
+2024-11-05 13:09:41,945 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:09:41,945 [INFO] price_checker.py:86 - 入住日期: 2025-01-08, 退房日期: 2025-01-09
+2024-11-05 13:09:41,945 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-08&check_out=2025-01-09&adults=3&children=0&infants=0
+2024-11-05 13:09:52,135 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:09:52,141 [INFO] price_checker.py:62 - 日期区间 08/01/2025 到 09/01/2025 可预订
+2024-11-05 13:09:57,194 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:09:57,218 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:10:00,223 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:10:00,231 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:10:00,249 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:10:00,263 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:10:00,277 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:10:00,292 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:10:00,295 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:10:00,299 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:10:00,306 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:10:00,306 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '08/01/2025', 'check_out': '09/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:10:00,306 [INFO] price_checker.py:349 - 成功获取 08/01/2025 的价格信息
+2024-11-05 13:10:00,306 [INFO] price_checker.py:343 - 正在处理第 52/74 个日期: 09/01/2025
+2024-11-05 13:10:00,306 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:10:00,307 [INFO] price_checker.py:86 - 入住日期: 2025-01-09, 退房日期: 2025-01-10
+2024-11-05 13:10:00,307 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-09&check_out=2025-01-10&adults=3&children=0&infants=0
+2024-11-05 13:10:10,491 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:10:10,497 [INFO] price_checker.py:62 - 日期区间 09/01/2025 到 10/01/2025 可预订
+2024-11-05 13:10:15,550 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:10:15,572 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:10:18,576 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:10:18,584 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:10:18,616 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:10:18,634 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:10:18,670 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:10:18,685 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:10:18,688 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:10:18,692 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:10:18,699 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:10:18,699 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '09/01/2025', 'check_out': '10/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:10:18,699 [INFO] price_checker.py:349 - 成功获取 09/01/2025 的价格信息
+2024-11-05 13:10:18,699 [INFO] price_checker.py:343 - 正在处理第 53/74 个日期: 10/01/2025
+2024-11-05 13:10:18,699 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:10:18,699 [INFO] price_checker.py:86 - 入住日期: 2025-01-10, 退房日期: 2025-01-11
+2024-11-05 13:10:18,699 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-10&check_out=2025-01-11&adults=3&children=0&infants=0
+2024-11-05 13:10:28,879 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:10:28,886 [INFO] price_checker.py:62 - 日期区间 10/01/2025 到 11/01/2025 可预订
+2024-11-05 13:10:33,944 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:10:33,970 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:10:36,974 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:10:36,980 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:10:36,998 [INFO] price_checker.py:227 - 获取到价格项: $142 NZD x 1 night = $142 NZD
+2024-11-05 13:10:37,012 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:10:37,026 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:10:37,040 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $29 NZD
+2024-11-05 13:10:37,044 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:10:37,047 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:10:37,054 [INFO] price_checker.py:241 - 获取到总价: $252 NZD
+2024-11-05 13:10:37,054 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '10/01/2025', 'check_out': '11/01/2025', 'guests': 3, 'nightly_price': '$142 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$29 NZD', 'total': '$252 NZD'}
+2024-11-05 13:10:37,055 [INFO] price_checker.py:349 - 成功获取 10/01/2025 的价格信息
+2024-11-05 13:10:37,055 [INFO] price_checker.py:343 - 正在处理第 54/74 个日期: 11/01/2025
+2024-11-05 13:10:37,055 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:10:37,055 [INFO] price_checker.py:86 - 入住日期: 2025-01-11, 退房日期: 2025-01-12
+2024-11-05 13:10:37,055 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-11&check_out=2025-01-12&adults=3&children=0&infants=0
+2024-11-05 13:10:47,236 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:10:47,243 [INFO] price_checker.py:62 - 日期区间 11/01/2025 到 12/01/2025 可预订
+2024-11-05 13:10:52,307 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:10:52,338 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:10:55,342 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:10:55,349 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:10:55,366 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:10:55,380 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:10:55,394 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:10:55,409 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:10:55,412 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:10:55,416 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:10:55,423 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:10:55,423 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '11/01/2025', 'check_out': '12/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:10:55,423 [INFO] price_checker.py:349 - 成功获取 11/01/2025 的价格信息
+2024-11-05 13:10:55,423 [INFO] price_checker.py:343 - 正在处理第 55/74 个日期: 12/01/2025
+2024-11-05 13:10:55,423 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:10:55,423 [INFO] price_checker.py:86 - 入住日期: 2025-01-12, 退房日期: 2025-01-13
+2024-11-05 13:10:55,423 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-12&check_out=2025-01-13&adults=3&children=0&infants=0
+2024-11-05 13:11:05,612 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:11:05,621 [INFO] price_checker.py:62 - 日期区间 12/01/2025 到 13/01/2025 可预订
+2024-11-05 13:11:10,679 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:11:10,703 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:11:13,707 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:11:13,714 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:11:13,732 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:11:13,746 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:11:13,760 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:11:13,773 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:11:13,779 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:11:13,790 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:11:13,799 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:11:13,800 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '12/01/2025', 'check_out': '13/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:11:13,800 [INFO] price_checker.py:349 - 成功获取 12/01/2025 的价格信息
+2024-11-05 13:11:23,800 [INFO] price_checker.py:343 - 正在处理第 56/74 个日期: 13/01/2025
+2024-11-05 13:11:23,800 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:11:23,801 [INFO] price_checker.py:86 - 入住日期: 2025-01-13, 退房日期: 2025-01-14
+2024-11-05 13:11:23,801 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-13&check_out=2025-01-14&adults=3&children=0&infants=0
+2024-11-05 13:11:33,989 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:11:33,996 [INFO] price_checker.py:62 - 日期区间 13/01/2025 到 14/01/2025 可预订
+2024-11-05 13:11:39,050 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:11:39,075 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:11:42,082 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:11:42,097 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:11:42,120 [INFO] price_checker.py:227 - 获取到价格项: $136 NZD x 1 night = $136 NZD
+2024-11-05 13:11:42,140 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:11:42,175 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:11:42,192 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:11:42,195 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:11:42,200 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:11:42,207 [INFO] price_checker.py:241 - 获取到总价: $244 NZD
+2024-11-05 13:11:42,207 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '13/01/2025', 'check_out': '14/01/2025', 'guests': 3, 'nightly_price': '$136 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$244 NZD'}
+2024-11-05 13:11:42,207 [INFO] price_checker.py:349 - 成功获取 13/01/2025 的价格信息
+2024-11-05 13:11:42,207 [INFO] price_checker.py:343 - 正在处理第 57/74 个日期: 14/01/2025
+2024-11-05 13:11:42,207 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:11:42,207 [INFO] price_checker.py:86 - 入住日期: 2025-01-14, 退房日期: 2025-01-15
+2024-11-05 13:11:42,207 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-14&check_out=2025-01-15&adults=3&children=0&infants=0
+2024-11-05 13:11:52,387 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:11:52,393 [INFO] price_checker.py:62 - 日期区间 14/01/2025 到 15/01/2025 可预订
+2024-11-05 13:11:57,449 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:11:57,479 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:12:00,484 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:12:00,490 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:12:00,508 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:12:00,523 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:12:00,538 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:12:00,553 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:12:00,556 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:12:00,560 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:12:00,567 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:12:00,567 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '14/01/2025', 'check_out': '15/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:12:00,568 [INFO] price_checker.py:349 - 成功获取 14/01/2025 的价格信息
+2024-11-05 13:12:00,568 [INFO] price_checker.py:343 - 正在处理第 58/74 个日期: 15/01/2025
+2024-11-05 13:12:00,568 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:12:00,568 [INFO] price_checker.py:86 - 入住日期: 2025-01-15, 退房日期: 2025-01-16
+2024-11-05 13:12:00,568 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-15&check_out=2025-01-16&adults=3&children=0&infants=0
+2024-11-05 13:12:10,752 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:12:10,770 [INFO] price_checker.py:62 - 日期区间 15/01/2025 到 16/01/2025 可预订
+2024-11-05 13:12:15,825 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:12:15,850 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:12:18,854 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:12:18,861 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:12:18,878 [INFO] price_checker.py:227 - 获取到价格项: $140 NZD x 1 night = $140 NZD
+2024-11-05 13:12:18,893 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:12:18,907 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:12:18,920 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $29 NZD
+2024-11-05 13:12:18,924 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:12:18,928 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:12:18,935 [INFO] price_checker.py:241 - 获取到总价: $250 NZD
+2024-11-05 13:12:18,935 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '15/01/2025', 'check_out': '16/01/2025', 'guests': 3, 'nightly_price': '$140 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$29 NZD', 'total': '$250 NZD'}
+2024-11-05 13:12:18,935 [INFO] price_checker.py:349 - 成功获取 15/01/2025 的价格信息
+2024-11-05 13:12:18,935 [INFO] price_checker.py:343 - 正在处理第 59/74 个日期: 16/01/2025
+2024-11-05 13:12:18,935 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:12:18,935 [INFO] price_checker.py:86 - 入住日期: 2025-01-16, 退房日期: 2025-01-17
+2024-11-05 13:12:18,935 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-16&check_out=2025-01-17&adults=3&children=0&infants=0
+2024-11-05 13:12:29,124 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:12:29,130 [INFO] price_checker.py:62 - 日期区间 16/01/2025 到 17/01/2025 可预订
+2024-11-05 13:12:34,184 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:12:34,207 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:12:37,211 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:12:37,218 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:12:37,235 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:12:37,249 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:12:37,264 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:12:37,278 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:12:37,281 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:12:37,285 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:12:37,292 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:12:37,292 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '16/01/2025', 'check_out': '17/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:12:37,292 [INFO] price_checker.py:349 - 成功获取 16/01/2025 的价格信息
+2024-11-05 13:12:37,292 [INFO] price_checker.py:343 - 正在处理第 60/74 个日期: 17/01/2025
+2024-11-05 13:12:37,292 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:12:37,292 [INFO] price_checker.py:86 - 入住日期: 2025-01-17, 退房日期: 2025-01-18
+2024-11-05 13:12:37,292 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-17&check_out=2025-01-18&adults=3&children=0&infants=0
+2024-11-05 13:12:47,467 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:12:52,467 [INFO] price_checker.py:103 - 等待页面就绪，重试 1/3
+2024-11-05 13:12:52,477 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:12:57,478 [INFO] price_checker.py:103 - 等待页面就绪，重试 2/3
+2024-11-05 13:12:57,487 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:13:02,488 [INFO] price_checker.py:103 - 等待页面就绪，重试 3/3
+2024-11-05 13:13:02,488 [ERROR] price_checker.py:106 - 页面状态检查失败，超过最大重试次数
+2024-11-05 13:13:02,488 [WARNING] price_checker.py:351 - 获取 17/01/2025 的价格信息失败
+2024-11-05 13:13:12,489 [INFO] price_checker.py:343 - 正在处理第 61/74 个日期: 18/01/2025
+2024-11-05 13:13:12,489 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:13:12,489 [INFO] price_checker.py:86 - 入住日期: 2025-01-18, 退房日期: 2025-01-19
+2024-11-05 13:13:12,489 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-18&check_out=2025-01-19&adults=3&children=0&infants=0
+2024-11-05 13:13:22,678 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:13:22,687 [INFO] price_checker.py:62 - 日期区间 18/01/2025 到 19/01/2025 可预订
+2024-11-05 13:13:27,740 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:13:27,763 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:13:30,768 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:13:30,775 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:13:30,805 [INFO] price_checker.py:227 - 获取到价格项: $148 NZD x 1 night = $148 NZD
+2024-11-05 13:13:30,823 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:13:30,855 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $32 NZD
+2024-11-05 13:13:30,875 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $30 NZD
+2024-11-05 13:13:30,879 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:13:30,882 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:13:30,890 [INFO] price_checker.py:241 - 获取到总价: $260 NZD
+2024-11-05 13:13:30,890 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '18/01/2025', 'check_out': '19/01/2025', 'guests': 3, 'nightly_price': '$148 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$32 NZD', 'taxes': '$30 NZD', 'total': '$260 NZD'}
+2024-11-05 13:13:30,890 [INFO] price_checker.py:349 - 成功获取 18/01/2025 的价格信息
+2024-11-05 13:13:30,890 [INFO] price_checker.py:343 - 正在处理第 62/74 个日期: 19/01/2025
+2024-11-05 13:13:30,891 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:13:30,891 [INFO] price_checker.py:86 - 入住日期: 2025-01-19, 退房日期: 2025-01-20
+2024-11-05 13:13:30,891 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-19&check_out=2025-01-20&adults=3&children=0&infants=0
+2024-11-05 13:13:41,064 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:13:46,064 [INFO] price_checker.py:103 - 等待页面就绪，重试 1/3
+2024-11-05 13:13:46,074 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:13:51,075 [INFO] price_checker.py:103 - 等待页面就绪，重试 2/3
+2024-11-05 13:13:51,085 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:13:56,085 [INFO] price_checker.py:103 - 等待页面就绪，重试 3/3
+2024-11-05 13:13:56,085 [ERROR] price_checker.py:106 - 页面状态检查失败，超过最大重试次数
+2024-11-05 13:13:56,085 [WARNING] price_checker.py:351 - 获取 19/01/2025 的价格信息失败
+2024-11-05 13:13:56,086 [INFO] price_checker.py:343 - 正在处理第 63/74 个日期: 20/01/2025
+2024-11-05 13:13:56,086 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:13:56,086 [INFO] price_checker.py:86 - 入住日期: 2025-01-20, 退房日期: 2025-01-21
+2024-11-05 13:13:56,086 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-20&check_out=2025-01-21&adults=3&children=0&infants=0
+2024-11-05 13:14:06,260 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:14:06,266 [INFO] price_checker.py:62 - 日期区间 20/01/2025 到 21/01/2025 可预订
+2024-11-05 13:14:11,320 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:14:11,344 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:14:14,350 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:14:14,365 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:14:14,389 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:14:14,418 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:14:14,442 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:14:14,455 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:14:14,459 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:14:14,463 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:14:14,469 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:14:14,469 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '20/01/2025', 'check_out': '21/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:14:14,470 [INFO] price_checker.py:349 - 成功获取 20/01/2025 的价格信息
+2024-11-05 13:14:14,470 [INFO] price_checker.py:343 - 正在处理第 64/74 个日期: 21/01/2025
+2024-11-05 13:14:14,470 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:14:14,470 [INFO] price_checker.py:86 - 入住日期: 2025-01-21, 退房日期: 2025-01-22
+2024-11-05 13:14:14,470 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-21&check_out=2025-01-22&adults=3&children=0&infants=0
+2024-11-05 13:14:24,646 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:14:24,652 [INFO] price_checker.py:62 - 日期区间 21/01/2025 到 22/01/2025 可预订
+2024-11-05 13:14:29,708 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:14:29,731 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:14:32,735 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:14:32,742 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:14:32,762 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:14:32,776 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:14:32,791 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:14:32,806 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:14:32,809 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:14:32,813 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:14:32,820 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:14:32,821 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '21/01/2025', 'check_out': '22/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:14:32,821 [INFO] price_checker.py:349 - 成功获取 21/01/2025 的价格信息
+2024-11-05 13:14:32,821 [INFO] price_checker.py:343 - 正在处理第 65/74 个日期: 22/01/2025
+2024-11-05 13:14:32,821 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:14:32,821 [INFO] price_checker.py:86 - 入住日期: 2025-01-22, 退房日期: 2025-01-23
+2024-11-05 13:14:32,821 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-22&check_out=2025-01-23&adults=3&children=0&infants=0
+2024-11-05 13:14:42,999 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:14:43,005 [INFO] price_checker.py:62 - 日期区间 22/01/2025 到 23/01/2025 可预订
+2024-11-05 13:14:48,060 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:14:48,086 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:14:51,090 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:14:51,097 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:14:51,127 [INFO] price_checker.py:227 - 获取到价格项: $140 NZD x 1 night = $140 NZD
+2024-11-05 13:14:51,145 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:14:51,182 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:14:51,196 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $29 NZD
+2024-11-05 13:14:51,199 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:14:51,203 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:14:51,211 [INFO] price_checker.py:241 - 获取到总价: $250 NZD
+2024-11-05 13:14:51,211 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '22/01/2025', 'check_out': '23/01/2025', 'guests': 3, 'nightly_price': '$140 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$29 NZD', 'total': '$250 NZD'}
+2024-11-05 13:14:51,211 [INFO] price_checker.py:349 - 成功获取 22/01/2025 的价格信息
+2024-11-05 13:15:01,211 [INFO] price_checker.py:343 - 正在处理第 66/74 个日期: 23/01/2025
+2024-11-05 13:15:01,211 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:15:01,212 [INFO] price_checker.py:86 - 入住日期: 2025-01-23, 退房日期: 2025-01-24
+2024-11-05 13:15:01,212 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-23&check_out=2025-01-24&adults=3&children=0&infants=0
+2024-11-05 13:15:11,394 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:15:16,394 [INFO] price_checker.py:103 - 等待页面就绪，重试 1/3
+2024-11-05 13:15:16,404 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:15:21,404 [INFO] price_checker.py:103 - 等待页面就绪，重试 2/3
+2024-11-05 13:15:21,415 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:15:26,415 [INFO] price_checker.py:103 - 等待页面就绪，重试 3/3
+2024-11-05 13:15:26,415 [ERROR] price_checker.py:106 - 页面状态检查失败，超过最大重试次数
+2024-11-05 13:15:26,416 [WARNING] price_checker.py:351 - 获取 23/01/2025 的价格信息失败
+2024-11-05 13:15:26,416 [INFO] price_checker.py:343 - 正在处理第 67/74 个日期: 24/01/2025
+2024-11-05 13:15:26,416 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:15:26,416 [INFO] price_checker.py:86 - 入住日期: 2025-01-24, 退房日期: 2025-01-25
+2024-11-05 13:15:26,416 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-24&check_out=2025-01-25&adults=3&children=0&infants=0
+2024-11-05 13:15:36,596 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:15:36,602 [INFO] price_checker.py:62 - 日期区间 24/01/2025 到 25/01/2025 可预订
+2024-11-05 13:15:41,664 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:15:41,693 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:15:44,700 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:15:44,709 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:15:44,729 [INFO] price_checker.py:227 - 获取到价格项: $142 NZD x 1 night = $142 NZD
+2024-11-05 13:15:44,742 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:15:44,756 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:15:44,770 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $29 NZD
+2024-11-05 13:15:44,774 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:15:44,777 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:15:44,785 [INFO] price_checker.py:241 - 获取到总价: $252 NZD
+2024-11-05 13:15:44,785 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '24/01/2025', 'check_out': '25/01/2025', 'guests': 3, 'nightly_price': '$142 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$29 NZD', 'total': '$252 NZD'}
+2024-11-05 13:15:44,785 [INFO] price_checker.py:349 - 成功获取 24/01/2025 的价格信息
+2024-11-05 13:15:44,785 [INFO] price_checker.py:343 - 正在处理第 68/74 个日期: 25/01/2025
+2024-11-05 13:15:44,785 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:15:44,785 [INFO] price_checker.py:86 - 入住日期: 2025-01-25, 退房日期: 2025-01-26
+2024-11-05 13:15:44,785 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-25&check_out=2025-01-26&adults=3&children=0&infants=0
+2024-11-05 13:15:54,952 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:15:59,952 [INFO] price_checker.py:103 - 等待页面就绪，重试 1/3
+2024-11-05 13:15:59,962 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:16:04,962 [INFO] price_checker.py:103 - 等待页面就绪，重试 2/3
+2024-11-05 13:16:04,972 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:16:09,972 [INFO] price_checker.py:103 - 等待页面就绪，重试 3/3
+2024-11-05 13:16:09,972 [ERROR] price_checker.py:106 - 页面状态检查失败，超过最大重试次数
+2024-11-05 13:16:09,972 [WARNING] price_checker.py:351 - 获取 25/01/2025 的价格信息失败
+2024-11-05 13:16:09,972 [INFO] price_checker.py:343 - 正在处理第 69/74 个日期: 26/01/2025
+2024-11-05 13:16:09,972 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:16:09,972 [INFO] price_checker.py:86 - 入住日期: 2025-01-26, 退房日期: 2025-01-27
+2024-11-05 13:16:09,973 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-26&check_out=2025-01-27&adults=3&children=0&infants=0
+2024-11-05 13:16:20,133 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:16:25,133 [INFO] price_checker.py:103 - 等待页面就绪，重试 1/3
+2024-11-05 13:16:25,143 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:16:30,144 [INFO] price_checker.py:103 - 等待页面就绪，重试 2/3
+2024-11-05 13:16:30,153 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:16:35,154 [INFO] price_checker.py:103 - 等待页面就绪，重试 3/3
+2024-11-05 13:16:35,154 [ERROR] price_checker.py:106 - 页面状态检查失败，超过最大重试次数
+2024-11-05 13:16:35,154 [WARNING] price_checker.py:351 - 获取 26/01/2025 的价格信息失败
+2024-11-05 13:16:35,154 [INFO] price_checker.py:343 - 正在处理第 70/74 个日期: 27/01/2025
+2024-11-05 13:16:35,155 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:16:35,155 [INFO] price_checker.py:86 - 入住日期: 2025-01-27, 退房日期: 2025-01-28
+2024-11-05 13:16:35,155 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-27&check_out=2025-01-28&adults=3&children=0&infants=0
+2024-11-05 13:16:45,324 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:16:45,331 [INFO] price_checker.py:62 - 日期区间 27/01/2025 到 28/01/2025 可预订
+2024-11-05 13:16:50,384 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:16:50,409 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:16:53,416 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:16:53,428 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:16:53,453 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:16:53,467 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:16:53,481 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:16:53,495 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:16:53,499 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:16:53,503 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:16:53,512 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:16:53,512 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '27/01/2025', 'check_out': '28/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:16:53,512 [INFO] price_checker.py:349 - 成功获取 27/01/2025 的价格信息
+2024-11-05 13:17:03,512 [INFO] price_checker.py:343 - 正在处理第 71/74 个日期: 28/01/2025
+2024-11-05 13:17:03,513 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:17:03,513 [INFO] price_checker.py:86 - 入住日期: 2025-01-28, 退房日期: 2025-01-29
+2024-11-05 13:17:03,513 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-28&check_out=2025-01-29&adults=3&children=0&infants=0
+2024-11-05 13:17:13,694 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:17:13,700 [INFO] price_checker.py:62 - 日期区间 28/01/2025 到 29/01/2025 可预订
+2024-11-05 13:17:18,753 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:17:18,778 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:17:21,783 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:17:21,789 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:17:21,806 [INFO] price_checker.py:227 - 获取到价格项: $139 NZD x 1 night = $139 NZD
+2024-11-05 13:17:21,820 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:17:21,834 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:17:21,848 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:17:21,852 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:17:21,855 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:17:21,863 [INFO] price_checker.py:241 - 获取到总价: $248 NZD
+2024-11-05 13:17:21,863 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '28/01/2025', 'check_out': '29/01/2025', 'guests': 3, 'nightly_price': '$139 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$28 NZD', 'total': '$248 NZD'}
+2024-11-05 13:17:21,863 [INFO] price_checker.py:349 - 成功获取 28/01/2025 的价格信息
+2024-11-05 13:17:21,863 [INFO] price_checker.py:343 - 正在处理第 72/74 个日期: 29/01/2025
+2024-11-05 13:17:21,863 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:17:21,863 [INFO] price_checker.py:86 - 入住日期: 2025-01-29, 退房日期: 2025-01-30
+2024-11-05 13:17:21,863 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-29&check_out=2025-01-30&adults=3&children=0&infants=0
+2024-11-05 13:17:32,043 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:17:32,049 [INFO] price_checker.py:62 - 日期区间 29/01/2025 到 30/01/2025 可预订
+2024-11-05 13:17:37,103 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:17:37,126 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:17:40,131 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:17:40,138 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:17:40,156 [INFO] price_checker.py:227 - 获取到价格项: $142 NZD x 1 night = $142 NZD
+2024-11-05 13:17:40,170 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:17:40,185 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $31 NZD
+2024-11-05 13:17:40,199 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $29 NZD
+2024-11-05 13:17:40,203 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:17:40,206 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:17:40,213 [INFO] price_checker.py:241 - 获取到总价: $252 NZD
+2024-11-05 13:17:40,214 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '29/01/2025', 'check_out': '30/01/2025', 'guests': 3, 'nightly_price': '$142 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$31 NZD', 'taxes': '$29 NZD', 'total': '$252 NZD'}
+2024-11-05 13:17:40,214 [INFO] price_checker.py:349 - 成功获取 29/01/2025 的价格信息
+2024-11-05 13:17:40,214 [INFO] price_checker.py:343 - 正在处理第 73/74 个日期: 30/01/2025
+2024-11-05 13:17:40,214 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:17:40,214 [INFO] price_checker.py:86 - 入住日期: 2025-01-30, 退房日期: 2025-01-31
+2024-11-05 13:17:40,214 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-30&check_out=2025-01-31&adults=3&children=0&infants=0
+2024-11-05 13:17:50,393 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:17:50,399 [INFO] price_checker.py:62 - 日期区间 30/01/2025 到 31/01/2025 可预订
+2024-11-05 13:17:55,454 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:17:55,478 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:17:58,482 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:17:58,489 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:17:58,506 [INFO] price_checker.py:227 - 获取到价格项: $135 NZD x 1 night = $135 NZD
+2024-11-05 13:17:58,520 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:17:58,534 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:17:58,548 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:17:58,552 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:17:58,556 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:17:58,563 [INFO] price_checker.py:241 - 获取到总价: $243 NZD
+2024-11-05 13:17:58,563 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '30/01/2025', 'check_out': '31/01/2025', 'guests': 3, 'nightly_price': '$135 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$243 NZD'}
+2024-11-05 13:17:58,563 [INFO] price_checker.py:349 - 成功获取 30/01/2025 的价格信息
+2024-11-05 13:17:58,563 [INFO] price_checker.py:343 - 正在处理第 74/74 个日期: 31/01/2025
+2024-11-05 13:17:58,563 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-05 13:17:58,563 [INFO] price_checker.py:86 - 入住日期: 2025-01-31, 退房日期: 2025-02-01
+2024-11-05 13:17:58,563 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/830193102361409290?check_in=2025-01-31&check_out=2025-02-01&adults=3&children=0&infants=0
+2024-11-05 13:18:08,739 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:18:08,745 [INFO] price_checker.py:62 - 日期区间 31/01/2025 到 01/02/2025 可预订
+2024-11-05 13:18:13,798 [INFO] price_checker.py:152 - 找到价格详情按钮，使用选择器: button._12wl7g09
+2024-11-05 13:18:13,821 [INFO] price_checker.py:177 - 成功点击展开价格详情按钮
+2024-11-05 13:18:16,826 [INFO] price_checker.py:185 - 价格详情已成功展开
+2024-11-05 13:18:16,832 [INFO] price_checker.py:206 - 获取到每晚价格: 
+2024-11-05 13:18:16,851 [INFO] price_checker.py:227 - 获取到价格项: $136 NZD x 1 night = $136 NZD
+2024-11-05 13:18:16,866 [INFO] price_checker.py:227 - 获取到价格项: Cleaning fee = $50 NZD
+2024-11-05 13:18:16,881 [INFO] price_checker.py:227 - 获取到价格项: Airbnb service fee = $30 NZD
+2024-11-05 13:18:16,895 [INFO] price_checker.py:227 - 获取到价格项: Taxes = $28 NZD
+2024-11-05 13:18:16,899 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:18:16,902 [WARNING] price_checker.py:229 - 处理价格项时出错: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.l1x1206l"}
+  (Session info: chrome=130.0.6723.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00DC38B3+24035]
+	(No symbol) [0x00D4BC44]
+	(No symbol) [0x00C2C2D3]
+	(No symbol) [0x00C6DC86]
+	(No symbol) [0x00C6DECB]
+	(No symbol) [0x00C63CE1]
+	(No symbol) [0x00C8FED4]
+	(No symbol) [0x00C63C04]
+	(No symbol) [0x00C90124]
+	(No symbol) [0x00CA953F]
+	(No symbol) [0x00C8FC26]
+	(No symbol) [0x00C6218C]
+	(No symbol) [0x00C6310D]
+	GetHandleVerifier [0x010696D3+2800643]
+	GetHandleVerifier [0x010C428E+3172286]
+	GetHandleVerifier [0x010BCEA2+3142610]
+	GetHandleVerifier [0x00E66C60+692624]
+	(No symbol) [0x00D54C5D]
+	(No symbol) [0x00D51968]
+	(No symbol) [0x00D51B00]
+	(No symbol) [0x00D43FB0]
+	BaseThreadInitThunk [0x769C7BA9+25]
+	RtlInitializeExceptionChain [0x7748C0CB+107]
+	RtlClearBits [0x7748C04F+191]
+
+2024-11-05 13:18:16,909 [INFO] price_checker.py:241 - 获取到总价: $244 NZD
+2024-11-05 13:18:16,910 [INFO] price_checker.py:252 - 成功获取价格信息: {'check_in': '31/01/2025', 'check_out': '01/02/2025', 'guests': 3, 'nightly_price': '$136 NZD', 'cleaning_fee': '$50 NZD', 'service_fee': '$30 NZD', 'taxes': '$28 NZD', 'total': '$244 NZD'}
+2024-11-05 13:18:16,910 [INFO] price_checker.py:349 - 成功获取 31/01/2025 的价格信息
+2024-11-05 13:18:16,929 [INFO] price_checker.py:290 - 价格数据已保存到: data/airbnb_price_830193102361409290_20241105_131816.xlsx
+2024-11-05 13:18:16,929 [INFO] price_checker.py:294 - 共导出 66 条价格记录
+2024-11-05 13:18:16,929 [INFO] price_checker.py:304 - 价格统计: 平均=131.53, 最高=148.0, 最低=126.0
+2024-11-05 13:18:16,929 [INFO] price_checker.py:361 - 所有价格数据已导出到: data/airbnb_price_830193102361409290_20241105_131816.xlsx
+2024-11-05 13:18:16,929 [INFO] advanced_analyzer.py:81 - 成功获取价格数据
+2024-11-05 13:18:16,929 [INFO] advanced_analyzer.py:97 - 
+=== 日历统计信息 ===
+2024-11-05 13:18:16,930 [INFO] advanced_analyzer.py:100 - 不可预订: 49天 (39.84%)
+2024-11-05 13:18:16,930 [INFO] advanced_analyzer.py:100 - 可预订: 74天 (60.16%)
+2024-11-05 13:18:16,930 [INFO] advanced_analyzer.py:123 - 数据已保存到: data/airbnb_calendar_830193102361409290_20241105_124457.xlsx
+2024-11-05 13:18:16,930 [INFO] advanced_analyzer.py:119 - 
+处理第 2/2 个房源
+2024-11-05 13:18:16,930 [INFO] advanced_analyzer.py:65 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:18:16,930 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:18:25,123 [INFO] airbnb_calendar_checker.py:103 - 没有找到需要关闭的模态框或关闭失败
+2024-11-05 13:18:25,218 [INFO] airbnb_calendar_checker.py:114 - 成功打开日历
+2024-11-05 13:18:27,305 [INFO] airbnb_calendar_checker.py:133 - 找到 246 个日期单元格
+2024-11-05 13:18:27,307 [INFO] airbnb_calendar_checker.py:178 - 原始单元格数量: 246
+2024-11-05 13:18:27,307 [INFO] airbnb_calendar_checker.py:179 - 去重后数据条数: 123
+2024-11-05 13:18:27,307 [INFO] airbnb_calendar_checker.py:180 - 处理的唯一日期数: 123
+2024-11-05 13:18:27,307 [INFO] airbnb_calendar_checker.py:184 - 收集到 123 条有效日历数据
+2024-11-05 13:18:27,307 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-05 13:18:27,307 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 1043238006551529117
+2024-11-05 13:18:27,307 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_1043238006551529117_20241105_131827.xlsx
+2024-11-05 13:18:27,308 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-05 13:18:27,329 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_1043238006551529117_20241105_131827.xlsx
+2024-11-05 13:18:27,329 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 9.10 KB
+2024-11-05 13:18:27,329 [INFO] airbnb_calendar_checker.py:187 - 日历数据已成功导出到: data/airbnb_calendar_1043238006551529117_20241105_131827.xlsx
+2024-11-05 13:18:27,329 [INFO] advanced_analyzer.py:74 - 成功获取日历数据: 123 条记录
+2024-11-05 13:18:27,329 [INFO] price_checker.py:329 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:18:27,329 [INFO] price_checker.py:323 - 找到 43 个可预订日期
+2024-11-05 13:18:27,330 [INFO] price_checker.py:343 - 正在处理第 1/43 个日期: 19/11/2024
+2024-11-05 13:18:27,330 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:18:27,330 [INFO] price_checker.py:86 - 入住日期: 2024-11-19, 退房日期: 2024-11-20
+2024-11-05 13:18:27,330 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-11-19&check_out=2024-11-20&adults=3&children=0&infants=0
+2024-11-05 13:18:37,516 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:18:37,523 [INFO] price_checker.py:62 - 日期区间 19/11/2024 到 20/11/2024 可预订
+2024-11-05 13:18:57,712 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:18:57,713 [WARNING] price_checker.py:351 - 获取 19/11/2024 的价格信息失败
+2024-11-05 13:18:57,713 [INFO] price_checker.py:343 - 正在处理第 2/43 个日期: 20/11/2024
+2024-11-05 13:18:57,713 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:18:57,713 [INFO] price_checker.py:86 - 入住日期: 2024-11-20, 退房日期: 2024-11-21
+2024-11-05 13:18:57,713 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-11-20&check_out=2024-11-21&adults=3&children=0&infants=0
+2024-11-05 13:19:07,902 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:19:07,908 [INFO] price_checker.py:62 - 日期区间 20/11/2024 到 21/11/2024 可预订
+2024-11-05 13:19:28,097 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:19:28,097 [WARNING] price_checker.py:351 - 获取 20/11/2024 的价格信息失败
+2024-11-05 13:19:28,097 [INFO] price_checker.py:343 - 正在处理第 3/43 个日期: 24/11/2024
+2024-11-05 13:19:28,097 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:19:28,097 [INFO] price_checker.py:86 - 入住日期: 2024-11-24, 退房日期: 2024-11-25
+2024-11-05 13:19:28,097 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-11-24&check_out=2024-11-25&adults=3&children=0&infants=0
+2024-11-05 13:19:38,283 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:19:38,289 [INFO] price_checker.py:62 - 日期区间 24/11/2024 到 25/11/2024 可预订
+2024-11-05 13:19:58,471 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:19:58,471 [WARNING] price_checker.py:351 - 获取 24/11/2024 的价格信息失败
+2024-11-05 13:19:58,471 [INFO] price_checker.py:343 - 正在处理第 4/43 个日期: 25/11/2024
+2024-11-05 13:19:58,472 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:19:58,472 [INFO] price_checker.py:86 - 入住日期: 2024-11-25, 退房日期: 2024-11-26
+2024-11-05 13:19:58,472 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-11-25&check_out=2024-11-26&adults=3&children=0&infants=0
+2024-11-05 13:20:08,654 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:20:08,660 [INFO] price_checker.py:62 - 日期区间 25/11/2024 到 26/11/2024 可预订
+2024-11-05 13:20:28,845 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:20:28,845 [WARNING] price_checker.py:351 - 获取 25/11/2024 的价格信息失败
+2024-11-05 13:20:28,845 [INFO] price_checker.py:343 - 正在处理第 5/43 个日期: 26/11/2024
+2024-11-05 13:20:28,845 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:20:28,845 [INFO] price_checker.py:86 - 入住日期: 2024-11-26, 退房日期: 2024-11-27
+2024-11-05 13:20:28,845 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-11-26&check_out=2024-11-27&adults=3&children=0&infants=0
+2024-11-05 13:20:39,032 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:20:39,038 [INFO] price_checker.py:62 - 日期区间 26/11/2024 到 27/11/2024 可预订
+2024-11-05 13:20:59,223 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:20:59,223 [WARNING] price_checker.py:351 - 获取 26/11/2024 的价格信息失败
+2024-11-05 13:21:09,224 [INFO] price_checker.py:343 - 正在处理第 6/43 个日期: 01/12/2024
+2024-11-05 13:21:09,224 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:21:09,224 [INFO] price_checker.py:86 - 入住日期: 2024-12-01, 退房日期: 2024-12-02
+2024-11-05 13:21:09,224 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-12-01&check_out=2024-12-02&adults=3&children=0&infants=0
+2024-11-05 13:21:19,410 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:21:19,416 [INFO] price_checker.py:62 - 日期区间 01/12/2024 到 02/12/2024 可预订
+2024-11-05 13:21:39,601 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:21:39,601 [WARNING] price_checker.py:351 - 获取 01/12/2024 的价格信息失败
+2024-11-05 13:21:39,601 [INFO] price_checker.py:343 - 正在处理第 7/43 个日期: 02/12/2024
+2024-11-05 13:21:39,601 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:21:39,601 [INFO] price_checker.py:86 - 入住日期: 2024-12-02, 退房日期: 2024-12-03
+2024-11-05 13:21:39,601 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-12-02&check_out=2024-12-03&adults=3&children=0&infants=0
+2024-11-05 13:21:49,785 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:21:49,791 [INFO] price_checker.py:62 - 日期区间 02/12/2024 到 03/12/2024 可预订
+2024-11-05 13:22:09,973 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:22:09,973 [WARNING] price_checker.py:351 - 获取 02/12/2024 的价格信息失败
+2024-11-05 13:22:09,973 [INFO] price_checker.py:343 - 正在处理第 8/43 个日期: 03/12/2024
+2024-11-05 13:22:09,973 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:22:09,973 [INFO] price_checker.py:86 - 入住日期: 2024-12-03, 退房日期: 2024-12-04
+2024-11-05 13:22:09,973 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-12-03&check_out=2024-12-04&adults=3&children=0&infants=0
+2024-11-05 13:22:20,162 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:22:20,168 [INFO] price_checker.py:62 - 日期区间 03/12/2024 到 04/12/2024 可预订
+2024-11-05 13:22:40,351 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:22:40,351 [WARNING] price_checker.py:351 - 获取 03/12/2024 的价格信息失败
+2024-11-05 13:22:40,351 [INFO] price_checker.py:343 - 正在处理第 9/43 个日期: 04/12/2024
+2024-11-05 13:22:40,351 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:22:40,352 [INFO] price_checker.py:86 - 入住日期: 2024-12-04, 退房日期: 2024-12-05
+2024-11-05 13:22:40,352 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-12-04&check_out=2024-12-05&adults=3&children=0&infants=0
+2024-11-05 13:22:50,539 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:22:50,545 [INFO] price_checker.py:62 - 日期区间 04/12/2024 到 05/12/2024 可预订
+2024-11-05 13:23:10,729 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:23:10,729 [WARNING] price_checker.py:351 - 获取 04/12/2024 的价格信息失败
+2024-11-05 13:23:10,729 [INFO] price_checker.py:343 - 正在处理第 10/43 个日期: 05/12/2024
+2024-11-05 13:23:10,729 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:23:10,729 [INFO] price_checker.py:86 - 入住日期: 2024-12-05, 退房日期: 2024-12-06
+2024-11-05 13:23:10,729 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-12-05&check_out=2024-12-06&adults=3&children=0&infants=0
+2024-11-05 13:23:20,913 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:23:20,930 [INFO] price_checker.py:62 - 日期区间 05/12/2024 到 06/12/2024 可预订
+2024-11-05 13:23:41,111 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:23:41,112 [WARNING] price_checker.py:351 - 获取 05/12/2024 的价格信息失败
+2024-11-05 13:23:51,112 [INFO] price_checker.py:343 - 正在处理第 11/43 个日期: 10/12/2024
+2024-11-05 13:23:51,112 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:23:51,112 [INFO] price_checker.py:86 - 入住日期: 2024-12-10, 退房日期: 2024-12-11
+2024-11-05 13:23:51,112 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-12-10&check_out=2024-12-11&adults=3&children=0&infants=0
+2024-11-05 13:24:01,295 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:24:01,301 [INFO] price_checker.py:62 - 日期区间 10/12/2024 到 11/12/2024 可预订
+2024-11-05 13:24:21,480 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:24:21,480 [WARNING] price_checker.py:351 - 获取 10/12/2024 的价格信息失败
+2024-11-05 13:24:21,481 [INFO] price_checker.py:343 - 正在处理第 12/43 个日期: 11/12/2024
+2024-11-05 13:24:21,481 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:24:21,481 [INFO] price_checker.py:86 - 入住日期: 2024-12-11, 退房日期: 2024-12-12
+2024-11-05 13:24:21,481 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-12-11&check_out=2024-12-12&adults=3&children=0&infants=0
+2024-11-05 13:24:31,662 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:24:31,669 [INFO] price_checker.py:62 - 日期区间 11/12/2024 到 12/12/2024 可预订
+2024-11-05 13:24:52,781 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:24:52,781 [WARNING] price_checker.py:351 - 获取 11/12/2024 的价格信息失败
+2024-11-05 13:24:52,782 [INFO] price_checker.py:343 - 正在处理第 13/43 个日期: 12/12/2024
+2024-11-05 13:24:52,782 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:24:52,782 [INFO] price_checker.py:86 - 入住日期: 2024-12-12, 退房日期: 2024-12-13
+2024-11-05 13:24:52,782 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-12-12&check_out=2024-12-13&adults=3&children=0&infants=0
+2024-11-05 13:25:02,971 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-05 13:25:02,977 [INFO] price_checker.py:62 - 日期区间 12/12/2024 到 13/12/2024 可预订
+2024-11-05 13:25:23,164 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-05 13:25:23,164 [WARNING] price_checker.py:351 - 获取 12/12/2024 的价格信息失败
+2024-11-05 13:25:23,164 [INFO] price_checker.py:343 - 正在处理第 14/43 个日期: 13/12/2024
+2024-11-05 13:25:23,164 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1043238006551529117
+2024-11-05 13:25:23,164 [INFO] price_checker.py:86 - 入住日期: 2024-12-13, 退房日期: 2024-12-14
+2024-11-05 13:25:23,164 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1043238006551529117?check_in=2024-12-13&check_out=2024-12-14&adults=3&children=0&infants=0
+2024-11-05 13:25:33,349 [ERROR] price_checker.py:430 - 价格区域不可见
+2024-11-05 13:25:53,042 [INFO] advanced_analyzer.py:178 - 浏览器已关闭
+2024-11-05 13:25:53,042 [INFO] advanced_analyzer.py:252 - === 程序执行完成 ===

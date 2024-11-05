@@ -42,10 +42,10 @@ def find_first_available_date(calendar_data):
     logger.warning("未找到可预订日期")
     return None
 
-def calculate_checkout_date(checkin_date_str):
-    """计算退房日期（checkin + 1天）"""
+def calculate_checkout_date(checkin_date_str, min_nights):
+    """根据最小入住天数计算退房日期"""
     checkin_date = datetime.strptime(checkin_date_str, '%d/%m/%Y')
-    checkout_date = checkin_date + timedelta(days=1)
+    checkout_date = checkin_date + timedelta(days=min_nights)
     return checkout_date.strftime('%d/%m/%Y')
 
 def check_booking_availability(driver, checkin_date, checkout_date):
@@ -69,21 +69,21 @@ def check_booking_availability(driver, checkin_date, checkout_date):
         logger.error(f"检查预订可用性时出错: {str(e)}")
         return False
 
-def get_price_info(driver, url, checkin_date):
+def get_price_info(driver, url, checkin_date, min_nights):
     """获取价格信息"""
     logger = get_logger()
     logger.info(f"开始获取价格信息: {url}")
     
     try:
-        # 1. 计算退房日期（入住日期+1天）
+        # 计算退房日期时使用最小入住天数
         checkin_dt = datetime.strptime(checkin_date, '%d/%m/%Y')
-        checkout_dt = checkin_dt + timedelta(days=1)
-        checkout_date = checkout_dt.strftime('%d/%m/%Y')
+        checkout_dt = checkin_dt + timedelta(days=min_nights)
         
-        # 2. 转换日期格式
+        # 使用正确的日期格式
         checkin_str = checkin_dt.strftime('%Y-%m-%d')
         checkout_str = checkout_dt.strftime('%Y-%m-%d')
-        logger.info(f"入住日期: {checkin_str}, 退房日期: {checkout_str}")
+        
+        logger.info(f"入住日期: {checkin_str}, 退房日期: {checkout_str} (最小入住: {min_nights}晚)")
         
         # 3. 访问带日期参数的URL
         url_with_dates = f"{url}?check_in={checkin_str}&check_out={checkout_str}&adults=3&children=0&infants=0"
@@ -121,7 +121,7 @@ def get_price_info(driver, url, checkin_date):
             logger.warning("页面加载超时")
         
         # 4. 验证日期区间是否可预订
-        if not check_booking_availability(driver, checkin_date, checkout_date):
+        if not check_booking_availability(driver, checkin_date, checkout_str):
             logger.error("所选日期区间不可预订")
             return None
             
@@ -190,7 +190,7 @@ def get_price_info(driver, url, checkin_date):
             # 初始化价格信息
             price_info = {
                 'check_in': checkin_date,
-                'check_out': checkout_date,
+                'check_out': checkout_str,
                 'guests': 3,
                 'nightly_price': None,
                 'cleaning_fee': None,
@@ -231,35 +231,18 @@ def get_price_info(driver, url, checkin_date):
             except Exception as e:
                 logger.error(f"获取价格详情失败: {str(e)}")
 
-            # 获取总价
+            # 修改获取总价的部分
             try:
-                # 使用多个选择器尝试获取总价
-                total_selectors = [
-                    "span._j1kt73",  # 原始选择器
-                    "div._1avmy66 span._j1kt73",  # 更具体的选择器
-                    "//div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]"  # XPath
-                ]
-                
-                total_price = None
-                for selector in total_selectors:
-                    try:
-                        if selector.startswith("//"):
-                            total_elem = driver.find_element(By.XPATH, selector)
-                        else:
-                            total_elem = driver.find_element(By.CSS_SELECTOR, selector)
-                        total_price = total_elem.text.strip()
-                        if "$" in total_price and "NZD" in total_price:  # 验证获取的是否是有效价格
-                            logger.info(f"获取到总价: {total_price}")
-                            break
-                    except Exception:
-                        continue
-                        
-                if not total_price or "$" not in total_price:
-                    logger.error("未能获取有效的总价")
+                total_elem = WebDriverWait(driver, 5).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "div._1avmy66 span._j1kt73"))
+                )
+                total_price = total_elem.text.strip()
+                if "$" in total_price and "NZD" in total_price:
+                    logger.info(f"获取到总价: {total_price}")
+                    price_info['total'] = total_price
+                else:
+                    logger.error("获取到的总价格式不正确")
                     return None
-                        
-                price_info['total'] = total_price
-            
             except Exception as e:
                 logger.error(f"获取总价失败: {str(e)}")
                 return None
@@ -340,44 +323,68 @@ def find_all_available_dates(calendar_data):
     logger.info(f"找到 {len(available_dates)} 个可预订日期")
     return available_dates
 
-def check_room_price(url, calendar_data, driver):
-    """检查房间所有可预订日期的价格"""
+def check_room_price(url_info, calendar_data, driver):
+    """检查房间价格"""
     logger = get_logger()
-    logger.info(f"开始检查房源价格: {url}")
+    url = url_info['url']
+    min_nights = url_info['min_nights']
+    logger.info(f"开始检查房源价格: {url} (最小入住: {min_nights}晚)")
     
     try:
         # 查找所有可预订日期
         available_dates = find_all_available_dates(calendar_data)
         if not available_dates:
-            logger.error("未找到可预订日期")
+            logger.error(f"房源 {url} 未找到可预订日期")
             return None
             
         # 存储所有日期的价格信息
         all_price_info = []
+        failed_dates = []
         
         # 遍历每个可预订日期
-        for index, check_in_date in enumerate(available_dates):
-            logger.info(f"正在处理第 {index + 1}/{len(available_dates)} 个日期: {check_in_date}")
-            
-            # 获取该日期的价格信息
-            price_info = get_price_info(driver, url, check_in_date)
-            if price_info:
-                all_price_info.append(price_info)
-                logger.info(f"成功获取 {check_in_date} 的价格信息")
-            else:
-                logger.warning(f"获取 {check_in_date} 的价格信息失败")
-            
-            # 每处理5个日期暂停一下，避免请求过于频繁
-            if (index + 1) % 5 == 0:
-                time.sleep(10)
+        for index, check_in_date in enumerate(available_dates, 1):
+            try:
+                logger.info(f"[{index}/{len(available_dates)}] 处理日期: {check_in_date}")
+                
+                # 获取该日期的价格信息
+                price_info = get_price_info(driver, url, check_in_date, min_nights)
+                if price_info:
+                    all_price_info.append(price_info)
+                    logger.info(f"✓ 成功获取 {check_in_date} 的价格信息")
+                else:
+                    failed_dates.append(check_in_date)
+                    logger.warning(f"✗ 获取 {check_in_date} 的价格信息失败")
+                
+                # 每处理5个日期暂停一下
+                if index % 5 == 0:
+                    logger.info(f"已完成 {index}/{len(available_dates)} 个日期的处理")
+                    time.sleep(10)
+                    
+            except Exception as e:
+                failed_dates.append(check_in_date)
+                logger.error(f"处理日期 {check_in_date} 时发生错误: {str(e)}")
+                continue
         
-        # 导出所有价格数据
+        # 统计处理结果
+        logger.info("\n=== 价格数据收集统计 ===")
+        logger.info(f"总可预订日期: {len(available_dates)}")
+        logger.info(f"成功收集: {len(all_price_info)}")
+        logger.info(f"失败日期: {len(failed_dates)}")
+        
+        if failed_dates:
+            logger.warning("失败日期列表:")
+            for date in failed_dates:
+                logger.warning(f"- {date}")
+        
+        # 导出数据
         if all_price_info:
             excel_file = export_price_data(all_price_info, url)
             if excel_file:
-                logger.info(f"所有价格数据已导出到: {excel_file}")
-            
-            return all_price_info
+                logger.info(f"✓ 所有价格数据已导出到: {excel_file}")
+                return all_price_info
+            else:
+                logger.error("导出价格数据失败")
+                return None
         else:
             logger.error("未能获取任何价格信息")
             return None
