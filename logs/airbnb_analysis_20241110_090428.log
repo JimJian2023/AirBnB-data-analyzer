@@ -1,0 +1,76 @@
+2024-11-10 09:04:28,638 [INFO] advanced_analyzer.py:192 - === 开始Airbnb数据收集程序 ===
+2024-11-10 09:04:28,875 [INFO] advanced_analyzer.py:33 - 成功读取 3 个房间信息
+2024-11-10 09:04:28,876 [INFO] advanced_analyzer.py:203 - 生成 3 个URL
+2024-11-10 09:04:28,876 [INFO] advanced_analyzer.py:207 - 创建数据目录: data/airbnb_data_20241110_090428
+2024-11-10 09:04:28,876 [INFO] advanced_analyzer.py:121 - === 开始批量分析房源 ===
+2024-11-10 09:04:31,700 [INFO] advanced_analyzer.py:67 - Chrome WebDriver 初始化成功
+2024-11-10 09:04:31,700 [INFO] advanced_analyzer.py:129 - 
+处理第 1/3 个房源
+2024-11-10 09:04:31,700 [INFO] advanced_analyzer.py:75 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/1125096139567330802 (最小入住: 1晚)
+2024-11-10 09:04:31,700 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:04:32,670 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-10 09:04:32,673 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-10 09:04:47,845 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-10 09:04:47,848 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-10 09:04:48,849 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-10 09:04:49,942 [INFO] airbnb_calendar_checker.py:153 - JavaScript点击日历按钮成功
+2024-11-10 09:05:00,200 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-10 09:05:00,211 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-10 09:05:00,336 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-10 09:05:00,338 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-10 09:05:00,338 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-10 09:05:00,338 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-10 09:05:00,338 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-10 09:05:00,338 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-10 09:05:00,338 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 1125096139567330802
+2024-11-10 09:05:00,338 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_1125096139567330802_20241110_090500.xlsx
+2024-11-10 09:05:00,339 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-10 09:05:00,367 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_1125096139567330802_20241110_090500.xlsx
+2024-11-10 09:05:00,368 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 8.94 KB
+2024-11-10 09:05:00,368 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_1125096139567330802_20241110_090500.xlsx
+2024-11-10 09:05:00,368 [INFO] advanced_analyzer.py:84 - 成功获取日历数据: 123 条记录
+2024-11-10 09:05:00,368 [INFO] price_checker.py:331 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/1125096139567330802 (最小入住: 1晚)
+2024-11-10 09:05:00,368 [INFO] price_checker.py:323 - 找到 20 个可预订日期
+2024-11-10 09:05:00,368 [INFO] price_checker.py:347 - [1/20] 处理日期: 18/11/2024
+2024-11-10 09:05:00,368 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:05:00,368 [INFO] price_checker.py:86 - 入住日期: 2024-11-18, 退房日期: 2024-11-19 (最小入住: 1晚)
+2024-11-10 09:05:00,368 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1125096139567330802?check_in=2024-11-18&check_out=2024-11-19&adults=3&children=0&infants=0
+2024-11-10 09:05:10,538 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-10 09:05:10,548 [INFO] price_checker.py:62 - 日期区间 18/11/2024 到 2024-11-19 可预订
+2024-11-10 09:05:30,825 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-10 09:05:30,825 [WARNING] price_checker.py:356 - ✗ 获取 18/11/2024 的价格信息失败
+2024-11-10 09:05:30,825 [INFO] price_checker.py:347 - [2/20] 处理日期: 22/11/2024
+2024-11-10 09:05:30,825 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:05:30,826 [INFO] price_checker.py:86 - 入住日期: 2024-11-22, 退房日期: 2024-11-23 (最小入住: 1晚)
+2024-11-10 09:05:30,826 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1125096139567330802?check_in=2024-11-22&check_out=2024-11-23&adults=3&children=0&infants=0
+2024-11-10 09:05:40,931 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-10 09:05:40,937 [INFO] price_checker.py:62 - 日期区间 22/11/2024 到 2024-11-23 可预订
+2024-11-10 09:06:01,159 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-10 09:06:01,160 [WARNING] price_checker.py:356 - ✗ 获取 22/11/2024 的价格信息失败
+2024-11-10 09:06:01,160 [INFO] price_checker.py:347 - [3/20] 处理日期: 26/11/2024
+2024-11-10 09:06:01,160 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:06:01,160 [INFO] price_checker.py:86 - 入住日期: 2024-11-26, 退房日期: 2024-11-27 (最小入住: 1晚)
+2024-11-10 09:06:01,160 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1125096139567330802?check_in=2024-11-26&check_out=2024-11-27&adults=3&children=0&infants=0
+2024-11-10 09:06:11,282 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-10 09:06:11,291 [INFO] price_checker.py:62 - 日期区间 26/11/2024 到 2024-11-27 可预订
+2024-11-10 09:06:31,527 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-10 09:06:31,527 [WARNING] price_checker.py:356 - ✗ 获取 26/11/2024 的价格信息失败
+2024-11-10 09:06:31,527 [INFO] price_checker.py:347 - [4/20] 处理日期: 27/11/2024
+2024-11-10 09:06:31,527 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:06:31,527 [INFO] price_checker.py:86 - 入住日期: 2024-11-27, 退房日期: 2024-11-28 (最小入住: 1晚)
+2024-11-10 09:06:31,527 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1125096139567330802?check_in=2024-11-27&check_out=2024-11-28&adults=3&children=0&infants=0
+2024-11-10 09:06:41,647 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-10 09:06:41,654 [INFO] price_checker.py:62 - 日期区间 27/11/2024 到 2024-11-28 可预订
+2024-11-10 09:07:01,878 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-10 09:07:01,878 [WARNING] price_checker.py:356 - ✗ 获取 27/11/2024 的价格信息失败
+2024-11-10 09:07:01,878 [INFO] price_checker.py:347 - [5/20] 处理日期: 28/11/2024
+2024-11-10 09:07:01,878 [INFO] price_checker.py:75 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:07:01,878 [INFO] price_checker.py:86 - 入住日期: 2024-11-28, 退房日期: 2024-11-29 (最小入住: 1晚)
+2024-11-10 09:07:01,879 [INFO] price_checker.py:90 - 访问URL: https://www.airbnb.co.nz/rooms/1125096139567330802?check_in=2024-11-28&check_out=2024-11-29&adults=3&children=0&infants=0
+2024-11-10 09:07:11,991 [INFO] price_checker.py:119 - 页面加载完成
+2024-11-10 09:07:11,999 [INFO] price_checker.py:62 - 日期区间 28/11/2024 到 2024-11-29 可预订
+2024-11-10 09:07:32,224 [ERROR] price_checker.py:158 - 未找到价格详情按钮
+2024-11-10 09:07:32,224 [WARNING] price_checker.py:356 - ✗ 获取 28/11/2024 的价格信息失败
+2024-11-10 09:07:32,224 [INFO] price_checker.py:360 - 已完成 5/20 个日期的处理
+2024-11-10 09:07:47,136 [INFO] advanced_analyzer.py:262 - === 程序执行完成 ===

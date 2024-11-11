@@ -120,6 +120,11 @@ def analyze_multiple_listings(urls):
     logger = get_logger()
     logger.info("=== 开始批量分析房源 ===")
     
+    # 创建时间戳目录
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    date_dir = f'data/{timestamp}'
+    os.makedirs(date_dir, exist_ok=True)
+    
     # 初始化WebDriver
     driver = initialize_driver()
     results = []
@@ -130,62 +135,84 @@ def analyze_multiple_listings(urls):
             result = analyze_listing(url, driver)
             if result:
                 results.append(result)
-                logger.info(f"数据已保存到: {result['calendar_excel']}")
                 
-        logger.info(f"\n分析完成，成功处理 {len(results)}/{len(urls)} 个房源")
+                # 复制日历数据到两个位置
+                room_id = url['url'].split('rooms/')[-1].split('?')[0]
+                room_dir = f'data/room_{room_id}'
+                os.makedirs(room_dir, exist_ok=True)
+                
+                # 复制到日期目录
+                date_calendar_file = f'{date_dir}/airbnb_calendar_{room_id}.xlsx'
+                pd.read_excel(result['calendar_excel']).to_excel(date_calendar_file, index=False)
+                
+                # 复制到房间目录
+                room_calendar_file = f'{room_dir}/airbnb_calendar_{timestamp}.xlsx'
+                pd.read_excel(result['calendar_excel']).to_excel(room_calendar_file, index=False)
+                
+                logger.info(f"数据已保存到日期目录: {date_calendar_file}")
+                logger.info(f"数据已保存到房间目录: {room_calendar_file}")
         
-        # 生成汇总Excel
+        # 生成汇总Excel，同样保存两份
         if results:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            summary_file = f'data/airbnb_summary_{timestamp}.xlsx'
+            summary_data = create_summary_data(results)
             
-            # 创建汇总数据
-            summary_data = []
+            # 保存到日期目录
+            date_summary_file = f'{date_dir}/airbnb_summary.xlsx'
+            pd.DataFrame(summary_data).to_excel(date_summary_file, index=False)
+            
+            # 保存到每个房间目录
             for result in results:
-                # 基础信息
-                summary_info = {
-                    'URL': result['url'],
-                    '总天数': len(result['calendar_data']),
-                    '可预订天数': sum(1 for d in result['calendar_data'] if d['status'] == "可预订"),
-                    '不可预订天数': sum(1 for d in result['calendar_data'] if d['status'] == "不可预订"),
-                    '仅可退房天数': sum(1 for d in result['calendar_data'] if d['status'] == "仅可退房"),
-                    '数据文件': result['calendar_excel']
-                }
+                room_id = result['url'].split('rooms/')[-1].split('?')[0]
+                room_summary_file = f'data/room_{room_id}/airbnb_summary_{timestamp}.xlsx'
                 
-                # 添加价格统计信息
-                if result['price_info'] and isinstance(result['price_info'], list):
-                    # 计算价格统计
-                    nightly_prices = []
-                    for price_item in result['price_info']:
-                        try:
-                            price = float(re.search(r'\$(\d+)', price_item['nightly_price']).group(1))
-                            nightly_prices.append(price)
-                        except:
-                            continue
-                    
-                    if nightly_prices:
-                        summary_info.update({
-                            '平均每晚价格': f"${sum(nightly_prices)/len(nightly_prices):.2f}",
-                            '最高每晚价格': f"${max(nightly_prices):.2f}",
-                            '最低每晚价格': f"${min(nightly_prices):.2f}",
-                            '价格样本数': len(nightly_prices)
-                        })
-                
-                summary_data.append(summary_info)
+                # 只保存该房间的汇总数据
+                room_summary = [d for d in summary_data if str(d['Room ID']) == room_id]
+                if room_summary:
+                    pd.DataFrame(room_summary).to_excel(room_summary_file, index=False)
             
-            # 保存汇总Excel
-            pd.DataFrame(summary_data).to_excel(summary_file, index=False)
-            logger.info(f"汇总数据已保存到: {summary_file}")
+            logger.info(f"汇总数据已保存到日期目录: {date_summary_file}")
+            logger.info("汇总数据已保存到各房间目录")
         
         return results
         
     except Exception as e:
         logger.error(f"批量分析过程中发生错误: {str(e)}")
         return results
-        
     finally:
         driver.quit()
         logger.info("浏览器已关闭")
+
+def create_summary_data(results):
+    """创建汇总数据"""
+    summary_data = []
+    for result in results:
+        if result:
+            room_id = result['url'].split('rooms/')[-1]
+            
+            # 基础信息
+            summary_info = {
+                'Room ID': room_id,
+                'URL': result['url'],
+                '总天数': len(result['calendar_data']),
+                '可预订天数': sum(1 for d in result['calendar_data'] if d['status'] == "可预订"),
+                '不可预订天数': sum(1 for d in result['calendar_data'] if d['status'] == "不可预订"),
+                '数据文件': result['calendar_excel']
+            }
+            
+            # 添加价格统计
+            if result['price_info'] and isinstance(result['price_info'], list):
+                prices = [float(re.search(r'\$(\d+)', p['nightly_price']).group(1)) 
+                         for p in result['price_info'] if p['nightly_price']]
+                if prices:
+                    summary_info.update({
+                        '平均每晚价格': f"${sum(prices)/len(prices):.2f}",
+                        '最高每晚价格': f"${max(prices):.2f}",
+                        '最低每晚价格': f"${min(prices):.2f}",
+                        '价格样本数': len(prices)
+                    })
+            
+            summary_data.append(summary_info)
+    return summary_data
 
 def main():
     logger = get_logger()

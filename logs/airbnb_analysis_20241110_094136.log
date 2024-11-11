@@ -1,0 +1,105 @@
+2024-11-10 09:41:36,815 [INFO] advanced_analyzer.py:192 - === 开始Airbnb数据收集程序 ===
+2024-11-10 09:41:37,004 [INFO] advanced_analyzer.py:33 - 成功读取 3 个房间信息
+2024-11-10 09:41:37,004 [INFO] advanced_analyzer.py:203 - 生成 3 个URL
+2024-11-10 09:41:37,004 [INFO] advanced_analyzer.py:207 - 创建数据目录: data/airbnb_data_20241110_094137
+2024-11-10 09:41:37,005 [INFO] advanced_analyzer.py:121 - === 开始批量分析房源 ===
+2024-11-10 09:41:38,719 [INFO] advanced_analyzer.py:67 - Chrome WebDriver 初始化成功
+2024-11-10 09:41:38,719 [INFO] advanced_analyzer.py:129 - 
+处理第 1/3 个房源
+2024-11-10 09:41:38,720 [INFO] advanced_analyzer.py:75 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/1125096139567330802 (最小入住: 1晚)
+2024-11-10 09:41:38,720 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:41:42,269 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-10 09:41:42,298 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-10 09:41:57,506 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-10 09:41:57,509 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-10 09:41:58,510 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-10 09:41:59,605 [INFO] airbnb_calendar_checker.py:153 - JavaScript点击日历按钮成功
+2024-11-10 09:42:09,771 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-10 09:42:09,783 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-10 09:42:09,901 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-10 09:42:09,902 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-10 09:42:09,902 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-10 09:42:09,902 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-10 09:42:09,902 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-10 09:42:09,902 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-10 09:42:09,902 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 1125096139567330802
+2024-11-10 09:42:09,903 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_1125096139567330802_20241110_094209.xlsx
+2024-11-10 09:42:09,903 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-10 09:42:09,929 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_1125096139567330802_20241110_094209.xlsx
+2024-11-10 09:42:09,929 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 8.94 KB
+2024-11-10 09:42:09,929 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_1125096139567330802_20241110_094209.xlsx
+2024-11-10 09:42:09,930 [INFO] advanced_analyzer.py:84 - 成功获取日历数据: 123 条记录
+2024-11-10 09:42:09,930 [INFO] price_checker.py:288 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/1125096139567330802 (最小入住: 1晚)
+2024-11-10 09:42:09,930 [INFO] price_checker.py:280 - 找到 20 个可预订日期
+2024-11-10 09:42:09,930 [INFO] price_checker.py:304 - [1/20] 处理日期: 18/11/2024
+2024-11-10 09:42:09,930 [INFO] price_checker.py:127 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:42:09,930 [INFO] price_checker.py:128 - 入住日期: 18/11/2024, 最小入住晚数: 1
+2024-11-10 09:42:09,930 [INFO] price_checker.py:132 - 检查页面状态...
+2024-11-10 09:42:09,933 [INFO] price_checker.py:134 - 页面状态: complete
+2024-11-10 09:42:09,935 [INFO] price_checker.py:138 - 当前页面URL: https://www.airbnb.co.nz/rooms/1125096139567330802?source_impression_id=p3_1731184900_P3x1u_8hvT3xG_AE
+2024-11-10 09:42:09,941 [INFO] price_checker.py:142 - 价格容器存在: True
+2024-11-10 09:42:30,159 [INFO] price_checker.py:116 - 成功找到元素，使用css: [data-testid='book-it-default'] span:not([class*='strike'])
+2024-11-10 09:42:30,168 [INFO] price_checker.py:148 - 找到每晚价格元素: 
+2024-11-10 09:42:30,169 [WARNING] price_checker.py:155 - 价格文本格式不符合预期: 
+2024-11-10 09:42:30,169 [INFO] price_checker.py:162 - 开始查找价格详情按钮...
+2024-11-10 09:42:30,169 [INFO] price_checker.py:166 - 尝试使用选择器: css - button[aria-label='Show price details']
+2024-11-10 09:42:30,177 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:30,177 [INFO] price_checker.py:166 - 尝试使用选择器: xpath - //button[contains(., 'price details')]
+2024-11-10 09:42:30,184 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:30,184 [INFO] price_checker.py:166 - 尝试使用选择器: css - button._12wl7g09
+2024-11-10 09:42:30,190 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:30,190 [INFO] price_checker.py:166 - 尝试使用选择器: xpath - //div[contains(@class, '_14omvfj')]//button
+2024-11-10 09:42:30,197 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:30,197 [INFO] price_checker.py:166 - 尝试使用选择器: xpath - //div[contains(@class, '_1k4xcdh')]/preceding-sibling::span//button
+2024-11-10 09:42:30,204 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:30,204 [INFO] price_checker.py:206 - 最终价格信息获取结果:
+2024-11-10 09:42:30,204 [ERROR] price_checker.py:218 - 获取价格信息时发生错误: name 'price_info' is not defined
+2024-11-10 09:42:30,204 [ERROR] price_checker.py:219 - 错误详情: NameError
+2024-11-10 09:42:30,207 [ERROR] price_checker.py:220 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 207, in get_price_info
+    for key, value in price_info.items():
+                      ^^^^^^^^^^
+NameError: name 'price_info' is not defined. Did you mean: 'get_price_info'?
+
+2024-11-10 09:42:30,207 [WARNING] price_checker.py:313 - ✗ 获取 18/11/2024 的价格信息失败
+2024-11-10 09:42:30,207 [INFO] price_checker.py:304 - [2/20] 处理日期: 22/11/2024
+2024-11-10 09:42:30,207 [INFO] price_checker.py:127 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:42:30,207 [INFO] price_checker.py:128 - 入住日期: 22/11/2024, 最小入住晚数: 1
+2024-11-10 09:42:30,207 [INFO] price_checker.py:132 - 检查页面状态...
+2024-11-10 09:42:30,210 [INFO] price_checker.py:134 - 页面状态: complete
+2024-11-10 09:42:30,212 [INFO] price_checker.py:138 - 当前页面URL: https://www.airbnb.co.nz/rooms/1125096139567330802?source_impression_id=p3_1731184900_P3x1u_8hvT3xG_AE
+2024-11-10 09:42:30,215 [INFO] price_checker.py:142 - 价格容器存在: True
+2024-11-10 09:42:50,425 [INFO] price_checker.py:116 - 成功找到元素，使用css: [data-testid='book-it-default'] span:not([class*='strike'])
+2024-11-10 09:42:50,429 [INFO] price_checker.py:148 - 找到每晚价格元素: 
+2024-11-10 09:42:50,430 [WARNING] price_checker.py:155 - 价格文本格式不符合预期: 
+2024-11-10 09:42:50,430 [INFO] price_checker.py:162 - 开始查找价格详情按钮...
+2024-11-10 09:42:50,430 [INFO] price_checker.py:166 - 尝试使用选择器: css - button[aria-label='Show price details']
+2024-11-10 09:42:50,433 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:50,434 [INFO] price_checker.py:166 - 尝试使用选择器: xpath - //button[contains(., 'price details')]
+2024-11-10 09:42:50,438 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:50,438 [INFO] price_checker.py:166 - 尝试使用选择器: css - button._12wl7g09
+2024-11-10 09:42:50,441 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:50,442 [INFO] price_checker.py:166 - 尝试使用选择器: xpath - //div[contains(@class, '_14omvfj')]//button
+2024-11-10 09:42:50,446 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:50,446 [INFO] price_checker.py:166 - 尝试使用选择器: xpath - //div[contains(@class, '_1k4xcdh')]/preceding-sibling::span//button
+2024-11-10 09:42:50,450 [INFO] price_checker.py:171 - 找到 0 个匹配元素
+2024-11-10 09:42:50,450 [INFO] price_checker.py:206 - 最终价格信息获取结果:
+2024-11-10 09:42:50,450 [ERROR] price_checker.py:218 - 获取价格信息时发生错误: name 'price_info' is not defined
+2024-11-10 09:42:50,451 [ERROR] price_checker.py:219 - 错误详情: NameError
+2024-11-10 09:42:50,453 [ERROR] price_checker.py:220 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 207, in get_price_info
+    for key, value in price_info.items():
+                      ^^^^^^^^^^
+NameError: name 'price_info' is not defined. Did you mean: 'get_price_info'?
+
+2024-11-10 09:42:50,453 [WARNING] price_checker.py:313 - ✗ 获取 22/11/2024 的价格信息失败
+2024-11-10 09:42:50,453 [INFO] price_checker.py:304 - [3/20] 处理日期: 26/11/2024
+2024-11-10 09:42:50,453 [INFO] price_checker.py:127 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-10 09:42:50,453 [INFO] price_checker.py:128 - 入住日期: 26/11/2024, 最小入住晚数: 1
+2024-11-10 09:42:50,453 [INFO] price_checker.py:132 - 检查页面状态...
+2024-11-10 09:42:50,455 [INFO] price_checker.py:134 - 页面状态: complete
+2024-11-10 09:42:50,457 [INFO] price_checker.py:138 - 当前页面URL: https://www.airbnb.co.nz/rooms/1125096139567330802?source_impression_id=p3_1731184900_P3x1u_8hvT3xG_AE
+2024-11-10 09:42:50,461 [INFO] price_checker.py:142 - 价格容器存在: True
+2024-11-10 09:43:23,457 [INFO] advanced_analyzer.py:188 - 浏览器已关闭
+2024-11-10 09:43:23,457 [INFO] advanced_analyzer.py:262 - === 程序执行完成 ===

@@ -1,0 +1,14 @@
+2024-11-12 09:24:45,898 [INFO] advanced_analyzer.py:219 - === 开始Airbnb数据收集程序 ===
+2024-11-12 09:24:46,077 [INFO] advanced_analyzer.py:33 - 成功读取 3 个房间信息
+2024-11-12 09:24:46,077 [INFO] advanced_analyzer.py:230 - 生成 3 个URL
+2024-11-12 09:24:46,078 [INFO] advanced_analyzer.py:234 - 创建数据目录: data/airbnb_data_20241112_092446
+2024-11-12 09:24:46,078 [INFO] advanced_analyzer.py:121 - === 开始批量分析房源 ===
+2024-11-12 09:24:48,079 [INFO] advanced_analyzer.py:67 - Chrome WebDriver 初始化成功
+2024-11-12 09:24:48,079 [INFO] advanced_analyzer.py:134 - 
+处理第 1/3 个房源
+2024-11-12 09:24:48,079 [INFO] advanced_analyzer.py:75 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/1125096139567330802 (最小入住: 1晚)
+2024-11-12 09:24:48,079 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/1125096139567330802
+2024-11-12 09:24:48,905 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-12 09:24:48,908 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-12 09:25:04,084 [INFO] advanced_analyzer.py:289 - === 程序执行完成 ===
