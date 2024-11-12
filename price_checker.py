@@ -46,20 +46,21 @@ SHOW_DETAILS_SELECTORS = [
 
 # 更新价格详情选择器配置
 PRICE_DETAIL_SELECTORS = [
-    # 清洁费 - 使用button文本定位对应的span
+    # 清洁费 - 多种匹配方式
     ("xpath", "//div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]"),
+    ("xpath", "//div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]"),
     
-    # 服务费
+    # 服务费 - 多种匹配方式
     ("xpath", "//div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]"),
+    ("xpath", "//div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]"),
     
-    # 税费
+    # 税费 - 多种匹配方式
     ("xpath", "//div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]"),
+    ("xpath", "//div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]"),
     
-    # 特殊优惠
-    ("xpath", "//div[contains(@class, '_14omvfj')][.//div[text()='Special offer']]//span[contains(@class, '_1rc8xn5')]"),
-    
-    # 总价
-    ("xpath", "//div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]")
+    # 总价 - 多种匹配方式
+    ("xpath", "//div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]"),
+    ("xpath", "//div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span")
 ]
 
 def initialize_driver():
@@ -140,31 +141,157 @@ def find_price_element(driver, selectors_config):
     
     return None
 
-def get_price_info(driver, url, checkin_date, min_nights):
+def min_nights_check(driver, date_element):
+    """
+    检查日期元素的最小入住天数要求
+    """
+    logger = get_logger()
+    try:
+        # 记录初始状态
+        initial_html = date_element.get_attribute('outerHTML')
+        logger.info(f"初始元素HTML: {initial_html}")
+        
+        # 获取日期信息
+        try:
+            date_div = date_element.find_element(By.XPATH, ".//div[contains(@data-testid, 'calendar-day-')]")
+            date_str = date_div.get_attribute('data-testid').replace('calendar-day-', '')
+            logger.info(f"找到日期: {date_str}")
+        except Exception as e:
+            logger.error(f"获取日期信息失败: {str(e)}")
+            return 1
+            
+        # 先点击日期元素
+        logger.info("点击日期元素...")
+        try:
+            date_element.click()
+            time.sleep(1)  # 等待状态更新
+        except Exception as e:
+            logger.warning(f"点击日期元素失败，尝试使用JavaScript点击: {str(e)}")
+            driver.execute_script("arguments[0].click();", date_element)
+            time.sleep(1)
+            
+        # 移动到日期元素上
+        logger.info("移动到日期元素...")
+        actions = ActionChains(driver)
+        actions.move_to_element(date_element).perform()
+        time.sleep(1)
+        
+        # 重新获取更新后的元素
+        try:
+            # 使用多个class名称尝试定位
+            selectors = [
+                f"//td[.//div[@data-testid='calendar-day-{date_str}']]",
+                "//td[contains(@class, '_5v1jabe')]",  # 选中状态的class
+                "//td[contains(@class, '_1fmu67uy')]"  # 未选中状态的class
+            ]
+            
+            updated_element = None
+            for selector in selectors:
+                try:
+                    elements = driver.find_elements(By.XPATH, selector)
+                    for elem in elements:
+                        if elem.is_displayed():
+                            updated_element = elem
+                            break
+                    if updated_element:
+                        break
+                except:
+                    continue
+                    
+            if not updated_element:
+                updated_element = date_element  # 如果找不到，使用原始元素
+                
+        except Exception as e:
+            logger.warning(f"重新获取元素失败: {str(e)}")
+            updated_element = date_element
+            
+        # 记录更新后的状态
+        updated_html = updated_element.get_attribute('outerHTML')
+        logger.info(f"更新后元素HTML: {updated_html}")
+        
+        # 获取并记录所有相关属性
+        aria_label = updated_element.get_attribute('aria-label')
+        aria_disabled = updated_element.get_attribute('aria-disabled')
+        is_blocked = updated_element.get_attribute('data-is-day-blocked')
+        
+        logger.info(f"更新后元素属性:")
+        logger.info(f"- aria-label: {aria_label}")
+        logger.info(f"- aria-disabled: {aria_disabled}")
+        logger.info(f"- data-is-day-blocked: {is_blocked}")
+        
+        # 使用正则表达式查找最小入住要求
+        if aria_label:
+            patterns = [
+                r'(\d+)\s*night minimum stay',
+                r'minimum stay[:\s]+(\d+)',
+                r'至少住(\d+)晚',
+                r'最少(\d+)晚'
+            ]
+            
+            for pattern in patterns:
+                min_stay_match = re.search(pattern, aria_label, re.IGNORECASE)
+                if min_stay_match:
+                    min_nights = int(min_stay_match.group(1))
+                    logger.info(f"✓ 成功找到最小入住要求: {min_nights}晚 (匹配模式: {pattern})")
+                    return min_nights
+                    
+            logger.info("未在aria-label中找到最小入住要求")
+        
+        # 如果所有方法都失败，使用默认值
+        logger.warning("⚠ 未找到最小入住要求，使用默认值1晚")
+        return 1
+        
+    except Exception as e:
+        logger.error(f"检查最小入住天数时出错: {str(e)}")
+        logger.error(f"错误类型: {type(e).__name__}")
+        logger.error(f"错误堆栈: {traceback.format_exc()}")
+        logger.warning("使用默认值1晚")
+        return 1
+
+def get_price_info(driver, url, checkin_date, min_nights=None):
     """获取价格信息"""
     logger = get_logger()
     logger.info(f"开始获取价格信息: {url}")
-    logger.info(f"入住日期: {checkin_date}, 最小入住晚数: {min_nights}")
-    
-    # 初始化价格信息字典
-    price_info = {
-        'check_in': checkin_date,
-        'check_out': calculate_checkout_date(checkin_date, min_nights),
-        'guests': 3,
-        'nightly_price': None,
-        'cleaning_fee': None,
-        'service_fee': None,
-        'taxes': None,
-        'total': None
-    }
+    logger.info(f"入住日期: {checkin_date}")
     
     try:
-        # 构建带日期参数的URL
+        # 先访问页面
+        driver.get(url)
+        time.sleep(5)
+        
+        # 找到日期单元格
+        date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+        date_element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located(
+                (By.XPATH, f"//div[@data-testid='calendar-day-{date_str}']/..")
+            )
+        )
+        
+        # 检查最小入住要求
+        logger.info(f"开始检查日期 {checkin_date} 的最小入住要求...")
+        actual_min_nights = min_nights_check(driver, date_element) if min_nights is None else min_nights
+        logger.info(f"最终使用的最小入住天数: {actual_min_nights}晚 ({'自动检测' if min_nights is None else '手动指定'})")
+        
+        # 计算退房日期
         checkin_dt = datetime.strptime(checkin_date, '%d/%m/%Y')
-        checkout_dt = checkin_dt + timedelta(days=min_nights)
+        checkout_dt = checkin_dt + timedelta(days=actual_min_nights)
+        
+        # 初始化价格信息字典
+        price_info = {
+            'check_in': checkin_date,
+            'check_out': checkout_dt.strftime('%d/%m/%Y'),
+            'min_nights': actual_min_nights,
+            'guests': 3,
+            'nightly_price': None,
+            'cleaning_fee': None,
+            'service_fee': None,
+            'taxes': None,
+            'total': None
+        }
+        
+        # 构建带日期参数的URL
         checkin_str = checkin_dt.strftime('%Y-%m-%d')
         checkout_str = checkout_dt.strftime('%Y-%m-%d')
-        
         url_with_dates = f"{url}?check_in={checkin_str}&check_out={checkout_str}&adults=3&children=0&infants=0"
         logger.info(f"访问URL: {url_with_dates}")
         
@@ -240,17 +367,18 @@ def get_price_info(driver, url, checkin_date, min_nights):
                 
         # 修改价格详情获取部分
         logger.info("开始获取价格详情...")
+        price_details_found = False
         
-        # 等待价格详情容器加载
+        # 等待价格详情容器加载，缩短等待时间
         try:
-            price_container = WebDriverWait(driver, 10).until(
+            price_container = WebDriverWait(driver, 3).until(
                 EC.presence_of_element_located((By.CLASS_NAME, "_1n7cvm7"))
             )
             logger.info("价格详情容器已加载")
             
-            # 记录价格容器的HTML结构，帮助调试
-            container_html = price_container.get_attribute('innerHTML')
-            logger.debug(f"价格容器HTML结构:\n{container_html}")
+            # 确保价格容器可见
+            driver.execute_script("arguments[0].scrollIntoView(true);", price_container)
+            time.sleep(0.5)  # 短暂等待滚动完成
             
         except TimeoutException:
             logger.warning("等待价格详情容器超时")
@@ -260,8 +388,8 @@ def get_price_info(driver, url, checkin_date, min_nights):
             try:
                 logger.info(f"尝试使用选择器获取价格详情: {selector}")
                 
-                # 等待元素出现
-                elements = WebDriverWait(driver, 5).until(
+                # 缩短等待时间到2秒
+                elements = WebDriverWait(driver, 2).until(
                     EC.presence_of_all_elements_located(
                         (By.XPATH if selector_type == "xpath" else By.CSS_SELECTOR, selector)
                     )
@@ -274,29 +402,45 @@ def get_price_info(driver, url, checkin_date, min_nights):
                     element_html = element.get_attribute('outerHTML')
                     logger.info(f"找到价格元素: {price_text} (HTML: {element_html})")
                     
-                    # 直接根据选择器内容设置价格信息，不依赖父元素文本
-                    if "Cleaning fee" in selector:
+                    # 根据选择器内容设置价格信息
+                    if "Cleaning fee" in selector or "cleaning fee" in selector.lower():
                         price_info['cleaning_fee'] = price_text
                         logger.info(f"✓ 成功设置清洁费: {price_text}")
-                    elif "service fee" in selector:
+                        price_details_found = True
+                    elif "service fee" in selector.lower():
                         price_info['service_fee'] = price_text
                         logger.info(f"✓ 成功设置服务费: {price_text}")
-                    elif "Taxes" in selector:
+                        price_details_found = True
+                    elif "tax" in selector.lower():
                         price_info['taxes'] = price_text
                         logger.info(f"✓ 成功设置税费: {price_text}")
-                    elif "_j1kt73" in selector:  # 总价的特殊class
+                        price_details_found = True
+                    elif "_j1kt73" in selector or "_1qs94rc" in selector:
                         price_info['total'] = price_text
                         logger.info(f"✓ 成功设置总价: {price_text}")
-                    elif "Special offer" in selector:
-                        price_info['special_offer'] = price_text
-                        logger.info(f"✓ 成功设置特殊优惠: {price_text}")
+                        price_details_found = True
                         
             except TimeoutException:
-                logger.warning(f"等待选择器超时: {selector}")
                 continue
             except Exception as e:
                 logger.warning(f"使用选择器 {selector} 获取价格详情时出错: {str(e)}")
                 continue
+            
+        # 如果没有找到任何价格详情，尝试点击展开按钮
+        if not price_details_found:
+            try:
+                # 尝试点击价格展开按钮
+                show_price_button = driver.find_element(By.XPATH, "//button[contains(@class, '_12wl7g09')]")
+                show_price_button.click()
+                time.sleep(1)
+                
+                # 重新执行一次价格获取
+                logger.info("点击展开按钮后重新获取价格详情...")
+                # 递归调用，但不再尝试点击展开
+                return get_price_info(driver, url, checkin_date, min_nights)
+                
+            except Exception as e:
+                logger.warning(f"尝试点击价格展开按钮失败: {str(e)}")
         
         # 验证价格信息完整性
         logger.info("验证价格信息完整性:")
@@ -308,7 +452,7 @@ def get_price_info(driver, url, checkin_date, min_nights):
                 logger.warning(f"✗ {field} 未获取到")
                 
         # 记录最终价格信息获取结果
-        logger.info("最终价格信息获取结果:")
+        logger.info("终价格信息获取结果:")
         for key, value in price_info.items():
             logger.info(f"{key}: {value}")
             
@@ -390,68 +534,53 @@ def check_room_price(url_info, calendar_data, driver):
     """检查房间价格"""
     logger = get_logger()
     url = url_info['url']
-    min_nights = url_info['min_nights']
-    logger.info(f"开始检查房源价格: {url} (最小入住: {min_nights}晚)")
+    logger.info(f"开始检查房源价格: {url}")
     
     try:
         # 查找所有可预订日期
         available_dates = find_all_available_dates(calendar_data)
         if not available_dates:
-            logger.error(f"房源 {url} 未找到可预订日期")
+            logger.error(f"房 {url} 未找到可预订日期")
             return None
-            
-        # 根据min_nights筛选有效的入住日期
-        valid_dates = []
-        for i in range(len(available_dates)):
-            checkin_date = datetime.strptime(available_dates[i], '%d/%m/%Y')
-            checkout_date = checkin_date + timedelta(days=min_nights)
-            
-            # 检查连续的日期是否都可预订
-            is_valid = True
-            for j in range(min_nights):
-                check_date = (checkin_date + timedelta(days=j)).strftime('%d/%m/%Y')
-                if check_date not in available_dates:
-                    is_valid = False
-                    break
-            
-            if is_valid:
-                valid_dates.append(available_dates[i])
-                # 如果是多晚入住，跳过已经包含在这次预订中的日期
-                i += min_nights - 1
-            
-        logger.info(f"找到 {len(valid_dates)} 个有效入住日期")
         
         # 存储所有日期的价格信息
         all_price_info = []
         failed_dates = []
         
         # 遍历每个可预订日期
-        for index, check_in_date in enumerate(valid_dates, 1):
+        for index, check_in_date in enumerate(available_dates, 1):
             try:
-                logger.info(f"[{index}/{len(valid_dates)}] 处理日期: {check_in_date}")
+                logger.info(f"[{index}/{len(available_dates)}] 处理日期: {check_in_date}")
                 
-                # 获取该日期的价格信息
-                price_info = get_price_info(driver, url, check_in_date, min_nights)
+                # 获取该日期的价格信息，让函数自动检查最小入住天数
+                price_info = get_price_info(driver, url, check_in_date)
                 if price_info:
                     all_price_info.append(price_info)
                     logger.info(f"✓ 成功获取 {check_in_date} 的价格信息")
+                    
+                    # 根据最小入住天数跳过后续日期
+                    min_nights = price_info['min_nights']
+                    if min_nights > 1:
+                        skip_count = min_nights - 1
+                        logger.info(f"根据最小入住要求({min_nights}晚)跳过接下来的 {skip_count} 天")
+                        index += skip_count
                 else:
                     failed_dates.append(check_in_date)
                     logger.warning(f"✗ 获取 {check_in_date} 的价格信息失败")
                 
-                # 每处理5个日期暂停一下
+                # 每处理5个日期暂停一
                 if index % 5 == 0:
-                    logger.info(f"已完成 {index}/{len(valid_dates)} 个日期的处理")
+                    logger.info(f"已完成 {index}/{len(available_dates)} 个日期的处理")
                     time.sleep(10)
                     
             except Exception as e:
                 failed_dates.append(check_in_date)
                 logger.error(f"处理日期 {check_in_date} 时发生错误: {str(e)}")
                 continue
-        
+                
         # 统计处理结果
         logger.info("\n=== 价格数据收集统计 ===")
-        logger.info(f"总可预订日期: {len(valid_dates)}")
+        logger.info(f"总可预订日期: {len(available_dates)}")
         logger.info(f"成功收集: {len(all_price_info)}")
         logger.info(f"失败日期: {len(failed_dates)}")
         
@@ -518,13 +647,13 @@ def parse_price(self, container):
         return None
 
 def check_page_state(driver):
-    """检查页面状态和可能的错误"""
+    """检查页���状态和可能的错误"""
     logger = get_logger()
     try:
         # 检查是否有误消息
         error_messages = driver.find_elements(By.CSS_SELECTOR, "[data-testid*='error']")
         if error_messages:
-            logger.error(f"页面显示错误: {error_messages[0].text}")
+            logger.error(f"页面显示错: {error_messages[0].text}")
             return False
             
         # 检查是否有加载指示器

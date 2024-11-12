@@ -9,41 +9,54 @@ from price_checker import check_room_price
 from logger_config import get_logger
 import re
 import os
+import traceback
 
 def read_room_ids(filename='RoomID.xlsx'):
-    """读取房间ID和最小入住天数"""
+    """读取房间ID"""
     logger = get_logger()
     try:
         if not os.path.exists(filename):
             logger.error(f"文件不存在: {filename}")
             return None
             
-        # 读取Excel文件
-        df = pd.read_excel(filename)
+        # 读取Excel文件，将第一列作为字符串读取
+        df = pd.read_excel(filename, dtype={0: str})  # 指定第一列为字符串类型
         
-        # 获取房间ID和最小入住天数
-        room_data = []
+        # 获取房间ID列表，确保是字符串格式
+        room_ids = []
         for _, row in df.iterrows():
-            room_info = {
-                'room_id': str(row.iloc[0]),  # 第一列是房间ID
-                'min_nights': int(row.iloc[1]) # 第二列是最小入住天数
-            }
-            room_data.append(room_info)
+            room_id = str(row.iloc[0]).strip()  # 转换为字符串并去除空白
+            if pd.notna(row.iloc[0]) and room_id:  # 检查是否为空
+                # 移除可能的小数点和科学计数法
+                room_id = room_id.split('.')[0]  # 移除小数部分
+                room_id = room_id.split('E')[0]  # 移除科学计数法部分
+                room_ids.append(room_id)
+                logger.debug(f"读取到房间ID: {room_id}")
         
-        logger.info(f"成功读取 {len(room_data)} 个房间信息")
-        return room_data
+        logger.info(f"成功读取 {len(room_ids)} 个房间ID")
+        if room_ids:
+            logger.debug(f"房间ID示例: {room_ids[0]}")
+        
+        return room_ids
         
     except Exception as e:
         logger.error(f"读取房间信息时发生错误: {str(e)}")
+        logger.error(f"错误类型: {type(e).__name__}")
+        logger.error(f"错误堆栈: {traceback.format_exc()}")
         return None
 
-def generate_urls(room_data):
-    """根据房间信息生成URL列表"""
+def generate_urls(room_ids):
+    """根据房间ID生成URL列表"""
     base_url = "https://www.airbnb.co.nz/rooms/"
-    return [{
-        'url': base_url + str(room['room_id']),
-        'min_nights': room['min_nights']
-    } for room in room_data]
+    urls = []
+    logger = get_logger()
+    
+    for room_id in room_ids:
+        url = {'url': base_url + room_id}
+        logger.debug(f"生成URL: {url['url']}")
+        urls.append(url)
+    
+    return urls
 
 def create_data_directory():
     """创建数据存储目录"""
@@ -71,8 +84,7 @@ def analyze_listing(url_info, driver):
     """分析单个房源"""
     logger = get_logger()
     url = url_info['url']
-    min_nights = url_info['min_nights']
-    logger.info(f"\n开始分析房源: {url} (最小入住: {min_nights}晚)")
+    logger.info(f"\n开始分析房源: {url}")
     
     try:
         # 1. 获取日历数据
@@ -83,7 +95,7 @@ def analyze_listing(url_info, driver):
             
         logger.info(f"成功获取日历数据: {len(calendar_data)} 条记录")
         
-        # 2. 获取价格数据，传入包含最小入住天数的url_info
+        # 2. 获取价格数据
         price_info = check_room_price(url_info, calendar_data, driver)
         if not price_info:
             logger.error(f"获取价格数据失败: {url}")
@@ -97,17 +109,6 @@ def analyze_listing(url_info, driver):
             'price_info': price_info,
             'calendar_excel': excel_file
         }
-        
-        # 4. 生成统计信息
-        status_count = {}
-        for date_info in calendar_data:
-            status = date_info['status']
-            status_count[status] = status_count.get(status, 0) + 1
-            
-        logger.info("\n=== 日历统计信息 ===")
-        for status, count in status_count.items():
-            percentage = (count / len(calendar_data)) * 100
-            logger.info(f"{status}: {count}天 ({percentage:.2f}%)")
         
         return result
         
@@ -220,13 +221,13 @@ def main():
     
     try:
         # 1. 读取房间ID
-        room_data = read_room_ids()
-        if not room_data:
+        room_ids = read_room_ids()
+        if not room_ids:
             logger.error("未能读取房间信息，程序退出")
             return
             
         # 2. 生成URL列表
-        urls = generate_urls(room_data)
+        urls = generate_urls(room_ids)
         logger.info(f"生成 {len(urls)} 个URL")
         
         # 3. 创建数据存储目录
@@ -278,9 +279,9 @@ def main():
                 
                 # 打印统计信息
                 print("\n=== 数据收集完成 ===")
-                print(f"总房源数: {len(room_data)}")
+                print(f"总房源数: {len(room_ids)}")
                 print(f"成功收集: {len(summary_data)}")
-                print(f"失败数量: {len(room_data) - len(summary_data)}")
+                print(f"失败数量: {len(room_ids) - len(summary_data)}")
                 print(f"汇总报告: {summary_file}")
         
     except Exception as e:

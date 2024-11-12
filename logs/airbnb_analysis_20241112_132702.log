@@ -1,0 +1,4 @@
+2024-11-12 13:27:02,078 [INFO] advanced_analyzer.py:219 - === 开始Airbnb数据收集程序 ===
+2024-11-12 13:27:02,251 [ERROR] advanced_analyzer.py:37 - 读取房间信息时发生错误: cannot convert float NaN to integer
+2024-11-12 13:27:02,251 [ERROR] advanced_analyzer.py:225 - 未能读取房间信息，程序退出
+2024-11-12 13:27:02,251 [INFO] advanced_analyzer.py:289 - === 程序执行完成 ===
