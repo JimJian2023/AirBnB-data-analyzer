@@ -1,0 +1,31 @@
+2024-11-15 10:40:25,163 [INFO] advanced_analyzer.py:358 - === 开始Airbnb数据收集程序 ===
+2024-11-15 10:40:25,335 [INFO] advanced_analyzer.py:99 - 成功读取 6 个房间ID
+2024-11-15 10:40:25,336 [INFO] advanced_analyzer.py:369 - 生成 6 个URL
+2024-11-15 10:40:25,336 [INFO] advanced_analyzer.py:373 - 创建数据目录: data/airbnb_data_20241115_104025
+2024-11-15 10:40:25,336 [INFO] advanced_analyzer.py:239 - === 开始批量分析房源 ===
+2024-11-15 10:40:25,336 [INFO] advanced_analyzer.py:248 - 设置并发线程数: 1
+2024-11-15 10:40:25,337 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 10:40:26,074 [ERROR] bit_browser_manager.py:41 - 创建浏览器失败: {'success': False, 'msg': 'getaddrinfo EAI_AGAIN serviceapi.bitbrowser.cn'}
+2024-11-15 10:40:26,074 [ERROR] advanced_analyzer.py:176 - 创建BitBrowser实例失败
+2024-11-15 10:40:26,074 [ERROR] advanced_analyzer.py:259 - 无法为URL https://www.airbnb.co.nz/rooms/837352260137971048 初始化BitBrowser
+2024-11-15 10:40:26,074 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 10:40:26,078 [ERROR] bit_browser_manager.py:41 - 创建浏览器失败: {'success': False, 'msg': 'getaddrinfo EAI_AGAIN serviceapi.bitbrowser.cn'}
+2024-11-15 10:40:26,079 [ERROR] advanced_analyzer.py:176 - 创建BitBrowser实例失败
+2024-11-15 10:40:26,079 [ERROR] advanced_analyzer.py:259 - 无法为URL https://www.airbnb.co.nz/rooms/43435162 初始化BitBrowser
+2024-11-15 10:40:26,079 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 10:40:26,083 [ERROR] bit_browser_manager.py:41 - 创建浏览器失败: {'success': False, 'msg': 'getaddrinfo EAI_AGAIN serviceapi.bitbrowser.cn'}
+2024-11-15 10:40:26,083 [ERROR] advanced_analyzer.py:176 - 创建BitBrowser实例失败
+2024-11-15 10:40:26,083 [ERROR] advanced_analyzer.py:259 - 无法为URL https://www.airbnb.co.nz/rooms/830193102361409290 初始化BitBrowser
+2024-11-15 10:40:26,083 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 10:40:26,087 [ERROR] bit_browser_manager.py:41 - 创建浏览器失败: {'success': False, 'msg': 'getaddrinfo EAI_AGAIN serviceapi.bitbrowser.cn'}
+2024-11-15 10:40:26,087 [ERROR] advanced_analyzer.py:176 - 创建BitBrowser实例失败
+2024-11-15 10:40:26,087 [ERROR] advanced_analyzer.py:259 - 无法为URL https://www.airbnb.co.nz/rooms/49525472 初始化BitBrowser
+2024-11-15 10:40:26,087 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 10:40:26,091 [ERROR] bit_browser_manager.py:41 - 创建浏览器失败: {'success': False, 'msg': 'getaddrinfo EAI_AGAIN serviceapi.bitbrowser.cn'}
+2024-11-15 10:40:26,092 [ERROR] advanced_analyzer.py:176 - 创建BitBrowser实例失败
+2024-11-15 10:40:26,092 [ERROR] advanced_analyzer.py:259 - 无法为URL https://www.airbnb.co.nz/rooms/716883705085875481 初始化BitBrowser
+2024-11-15 10:40:26,092 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 10:40:26,096 [ERROR] bit_browser_manager.py:41 - 创建浏览器失败: {'success': False, 'msg': 'getaddrinfo EAI_AGAIN serviceapi.bitbrowser.cn'}
+2024-11-15 10:40:26,097 [ERROR] advanced_analyzer.py:176 - 创建BitBrowser实例失败
+2024-11-15 10:40:26,097 [ERROR] advanced_analyzer.py:259 - 无法为URL https://www.airbnb.co.nz/rooms/969823904189469776 初始化BitBrowser
+2024-11-15 10:40:26,097 [INFO] advanced_analyzer.py:428 - === 程序执行完成 ===

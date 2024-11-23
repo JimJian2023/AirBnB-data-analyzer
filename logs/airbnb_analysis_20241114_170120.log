@@ -1,0 +1,110 @@
+2024-11-14 17:01:20,514 [INFO] advanced_analyzer.py:493 - === 开始Airbnb数据收集程序 ===
+2024-11-14 17:01:20,688 [INFO] advanced_analyzer.py:50 - 成功读取 6 个房间ID
+2024-11-14 17:01:20,689 [INFO] advanced_analyzer.py:504 - 生成 6 个URL
+2024-11-14 17:01:20,689 [INFO] advanced_analyzer.py:508 - 创建数据目录: data/airbnb_data_20241114_170120
+2024-11-14 17:01:20,689 [INFO] advanced_analyzer.py:375 - === 开始批量分析房源 ===
+2024-11-14 17:01:20,689 [INFO] advanced_analyzer.py:384 - 设置并发线程数: 1
+2024-11-14 17:01:20,690 [INFO] advanced_analyzer.py:178 - GeckoDriver已存在
+2024-11-14 17:01:20,690 [INFO] advanced_analyzer.py:209 - 开始初始化 Firefox WebDriver...
+2024-11-14 17:01:20,690 [INFO] advanced_analyzer.py:263 - 代理配置信息:
+2024-11-14 17:01:20,690 [INFO] advanced_analyzer.py:264 - 主机: 38.kookeey.info
+2024-11-14 17:01:20,690 [INFO] advanced_analyzer.py:265 - 端口: 7426
+2024-11-14 17:01:20,690 [INFO] advanced_analyzer.py:266 - 用户名: 23ba352f
+2024-11-14 17:01:20,691 [INFO] advanced_analyzer.py:279 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 17:02:24,886 [WARNING] advanced_analyzer.py:323 - 代理验证失败: Message: Navigation timed out after 60000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:740:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
+openWindowPrompt@resource://gre/modules/Prompter.sys.mjs:1249:17
+openPrompt@resource://gre/modules/Prompter.sys.mjs:1070:12
+openPromptAsync@resource://gre/modules/Prompter.sys.mjs:1283:29
+nsIPrompt_promptUsernameAndPassword@resource://gre/modules/Prompter.sys.mjs:1547:19
+promptAuth@resource://gre/modules/Prompter.sys.mjs:1688:21
+asyncPromptAuth@resource://gre/modules/Prompter.sys.mjs:658:14
+promptAuthInternal@resource://gre/modules/LoginManagerAuthPrompter.sys.mjs:712:34
+
+2024-11-14 17:02:31,493 [ERROR] advanced_analyzer.py:396 - 无法为URL https://www.airbnb.co.nz/rooms/837352260137971048 初始化WebDriver
+2024-11-14 17:02:31,494 [INFO] advanced_analyzer.py:178 - GeckoDriver已存在
+2024-11-14 17:02:31,494 [INFO] advanced_analyzer.py:209 - 开始初始化 Firefox WebDriver...
+2024-11-14 17:02:31,494 [INFO] advanced_analyzer.py:263 - 代理配置信息:
+2024-11-14 17:02:31,494 [INFO] advanced_analyzer.py:264 - 主机: 38.kookeey.info
+2024-11-14 17:02:31,494 [INFO] advanced_analyzer.py:265 - 端口: 7426
+2024-11-14 17:02:31,494 [INFO] advanced_analyzer.py:266 - 用户名: 23ba352f
+2024-11-14 17:02:31,494 [INFO] advanced_analyzer.py:279 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 17:02:47,159 [WARNING] advanced_analyzer.py:323 - 代理验证失败: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2024-11-14 17:03:07,635 [ERROR] advanced_analyzer.py:396 - 无法为URL https://www.airbnb.co.nz/rooms/43435162 初始化WebDriver
+2024-11-14 17:03:07,635 [INFO] advanced_analyzer.py:178 - GeckoDriver已存在
+2024-11-14 17:03:07,635 [INFO] advanced_analyzer.py:209 - 开始初始化 Firefox WebDriver...
+2024-11-14 17:03:07,635 [INFO] advanced_analyzer.py:263 - 代理配置信息:
+2024-11-14 17:03:07,635 [INFO] advanced_analyzer.py:264 - 主机: 38.kookeey.info
+2024-11-14 17:03:07,636 [INFO] advanced_analyzer.py:265 - 端口: 7426
+2024-11-14 17:03:07,636 [INFO] advanced_analyzer.py:266 - 用户名: 23ba352f
+2024-11-14 17:03:07,636 [INFO] advanced_analyzer.py:279 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 17:04:11,856 [WARNING] advanced_analyzer.py:323 - 代理验证失败: Message: Navigation timed out after 60000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:740:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
+openWindowPrompt@resource://gre/modules/Prompter.sys.mjs:1249:17
+openPrompt@resource://gre/modules/Prompter.sys.mjs:1070:12
+openPromptAsync@resource://gre/modules/Prompter.sys.mjs:1283:29
+nsIPrompt_promptUsernameAndPassword@resource://gre/modules/Prompter.sys.mjs:1547:19
+promptAuth@resource://gre/modules/Prompter.sys.mjs:1688:21
+asyncPromptAuth@resource://gre/modules/Prompter.sys.mjs:658:14
+promptAuthInternal@resource://gre/modules/LoginManagerAuthPrompter.sys.mjs:712:34
+
+2024-11-14 17:04:18,436 [ERROR] advanced_analyzer.py:396 - 无法为URL https://www.airbnb.co.nz/rooms/830193102361409290 初始化WebDriver
+2024-11-14 17:04:18,437 [INFO] advanced_analyzer.py:178 - GeckoDriver已存在
+2024-11-14 17:04:18,437 [INFO] advanced_analyzer.py:209 - 开始初始化 Firefox WebDriver...
+2024-11-14 17:04:18,437 [INFO] advanced_analyzer.py:263 - 代理配置信息:
+2024-11-14 17:04:18,437 [INFO] advanced_analyzer.py:264 - 主机: 38.kookeey.info
+2024-11-14 17:04:18,437 [INFO] advanced_analyzer.py:265 - 端口: 7426
+2024-11-14 17:04:18,437 [INFO] advanced_analyzer.py:266 - 用户名: 23ba352f
+2024-11-14 17:04:18,437 [INFO] advanced_analyzer.py:279 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 17:05:22,607 [WARNING] advanced_analyzer.py:323 - 代理验证失败: Message: Navigation timed out after 60000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:740:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
+openWindowPrompt@resource://gre/modules/Prompter.sys.mjs:1249:17
+openPrompt@resource://gre/modules/Prompter.sys.mjs:1070:12
+openPromptAsync@resource://gre/modules/Prompter.sys.mjs:1283:29
+nsIPrompt_promptUsernameAndPassword@resource://gre/modules/Prompter.sys.mjs:1547:19
+promptAuth@resource://gre/modules/Prompter.sys.mjs:1688:21
+asyncPromptAuth@resource://gre/modules/Prompter.sys.mjs:658:14
+promptAuthInternal@resource://gre/modules/LoginManagerAuthPrompter.sys.mjs:712:34
+
+2024-11-14 17:05:29,198 [ERROR] advanced_analyzer.py:396 - 无法为URL https://www.airbnb.co.nz/rooms/49525472 初始化WebDriver
+2024-11-14 17:05:29,199 [INFO] advanced_analyzer.py:178 - GeckoDriver已存在
+2024-11-14 17:05:29,199 [INFO] advanced_analyzer.py:209 - 开始初始化 Firefox WebDriver...
+2024-11-14 17:05:29,199 [INFO] advanced_analyzer.py:263 - 代理配置信息:
+2024-11-14 17:05:29,199 [INFO] advanced_analyzer.py:264 - 主机: 38.kookeey.info
+2024-11-14 17:05:29,199 [INFO] advanced_analyzer.py:265 - 端口: 7426
+2024-11-14 17:05:29,199 [INFO] advanced_analyzer.py:266 - 用户名: 23ba352f
+2024-11-14 17:05:29,199 [INFO] advanced_analyzer.py:279 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 17:06:33,403 [WARNING] advanced_analyzer.py:323 - 代理验证失败: Message: Navigation timed out after 60000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:740:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:211:19
+openWindowPrompt@resource://gre/modules/Prompter.sys.mjs:1249:17
+openPrompt@resource://gre/modules/Prompter.sys.mjs:1070:12
+openPromptAsync@resource://gre/modules/Prompter.sys.mjs:1283:29
+nsIPrompt_promptUsernameAndPassword@resource://gre/modules/Prompter.sys.mjs:1547:19
+promptAuth@resource://gre/modules/Prompter.sys.mjs:1688:21
+asyncPromptAuth@resource://gre/modules/Prompter.sys.mjs:658:14
+promptAuthInternal@resource://gre/modules/LoginManagerAuthPrompter.sys.mjs:712:34
+
+2024-11-14 17:06:39,987 [ERROR] advanced_analyzer.py:396 - 无法为URL https://www.airbnb.co.nz/rooms/716883705085875481 初始化WebDriver
+2024-11-14 17:06:39,988 [INFO] advanced_analyzer.py:178 - GeckoDriver已存在
+2024-11-14 17:06:39,988 [INFO] advanced_analyzer.py:209 - 开始初始化 Firefox WebDriver...
+2024-11-14 17:06:39,988 [INFO] advanced_analyzer.py:263 - 代理配置信息:
+2024-11-14 17:06:39,988 [INFO] advanced_analyzer.py:264 - 主机: 38.kookeey.info
+2024-11-14 17:06:39,988 [INFO] advanced_analyzer.py:265 - 端口: 7426
+2024-11-14 17:06:39,988 [INFO] advanced_analyzer.py:266 - 用户名: 23ba352f
+2024-11-14 17:06:39,988 [INFO] advanced_analyzer.py:279 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe

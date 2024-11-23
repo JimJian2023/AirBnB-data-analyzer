@@ -1,0 +1,19 @@
+2024-11-14 16:18:56,271 [INFO] advanced_analyzer.py:439 - === 开始Airbnb数据收集程序 ===
+2024-11-14 16:18:56,438 [INFO] advanced_analyzer.py:49 - 成功读取 6 个房间ID
+2024-11-14 16:18:56,438 [INFO] advanced_analyzer.py:450 - 生成 6 个URL
+2024-11-14 16:18:56,438 [INFO] advanced_analyzer.py:454 - 创建数据目录: data/airbnb_data_20241114_161856
+2024-11-14 16:18:56,438 [INFO] advanced_analyzer.py:321 - === 开始批量分析房源 ===
+2024-11-14 16:18:56,439 [INFO] advanced_analyzer.py:330 - 设置并发线程数: 1
+2024-11-14 16:18:56,439 [INFO] advanced_analyzer.py:146 - 开始初始化 Firefox WebDriver... (尝试 1/3)
+2024-11-14 16:19:05,206 [INFO] advanced_analyzer.py:123 - 成功获取SOCKS5代理IP: 7731224-23ba352f:74024a8b-global-686533001@gate.kookeey.info:1000
+2024-11-14 16:19:05,206 [INFO] advanced_analyzer.py:210 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:19:05,206 [INFO] advanced_analyzer.py:223 - 正在下载GeckoDriver...
+2024-11-14 16:19:05,959 [ERROR] advanced_analyzer.py:232 - GeckoDriver安装失败: response body:
+{"message":"API rate limit exceeded for 203.211.106.161. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+request url:
+https://api.github.com/repos/mozilla/geckodriver/releases/tags/v0.33.0
+response headers:
+{'Date': 'Thu, 14 Nov 2024 03:19:08 GMT', 'Server': 'Varnish', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'deny', 'X-XSS-Protection': '1; mode=block', 'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'", 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Used, X-RateLimit-Resource, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset', 'Content-Type': 'application/json; charset=utf-8', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'X-GitHub-Media-Type': 'github.v3; format=json', 'X-RateLimit-Limit': '60', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1731555739', 'X-RateLimit-Resource': 'core', 'X-RateLimit-Used': '60', 'Content-Length': '281', 'X-GitHub-Request-Id': 'C39F:6FFFF:34E5A6:3885CE:67356C2C'}
+
+2024-11-14 16:19:05,960 [INFO] advanced_analyzer.py:146 - 开始初始化 Firefox WebDriver... (尝试 2/3)

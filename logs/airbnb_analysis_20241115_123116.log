@@ -1,0 +1,93 @@
+2024-11-15 12:31:16,848 [INFO] advanced_analyzer.py:362 - === 开始Airbnb数据收集程序 ===
+2024-11-15 12:31:17,021 [INFO] advanced_analyzer.py:99 - 成功读取 6 个房间ID
+2024-11-15 12:31:17,021 [INFO] advanced_analyzer.py:373 - 生成 6 个URL
+2024-11-15 12:31:17,021 [INFO] advanced_analyzer.py:377 - 创建数据目录: data/airbnb_data_20241115_123117
+2024-11-15 12:31:17,021 [INFO] advanced_analyzer.py:231 - === 开始批量分析房源 ===
+2024-11-15 12:31:17,022 [INFO] advanced_analyzer.py:240 - 设置并发线程数: 1
+2024-11-15 12:31:17,050 [INFO] bit_browser_manager.py:47 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 38384,
+    "fa23ba7669ce4064b2fafb611daa22a3": 23592
+  }
+}
+2024-11-15 12:31:17,051 [INFO] bit_browser_manager.py:55 - 找到活动浏览器 ID: cf51683770d94ff3931408fce73c90f3, PID: 38384
+2024-11-15 12:31:17,054 [INFO] bit_browser_manager.py:151 - 打开浏览器响应: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:65290/devtools/browser/8e2a4401-b538-4ed7-8dc2-3c135d6a2d3c",
+    "http": "127.0.0.1:65290",
+    "coreVersion": "126",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\126\\chromedriver.exe",
+    "seq": 1,
+    "name": "",
+    "remark": "",
+    "pid": 38384
+  }
+}
+2024-11-15 12:31:17,054 [INFO] bit_browser_manager.py:158 - 调试地址: 127.0.0.1:65290
+2024-11-15 12:31:17,054 [INFO] bit_browser_manager.py:159 - Driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\126\chromedriver.exe
+2024-11-15 12:31:17,636 [INFO] bit_browser_manager.py:182 - 正在导航到: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:31:17,819 [INFO] bit_browser_manager.py:184 - 成功加载页面: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:31:22,820 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:31:22,820 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:31:22,942 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:31:22,965 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:32:23,151 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 12:32:23,155 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 12:32:24,155 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 12:32:24,292 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 12:32:44,417 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 12:32:44,428 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-15 12:32:44,534 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-15 12:32:44,535 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-15 12:32:44,535 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-15 12:32:44,535 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-15 12:32:44,536 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-15 12:32:44,536 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 12:32:44,536 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 837352260137971048
+2024-11-15 12:32:44,536 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_837352260137971048_20241115_123244.xlsx
+2024-11-15 12:32:44,536 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-15 12:32:44,563 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_837352260137971048_20241115_123244.xlsx
+2024-11-15 12:32:44,563 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 9.17 KB
+2024-11-15 12:32:44,563 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_837352260137971048_20241115_123244.xlsx
+2024-11-15 12:32:44,563 [INFO] advanced_analyzer.py:205 - 成功获取日历数据: 123 条记录
+2024-11-15 12:32:44,563 [INFO] price_checker.py:409 - 开始检查房源价格: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:32:44,563 [INFO] price_checker.py:402 - 找到 37 个可预订日期
+2024-11-15 12:32:44,563 [INFO] price_checker.py:425 - [1/37] 处理日期: 11/18/2024
+2024-11-15 12:32:44,563 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:32:44,563 [INFO] price_checker.py:255 - 入住日期: 11/18/2024
+2024-11-15 12:32:44,564 [INFO] price_checker.py:272 - 转换后的日期格式: 2024-11-18
+2024-11-15 12:32:44,564 [INFO] price_checker.py:280 - 访问URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-18
+2024-11-15 12:33:37,714 [INFO] price_checker.py:431 - ✓ 成功获取 11/18/2024 的价格信息
+2024-11-15 12:33:37,714 [INFO] price_checker.py:425 - [2/37] 处理日期: 11/27/2024
+2024-11-15 12:33:37,714 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:33:37,714 [INFO] price_checker.py:255 - 入住日期: 11/27/2024
+2024-11-15 12:33:37,714 [INFO] price_checker.py:272 - 转换后的日期格式: 2024-11-27
+2024-11-15 12:33:37,714 [INFO] price_checker.py:280 - 访问URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-27
+2024-11-15 12:34:30,762 [INFO] price_checker.py:431 - ✓ 成功获取 11/27/2024 的价格信息
+2024-11-15 12:34:30,762 [INFO] price_checker.py:425 - [3/37] 处理日期: 11/28/2024
+2024-11-15 12:34:30,762 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:34:30,762 [INFO] price_checker.py:255 - 入住日期: 11/28/2024
+2024-11-15 12:34:30,762 [INFO] price_checker.py:272 - 转换后的日期格式: 2024-11-28
+2024-11-15 12:34:30,762 [INFO] price_checker.py:280 - 访问URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-28
+2024-11-15 12:35:23,891 [INFO] price_checker.py:431 - ✓ 成功获取 11/28/2024 的价格信息
+2024-11-15 12:35:23,891 [INFO] price_checker.py:425 - [4/37] 处理日期: 11/29/2024
+2024-11-15 12:35:23,891 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:35:23,891 [INFO] price_checker.py:255 - 入住日期: 11/29/2024
+2024-11-15 12:35:23,892 [INFO] price_checker.py:272 - 转换后的日期格式: 2024-11-29
+2024-11-15 12:35:23,892 [INFO] price_checker.py:280 - 访问URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-29
+2024-11-15 12:36:16,291 [INFO] price_checker.py:431 - ✓ 成功获取 11/29/2024 的价格信息
+2024-11-15 12:36:16,291 [INFO] price_checker.py:425 - [5/37] 处理日期: 11/30/2024
+2024-11-15 12:36:16,291 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:36:16,291 [INFO] price_checker.py:255 - 入住日期: 11/30/2024
+2024-11-15 12:36:16,291 [INFO] price_checker.py:272 - 转换后的日期格式: 2024-11-30
+2024-11-15 12:36:16,291 [INFO] price_checker.py:280 - 访问URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-30
+2024-11-15 12:37:08,850 [INFO] price_checker.py:431 - ✓ 成功获取 11/30/2024 的价格信息
+2024-11-15 12:37:08,850 [INFO] price_checker.py:445 - 已完成 5/37 个日期的处理
+2024-11-15 12:37:11,850 [INFO] price_checker.py:425 - [6/37] 处理日期: 12/01/2024
+2024-11-15 12:37:11,850 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:37:11,850 [INFO] price_checker.py:255 - 入住日期: 12/01/2024
+2024-11-15 12:37:11,850 [INFO] price_checker.py:272 - 转换后的日期格式: 2024-12-01
+2024-11-15 12:37:11,851 [INFO] price_checker.py:280 - 访问URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-01

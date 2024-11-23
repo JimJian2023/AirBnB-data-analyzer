@@ -1,0 +1,90 @@
+2024-11-15 12:04:17,496 [INFO] advanced_analyzer.py:357 - === 开始Airbnb数据收集程序 ===
+2024-11-15 12:04:17,667 [INFO] advanced_analyzer.py:99 - 成功读取 6 个房间ID
+2024-11-15 12:04:17,667 [INFO] advanced_analyzer.py:368 - 生成 6 个URL
+2024-11-15 12:04:17,667 [INFO] advanced_analyzer.py:372 - 创建数据目录: data/airbnb_data_20241115_120417
+2024-11-15 12:04:17,668 [INFO] advanced_analyzer.py:231 - === 开始批量分析房源 ===
+2024-11-15 12:04:17,668 [INFO] advanced_analyzer.py:240 - 设置并发线程数: 3
+2024-11-15 12:04:17,700 [INFO] bit_browser_manager.py:43 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 32188
+  }
+}
+2024-11-15 12:04:17,700 [INFO] bit_browser_manager.py:51 - 找到活动浏览器 ID: cf51683770d94ff3931408fce73c90f3, PID: 32188
+2024-11-15 12:04:17,705 [INFO] bit_browser_manager.py:43 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 32188
+  }
+}
+2024-11-15 12:04:17,705 [INFO] bit_browser_manager.py:51 - 找到活动浏览器 ID: cf51683770d94ff3931408fce73c90f3, PID: 32188
+2024-11-15 12:04:17,705 [INFO] bit_browser_manager.py:117 - 打开浏览器响应: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:60561/devtools/browser/be8befb9-64d5-4035-a62a-8893a8ded032",
+    "http": "127.0.0.1:60561",
+    "coreVersion": "126",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\126\\chromedriver.exe",
+    "seq": 1,
+    "name": "",
+    "remark": "",
+    "pid": 32188
+  }
+}
+2024-11-15 12:04:17,706 [INFO] bit_browser_manager.py:124 - 调试地址: 127.0.0.1:60561
+2024-11-15 12:04:17,706 [INFO] bit_browser_manager.py:125 - Driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\126\chromedriver.exe
+2024-11-15 12:04:17,708 [INFO] bit_browser_manager.py:43 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 32188
+  }
+}
+2024-11-15 12:04:17,709 [INFO] bit_browser_manager.py:117 - 打开浏览器响应: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:60561/devtools/browser/be8befb9-64d5-4035-a62a-8893a8ded032",
+    "http": "127.0.0.1:60561",
+    "coreVersion": "126",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\126\\chromedriver.exe",
+    "seq": 1,
+    "name": "",
+    "remark": "",
+    "pid": 32188
+  }
+}
+2024-11-15 12:04:17,709 [INFO] bit_browser_manager.py:51 - 找到活动浏览器 ID: cf51683770d94ff3931408fce73c90f3, PID: 32188
+2024-11-15 12:04:17,709 [INFO] bit_browser_manager.py:124 - 调试地址: 127.0.0.1:60561
+2024-11-15 12:04:17,709 [INFO] bit_browser_manager.py:125 - Driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\126\chromedriver.exe
+2024-11-15 12:04:17,711 [INFO] bit_browser_manager.py:117 - 打开浏览器响应: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:60561/devtools/browser/be8befb9-64d5-4035-a62a-8893a8ded032",
+    "http": "127.0.0.1:60561",
+    "coreVersion": "126",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\126\\chromedriver.exe",
+    "seq": 1,
+    "name": "",
+    "remark": "",
+    "pid": 32188
+  }
+}
+2024-11-15 12:04:17,712 [INFO] bit_browser_manager.py:124 - 调试地址: 127.0.0.1:60561
+2024-11-15 12:04:17,712 [INFO] bit_browser_manager.py:125 - Driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\126\chromedriver.exe
+2024-11-15 12:04:18,304 [INFO] bit_browser_manager.py:144 - 当前页面: chrome://settings/help
+2024-11-15 12:04:18,305 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:04:18,305 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:04:20,446 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:04:20,450 [INFO] bit_browser_manager.py:144 - 当前页面: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:04:20,450 [INFO] bit_browser_manager.py:144 - 当前页面: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:04:20,451 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:04:20,451 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/43435162
+2024-11-15 12:04:20,451 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:04:20,451 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/43435162
+2024-11-15 12:04:20,451 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:04:20,462 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:04:20,570 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:04:20,573 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:04:21,073 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成

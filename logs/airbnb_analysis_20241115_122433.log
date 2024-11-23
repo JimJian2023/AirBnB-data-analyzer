@@ -1,0 +1,40 @@
+2024-11-15 12:24:33,605 [INFO] advanced_analyzer.py:362 - === 开始Airbnb数据收集程序 ===
+2024-11-15 12:24:33,775 [INFO] advanced_analyzer.py:99 - 成功读取 6 个房间ID
+2024-11-15 12:24:33,775 [INFO] advanced_analyzer.py:373 - 生成 6 个URL
+2024-11-15 12:24:33,776 [INFO] advanced_analyzer.py:377 - 创建数据目录: data/airbnb_data_20241115_122433
+2024-11-15 12:24:33,776 [INFO] advanced_analyzer.py:231 - === 开始批量分析房源 ===
+2024-11-15 12:24:33,776 [INFO] advanced_analyzer.py:240 - 设置并发线程数: 1
+2024-11-15 12:24:33,804 [INFO] bit_browser_manager.py:47 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 31680,
+    "31a9dd5e4682492e93b471c7d0429739": 13856
+  }
+}
+2024-11-15 12:24:33,804 [INFO] bit_browser_manager.py:55 - 找到活动浏览器 ID: cf51683770d94ff3931408fce73c90f3, PID: 31680
+2024-11-15 12:24:33,807 [INFO] bit_browser_manager.py:151 - 打开浏览器响应: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:64147/devtools/browser/ad368a18-6d69-44f4-872a-1459059a9415",
+    "http": "127.0.0.1:64147",
+    "coreVersion": "126",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\126\\chromedriver.exe",
+    "seq": 1,
+    "name": "",
+    "remark": "",
+    "pid": 31680
+  }
+}
+2024-11-15 12:24:33,807 [INFO] bit_browser_manager.py:158 - 调试地址: 127.0.0.1:64147
+2024-11-15 12:24:33,807 [INFO] bit_browser_manager.py:159 - Driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\126\chromedriver.exe
+2024-11-15 12:24:34,392 [INFO] bit_browser_manager.py:182 - 正在导航到: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:24:34,518 [INFO] bit_browser_manager.py:184 - 成功加载页面: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:24:39,518 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:24:39,519 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:24:39,643 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:24:39,645 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:25:39,806 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 12:25:39,809 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 12:25:40,810 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 12:25:40,864 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功

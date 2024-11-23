@@ -1,0 +1,282 @@
+1731552322554	geckodriver	INFO	Listening on 127.0.0.1:63453
+1731552325614	mozrunner::runner	INFO	Running command: "C:\\P1731552326762	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 1" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilegIQt2S"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552326974	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552327088	Marionette	INFO	Listening on port 63488
+WebDriver BiDi listening on ws://127.0.0.1:63461
+Read port: 63488
+1731552327195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1731552329180	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "Exiting due to channel error.
+Exiting due to channel error.
+iting due to channel error.
+emote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileL3Wf8i"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552329391	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552329511	Marionette	INFO	Listening on port 63503
+WebDriver BiDi listening on ws://127.0.0.1:63479
+Read port: 63503
+1731552329635	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+Exiting due to channel error.
+Exiting due to channel error.
+31552344438	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 3" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileyLcrQp"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552344646	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552344758	Marionette	INFO	Listening on port 63534
+WebDriver BiDi listening on ws://127.0.0.1:63523
+Read port: 63534
+1731552344895	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+Exiting due to channel error.
+Exiting due to channel error.
+1731552457063	geckodriver	INFO	Listening on 127.0.0.1:63734
+1731552460113	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 5" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile9QAVgw"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552460656	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552460773	Marionette	INFO	Listening on port 63771
+WebDriver BiDi listening on ws://127.0.0.1:63735
+1731552464564	geckodriver	INFO	Listening on 127.0.0.1:63758
+1731552467612	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 4" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile2R3tcj"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552468165	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552468284	Marionette	INFO	Listening on port 63814
+WebDriver BiDi listening on ws://127.0.0.1:63759
+Read port: 63814
+1731552468393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+Exiting due to channel error.
+1731552474222	geckodriver	INFO	Listening on 127.0.0.1:63836
+1731552481303	geckodriver	INFO	Listening on 127.0.0.1:63846
+1731552485993	geckodriver	INFO	Listening on 127.0.0.1:63857
+1731552489045	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 8" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileVDUJlj"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552489260	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552489376	Marionette	INFO	Listening on port 63870
+WebDriver BiDi listening on ws://127.0.0.1:63858
+Read port: 63870
+1731552489475	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+Exiting due to channel error.
+1731552500437	geckodriver	INFO	Listening on 127.0.0.1:63899
+1731552503484	mozrunner::runner	INFO	Running command: "C:\\P1731552504676	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile0lbxFw"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552504881	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552504993	Marionette	INFO	Listening on port 63933
+WebDriver BiDi listening on ws://127.0.0.1:63910
+Read port: 63933
+1731552505105	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not Exiting due to channel error.
+ing back to window prompt."
+1731552524400	geckodriver	INFO	Listening on 127.0.0.1:63966
+1731552553348	geckodriver	INFO	Listening on 127.0.0.1:64008
+1731552556401	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 9" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileaNnHF7"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552556609	Marionette	INFO	Marionette enabled
+1731552560808	geckodriver	INFO	Listening on 127.0.0.1:64024
+idth"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552556723	Marionette	INFO	Listening on port 64023
+WebDriver BiDi listening on ws://127.0.0.1:64009
+Read port: 64023
+1731552556860	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+Exiting due to channel error.
+Exiting due to channel error.
+1731552581601	geckodriver	INFO	Listening on 127.0.0.1:64059
+1731552584646	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileHGafX6"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552584846	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552584958	Marionette	INFO	Listening on port 64071
+WebDriver BiDi listening on ws://127.0.0.1:64060
+Read port: 64071
+1731552585095	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+Exiting due to channel error.
+1731552761288	geckodriver	INFO	Listening on 127.0.0.1:64202
+1731552764331	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 3" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilemNPEMB"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731552764550	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731552764666	Marionette	INFO	Listening on port 64213
+WebDriver BiDi listening on ws://127.0.0.1:64203
+Read port: 64213
+1731552764761	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:64203/devtools/browser/42c4afcc-2895-4d60-b48e-ce23b2804c92
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+1731552765377	Marionette	INFO	Stopped listening on port 64213
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 718: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=19fff8c3000"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 718: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=19fff8c3500"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 718: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=19fff8c3a00"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1731553071621	geckodriver	INFO	Listening on 127.0.0.1:64465
+1731553074672	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileHPxPlN"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731553074879	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731553074992	Marionette	INFO	Listening on port 64474
+WebDriver BiDi listening on ws://127.0.0.1:64466
+Read port: 64474
+1731553075130	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+Exiting due to channel error.
+Exiting due to channel error.
+1731553154709	geckodriver	INFO	Listening on 127.0.0.1:64535
+1731553157757	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofiler4aGMu"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731553157964	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731553158082	Marionette	INFO	Listening on port 64553
+WebDriver BiDi listening on ws://127.0.0.1:64536
+Read port: 64553
+1731553158182	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+1731553235477	geckodriver	INFO	Listening on 127.0.0.1:64629
+1731553238532	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileFQjoIk"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731553238738	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731553238857	Marionette	INFO	Listening on port 64637
+WebDriver BiDi listening on ws://127.0.0.1:64630
+Read port: 64637
+1731553238959	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+Exiting due to channel error.
+Exiting due to channel error.
+1731553350324	geckodriver	INFO	Listening on 127.0.0.1:64834
+1731553370118	geckodriver	INFO	Listening on 127.0.0.1:64847
+1731553373163	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 8" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilevrdzD4"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731553373395	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731553373515	Marionette	INFO	Listening on port 64861
+WebDriver BiDi listening on ws://127.0.0.1:64848
+Read port: 64861
+1731553373614	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+Exiting due to channel error.
+1731553715653	geckodriver	INFO	Listening on 127.0.0.1:65250
+1731553718708	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 1" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileye2Bpg"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731553718911	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+WebDriver BiDi listening on ws://localhost:65251
+1731553719027	Marionette	INFO	Listening on port 65259
+Read port: 65259
+1731553719162	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://localhost:65251/devtools/browser/1693d484-6952-4a8a-aa28-66bb790fc066
+1731553720858	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731553722084	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731553723291	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731553723333	Marionette	INFO	Stopped listening on port 65259
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  main/fingerprinting-protection-overrides Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+1731553748834	geckodriver	INFO	Listening on 127.0.0.1:65367

@@ -1,0 +1,344 @@
+2024-11-15 13:18:57,503 [INFO] advanced_analyzer.py:391 - === 开始Airbnb数据收集程序 ===
+2024-11-15 13:18:57,682 [INFO] advanced_analyzer.py:100 - 成功读取 6 个房间ID
+2024-11-15 13:18:57,682 [INFO] advanced_analyzer.py:402 - 生成 6 个URL
+2024-11-15 13:18:57,683 [INFO] advanced_analyzer.py:406 - 创建数据目录: data/airbnb_data_20241115_131857
+2024-11-15 13:18:57,683 [INFO] advanced_analyzer.py:232 - === 开始批量分析房源 ===
+2024-11-15 13:18:57,683 [INFO] advanced_analyzer.py:241 - 设置并发线程数: 3
+2024-11-15 13:18:57,712 [INFO] bit_browser_manager.py:38 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "fa23ba7669ce4064b2fafb611daa22a3": 23592,
+    "cf51683770d94ff3931408fce73c90f3": 38604,
+    "cd272b4525344db49309c826255465b8": 26068
+  }
+}
+2024-11-15 13:19:01,680 [INFO] bit_browser_manager.py:63 - 找到 3 个活动浏览器
+2024-11-15 13:19:01,680 [INFO] advanced_analyzer.py:257 - 
+=== 可用的浏览器实例 ===
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:259 - ID: fa23ba7669ce4064b2fafb611daa22a3
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:260 - 名称: _1
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:261 - 备注: 
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:262 - PID: 23592
+
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:259 - ID: cf51683770d94ff3931408fce73c90f3
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:260 - 名称: 
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:261 - 备注: 
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:262 - PID: 38604
+
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:259 - ID: cd272b4525344db49309c826255465b8
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:260 - 名称: _2
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:261 - 备注: 
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:262 - PID: 26068
+
+2024-11-15 13:19:01,681 [INFO] advanced_analyzer.py:275 - 线程 40948 使用浏览器 fa23ba7669ce4064b2fafb611daa22a3
+2024-11-15 13:19:01,682 [INFO] advanced_analyzer.py:275 - 线程 35008 使用浏览器 cf51683770d94ff3931408fce73c90f3
+2024-11-15 13:19:01,682 [INFO] advanced_analyzer.py:275 - 线程 38168 使用浏览器 cd272b4525344db49309c826255465b8
+2024-11-15 13:19:02,797 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:19:02,828 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:19:02,828 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:19:02,967 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:19:02,967 [INFO] advanced_analyzer.py:197 - 
+开始分析房源: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:19:02,967 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:19:03,005 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:19:03,005 [INFO] advanced_analyzer.py:197 - 
+开始分析房源: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:19:03,006 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:19:03,060 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 13:19:03,064 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 13:19:03,113 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 13:19:03,117 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 13:19:03,135 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:19:03,135 [INFO] advanced_analyzer.py:197 - 
+开始分析房源: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:19:03,135 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:19:03,281 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 13:19:03,283 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 13:20:03,267 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 13:20:03,270 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 13:20:03,314 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 13:20:03,317 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 13:20:03,470 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 13:20:03,473 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 13:20:04,270 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 13:20:04,317 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 13:20:04,320 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 13:20:04,472 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 13:20:04,474 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 13:20:04,623 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 13:20:24,416 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 13:20:24,427 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-15 13:20:24,545 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-15 13:20:24,546 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-15 13:20:24,546 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-15 13:20:24,547 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-15 13:20:24,547 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-15 13:20:24,547 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 13:20:24,547 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 837352260137971048
+2024-11-15 13:20:24,547 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_837352260137971048_20241115_132024.xlsx
+2024-11-15 13:20:24,547 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-15 13:20:24,574 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_837352260137971048_20241115_132024.xlsx
+2024-11-15 13:20:24,575 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 9.17 KB
+2024-11-15 13:20:24,575 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_837352260137971048_20241115_132024.xlsx
+2024-11-15 13:20:24,575 [INFO] advanced_analyzer.py:206 - 成功获取日历数据: 123 条记录
+2024-11-15 13:20:24,575 [INFO] price_checker.py:537 - 开始检查房源价格: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:20:24,575 [INFO] price_checker.py:530 - 找到 37 个可预订日期
+2024-11-15 13:20:24,575 [INFO] price_checker.py:553 - [1/37] 处理日期: 11/18/2024
+2024-11-15 13:20:24,575 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:20:24,575 [INFO] price_checker.py:255 - 入住日期: 11/18/2024
+2024-11-15 13:20:24,602 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 13:20:24,615 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-15 13:20:24,728 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-15 13:20:24,731 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-15 13:20:24,731 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-15 13:20:24,732 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-15 13:20:24,732 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-15 13:20:24,732 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 13:20:24,732 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 43435162
+2024-11-15 13:20:24,732 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_43435162_20241115_132024.xlsx
+2024-11-15 13:20:24,732 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-15 13:20:24,740 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 13:20:24,757 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-15 13:20:24,764 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_43435162_20241115_132024.xlsx
+2024-11-15 13:20:24,764 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 9.14 KB
+2024-11-15 13:20:24,764 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_43435162_20241115_132024.xlsx
+2024-11-15 13:20:24,764 [INFO] advanced_analyzer.py:206 - 成功获取日历数据: 123 条记录
+2024-11-15 13:20:24,765 [INFO] price_checker.py:537 - 开始检查房源价格: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:20:24,765 [INFO] price_checker.py:530 - 找到 39 个可预订日期
+2024-11-15 13:20:24,765 [INFO] price_checker.py:553 - [1/39] 处理日期: 11/17/2024
+2024-11-15 13:20:24,765 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:20:24,765 [INFO] price_checker.py:255 - 入住日期: 11/17/2024
+2024-11-15 13:20:24,871 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-15 13:20:24,872 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-15 13:20:24,872 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-15 13:20:24,872 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-15 13:20:24,872 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-15 13:20:24,873 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 13:20:24,873 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 830193102361409290
+2024-11-15 13:20:24,873 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_830193102361409290_20241115_132024.xlsx
+2024-11-15 13:20:24,873 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-15 13:20:24,901 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_830193102361409290_20241115_132024.xlsx
+2024-11-15 13:20:24,901 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 8.93 KB
+2024-11-15 13:20:24,902 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_830193102361409290_20241115_132024.xlsx
+2024-11-15 13:20:24,902 [INFO] advanced_analyzer.py:206 - 成功获取日历数据: 123 条记录
+2024-11-15 13:20:24,902 [INFO] price_checker.py:537 - 开始检查房源价格: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:20:24,902 [INFO] price_checker.py:530 - 找到 72 个可预订日期
+2024-11-15 13:20:24,902 [INFO] price_checker.py:553 - [1/72] 处理日期: 11/18/2024
+2024-11-15 13:20:24,902 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:20:24,902 [INFO] price_checker.py:255 - 入住日期: 11/18/2024
+2024-11-15 13:20:29,700 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/18/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:29,700 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:29,701 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/18/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:29,701 [WARNING] price_checker.py:569 - ✗ 获取 11/18/2024 的价格信息失败
+2024-11-15 13:20:29,701 [INFO] price_checker.py:553 - [2/37] 处理日期: 11/27/2024
+2024-11-15 13:20:29,701 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:20:29,702 [INFO] price_checker.py:255 - 入住日期: 11/27/2024
+2024-11-15 13:20:29,899 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/17/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:29,899 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:29,900 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/17/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:29,900 [WARNING] price_checker.py:569 - ✗ 获取 11/17/2024 的价格信息失败
+2024-11-15 13:20:29,900 [INFO] price_checker.py:553 - [2/39] 处理日期: 11/18/2024
+2024-11-15 13:20:29,900 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:20:29,900 [INFO] price_checker.py:255 - 入住日期: 11/18/2024
+2024-11-15 13:20:30,034 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/18/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:30,034 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:30,035 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/18/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:30,035 [WARNING] price_checker.py:569 - ✗ 获取 11/18/2024 的价格信息失败
+2024-11-15 13:20:30,035 [INFO] price_checker.py:553 - [2/72] 处理日期: 11/19/2024
+2024-11-15 13:20:30,035 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:20:30,036 [INFO] price_checker.py:255 - 入住日期: 11/19/2024
+2024-11-15 13:20:34,789 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/27/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:34,790 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:34,790 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/27/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:34,790 [WARNING] price_checker.py:569 - ✗ 获取 11/27/2024 的价格信息失败
+2024-11-15 13:20:34,791 [INFO] price_checker.py:553 - [3/37] 处理日期: 11/28/2024
+2024-11-15 13:20:34,791 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:20:34,791 [INFO] price_checker.py:255 - 入住日期: 11/28/2024
+2024-11-15 13:20:35,005 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/18/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:35,005 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:35,006 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/18/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:35,006 [WARNING] price_checker.py:569 - ✗ 获取 11/18/2024 的价格信息失败
+2024-11-15 13:20:35,006 [INFO] price_checker.py:553 - [3/39] 处理日期: 11/19/2024
+2024-11-15 13:20:35,006 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:20:35,006 [INFO] price_checker.py:255 - 入住日期: 11/19/2024
+2024-11-15 13:20:35,138 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/19/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:35,138 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:35,139 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/19/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:35,139 [WARNING] price_checker.py:569 - ✗ 获取 11/19/2024 的价格信息失败
+2024-11-15 13:20:35,139 [INFO] price_checker.py:553 - [3/72] 处理日期: 11/20/2024
+2024-11-15 13:20:35,139 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:20:35,140 [INFO] price_checker.py:255 - 入住日期: 11/20/2024
+2024-11-15 13:20:39,921 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/28/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:39,921 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:39,922 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/28/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:39,922 [WARNING] price_checker.py:569 - ✗ 获取 11/28/2024 的价格信息失败
+2024-11-15 13:20:39,922 [INFO] price_checker.py:553 - [4/37] 处理日期: 11/29/2024
+2024-11-15 13:20:39,922 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:20:39,922 [INFO] price_checker.py:255 - 入住日期: 11/29/2024
+2024-11-15 13:20:40,124 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/19/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:40,125 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:40,125 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/19/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:40,125 [WARNING] price_checker.py:569 - ✗ 获取 11/19/2024 的价格信息失败
+2024-11-15 13:20:40,125 [INFO] price_checker.py:553 - [4/39] 处理日期: 11/20/2024
+2024-11-15 13:20:40,125 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:20:40,126 [INFO] price_checker.py:255 - 入住日期: 11/20/2024
+2024-11-15 13:20:40,274 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/20/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:40,275 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:40,275 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/20/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:40,275 [WARNING] price_checker.py:569 - ✗ 获取 11/20/2024 的价格信息失败
+2024-11-15 13:20:40,275 [INFO] price_checker.py:553 - [4/72] 处理日期: 11/21/2024
+2024-11-15 13:20:40,276 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:20:40,276 [INFO] price_checker.py:255 - 入住日期: 11/21/2024
+2024-11-15 13:20:45,012 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/29/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:45,012 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:45,013 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/29/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:45,013 [WARNING] price_checker.py:569 - ✗ 获取 11/29/2024 的价格信息失败
+2024-11-15 13:20:45,014 [INFO] price_checker.py:553 - [5/37] 处理日期: 11/30/2024
+2024-11-15 13:20:45,014 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:20:45,014 [INFO] price_checker.py:255 - 入住日期: 11/30/2024
+2024-11-15 13:20:45,264 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/20/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:45,264 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:45,265 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/20/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:45,265 [WARNING] price_checker.py:569 - ✗ 获取 11/20/2024 的价格信息失败
+2024-11-15 13:20:45,265 [INFO] price_checker.py:553 - [5/39] 处理日期: 11/21/2024
+2024-11-15 13:20:45,265 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:20:45,265 [INFO] price_checker.py:255 - 入住日期: 11/21/2024
+2024-11-15 13:20:45,411 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: time data '11/21/2024' does not match format '%d/%m/%Y'
+2024-11-15 13:20:45,411 [ERROR] price_checker.py:463 - 错误详情: ValueError
+2024-11-15 13:20:45,412 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 263, in get_price_info
+    date_str = datetime.strptime(checkin_date, '%d/%m/%Y').strftime('%d/%m/%Y')
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 573, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+                     (data_string, format))
+ValueError: time data '11/21/2024' does not match format '%d/%m/%Y'
+
+2024-11-15 13:20:45,412 [WARNING] price_checker.py:569 - ✗ 获取 11/21/2024 的价格信息失败
+2024-11-15 13:20:45,412 [INFO] price_checker.py:553 - [5/72] 处理日期: 11/22/2024
+2024-11-15 13:20:45,412 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:20:45,412 [INFO] price_checker.py:255 - 入住日期: 11/22/2024

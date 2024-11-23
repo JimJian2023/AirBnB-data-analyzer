@@ -1,0 +1,308 @@
+2024-11-14 09:58:56,586 [INFO] advanced_analyzer.py:235 - === 开始Airbnb数据收集程序 ===
+2024-11-14 09:58:56,802 [INFO] advanced_analyzer.py:36 - 成功读取 6 个房间ID
+2024-11-14 09:58:56,802 [INFO] advanced_analyzer.py:246 - 生成 6 个URL
+2024-11-14 09:58:56,802 [INFO] advanced_analyzer.py:250 - 创建数据目录: data/airbnb_data_20241114_095856
+2024-11-14 09:58:56,803 [INFO] advanced_analyzer.py:137 - === 开始批量分析房源 ===
+2024-11-14 09:59:04,375 [INFO] advanced_analyzer.py:89 - Firefox WebDriver 初始化成功
+2024-11-14 09:59:04,375 [INFO] advanced_analyzer.py:150 - 
+处理第 1/6 个房源
+2024-11-14 09:59:04,375 [INFO] advanced_analyzer.py:102 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-14 09:59:04,375 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-14 09:59:05,304 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-14 09:59:05,311 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-14 09:59:20,388 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-14 09:59:20,390 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-14 09:59:21,391 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-14 09:59:21,831 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-14 09:59:31,871 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-14 09:59:31,875 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-14 09:59:31,959 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-14 09:59:31,960 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-14 09:59:31,960 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-14 09:59:31,961 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-14 09:59:31,961 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-14 09:59:31,961 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-14 09:59:31,961 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 837352260137971048
+2024-11-14 09:59:31,961 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_837352260137971048_20241114_095931.xlsx
+2024-11-14 09:59:31,962 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-14 09:59:31,992 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_837352260137971048_20241114_095931.xlsx
+2024-11-14 09:59:31,992 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 9.12 KB
+2024-11-14 09:59:31,992 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_837352260137971048_20241114_095931.xlsx
+2024-11-14 09:59:31,993 [INFO] advanced_analyzer.py:111 - 成功获取日历数据: 123 条记录
+2024-11-14 09:59:31,993 [INFO] price_checker.py:537 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-14 09:59:31,993 [INFO] price_checker.py:530 - 找到 37 个可预订日期
+2024-11-14 09:59:31,993 [INFO] price_checker.py:553 - [1/37] 处理日期: 18/11/2024
+2024-11-14 09:59:31,993 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-14 09:59:31,993 [INFO] price_checker.py:255 - 入住日期: 18/11/2024
+2024-11-14 09:59:37,169 [INFO] price_checker.py:271 - 开始检查日期 18/11/2024 的最小入住要求...
+2024-11-14 09:59:37,216 [INFO] price_checker.py:152 - 初始元素HTML: <td class="_sl5yz7r" style="width: 42px; height: 42px;" role="button" aria-disabled="false" aria-label="18, Monday, November 2024. Available There is a 1 night minimum stay requirement. Select as check-in date. " tabindex="0"><div class="_1xnkk5ra notranslate" data-testid="calendar-day-18/11/2024" data-is-day-blocked="false" style="width: 42px; height: 42px;">18</div></td>
+2024-11-14 09:59:37,219 [INFO] price_checker.py:158 - 找到日期: 18/11/2024
+2024-11-14 09:59:37,219 [INFO] price_checker.py:164 - 点击日期元素...
+2024-11-14 09:59:38,575 [INFO] price_checker.py:174 - 移动到日期元素...
+2024-11-14 09:59:39,869 [INFO] price_checker.py:210 - 更新后元素HTML: <td class="_5v1jabe" style="width: 42px; height: 42px;" role="button" aria-disabled="true" aria-label="18, Monday, November 2024. Selected check-in date There is a 2 night minimum stay requirement. " tabindex="0"><div class="_h84ua7"><div class="_d82cel" style="transform: translateY(-100%) translateY(-12px);"><div class="_1mslrl4"><div class="_u7azij">2-night minimum</div><svg role="presentation" focusable="false" class="_8c7xtno" style="left: 10px;"><path class="_1s2t3cl" d="M0,0 20,0 10,10z"></path><path class="_c3dsty" d="M0,0 10,10 20,0"></path></svg></div></div><div class="_17slido1 notranslate" data-testid="calendar-day-18/11/2024" data-is-day-blocked="true" style="width: 42px; height: 42px;">18</div></div></td>
+2024-11-14 09:59:39,875 [INFO] price_checker.py:217 - 更新后元素属性:
+2024-11-14 09:59:39,875 [INFO] price_checker.py:218 - - aria-label: 18, Monday, November 2024. Selected check-in date There is a 2 night minimum stay requirement. 
+2024-11-14 09:59:39,875 [INFO] price_checker.py:219 - - aria-disabled: true
+2024-11-14 09:59:39,875 [INFO] price_checker.py:220 - - data-is-day-blocked: None
+2024-11-14 09:59:39,875 [INFO] price_checker.py:235 - ✓ 成功找到最小入住要求: 2晚 (匹配模式: (\d+)\s*night minimum stay)
+2024-11-14 09:59:39,876 [INFO] price_checker.py:273 - 最终使用的最小入住天数: 2晚 (自动检测)
+2024-11-14 09:59:39,876 [INFO] price_checker.py:296 - 访问URL: https://www.airbnb.co.nz/rooms/837352260137971048?check_in=2024-11-18&check_out=2024-11-20&adults=3&children=0&infants=0
+2024-11-14 09:59:45,017 [INFO] price_checker.py:303 - 检查页面状态...
+2024-11-14 09:59:45,019 [INFO] price_checker.py:305 - 页面状态: complete
+2024-11-14 09:59:47,024 [INFO] price_checker.py:318 - 价格容器已加载并可见
+2024-11-14 09:59:47,024 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-14 09:59:47,026 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-14 09:59:47,026 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-14 09:59:47,027 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-14 09:59:47,028 [INFO] price_checker.py:327 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-14 09:59:47,029 [INFO] price_checker.py:332 - 找到 1 个价格元素
+2024-11-14 09:59:47,045 [INFO] price_checker.py:337 - 找到可见价格元素: $321 NZD 
+$283 NZD 
+night
+$283 NZD per night, originally $321 NZD
+2024-11-14 09:59:47,055 [INFO] price_checker.py:350 - 找到每晚价格元素: $321 NZD 
+$283 NZD 
+night
+$283 NZD per night, originally $321 NZD
+2024-11-14 09:59:47,055 [INFO] price_checker.py:356 - 成功解析折扣价格: $283 NZD
+2024-11-14 09:59:47,055 [INFO] price_checker.py:369 - 开始获取价格详情...
+2024-11-14 09:59:47,056 [INFO] price_checker.py:377 - 价格详情容器已加载
+2024-11-14 09:59:47,558 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 09:59:47,560 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 09:59:47,564 [INFO] price_checker.py:403 - 找到价格元素: $59 NZD (HTML: <span class="_1k4xcdh">$59&nbsp;NZD</span>)
+2024-11-14 09:59:47,564 [INFO] price_checker.py:408 - ✓ 成功设置清洁费: $59 NZD
+2024-11-14 09:59:47,564 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 09:59:47,565 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 09:59:47,570 [INFO] price_checker.py:403 - 找到价格元素: $59 NZD (HTML: <span class="_1k4xcdh">$59&nbsp;NZD</span>)
+2024-11-14 09:59:47,570 [INFO] price_checker.py:408 - ✓ 成功设置清洁费: $59 NZD
+2024-11-14 09:59:47,570 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 09:59:47,572 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 09:59:47,576 [INFO] price_checker.py:403 - 找到价格元素: $87 NZD (HTML: <span class="_1k4xcdh">$87&nbsp;NZD</span>)
+2024-11-14 09:59:47,576 [INFO] price_checker.py:412 - ✓ 成功设置服务费: $87 NZD
+2024-11-14 09:59:47,576 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 09:59:47,577 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 09:59:47,581 [INFO] price_checker.py:403 - 找到价格元素: $87 NZD (HTML: <span class="_1k4xcdh">$87&nbsp;NZD</span>)
+2024-11-14 09:59:47,581 [INFO] price_checker.py:412 - ✓ 成功设置服务费: $87 NZD
+2024-11-14 09:59:47,581 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 09:59:47,582 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 09:59:47,587 [INFO] price_checker.py:403 - 找到价格元素: $81 NZD (HTML: <span class="_1k4xcdh">$81&nbsp;NZD</span>)
+2024-11-14 09:59:47,587 [INFO] price_checker.py:416 - ✓ 成功设置税费: $81 NZD
+2024-11-14 09:59:47,587 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 09:59:49,596 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-14 09:59:49,598 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 09:59:49,604 [INFO] price_checker.py:403 - 找到价格元素: $705 NZD (HTML: <span class="_j1kt73">$705&nbsp;NZD</span>)
+2024-11-14 09:59:49,604 [INFO] price_checker.py:420 - ✓ 成功设置总价: $705 NZD
+2024-11-14 09:59:49,604 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-14 09:59:49,606 [INFO] price_checker.py:398 - 找到 3 个匹配元素
+2024-11-14 09:59:49,610 [INFO] price_checker.py:403 - 找到价格元素: $705 NZD (HTML: <span aria-hidden="false"><span class="_j1kt73">$705&nbsp;NZD</span></span>)
+2024-11-14 09:59:49,610 [INFO] price_checker.py:420 - ✓ 成功设置总价: $705 NZD
+2024-11-14 09:59:49,613 [INFO] price_checker.py:403 - 找到价格元素: $705 NZD (HTML: <span class="_j1kt73">$705&nbsp;NZD</span>)
+2024-11-14 09:59:49,614 [INFO] price_checker.py:420 - ✓ 成功设置总价: $705 NZD
+2024-11-14 09:59:49,617 [INFO] price_checker.py:403 - 找到价格元素:  (HTML: <span class="a8jt5op atm_3f_idpfg4 atm_7h_hxbz6r atm_7i_ysn8ba atm_e2_t94yts atm_ks_zryt35 atm_l8_idpfg4 atm_mk_stnw88 atm_vv_1q9ccgz atm_vy_t94yts dir dir-ltr"></span>)
+2024-11-14 09:59:49,617 [INFO] price_checker.py:420 - ✓ 成功设置总价: 
+2024-11-14 09:59:49,617 [INFO] price_checker.py:446 - 验证价格信息完整性:
+2024-11-14 09:59:49,617 [INFO] price_checker.py:450 - ✓ cleaning_fee: $59 NZD
+2024-11-14 09:59:49,617 [INFO] price_checker.py:450 - ✓ service_fee: $87 NZD
+2024-11-14 09:59:49,617 [INFO] price_checker.py:450 - ✓ taxes: $81 NZD
+2024-11-14 09:59:49,618 [WARNING] price_checker.py:452 - ✗ total 未获取到
+2024-11-14 09:59:49,618 [INFO] price_checker.py:455 - 终价格信息获取结果:
+2024-11-14 09:59:49,618 [INFO] price_checker.py:457 - check_in: 18/11/2024
+2024-11-14 09:59:49,618 [INFO] price_checker.py:457 - check_out: 20/11/2024
+2024-11-14 09:59:49,618 [INFO] price_checker.py:457 - min_nights: 2
+2024-11-14 09:59:49,618 [INFO] price_checker.py:457 - guests: 3
+2024-11-14 09:59:49,618 [INFO] price_checker.py:457 - nightly_price: $283 NZD
+2024-11-14 09:59:49,618 [INFO] price_checker.py:457 - cleaning_fee: $59 NZD
+2024-11-14 09:59:49,618 [INFO] price_checker.py:457 - service_fee: $87 NZD
+2024-11-14 09:59:49,618 [INFO] price_checker.py:457 - taxes: $81 NZD
+2024-11-14 09:59:49,618 [INFO] price_checker.py:457 - total: 
+2024-11-14 09:59:49,618 [INFO] price_checker.py:559 - ✓ 成功获取 18/11/2024 的价格信息
+2024-11-14 09:59:49,619 [INFO] price_checker.py:565 - 根据最小入住要求(2晚)跳过接下来的 1 天
+2024-11-14 09:59:49,619 [INFO] price_checker.py:553 - [2/37] 处理日期: 27/11/2024
+2024-11-14 09:59:49,619 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-14 09:59:49,619 [INFO] price_checker.py:255 - 入住日期: 27/11/2024
+2024-11-14 09:59:54,768 [INFO] price_checker.py:271 - 开始检查日期 27/11/2024 的最小入住要求...
+2024-11-14 09:59:54,771 [INFO] price_checker.py:152 - 初始元素HTML: <td class="_2byvyib" style="width: 42px; height: 42px;" role="button" aria-disabled="false" aria-label="27, Wednesday, November 2024. Available There is a 1 night minimum stay requirement. Select as check-in date. " tabindex="-1"><div class="_697u988 notranslate" data-testid="calendar-day-27/11/2024" data-is-day-blocked="false" style="width: 42px; height: 42px;">27</div></td>
+2024-11-14 09:59:54,774 [INFO] price_checker.py:158 - 找到日期: 27/11/2024
+2024-11-14 09:59:54,775 [INFO] price_checker.py:164 - 点击日期元素...
+2024-11-14 09:59:56,121 [INFO] price_checker.py:174 - 移动到日期元素...
+2024-11-14 09:59:57,404 [INFO] price_checker.py:210 - 更新后元素HTML: <td class="_1fmu67uy" style="width: 42px; height: 42px;" role="button" aria-disabled="true" aria-label="27, Wednesday, November 2024. Selected check-in date There is a 3 night minimum stay requirement. " tabindex="-1"><div class="_h84ua7"><div class="_d82cel" style="transform: translate(-50%, -100%) translate(21px, -12px);"><div class="_1mslrl4"><div class="_u7azij">3-night minimum</div><svg role="presentation" focusable="false" class="_1mjga4hj"><path class="_1s2t3cl" d="M0,0 20,0 10,10z"></path><path class="_c3dsty" d="M0,0 10,10 20,0"></path></svg></div></div><div class="_194zlzjz notranslate" data-testid="calendar-day-27/11/2024" data-is-day-blocked="true" style="width: 42px; height: 42px;">27</div></div></td>
+2024-11-14 09:59:57,411 [INFO] price_checker.py:217 - 更新后元素属性:
+2024-11-14 09:59:57,411 [INFO] price_checker.py:218 - - aria-label: 27, Wednesday, November 2024. Selected check-in date There is a 3 night minimum stay requirement. 
+2024-11-14 09:59:57,412 [INFO] price_checker.py:219 - - aria-disabled: true
+2024-11-14 09:59:57,412 [INFO] price_checker.py:220 - - data-is-day-blocked: None
+2024-11-14 09:59:57,412 [INFO] price_checker.py:235 - ✓ 成功找到最小入住要求: 3晚 (匹配模式: (\d+)\s*night minimum stay)
+2024-11-14 09:59:57,412 [INFO] price_checker.py:273 - 最终使用的最小入住天数: 3晚 (自动检测)
+2024-11-14 09:59:57,412 [INFO] price_checker.py:296 - 访问URL: https://www.airbnb.co.nz/rooms/837352260137971048?check_in=2024-11-27&check_out=2024-11-30&adults=3&children=0&infants=0
+2024-11-14 10:00:02,549 [INFO] price_checker.py:303 - 检查页面状态...
+2024-11-14 10:00:02,551 [INFO] price_checker.py:305 - 页面状态: complete
+2024-11-14 10:00:04,555 [INFO] price_checker.py:318 - 价格容器已加载并可见
+2024-11-14 10:00:04,555 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-14 10:00:04,556 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-14 10:00:04,556 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-14 10:00:04,558 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-14 10:00:04,558 [INFO] price_checker.py:327 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-14 10:00:04,559 [INFO] price_checker.py:332 - 找到 1 个价格元素
+2024-11-14 10:00:04,572 [INFO] price_checker.py:337 - 找到可见价格元素: $312 NZD 
+night
+$312 NZD per night
+2024-11-14 10:00:04,580 [INFO] price_checker.py:350 - 找到每晚价格元素: $312 NZD 
+night
+$312 NZD per night
+2024-11-14 10:00:04,580 [INFO] price_checker.py:356 - 成功解析折扣价格: $312 NZD
+2024-11-14 10:00:04,580 [INFO] price_checker.py:369 - 开始获取价格详情...
+2024-11-14 10:00:04,581 [INFO] price_checker.py:377 - 价格详情容器已加载
+2024-11-14 10:00:05,083 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:05,085 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:05,090 [INFO] price_checker.py:403 - 找到价格元素: $59 NZD (HTML: <span class="_1k4xcdh">$59&nbsp;NZD</span>)
+2024-11-14 10:00:05,090 [INFO] price_checker.py:408 - ✓ 成功设置清洁费: $59 NZD
+2024-11-14 10:00:05,090 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:05,092 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:05,099 [INFO] price_checker.py:403 - 找到价格元素: $59 NZD (HTML: <span class="_1k4xcdh">$59&nbsp;NZD</span>)
+2024-11-14 10:00:05,100 [INFO] price_checker.py:408 - ✓ 成功设置清洁费: $59 NZD
+2024-11-14 10:00:05,100 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:05,102 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:05,107 [INFO] price_checker.py:403 - 找到价格元素: $139 NZD (HTML: <span class="_1k4xcdh">$139&nbsp;NZD</span>)
+2024-11-14 10:00:05,107 [INFO] price_checker.py:412 - ✓ 成功设置服务费: $139 NZD
+2024-11-14 10:00:05,107 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:05,109 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:05,118 [INFO] price_checker.py:403 - 找到价格元素: $139 NZD (HTML: <span class="_1k4xcdh">$139&nbsp;NZD</span>)
+2024-11-14 10:00:05,118 [INFO] price_checker.py:412 - ✓ 成功设置服务费: $139 NZD
+2024-11-14 10:00:05,118 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:05,120 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:05,126 [INFO] price_checker.py:403 - 找到价格元素: $128 NZD (HTML: <span class="_1k4xcdh">$128&nbsp;NZD</span>)
+2024-11-14 10:00:05,126 [INFO] price_checker.py:416 - ✓ 成功设置税费: $128 NZD
+2024-11-14 10:00:05,126 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:07,137 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-14 10:00:07,138 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:07,143 [INFO] price_checker.py:403 - 找到价格元素: $1,123 NZD (HTML: <span class="_j1kt73">$1,123&nbsp;NZD</span>)
+2024-11-14 10:00:07,143 [INFO] price_checker.py:420 - ✓ 成功设置总价: $1,123 NZD
+2024-11-14 10:00:07,143 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-14 10:00:07,144 [INFO] price_checker.py:398 - 找到 3 个匹配元素
+2024-11-14 10:00:07,150 [INFO] price_checker.py:403 - 找到价格元素: $1,123 NZD (HTML: <span aria-hidden="false"><span class="_j1kt73">$1,123&nbsp;NZD</span></span>)
+2024-11-14 10:00:07,150 [INFO] price_checker.py:420 - ✓ 成功设置总价: $1,123 NZD
+2024-11-14 10:00:07,153 [INFO] price_checker.py:403 - 找到价格元素: $1,123 NZD (HTML: <span class="_j1kt73">$1,123&nbsp;NZD</span>)
+2024-11-14 10:00:07,154 [INFO] price_checker.py:420 - ✓ 成功设置总价: $1,123 NZD
+2024-11-14 10:00:07,157 [INFO] price_checker.py:403 - 找到价格元素:  (HTML: <span class="a8jt5op atm_3f_idpfg4 atm_7h_hxbz6r atm_7i_ysn8ba atm_e2_t94yts atm_ks_zryt35 atm_l8_idpfg4 atm_mk_stnw88 atm_vv_1q9ccgz atm_vy_t94yts dir dir-ltr"></span>)
+2024-11-14 10:00:07,157 [INFO] price_checker.py:420 - ✓ 成功设置总价: 
+2024-11-14 10:00:07,158 [INFO] price_checker.py:446 - 验证价格信息完整性:
+2024-11-14 10:00:07,158 [INFO] price_checker.py:450 - ✓ cleaning_fee: $59 NZD
+2024-11-14 10:00:07,158 [INFO] price_checker.py:450 - ✓ service_fee: $139 NZD
+2024-11-14 10:00:07,158 [INFO] price_checker.py:450 - ✓ taxes: $128 NZD
+2024-11-14 10:00:07,158 [WARNING] price_checker.py:452 - ✗ total 未获取到
+2024-11-14 10:00:07,158 [INFO] price_checker.py:455 - 终价格信息获取结果:
+2024-11-14 10:00:07,158 [INFO] price_checker.py:457 - check_in: 27/11/2024
+2024-11-14 10:00:07,158 [INFO] price_checker.py:457 - check_out: 30/11/2024
+2024-11-14 10:00:07,158 [INFO] price_checker.py:457 - min_nights: 3
+2024-11-14 10:00:07,158 [INFO] price_checker.py:457 - guests: 3
+2024-11-14 10:00:07,158 [INFO] price_checker.py:457 - nightly_price: $312 NZD
+2024-11-14 10:00:07,158 [INFO] price_checker.py:457 - cleaning_fee: $59 NZD
+2024-11-14 10:00:07,158 [INFO] price_checker.py:457 - service_fee: $139 NZD
+2024-11-14 10:00:07,158 [INFO] price_checker.py:457 - taxes: $128 NZD
+2024-11-14 10:00:07,158 [INFO] price_checker.py:457 - total: 
+2024-11-14 10:00:07,159 [INFO] price_checker.py:559 - ✓ 成功获取 27/11/2024 的价格信息
+2024-11-14 10:00:07,159 [INFO] price_checker.py:565 - 根据最小入住要求(3晚)跳过接下来的 2 天
+2024-11-14 10:00:07,159 [INFO] price_checker.py:553 - [3/37] 处理日期: 28/11/2024
+2024-11-14 10:00:07,159 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-14 10:00:07,159 [INFO] price_checker.py:255 - 入住日期: 28/11/2024
+2024-11-14 10:00:12,303 [INFO] price_checker.py:271 - 开始检查日期 28/11/2024 的最小入住要求...
+2024-11-14 10:00:12,306 [INFO] price_checker.py:152 - 初始元素HTML: <td class="_2byvyib" style="width: 42px; height: 42px;" role="button" aria-disabled="false" aria-label="28, Thursday, November 2024. Available There is a 1 night minimum stay requirement. Select as check-in date. " tabindex="-1"><div class="_697u988 notranslate" data-testid="calendar-day-28/11/2024" data-is-day-blocked="false" style="width: 42px; height: 42px;">28</div></td>
+2024-11-14 10:00:12,309 [INFO] price_checker.py:158 - 找到日期: 28/11/2024
+2024-11-14 10:00:12,309 [INFO] price_checker.py:164 - 点击日期元素...
+2024-11-14 10:00:13,660 [INFO] price_checker.py:174 - 移动到日期元素...
+2024-11-14 10:00:14,937 [INFO] price_checker.py:210 - 更新后元素HTML: <td class="_1fmu67uy" style="width: 42px; height: 42px;" role="button" aria-disabled="true" aria-label="28, Thursday, November 2024. Selected check-in date There is a 3 night minimum stay requirement. " tabindex="-1"><div class="_h84ua7"><div class="_d82cel" style="transform: translate(-50%, -100%) translate(21px, -12px);"><div class="_1mslrl4"><div class="_u7azij">3-night minimum</div><svg role="presentation" focusable="false" class="_1mjga4hj"><path class="_1s2t3cl" d="M0,0 20,0 10,10z"></path><path class="_c3dsty" d="M0,0 10,10 20,0"></path></svg></div></div><div class="_194zlzjz notranslate" data-testid="calendar-day-28/11/2024" data-is-day-blocked="true" style="width: 42px; height: 42px;">28</div></div></td>
+2024-11-14 10:00:14,944 [INFO] price_checker.py:217 - 更新后元素属性:
+2024-11-14 10:00:14,945 [INFO] price_checker.py:218 - - aria-label: 28, Thursday, November 2024. Selected check-in date There is a 3 night minimum stay requirement. 
+2024-11-14 10:00:14,945 [INFO] price_checker.py:219 - - aria-disabled: true
+2024-11-14 10:00:14,945 [INFO] price_checker.py:220 - - data-is-day-blocked: None
+2024-11-14 10:00:14,945 [INFO] price_checker.py:235 - ✓ 成功找到最小入住要求: 3晚 (匹配模式: (\d+)\s*night minimum stay)
+2024-11-14 10:00:14,945 [INFO] price_checker.py:273 - 最终使用的最小入住天数: 3晚 (自动检测)
+2024-11-14 10:00:14,945 [INFO] price_checker.py:296 - 访问URL: https://www.airbnb.co.nz/rooms/837352260137971048?check_in=2024-11-28&check_out=2024-12-01&adults=3&children=0&infants=0
+2024-11-14 10:00:20,094 [INFO] price_checker.py:303 - 检查页面状态...
+2024-11-14 10:00:20,106 [INFO] price_checker.py:305 - 页面状态: complete
+2024-11-14 10:00:22,112 [INFO] price_checker.py:318 - 价格容器已加载并可见
+2024-11-14 10:00:22,112 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-14 10:00:22,114 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-14 10:00:22,115 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-14 10:00:22,116 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-14 10:00:22,116 [INFO] price_checker.py:327 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-14 10:00:22,117 [INFO] price_checker.py:332 - 找到 1 个价格元素
+2024-11-14 10:00:22,131 [INFO] price_checker.py:337 - 找到可见价格元素: $316 NZD 
+night
+$316 NZD per night
+2024-11-14 10:00:22,139 [INFO] price_checker.py:350 - 找到每晚价格元素: $316 NZD 
+night
+$316 NZD per night
+2024-11-14 10:00:22,139 [INFO] price_checker.py:356 - 成功解析折扣价格: $316 NZD
+2024-11-14 10:00:22,139 [INFO] price_checker.py:369 - 开始获取价格详情...
+2024-11-14 10:00:22,141 [INFO] price_checker.py:377 - 价格详情容器已加载
+2024-11-14 10:00:22,643 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:22,645 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:22,650 [INFO] price_checker.py:403 - 找到价格元素: $59 NZD (HTML: <span class="_1k4xcdh">$59&nbsp;NZD</span>)
+2024-11-14 10:00:22,650 [INFO] price_checker.py:408 - ✓ 成功设置清洁费: $59 NZD
+2024-11-14 10:00:22,650 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:22,651 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:22,657 [INFO] price_checker.py:403 - 找到价格元素: $59 NZD (HTML: <span class="_1k4xcdh">$59&nbsp;NZD</span>)
+2024-11-14 10:00:22,657 [INFO] price_checker.py:408 - ✓ 成功设置清洁费: $59 NZD
+2024-11-14 10:00:22,657 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:22,659 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:22,663 [INFO] price_checker.py:403 - 找到价格元素: $141 NZD (HTML: <span class="_1k4xcdh">$141&nbsp;NZD</span>)
+2024-11-14 10:00:22,663 [INFO] price_checker.py:412 - ✓ 成功设置服务费: $141 NZD
+2024-11-14 10:00:22,663 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:22,665 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:22,669 [INFO] price_checker.py:403 - 找到价格元素: $141 NZD (HTML: <span class="_1k4xcdh">$141&nbsp;NZD</span>)
+2024-11-14 10:00:22,669 [INFO] price_checker.py:412 - ✓ 成功设置服务费: $141 NZD
+2024-11-14 10:00:22,669 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:22,671 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:22,676 [INFO] price_checker.py:403 - 找到价格元素: $130 NZD (HTML: <span class="_1k4xcdh">$130&nbsp;NZD</span>)
+2024-11-14 10:00:22,676 [INFO] price_checker.py:416 - ✓ 成功设置税费: $130 NZD
+2024-11-14 10:00:22,676 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-14 10:00:24,685 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-14 10:00:24,686 [INFO] price_checker.py:398 - 找到 1 个匹配元素
+2024-11-14 10:00:24,692 [INFO] price_checker.py:403 - 找到价格元素: $1,137 NZD (HTML: <span class="_j1kt73">$1,137&nbsp;NZD</span>)
+2024-11-14 10:00:24,692 [INFO] price_checker.py:420 - ✓ 成功设置总价: $1,137 NZD
+2024-11-14 10:00:24,692 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-14 10:00:24,693 [INFO] price_checker.py:398 - 找到 3 个匹配元素
+2024-11-14 10:00:24,697 [INFO] price_checker.py:403 - 找到价格元素: $1,137 NZD (HTML: <span aria-hidden="false"><span class="_j1kt73">$1,137&nbsp;NZD</span></span>)
+2024-11-14 10:00:24,697 [INFO] price_checker.py:420 - ✓ 成功设置总价: $1,137 NZD
+2024-11-14 10:00:24,701 [INFO] price_checker.py:403 - 找到价格元素: $1,137 NZD (HTML: <span class="_j1kt73">$1,137&nbsp;NZD</span>)
+2024-11-14 10:00:24,701 [INFO] price_checker.py:420 - ✓ 成功设置总价: $1,137 NZD
+2024-11-14 10:00:24,707 [INFO] price_checker.py:403 - 找到价格元素:  (HTML: <span class="a8jt5op atm_3f_idpfg4 atm_7h_hxbz6r atm_7i_ysn8ba atm_e2_t94yts atm_ks_zryt35 atm_l8_idpfg4 atm_mk_stnw88 atm_vv_1q9ccgz atm_vy_t94yts dir dir-ltr"></span>)
+2024-11-14 10:00:24,707 [INFO] price_checker.py:420 - ✓ 成功设置总价: 
+2024-11-14 10:00:24,707 [INFO] price_checker.py:446 - 验证价格信息完整性:
+2024-11-14 10:00:24,707 [INFO] price_checker.py:450 - ✓ cleaning_fee: $59 NZD
+2024-11-14 10:00:24,707 [INFO] price_checker.py:450 - ✓ service_fee: $141 NZD
+2024-11-14 10:00:24,707 [INFO] price_checker.py:450 - ✓ taxes: $130 NZD
+2024-11-14 10:00:24,707 [WARNING] price_checker.py:452 - ✗ total 未获取到
+2024-11-14 10:00:24,707 [INFO] price_checker.py:455 - 终价格信息获取结果:
+2024-11-14 10:00:24,707 [INFO] price_checker.py:457 - check_in: 28/11/2024
+2024-11-14 10:00:24,708 [INFO] price_checker.py:457 - check_out: 01/12/2024
+2024-11-14 10:00:24,708 [INFO] price_checker.py:457 - min_nights: 3
+2024-11-14 10:00:24,708 [INFO] price_checker.py:457 - guests: 3
+2024-11-14 10:00:24,708 [INFO] price_checker.py:457 - nightly_price: $316 NZD
+2024-11-14 10:00:24,708 [INFO] price_checker.py:457 - cleaning_fee: $59 NZD
+2024-11-14 10:00:24,708 [INFO] price_checker.py:457 - service_fee: $141 NZD
+2024-11-14 10:00:24,708 [INFO] price_checker.py:457 - taxes: $130 NZD
+2024-11-14 10:00:24,708 [INFO] price_checker.py:457 - total: 
+2024-11-14 10:00:24,708 [INFO] price_checker.py:559 - ✓ 成功获取 28/11/2024 的价格信息
+2024-11-14 10:00:24,708 [INFO] price_checker.py:565 - 根据最小入住要求(3晚)跳过接下来的 2 天
+2024-11-14 10:00:24,708 [INFO] price_checker.py:573 - 已完成 5/37 个日期的处理
+2024-11-14 10:00:34,708 [INFO] price_checker.py:553 - [4/37] 处理日期: 29/11/2024
+2024-11-14 10:00:34,709 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-14 10:00:34,709 [INFO] price_checker.py:255 - 入住日期: 29/11/2024
+2024-11-14 10:00:39,852 [INFO] price_checker.py:271 - 开始检查日期 29/11/2024 的最小入住要求...
+2024-11-14 10:00:39,855 [INFO] price_checker.py:152 - 初始元素HTML: <td class="_2byvyib" style="width: 42px; height: 42px;" role="button" aria-disabled="false" aria-label="29, Friday, November 2024. Available There is a 1 night minimum stay requirement. Select as check-in date. " tabindex="-1"><div class="_697u988 notranslate" data-testid="calendar-day-29/11/2024" data-is-day-blocked="false" style="width: 42px; height: 42px;">29</div></td>
+2024-11-14 10:00:39,858 [INFO] price_checker.py:158 - 找到日期: 29/11/2024
+2024-11-14 10:00:39,858 [INFO] price_checker.py:164 - 点击日期元素...
+2024-11-14 10:00:41,233 [INFO] price_checker.py:174 - 移动到日期元素...
+2024-11-14 10:00:42,524 [INFO] price_checker.py:210 - 更新后元素HTML: <td class="_1fmu67uy" style="width: 42px; height: 42px;" role="button" aria-disabled="true" aria-label="29, Friday, November 2024. Selected check-in date There is a 3 night minimum stay requirement. " tabindex="-1"><div class="_h84ua7"><div class="_d82cel" style="transform: translate(-50%, -100%) translate(21px, -12px);"><div class="_1mslrl4"><div class="_u7azij">3-night minimum</div><svg role="presentation" focusable="false" class="_1mjga4hj"><path class="_1s2t3cl" d="M0,0 20,0 10,10z"></path><path class="_c3dsty" d="M0,0 10,10 20,0"></path></svg></div></div><div class="_194zlzjz notranslate" data-testid="calendar-day-29/11/2024" data-is-day-blocked="true" style="width: 42px; height: 42px;">29</div></div></td>
+2024-11-14 10:00:42,532 [INFO] price_checker.py:217 - 更新后元素属性:
+2024-11-14 10:00:42,532 [INFO] price_checker.py:218 - - aria-label: 29, Friday, November 2024. Selected check-in date There is a 3 night minimum stay requirement. 
+2024-11-14 10:00:42,532 [INFO] price_checker.py:219 - - aria-disabled: true
+2024-11-14 10:00:42,532 [INFO] price_checker.py:220 - - data-is-day-blocked: None
+2024-11-14 10:00:42,533 [INFO] price_checker.py:235 - ✓ 成功找到最小入住要求: 3晚 (匹配模式: (\d+)\s*night minimum stay)
+2024-11-14 10:00:42,533 [INFO] price_checker.py:273 - 最终使用的最小入住天数: 3晚 (自动检测)
+2024-11-14 10:00:42,533 [INFO] price_checker.py:296 - 访问URL: https://www.airbnb.co.nz/rooms/837352260137971048?check_in=2024-11-29&check_out=2024-12-02&adults=3&children=0&infants=0
+2024-11-14 10:00:47,682 [INFO] price_checker.py:303 - 检查页面状态...
+2024-11-14 10:00:47,684 [INFO] price_checker.py:305 - 页面状态: complete
+2024-11-14 10:00:55,158 [INFO] advanced_analyzer.py:305 - === 程序执行完成 ===

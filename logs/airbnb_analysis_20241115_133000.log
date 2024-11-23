@@ -1,0 +1,14 @@
+2024-11-15 13:30:00,701 [INFO] advanced_analyzer.py:391 - === 开始Airbnb数据收集程序 ===
+2024-11-15 13:30:00,876 [INFO] advanced_analyzer.py:100 - 成功读取 6 个房间ID
+2024-11-15 13:30:00,876 [INFO] advanced_analyzer.py:402 - 生成 6 个URL
+2024-11-15 13:30:00,876 [INFO] advanced_analyzer.py:406 - 创建数据目录: data/airbnb_data_20241115_133000
+2024-11-15 13:30:00,876 [INFO] advanced_analyzer.py:232 - === 开始批量分析房源 ===
+2024-11-15 13:30:00,877 [INFO] advanced_analyzer.py:241 - 设置并发线程数: 3
+2024-11-15 13:30:00,906 [INFO] bit_browser_manager.py:38 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "fa23ba7669ce4064b2fafb611daa22a3": 23592,
+    "cf51683770d94ff3931408fce73c90f3": 38604,
+    "cd272b4525344db49309c826255465b8": 26068
+  }
+}
