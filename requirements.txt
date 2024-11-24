@@ -1,8 +1,8 @@
-selenium>=4.0.0
-webdriver-manager>=3.8.0
+selenium
+webdriver-manager
 requests
 beautifulsoup4
-pandas>=1.0.0
+pandas
 matplotlib
 seaborn
 numpy

@@ -1,9 +1,0 @@
-2024-11-14 16:17:47,908 [INFO] advanced_analyzer.py:484 - === 开始Airbnb数据收集程序 ===
-2024-11-14 16:17:48,079 [INFO] advanced_analyzer.py:49 - 成功读取 6 个房间ID
-2024-11-14 16:17:48,079 [INFO] advanced_analyzer.py:495 - 生成 6 个URL
-2024-11-14 16:17:48,079 [INFO] advanced_analyzer.py:499 - 创建数据目录: data/airbnb_data_20241114_161748
-2024-11-14 16:17:48,079 [INFO] advanced_analyzer.py:366 - === 开始批量分析房源 ===
-2024-11-14 16:17:48,079 [INFO] advanced_analyzer.py:375 - 设置并发线程数: 1
-2024-11-14 16:17:48,080 [INFO] advanced_analyzer.py:191 - 开始初始化 Firefox WebDriver... (尝试 1/3)
-2024-11-14 16:17:54,463 [ERROR] advanced_analyzer.py:148 - 身份验证错误，请检查accessid和签名
-2024-11-14 16:18:08,103 [ERROR] advanced_analyzer.py:148 - 身份验证错误，请检查accessid和签名
