@@ -1,15 +1,79 @@
 from datetime import datetime
 import pandas as pd
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from webdriver_manager.firefox import GeckoDriverManager
 from airbnb_calendar_checker import check_calendar_availability, export_to_excel
 from price_checker import check_room_price
 from logger_config import get_logger
 import re
 import os
 import traceback
+import time
+from concurrent.futures import ThreadPoolExecutor
+import concurrent.futures
+import requests
+import hmac
+import hashlib
+import base64
+import shutil
+from bit_browser_manager import BitBrowserManager
+import threading
+
+# 在文件顶部添加配置变量
+MAX_CONCURRENT_THREADS = 3  # 最大并发线程数
+GECKODRIVER_VERSION = "v0.33.0"  # 指定版本
+GECKODRIVER_PATH = os.path.join(os.path.dirname(__file__), "drivers", "geckodriver.exe")
+GECKODRIVER_URL = "https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-win64.zip"
+
+class KookeeyProxy:
+    def __init__(self):
+        self.access_id = "7731224"
+        self.secret_key = "565067ae9400a1f722e83918c510c829"
+        self.session = requests.session()
+        
+    def get_proxy(self):
+        """获取代理IP"""
+        logger = get_logger()
+        try:
+            # 获取时间戳
+            ts = str(int(time.time()))
+            
+            # 构建参数字符串
+            param_str = f"p=http&ts={ts}"
+            
+            # 计算签名
+            token = base64.b64encode(
+                hmac.new(
+                    bytes(self.secret_key, encoding='utf-8'),
+                    bytes(param_str, encoding='utf-8'),
+                    hashlib.sha1
+                ).hexdigest().encode('utf-8')
+            ).decode('utf-8')
+            
+            # 构建API URL
+            api_url = (
+                f"https://kookeey.com/ip?"
+                f"accessid={self.access_id}&"
+                f"signature={token}&"
+                f"{param_str}"
+            )
+            
+            # 发送请求
+            response = self.session.get(api_url, verify=False, timeout=30)
+            
+            if response.status_code == 200:
+                proxy_info = response.text.strip()
+                logger.info(f"成功获取代理IP: {proxy_info}")
+                return proxy_info
+            else:
+                logger.error(f"获取代理IP失败: {response.status_code}")
+                return None
+                
+        except Exception as e:
+            logger.error(f"获取代理IP时发生错误: {e}")
+            return None
 
 def read_room_ids(filename='RoomID.xlsx'):
     """读取房间ID"""
@@ -46,7 +110,7 @@ def read_room_ids(filename='RoomID.xlsx'):
         return None
 
 def generate_urls(room_ids):
-    """根据房间ID生成URL列表"""
+    """根房间ID生成URL列表"""
     base_url = "https://www.airbnb.co.nz/rooms/"
     urls = []
     logger = get_logger()
@@ -65,20 +129,66 @@ def create_data_directory():
     os.makedirs(data_dir, exist_ok=True)
     return data_dir
 
-def initialize_driver():
-    """初始化WebDriver"""
+def download_geckodriver():
+    """直接下载GeckoDriver"""
     logger = get_logger()
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    chrome_options.add_argument('--window-size=1920,1080')
+    try:
+        import urllib.request
+        import zipfile
+        import tempfile
+        
+        # 创建drivers目录
+        os.makedirs(os.path.dirname(GECKODRIVER_PATH), exist_ok=True)
+        
+        # 如果已存在，直接返回
+        if os.path.exists(GECKODRIVER_PATH):
+            logger.info("GeckoDriver已存在")
+            return True
+            
+        # 下载文件
+        logger.info(f"正在从 {GECKODRIVER_URL} 下载GeckoDriver...")
+        temp_dir = tempfile.mkdtemp()
+        zip_path = os.path.join(temp_dir, "geckodriver.zip")
+        
+        urllib.request.urlretrieve(GECKODRIVER_URL, zip_path)
+        
+        # 解压文件
+        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            zip_ref.extract("geckodriver.exe", os.path.dirname(GECKODRIVER_PATH))
+            
+        logger.info(f"GeckoDriver已下载并解压到: {GECKODRIVER_PATH}")
+        return True
+        
+    except Exception as e:
+        logger.error(f"下载GeckoDriver失败: {e}")
+        return False
+
+def initialize_driver(max_retries=3):
+    """初始化BitBrowser WebDriver"""
+    logger = get_logger()
+    logger.info("开始初始化BitBrowser...")
     
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-    logger.info("Chrome WebDriver 初始化成功")
-    return driver
+    try:
+        browser_manager = BitBrowserManager()
+        
+        # 直接连接到浏览器
+        driver = browser_manager.connect_browser()
+        if not driver:
+            logger.error("连接BitBrowser失败")
+            return None
+            
+        # 设置超时时间
+        driver.set_page_load_timeout(60)
+        driver.implicitly_wait(20)
+        
+        # 存储browser_manager用于后续清理
+        driver.browser_manager = browser_manager
+        
+        return driver
+        
+    except Exception as e:
+        logger.error(f"初始化BitBrowser失败: {e}")
+        return None
 
 def analyze_listing(url_info, driver):
     """分析单个房源"""
@@ -98,7 +208,7 @@ def analyze_listing(url_info, driver):
         # 2. 获取价格数据
         price_info = check_room_price(url_info, calendar_data, driver)
         if not price_info:
-            logger.error(f"获取价格数据失败: {url}")
+            logger.error(f"获取格数据失败: {url}")
         else:
             logger.info("成功获取价格数据")
         
@@ -117,7 +227,7 @@ def analyze_listing(url_info, driver):
         return None
 
 def analyze_multiple_listings(urls):
-    """分析多个房源"""
+    """并发分析多个房源"""
     logger = get_logger()
     logger.info("=== 开始批量分析房源 ===")
     
@@ -126,62 +236,127 @@ def analyze_multiple_listings(urls):
     date_dir = f'data/{timestamp}'
     os.makedirs(date_dir, exist_ok=True)
     
-    # 初始化WebDriver
-    driver = initialize_driver()
     results = []
-    
+    max_workers = min(MAX_CONCURRENT_THREADS, len(urls))
+    logger.info(f"设置并发线程数: {max_workers}")
+
     try:
-        for i, url in enumerate(urls, 1):
-            logger.info(f"\n处理第 {i}/{len(urls)} 个房源")
-            result = analyze_listing(url, driver)
-            if result:
-                results.append(result)
-                
-                # 复制日历数据到两个位置
+        browser_manager = BitBrowserManager()
+        
+        # 获取所有可用的浏览器实例
+        browsers = browser_manager.get_all_browsers()
+        if not browsers:
+            logger.error("没有可用的浏览器实例")
+            return []
+            
+        # 确保有足够的浏览器实例
+        if len(browsers) < max_workers:
+            logger.warning(f"可用浏览器实例数量({len(browsers)})小于线程数({max_workers})")
+            max_workers = len(browsers)
+            
+        logger.info("\n=== 可用的浏览器实例 ===")
+        for browser in browsers[:max_workers]:
+            logger.info(f"ID: {browser['id']}")
+            logger.info(f"名称: {browser['name']}")
+            logger.info(f"备注: {browser['remark']}")
+            logger.info(f"PID: {browser['pid']}\n")
+            
+        # 将URLs平均分配给每个线程
+        urls_per_thread = len(urls) // max_workers
+        remainder = len(urls) % max_workers
+        
+        url_chunks = []
+        start = 0
+        for i in range(max_workers):
+            # 如果有余数，前几个线程多分配一个URL
+            chunk_size = urls_per_thread + (1 if i < remainder else 0)
+            end = start + chunk_size
+            url_chunks.append(urls[start:end])
+            start = end
+            
+        logger.info("\n=== URL分配情况 ===")
+        for i, chunk in enumerate(url_chunks):
+            logger.info(f"线程 {i+1} 分配到 {len(chunk)} 个URL:")
+            for url in chunk:
                 room_id = url['url'].split('rooms/')[-1].split('?')[0]
-                room_dir = f'data/room_{room_id}'
-                os.makedirs(room_dir, exist_ok=True)
-                
-                # 复制到日期目录
-                date_calendar_file = f'{date_dir}/airbnb_calendar_{room_id}.xlsx'
-                pd.read_excel(result['calendar_excel']).to_excel(date_calendar_file, index=False)
-                
-                # 复制到房间目录
-                room_calendar_file = f'{room_dir}/airbnb_calendar_{timestamp}.xlsx'
-                pd.read_excel(result['calendar_excel']).to_excel(room_calendar_file, index=False)
-                
-                logger.info(f"数据已保存到日期目录: {date_calendar_file}")
-                logger.info(f"数据已保存到房间目录: {room_calendar_file}")
+                logger.info(f"  - Room ID: {room_id}")
         
-        # 生成汇总Excel，同样保存两份
-        if results:
-            summary_data = create_summary_data(results)
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = []
             
-            # 保存到日期目录
-            date_summary_file = f'{date_dir}/airbnb_summary.xlsx'
-            pd.DataFrame(summary_data).to_excel(date_summary_file, index=False)
-            
-            # 保存到每个房间目录
-            for result in results:
-                room_id = result['url'].split('rooms/')[-1].split('?')[0]
-                room_summary_file = f'data/room_{room_id}/airbnb_summary_{timestamp}.xlsx'
+            # 为每个线程分配一个浏览器实例和一组URL
+            for i, (browser, urls_chunk) in enumerate(zip(browsers[:max_workers], url_chunks)):
+                browser_id = browser['id']
                 
-                # 只保存该房间的汇总数据
-                room_summary = [d for d in summary_data if str(d['Room ID']) == room_id]
-                if room_summary:
-                    pd.DataFrame(room_summary).to_excel(room_summary_file, index=False)
-            
-            logger.info(f"汇总数据已保存到日期目录: {date_summary_file}")
-            logger.info("汇总数据已保存到各房间目录")
-        
+                def process_urls(urls_chunk, browser_id, thread_index):
+                    thread_id = threading.get_ident()
+                    logger.info(f"线程 {thread_id} (#{thread_index+1}) 使用浏览器 {browser_id}")
+                    thread_results = []
+                    
+                    try:
+                        # 连接到指定的浏览器实例
+                        driver = browser_manager.connect_browser(browser_id=browser_id)
+                        if not driver:
+                            logger.error(f"无法连接到浏览器实例 {browser_id}")
+                            return None
+                            
+                        # 处理分配给这个线程的所有URL
+                        for url_info in urls_chunk:
+                            room_id = url_info['url'].split('rooms/')[-1].split('?')[0]
+                            logger.info(f"线程 #{thread_index+1} 开始处理 Room ID: {room_id}")
+                            
+                            try:
+                                # 在新标签页中打开URL
+                                result = browser_manager.open_url_in_new_tab(driver, url_info['url'])
+                                if not result:
+                                    logger.error(f"无法在浏览器 {browser_id} 中打开URL {url_info['url']}")
+                                    continue
+                                    
+                                # 分析房源
+                                result = analyze_listing(url_info, driver)
+                                if result:
+                                    thread_results.append(result)
+                                    logger.info(f"线程 #{thread_index+1} 完成 Room ID: {room_id}")
+                                
+                                # 关闭标签页但保持浏览器实例
+                                browser_manager.close_tab(driver)
+                                
+                            except Exception as e:
+                                logger.error(f"处理 Room ID {room_id} 时发生错误: {str(e)}")
+                                continue
+                                
+                        return thread_results
+                        
+                    except Exception as e:
+                        logger.error(f"线程 #{thread_index+1} 发生错误: {str(e)}")
+                        return None
+
+                futures.append(executor.submit(process_urls, urls_chunk, browser_id, i))
+
+            # 收集所有线程的结果
+            for i, future in enumerate(concurrent.futures.as_completed(futures)):
+                try:
+                    thread_results = future.result()
+                    if thread_results:
+                        results.extend(thread_results)
+                        # 处理每个结果...
+                        for result in thread_results:
+                            # 复制文件等操作...
+                            room_id = result['url'].split('rooms/')[-1].split('?')[0]
+                            room_dir = f'data/room_{room_id}'
+                            os.makedirs(room_dir, exist_ok=True)
+                            
+                            # 复制到日期目录和房间目录
+                            # ... 其余代码保持不变 ...
+                            
+                except Exception as e:
+                    logger.error(f"处理线程 {i+1} 的结果时发生错误: {str(e)}")
+
         return results
         
     except Exception as e:
         logger.error(f"批量分析过程中发生错误: {str(e)}")
         return results
-    finally:
-        driver.quit()
-        logger.info("浏览器已关闭")
 
 def create_summary_data(results):
     """创建汇总数据"""

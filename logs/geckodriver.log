@@ -1,0 +1,733 @@
+1731553842571	geckodriver	INFO	Listening on 127.0.0.1:65441
+1731553845618	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 2" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilevADMYo"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731553845822	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+WebDriver BiDi listening on ws://localhost:65442
+1731553845942	Marionette	INFO	Listening on port 65455
+Read port: 65455
+1731553846074	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://localhost:65442/devtools/browser/239b976c-be53-41be-8fe8-ba7e01432f83
+1731553847833	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731553847882	Marionette	INFO	Stopped listening on port 65455
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+1731554440633	geckodriver	INFO	Listening on 127.0.0.1:49639
+1731554443671	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilefMjOxO"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731554443875	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+WebDriver BiDi listening on ws://localhost:49640
+1731554443988	Marionette	INFO	Listening on port 49648
+Read port: 49648
+1731554444078	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://localhost:49640/devtools/browser/0a8b463d-3245-4548-a4db-bf7878a74307
+1731554445821	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731554445862	Marionette	INFO	Stopped listening on port 49648
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+1731554470322	geckodriver	INFO	Listening on 127.0.0.1:49719
+1731554473380	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile9JAKcY"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731554473590	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+WebDriver BiDi listening on ws://localhost:49720
+1731554473710	Marionette	INFO	Listening on port 49734
+Read port: 49734
+1731554473797	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://localhost:49720/devtools/browser/7dcefc44-aef4-4b9d-9238-fde7751f198f
+1731554476319	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731554476360	Marionette	INFO	Stopped listening on port 49734
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+1731554502473	geckodriver	INFO	Listening on 127.0.0.1:49832
+1731554540431	geckodriver	INFO	Listening on 127.0.0.1:49876
+1731554543488	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 7" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileIRIem2"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731554543691	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+WebDriver BiDi listening on ws://localhost:49877
+1731554543806	Marionette	INFO	Listening on port 49886
+Read port: 49886
+1731554543893	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://localhost:49877/devtools/browser/59a2c816-f6c7-4cc3-9c55-02948d16619c
+1731554545528	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731554545578	Marionette	INFO	Stopped listening on port 49886
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+1731554572082	geckodriver	INFO	Listening on 127.0.0.1:49954
+1731554575147	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 5" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilexXJbti"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731554575351	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+WebDriver BiDi listening on ws://localhost:49955
+1731554575467	Marionette	INFO	Listening on port 49964
+Read port: 49964
+1731554575557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://localhost:49955/devtools/browser/fb5cac39-6122-4d99-adcf-43bac860c7b1
+1731554577162	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731554577210	Marionette	INFO	Stopped listening on port 49964
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+1731554613836	geckodriver	INFO	Listening on 127.0.0.1:50052
+1731554616876	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 3" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilesObyQf"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731554617081	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+WebDriver BiDi listening on ws://localhost:50053
+1731554617200	Marionette	INFO	Listening on port 50079
+Read port: 50079
+1731554617289	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://localhost:50053/devtools/browser/67c7e964-cf45-4b33-87e4-4a595a8966e1
+1731554618913	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731554618954	Marionette	INFO	Stopped listening on port 50079
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+1731554646312	geckodriver	INFO	Listening on 127.0.0.1:50218
+1731554649342	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 9" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileNW6R8y"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731554649572	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+WebDriver BiDi listening on ws://localhost:50219
+1731554649699	Marionette	INFO	Listening on port 50255
+Read port: 50255
+1731554649836	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://localhost:50219/devtools/browser/88d86b4a-9c58-4b0c-b9c0-b18bbfc1e23e
+1731554651557	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1731554651602	Marionette	INFO	Stopped listening on port 50255
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+1731555270602	geckodriver	INFO	Listening on 127.0.0.1:51002
+1731555273645	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 3" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilehdp62I"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731555273851	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731555273964	Marionette	INFO	Listening on port 51016
+WebDriver BiDi listening on ws://127.0.0.1:51003
+Read port: 51016
+1731555274058	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+1731555596099	geckodriver	INFO	Listening on 127.0.0.1:51273
+1731555599158	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 4" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileA730fB"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731555599362	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731555599484	Marionette	INFO	Listening on port 51282
+WebDriver BiDi listening on ws://127.0.0.1:51274
+Read port: 51282
+1731555599569	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51274/devtools/browser/873f400b-b501-48d2-9e77-d01e67cd83f2
+1731555620832	geckodriver	INFO	Listening on 127.0.0.1:51315
+1731555623877	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--width=1920" "--height=1080" ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileqCduyt"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731555624082	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-width"
+console.error: "Warning: unrecognized command line flag" "-height"
+console.error: "Warning: unrecognized command line flag" "-no-sandbox"
+1731555624196	Marionette	INFO	Listening on port 51331
+WebDriver BiDi listening on ws://127.0.0.1:51316
+Read port: 51331
+1731555624292	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51316/devtools/browser/e1f4e5bb-27fc-4f31-9da3-8328facbac0e
+1731555747852	geckodriver	INFO	Listening on 127.0.0.1:51488
+1731555750900	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "514 ... 9" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileaoUq27"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731555751115	Marionette	INFO	Marionette enabled
+1731555751230	Marionette	INFO	Listening on port 51497
+WebDriver BiDi listening on ws://127.0.0.1:51489
+Read port: 51497
+1731555751313	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51489/devtools/browser/809e65cf-1fac-4f87-ace2-bf3686b0d944
+1731555782137	Marionette	INFO	Stopped listening on port 51497
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+1731555788879	geckodriver	INFO	Listening on 127.0.0.1:51545
+1731555791925	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "515 ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileLi5EXJ"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731555792127	Marionette	INFO	Marionette enabled
+1731555792244	Marionette	INFO	Listening on port 51555
+WebDriver BiDi listening on ws://127.0.0.1:51546
+Read port: 51555
+1731555792336	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51546/devtools/browser/e728f7ca-06ac-41ea-a5d8-80fec18469a4
+1731555822968	Marionette	INFO	Stopped listening on port 51555
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+1731555829673	geckodriver	INFO	Listening on 127.0.0.1:51600
+1731555832722	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "516 ... 1" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileKkWm1f"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731555832926	Marionette	INFO	Marionette enabled
+1731555833049	Marionette	INFO	Listening on port 51610
+WebDriver BiDi listening on ws://127.0.0.1:51601
+Read port: 51610
+1731555833141	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51601/devtools/browser/b288c1f1-b3c0-4523-9a05-bf12eed3c8e8
+Exiting due to channel error.
+Exiting due to channel error.
+1731555901688	geckodriver	INFO	Listening on 127.0.0.1:51677
+1731555904735	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "516 ... 8" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileRCb3F6"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731555904942	Marionette	INFO	Marionette enabled
+1731555905062	Marionette	INFO	Listening on port 51691
+WebDriver BiDi listening on ws://127.0.0.1:51678
+Read port: 51691
+1731555905149	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51678/devtools/browser/83dae07e-bd2a-4cab-9b52-f166aae1cefa
+1731555965872	Marionette	INFO	Stopped listening on port 51691
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731555972500	geckodriver	INFO	Listening on 127.0.0.1:51799
+1731555975546	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "518 ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileMeYvvV"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731555975761	Marionette	INFO	Marionette enabled
+1731555975873	Marionette	INFO	Listening on port 51808
+WebDriver BiDi listening on ws://127.0.0.1:51800
+Read port: 51808
+1731555975956	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51800/devtools/browser/6993a7a0-ac2b-4d06-8ac6-b655240ef1c4
+1731556036628	Marionette	INFO	Stopped listening on port 51808
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731556043229	geckodriver	INFO	Listening on 127.0.0.1:51867
+1731556046275	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "518 ... 8" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileADk3xR"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556046483	Marionette	INFO	Marionette enabled
+1731556046601	Marionette	INFO	Listening on port 51877
+WebDriver BiDi listening on ws://127.0.0.1:51868
+Read port: 51877
+1731556046684	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51868/devtools/browser/58579b4c-cf2c-499f-af9e-0f7a840f4be3
+Exiting due to channel error.
+1731556093873	geckodriver	INFO	Listening on 127.0.0.1:51935
+1731556096916	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "519 ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileixlBd1"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556097124	Marionette	INFO	Marionette enabled
+1731556097243	Marionette	INFO	Listening on port 51956
+WebDriver BiDi listening on ws://127.0.0.1:51936
+Read port: 51956
+1731556097328	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51936/devtools/browser/a3252fb5-50f6-4230-9acb-17992f86a9a0
+1731556158025	Marionette	INFO	Stopped listening on port 51956
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731556164659	geckodriver	INFO	Listening on 127.0.0.1:52025
+1731556167703	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "520 ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileqFYqPW"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556167912	Marionette	INFO	Marionette enabled
+1731556168029	Marionette	INFO	Listening on port 52035
+WebDriver BiDi listening on ws://127.0.0.1:52026
+Read port: 52035
+1731556168121	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52026/devtools/browser/207d6f09-ab01-4132-9b16-1e3f7cf52055
+1731556228755	Marionette	INFO	Stopped listening on port 52035
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731556235368	geckodriver	INFO	Listening on 127.0.0.1:52095
+1731556238413	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "520 ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile49o0mQ"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556238626	Marionette	INFO	Marionette enabled
+1731556238743	Marionette	INFO	Listening on port 52105
+WebDriver BiDi listening on ws://127.0.0.1:52096
+Read port: 52105
+1731556238829	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52096/devtools/browser/59f5558b-982e-464c-b767-3b36fea81fe1
+1731556299516	Marionette	INFO	Stopped listening on port 52105
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731556306151	geckodriver	INFO	Listening on 127.0.0.1:52170
+1731556309209	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "521 ... 1" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileK253nI"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556309418	Marionette	INFO	Marionette enabled
+1731556309534	Marionette	INFO	Listening on port 52180
+WebDriver BiDi listening on ws://127.0.0.1:52171
+Read port: 52180
+1731556309616	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52171/devtools/browser/5c099d67-bbb1-4710-b180-9c8a9dd24cd5
+1731556370324	Marionette	INFO	Stopped listening on port 52180
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731556376932	geckodriver	INFO	Listening on 127.0.0.1:52235
+1731556379985	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "522 ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilefHp1Sv"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556380195	Marionette	INFO	Marionette enabled
+1731556380311	Marionette	INFO	Listening on port 52244
+WebDriver BiDi listening on ws://127.0.0.1:52236
+Read port: 52244
+1731556380395	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52236/devtools/browser/2791ce25-eea2-41a6-a0ef-2e428ac86d86
+1731556441082	Marionette	INFO	Stopped listening on port 52244
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731556447705	geckodriver	INFO	Listening on 127.0.0.1:52291
+1731556450757	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "522 ... 2" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileeMzHKI"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556450977	Marionette	INFO	Marionette enabled
+1731556451126	Marionette	INFO	Listening on port 52302
+WebDriver BiDi listening on ws://127.0.0.1:52292
+Read port: 52302
+1731556451223	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52292/devtools/browser/33d6a14e-d845-4c7a-9715-f81a4e4f10f8
+1731556511919	Marionette	INFO	Stopped listening on port 52302
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731556880716	geckodriver	INFO	Listening on 127.0.0.1:52546
+1731556883759	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "525 ... 7" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile1UsZLu"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556883967	Marionette	INFO	Marionette enabled
+1731556884085	Marionette	INFO	Listening on port 52559
+WebDriver BiDi listening on ws://127.0.0.1:52547
+Read port: 52559
+1731556884168	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52547/devtools/browser/b350f8e6-514c-4411-b0aa-1a174f9aca67
+1731556944887	Marionette	INFO	Stopped listening on port 52559
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731556951519	geckodriver	INFO	Listening on 127.0.0.1:52624
+1731556954565	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "526 ... 5" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileGnn4S6"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556954776	Marionette	INFO	Marionette enabled
+1731556954891	Marionette	INFO	Listening on port 52633
+WebDriver BiDi listening on ws://127.0.0.1:52625
+Read port: 52633
+1731556954984	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52625/devtools/browser/44051ab3-c9e7-4142-9a1e-cb637d5b2e5d
+1731556987661	geckodriver	INFO	Listening on 127.0.0.1:52668
+1731556990713	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "526 ... 9" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile3n2vDu"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731556990943	Marionette	INFO	Marionette enabled
+1731556991063	Marionette	INFO	Listening on port 52677
+WebDriver BiDi listening on ws://127.0.0.1:52669
+Read port: 52677
+1731556991203	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52669/devtools/browser/ef738fa8-d9dd-4cc9-ab12-01683dcc2aa9
+1731557051857	Marionette	INFO	Stopped listening on port 52677
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731557058462	geckodriver	INFO	Listening on 127.0.0.1:52801
+1731557061513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "528 ... 2" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileUYqnQ7"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731557061728	Marionette	INFO	Marionette enabled
+1731557061845	Marionette	INFO	Listening on port 52810
+Read port: 52810
+WebDriver BiDi listening on ws://127.0.0.1:52802
+1731557061883	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52802/devtools/browser/e845fe11-f3cb-4f20-8ea7-f1efc25983e4
+1731557122608	Marionette	INFO	Stopped listening on port 52810
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731557129225	geckodriver	INFO	Listening on 127.0.0.1:52858
+1731557132274	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "528 ... 9" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofiledqofM2"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731557132488	Marionette	INFO	Marionette enabled
+1731557132608	Marionette	INFO	Listening on port 52867
+Read port: 52867
+WebDriver BiDi listening on ws://127.0.0.1:52859
+1731557132645	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52859/devtools/browser/0c9f9f5b-2821-4072-9413-51385f8b1d54
+1731557193404	Marionette	INFO	Stopped listening on port 52867
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731557200014	geckodriver	INFO	Listening on 127.0.0.1:52928
+1731557203054	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "529 ... 9" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofileWy512x"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731557203267	Marionette	INFO	Marionette enabled
+1731557203382	Marionette	INFO	Listening on port 52938
+WebDriver BiDi listening on ws://127.0.0.1:52929
+Read port: 52938
+1731557203475	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52929/devtools/browser/b494b7b6-2479-4c8a-8e40-7888ee7d73ca
+Exiting due to channel error.
+Exiting due to channel error.
+1731557238335	geckodriver	INFO	Listening on 127.0.0.1:52986
+1731557241386	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "529 ... 7" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilexsRm9P"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731557241599	Marionette	INFO	Marionette enabled
+1731557241727	Marionette	INFO	Listening on port 52998
+WebDriver BiDi listening on ws://127.0.0.1:52987
+Read port: 52998
+1731557241873	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52987/devtools/browser/9303be52-cd51-42ec-b518-e938a2febee3
+1731557302535	Marionette	INFO	Stopped listening on port 52998
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731557309175	geckodriver	INFO	Listening on 127.0.0.1:53052
+1731557315319	geckodriver	INFO	Listening on 127.0.0.1:53061
+1731557318369	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "530 ... 2" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile12Yvqw"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731557318579	Marionette	INFO	Marionette enabled
+1731557318687	Marionette	INFO	Listening on port 53069
+WebDriver BiDi listening on ws://127.0.0.1:53062
+Read port: 53069
+1731557318781	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53062/devtools/browser/89532568-89f9-4289-9b9c-b41e8f7532b3
+Exiting due to channel error.
+1731557458182	geckodriver	INFO	Listening on 127.0.0.1:53203
+1731557461232	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "532 ... 4" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile9tWtJM"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731557461442	Marionette	INFO	Marionette enabled
+1731557461557	Marionette	INFO	Listening on port 53215
+WebDriver BiDi listening on ws://127.0.0.1:53204
+Read port: 53215
+1731557461649	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53204/devtools/browser/8fc2da7c-45f1-4d40-b701-4f05400bed62
+1731557493664	geckodriver	INFO	Listening on 127.0.0.1:53255
+1731557496713	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "532 ... 6" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilePQTiQT"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731557496920	Marionette	INFO	Marionette enabled
+1731557497034	Marionette	INFO	Listening on port 53264
+WebDriver BiDi listening on ws://127.0.0.1:53256
+Read port: 53264
+1731557497172	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Exiting due to channel error.
+1731557510680	geckodriver	INFO	Listening on 127.0.0.1:53280
+1731557513733	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "532 ... 1" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilepkATQC"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731557513936	Marionette	INFO	Marionette enabled
+1731557514053	Marionette	INFO	Listening on port 53290
+WebDriver BiDi listening on ws://127.0.0.1:53281
+Read port: 53290
+1731557514154	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53281/devtools/browser/c372147e-5e41-4904-88ba-c16fd000613f
+1731557574858	Marionette	INFO	Stopped listening on port 53290
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731557581501	geckodriver	INFO	Listening on 127.0.0.1:53354
+1731557584554	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "533 ... 5" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofile1bxWa1"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731557584762	Marionette	INFO	Marionette enabled
+1731557584875	Marionette	INFO	Listening on port 53365
+WebDriver BiDi listening on ws://127.0.0.1:53355
+Read port: 53365
+1731557584969	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Prompter: internal dialogs not available in this context. Falling back to window prompt."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53355/devtools/browser/b8a12648-fbd1-4c74-b10f-19221304f400
+1731557645656	Marionette	INFO	Stopped listening on port 53365
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+JavaScript error: resource://gre/modules/CaptiveDetect.sys.mjs, line 20: : 
+1731557652256	geckodriver	INFO	Listening on 127.0.0.1:53423
+1731557655303	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "534 ... 4" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\jiann\\AppData\\Local\\Temp\\rust_mozprofilean4qgH"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment

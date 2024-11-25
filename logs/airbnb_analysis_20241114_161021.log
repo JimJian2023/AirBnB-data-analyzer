@@ -1,0 +1,89 @@
+2024-11-14 16:10:21,055 [INFO] advanced_analyzer.py:375 - === 开始Airbnb数据收集程序 ===
+2024-11-14 16:10:21,223 [INFO] advanced_analyzer.py:43 - 成功读取 6 个房间ID
+2024-11-14 16:10:21,223 [INFO] advanced_analyzer.py:386 - 生成 6 个URL
+2024-11-14 16:10:21,223 [INFO] advanced_analyzer.py:390 - 创建数据目录: data/airbnb_data_20241114_161021
+2024-11-14 16:10:21,223 [INFO] advanced_analyzer.py:257 - === 开始批量分析房源 ===
+2024-11-14 16:10:21,224 [INFO] advanced_analyzer.py:266 - 设置并发线程数: 1
+2024-11-14 16:10:21,224 [INFO] advanced_analyzer.py:81 - 开始初始化 Firefox WebDriver... (尝试 1/3)
+2024-11-14 16:10:41,400 [INFO] advanced_analyzer.py:91 - 成功获取SOCKS5代理IP: 7731224-23ba352f:74024a8b-global-126959238@gate.kookeey.info:1000
+2024-11-14 16:10:41,400 [INFO] advanced_analyzer.py:151 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:10:47,881 [WARNING] advanced_analyzer.py:195 - 代理验证失败: Message: Reached error page: about:neterror?e=connectionFailure&u=http%3A//www.airbnb.co.nz/&c=UTF-8&d=Firefox%20%E6%97%A0%E6%B3%95%E5%BB%BA%E7%AB%8B%E5%88%B0%20www.airbnb.co.nz%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E8%BF%9E%E6%8E%A5%E3%80%82
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:832:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:58:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:344:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:148:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+
+2024-11-14 16:11:10,918 [INFO] advanced_analyzer.py:81 - 开始初始化 Firefox WebDriver... (尝试 2/3)
+2024-11-14 16:11:18,845 [INFO] advanced_analyzer.py:91 - 成功获取SOCKS5代理IP: 7731224-23ba352f:74024a8b-global-349675415@gate.kookeey.info:1000
+2024-11-14 16:11:18,845 [INFO] advanced_analyzer.py:151 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:11:19,587 [ERROR] advanced_analyzer.py:168 - GeckoDriver安装失败: response body:
+{"message":"API rate limit exceeded for 203.211.106.161. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+request url:
+https://api.github.com/repos/mozilla/geckodriver/releases/latest
+response headers:
+{'Date': 'Thu, 14 Nov 2024 03:11:22 GMT', 'Server': 'Varnish', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'deny', 'X-XSS-Protection': '1; mode=block', 'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'", 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Used, X-RateLimit-Resource, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset', 'Content-Type': 'application/json; charset=utf-8', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'X-GitHub-Media-Type': 'github.v3; format=json', 'X-RateLimit-Limit': '60', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1731555739', 'X-RateLimit-Resource': 'core', 'X-RateLimit-Used': '60', 'Content-Length': '281', 'X-GitHub-Request-Id': 'C393:748D7:36051A:3999F0:67356A5A'}
+
+2024-11-14 16:11:40,048 [INFO] advanced_analyzer.py:81 - 开始初始化 Firefox WebDriver... (尝试 3/3)
+2024-11-14 16:11:50,213 [INFO] advanced_analyzer.py:91 - 成功获取SOCKS5代理IP: 7731224-23ba352f:74024a8b-global-573647937@gate.kookeey.info:1000
+2024-11-14 16:11:50,213 [INFO] advanced_analyzer.py:151 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:11:50,971 [ERROR] advanced_analyzer.py:168 - GeckoDriver安装失败: response body:
+{"message":"API rate limit exceeded for 203.211.106.161. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+request url:
+https://api.github.com/repos/mozilla/geckodriver/releases/latest
+response headers:
+{'Date': 'Thu, 14 Nov 2024 03:11:53 GMT', 'Server': 'Varnish', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'deny', 'X-XSS-Protection': '1; mode=block', 'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'", 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Used, X-RateLimit-Resource, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset', 'Content-Type': 'application/json; charset=utf-8', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'X-GitHub-Media-Type': 'github.v3; format=json', 'X-RateLimit-Limit': '60', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1731555739', 'X-RateLimit-Resource': 'core', 'X-RateLimit-Used': '60', 'Content-Length': '281', 'X-GitHub-Request-Id': 'C3BC:6E617:35191E:38AE96:67356A79'}
+
+2024-11-14 16:12:11,420 [ERROR] advanced_analyzer.py:278 - 无法为URL https://www.airbnb.co.nz/rooms/837352260137971048 初始化WebDriver
+2024-11-14 16:12:11,420 [INFO] advanced_analyzer.py:81 - 开始初始化 Firefox WebDriver... (尝试 1/3)
+2024-11-14 16:12:48,901 [WARNING] advanced_analyzer.py:94 - 获取代理IP失败，尝试重新获取: HTTPSConnectionPool(host='www.kookeey.com', port=443): Read timed out. (read timeout=30)
+2024-11-14 16:12:56,501 [INFO] advanced_analyzer.py:91 - 成功获取SOCKS5代理IP: 7731224-23ba352f:74024a8b-global-423643639@gate.kookeey.info:1000
+2024-11-14 16:12:56,501 [INFO] advanced_analyzer.py:151 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:12:57,259 [ERROR] advanced_analyzer.py:168 - GeckoDriver安装失败: response body:
+{"message":"API rate limit exceeded for 203.211.106.161. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+request url:
+https://api.github.com/repos/mozilla/geckodriver/releases/latest
+response headers:
+{'Date': 'Thu, 14 Nov 2024 03:12:59 GMT', 'Server': 'Varnish', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'deny', 'X-XSS-Protection': '1; mode=block', 'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'", 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Used, X-RateLimit-Resource, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset', 'Content-Type': 'application/json; charset=utf-8', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'X-GitHub-Media-Type': 'github.v3; format=json', 'X-RateLimit-Limit': '60', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1731555739', 'X-RateLimit-Resource': 'core', 'X-RateLimit-Used': '60', 'Content-Length': '281', 'X-GitHub-Request-Id': 'C3E2:7138D:3FCFB3:4366E4:67356ABB'}
+
+2024-11-14 16:12:57,260 [INFO] advanced_analyzer.py:81 - 开始初始化 Firefox WebDriver... (尝试 2/3)
+2024-11-14 16:12:58,568 [INFO] advanced_analyzer.py:91 - 成功获取SOCKS5代理IP: 7731224-23ba352f:74024a8b-global-926464637@gate.kookeey.info:1000
+2024-11-14 16:12:58,569 [INFO] advanced_analyzer.py:151 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:12:59,322 [ERROR] advanced_analyzer.py:168 - GeckoDriver安装失败: response body:
+{"message":"API rate limit exceeded for 203.211.106.161. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+request url:
+https://api.github.com/repos/mozilla/geckodriver/releases/latest
+response headers:
+{'Date': 'Thu, 14 Nov 2024 03:13:02 GMT', 'Server': 'Varnish', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'deny', 'X-XSS-Protection': '1; mode=block', 'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'", 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Used, X-RateLimit-Resource, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset', 'Content-Type': 'application/json; charset=utf-8', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'X-GitHub-Media-Type': 'github.v3; format=json', 'X-RateLimit-Limit': '60', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1731555739', 'X-RateLimit-Resource': 'core', 'X-RateLimit-Used': '60', 'Content-Length': '281', 'X-GitHub-Request-Id': 'C3A4:6DF41:366449:39FB9C:67356ABE'}
+
+2024-11-14 16:12:59,322 [INFO] advanced_analyzer.py:81 - 开始初始化 Firefox WebDriver... (尝试 3/3)
+2024-11-14 16:13:10,620 [INFO] advanced_analyzer.py:91 - 成功获取SOCKS5代理IP: 7731224-23ba352f:74024a8b-global-850835248@gate.kookeey.info:1000
+2024-11-14 16:13:10,620 [INFO] advanced_analyzer.py:151 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:13:11,362 [ERROR] advanced_analyzer.py:168 - GeckoDriver安装失败: response body:
+{"message":"API rate limit exceeded for 203.211.106.161. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+request url:
+https://api.github.com/repos/mozilla/geckodriver/releases/latest
+response headers:
+{'Date': 'Thu, 14 Nov 2024 03:13:14 GMT', 'Server': 'Varnish', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'deny', 'X-XSS-Protection': '1; mode=block', 'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'", 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Used, X-RateLimit-Resource, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset', 'Content-Type': 'application/json; charset=utf-8', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'X-GitHub-Media-Type': 'github.v3; format=json', 'X-RateLimit-Limit': '60', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1731555739', 'X-RateLimit-Resource': 'core', 'X-RateLimit-Used': '60', 'Content-Length': '281', 'X-GitHub-Request-Id': 'C3D5:74FF3:360648:399DE8:67356ACA'}
+
+2024-11-14 16:13:11,363 [ERROR] advanced_analyzer.py:278 - 无法为URL https://www.airbnb.co.nz/rooms/43435162 初始化WebDriver
+2024-11-14 16:13:11,363 [INFO] advanced_analyzer.py:81 - 开始初始化 Firefox WebDriver... (尝试 1/3)
+2024-11-14 16:13:13,308 [INFO] advanced_analyzer.py:91 - 成功获取SOCKS5代理IP: 7731224-23ba352f:74024a8b-global-334399046@gate.kookeey.info:1000
+2024-11-14 16:13:13,308 [INFO] advanced_analyzer.py:151 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:13:14,055 [ERROR] advanced_analyzer.py:168 - GeckoDriver安装失败: response body:
+{"message":"API rate limit exceeded for 203.211.106.161. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+request url:
+https://api.github.com/repos/mozilla/geckodriver/releases/latest
+response headers:
+{'Date': 'Thu, 14 Nov 2024 03:13:16 GMT', 'Server': 'Varnish', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'deny', 'X-XSS-Protection': '1; mode=block', 'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'", 'Access-Control-Allow-Origin': '*', 'Access-Control-Expose-Headers': 'ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Used, X-RateLimit-Resource, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset', 'Content-Type': 'application/json; charset=utf-8', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'X-GitHub-Media-Type': 'github.v3; format=json', 'X-RateLimit-Limit': '60', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1731555739', 'X-RateLimit-Resource': 'core', 'X-RateLimit-Used': '60', 'Content-Length': '281', 'X-GitHub-Request-Id': 'C3BE:3A60B1:352702:38BD9C:67356ACC'}
+
+2024-11-14 16:13:14,055 [INFO] advanced_analyzer.py:81 - 开始初始化 Firefox WebDriver... (尝试 2/3)

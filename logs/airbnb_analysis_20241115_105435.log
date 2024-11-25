@@ -1,0 +1,345 @@
+2024-11-15 10:54:35,436 [INFO] advanced_analyzer.py:358 - === 开始Airbnb数据收集程序 ===
+2024-11-15 10:54:35,605 [INFO] advanced_analyzer.py:99 - 成功读取 6 个房间ID
+2024-11-15 10:54:35,605 [INFO] advanced_analyzer.py:369 - 生成 6 个URL
+2024-11-15 10:54:35,606 [INFO] advanced_analyzer.py:373 - 创建数据目录: data/airbnb_data_20241115_105435
+2024-11-15 10:54:35,606 [INFO] advanced_analyzer.py:239 - === 开始批量分析房源 ===
+2024-11-15 10:54:35,606 [INFO] advanced_analyzer.py:248 - 设置并发线程数: 1
+2024-11-15 10:54:35,607 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 10:54:35,611 [ERROR] bit_browser_manager.py:270 - 清理浏览器时发生错误: Expecting value: line 1 column 1 (char 0)
+2024-11-15 10:54:35,613 [ERROR] bit_browser_manager.py:271 - 错误详情: Traceback (most recent call last):
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 344, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 362, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\bit_browser_manager.py", line 253, in cleanup_browsers
+    response_json = response.json()
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2024-11-15 10:54:37,613 [INFO] bit_browser_manager.py:58 - 正在创建浏览器配置，请求数据: {
+  "name": "airbnb_browser_1731621277",
+  "remark": "Airbnb\u6570\u636e\u91c7\u96c6",
+  "proxyMethod": 2,
+  "proxyType": "http",
+  "host": "38.kookeey.info",
+  "port": "7426",
+  "proxyUserName": "23ba352f",
+  "proxyUserPwd": "74024a8b",
+  "isGlobalProxyInfo": true,
+  "browserFingerPrint": {
+    "coreVersion": "130"
+  },
+  "credentialsEnableService": true,
+  "proxyAgreementType": "http",
+  "syncTabs": true,
+  "syncCookies": true,
+  "abortImage": false,
+  "abortMedia": false,
+  "clearCacheFilesBeforeLaunch": true,
+  "clearCookiesBeforeLaunch": true,
+  "ipCheckService": "ip-api",
+  "proxyAuthenticationHeader": {
+    "Proxy-Authorization": "Basic MjNiYTM1MmY6NzQwMjRhOGI="
+  }
+}
+2024-11-15 10:54:38,518 [INFO] bit_browser_manager.py:66 - API响应状态码: 200
+2024-11-15 10:54:38,518 [INFO] bit_browser_manager.py:67 - API响应头: {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '8744', 'Date': 'Thu, 14 Nov 2024 21:54:38 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'}
+2024-11-15 10:54:38,519 [INFO] bit_browser_manager.py:70 - API响应内容: {
+  "success": true,
+  "data": {
+    "id": "8c794ab618954863b52cae00cf593dc0",
+    "seq": 1,
+    "code": "20241115055439178",
+    "platform": "",
+    "platformIcon": "",
+    "url": "",
+    "name": "airbnb_browser_1731621277",
+    "userName": "",
+    "password": "",
+    "cookie": "",
+    "otherCookie": "",
+    "isGlobalProxyInfo": true,
+    "isIpv6": false,
+    "proxyMethod": 2,
+    "proxyType": "http",
+    "agentId": "",
+    "ipCheckService": "ip-api",
+    "host": "38.kookeey.info",
+    "port": 7426,
+    "proxyUserName": "23ba352f",
+    "proxyPassword": "",
+    "lastIp": "",
+    "lastCountry": "",
+    "isIpNoChange": false,
+    "ip": "",
+    "country": "",
+    "province": "",
+    "city": "",
+    "dynamicIpUrl": "",
+    "isDynamicIpChangeIp": false,
+    "remark": "Airbnb\u6570\u636e\u91c7\u96c6",
+    "status": 0,
+    "operUserName": "",
+    "isDelete": 0,
+    "delReason": "",
+    "isMostCommon": 0,
+    "isRemove": 0,
+    "tempStr": null,
+    "createdBy": "2c9bc058931ee8a601932c65f12b6f6b",
+    "userId": "2c9bc058931ee8a601932c65f12b6f6b",
+    "createdTime": "2024-11-15 05:54:39",
+    "recycleBinRemark": "",
+    "mainUserId": "2c9bc058931ee8a601932c65f12b6f6b",
+    "abortImage": false,
+    "abortMedia": false,
+    "stopWhileNetError": false,
+    "stopWhileCountryChange": false,
+    "syncTabs": true,
+    "syncCookies": true,
+    "syncIndexedDb": false,
+    "syncBookmarks": false,
+    "syncAuthorization": false,
+    "syncHistory": false,
+    "syncGoogleAccount": true,
+    "allowedSignin": false,
+    "syncSessions": true,
+    "workbench": "localserver",
+    "clearCacheFilesBeforeLaunch": true,
+    "clearCookiesBeforeLaunch": true,
+    "clearHistoriesBeforeLaunch": false,
+    "randomFingerprint": false,
+    "muteAudio": false,
+    "disableGpu": false,
+    "enableBackgroundMode": false,
+    "abortImageMaxSize": null,
+    "syncExtensions": false,
+    "syncUserExtensions": false,
+    "syncLocalStorage": false,
+    "credentialsEnableService": true,
+    "disableTranslatePopup": false,
+    "stopWhileIpChange": false,
+    "disableClipboard": false,
+    "disableNotifications": false,
+    "memorySaver": false,
+    "browserFingerPrint": {
+      "id": "7baa22b27ddb4c8983a146e44042d1ca",
+      "seq": 1,
+      "coreVersion": "130",
+      "browserId": "8c794ab618954863b52cae00cf593dc0",
+      "ostype": "PC",
+      "os": "Win32",
+      "architecture": "x86",
+      "osVersion": "10",
+      "platformVersion": "10.0.0",
+      "version": "129",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.101 Safari/537.36",
+      "isIpCreateTimeZone": true,
+      "timeZone": "",
+      "timeZoneOffset": 0,
+      "ignoreHttpsErrors": false,
+      "webRTC": "3",
+      "position": "1",
+      "isIpCreatePosition": true,
+      "isIpCreateDisplayLanguage": false,
+      "displayLanguages": "",
+      "isIpCreateLanguage": true,
+      "resolutionType": "0",
+      "resolution": "1920 x 1080",
+      "openWidth": 1280,
+      "openHeight": 720,
+      "fontType": "2",
+      "font": "Luminari,Big Caslon,MingLiu_HKSCS-ExtB Regular,Bradley Hand,Small Fonts,Tamil MN,Sitka Banner,PMingLiU-ExtB Regular,Apple Symbols,MS Sans Serif Regular",
+      "canvas": "0",
+      "canvasValue": "571985",
+      "webGL": "0",
+      "webGLValue": "844986",
+      "webGLMeta": "0",
+      "webGLManufacturer": "Google Inc. (AMD)",
+      "webGLRender": "ANGLE (AMD, AMD Radeon(TM) Graphics Direct3D11 vs_5_0 ps_5_0, D3D11-30.0.14052.5)",
+      "audioContext": "0",
+      "audioContextValue": "51",
+      "mediaDevice": "1",
+      "speechVoices": "0",
+      "speechVoicesValue": "[{\"name\":\"Microsoft Elena Online (Natural) - Spanish (Argentina)\",\"default\":false,\"lang\":\"es-AR\",\"is_remote\":false,\"voice_uri\":\"Microsoft Elena Online (Natural) - Spanish (Argentina)\"},{\"name\":\"Microsoft Petra Online (Natural) - Slovenian (Slovenia)\",\"default\":false,\"lang\":\"sl-SI\",\"is_remote\":false,\"voice_uri\":\"Microsoft Petra Online (Natural) - Slovenian (Slovenia)\"},{\"name\":\"Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong)\",\"default\":false,\"lang\":\"zh-HK\",\"is_remote\":false,\"voice_uri\":\"Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong)\"},{\"name\":\"Microsoft Huihui - Chinese (Simplified, PRC)\",\"default\":true,\"lang\":\"zh-CN\",\"is_remote\":false,\"voice_uri\":\"Microsoft Huihui - Chinese (Simplified, PRC)\"},{\"name\":\"Microsoft Kangkang - Chinese (Simplified, PRC)\",\"default\":false,\"lang\":\"zh-CN\",\"is_remote\":false,\"voice_uri\":\"Microsoft Kangkang - Chinese (Simplified, PRC)\"},{\"name\":\"Microsoft Yaoyao - Chinese (Simplified, PRC)\",\"default\":false,\"lang\":\"zh-CN\",\"is_remote\":false,\"voice_uri\":\"Microsoft Yaoyao - Chinese (Simplified, PRC)\"},{\"name\":\"Google \u666e\u901a\u8bdd\uff08\u4e2d\u56fd\u5927\u9646\uff09\",\"default\":false,\"lang\":\"zh-CN\",\"is_remote\":true,\"voice_uri\":\"Google \u666e\u901a\u8bdd\uff08\u4e2d\u56fd\u5927\u9646\uff09\"},{\"name\":\"Google \u7ca4\u8a9e\uff08\u9999\u6e2f\uff09\",\"default\":false,\"lang\":\"zh-HK\",\"is_remote\":true,\"voice_uri\":\"Google \u7ca4\u8a9e\uff08\u9999\u6e2f\uff09\"},{\"name\":\"Google \u570b\u8a9e\uff08\u81fa\u7063\uff09\",\"default\":false,\"lang\":\"zh-TW\",\"is_remote\":true,\"voice_uri\":\"Google \u570b\u8a9e\uff08\u81fa\u7063\uff09\"},{\"name\":\"Google \u65e5\u672c\u8a9e\",\"default\":false,\"lang\":\"ja-JP\",\"is_remote\":true,\"voice_uri\":\"Google \u65e5\u672c\u8a9e\"},{\"name\":\"Google Deutsch\",\"default\":false,\"lang\":\"de-DE\",\"is_remote\":true,\"voice_uri\":\"Google Deutsch\"},{\"name\":\"Google US English\",\"default\":false,\"lang\":\"en-US\",\"is_remote\":true,\"voice_uri\":\"Google US English\"},{\"name\":\"Google UK English Female\",\"default\":false,\"lang\":\"en-GB\",\"is_remote\":true,\"voice_uri\":\"Google UK English Female\"},{\"name\":\"Google UK English Male\",\"default\":false,\"lang\":\"en-GB\",\"is_remote\":true,\"voice_uri\":\"Google UK English Male\"},{\"name\":\"Google espa\u00f1ol\",\"default\":false,\"lang\":\"es-ES\",\"is_remote\":true,\"voice_uri\":\"Google espa\u00f1ol\"},{\"name\":\"Google espa\u00f1ol de Estados Unidos\",\"default\":false,\"lang\":\"es-US\",\"is_remote\":true,\"voice_uri\":\"Google espa\u00f1ol de Estados Unidos\"},{\"name\":\"Google fran\u00e7ais\",\"default\":false,\"lang\":\"fr-FR\",\"is_remote\":true,\"voice_uri\":\"Google fran\u00e7ais\"},{\"name\":\"Google \u0939\u093f\u0928\u094d\u0926\u0940\",\"default\":false,\"lang\":\"hi-IN\",\"is_remote\":true,\"voice_uri\":\"Google \u0939\u093f\u0928\u094d\u0926\u0940\"},{\"name\":\"Google Bahasa Indonesia\",\"default\":false,\"lang\":\"id-ID\",\"is_remote\":true,\"voice_uri\":\"Google Bahasa Indonesia\"},{\"name\":\"Google polski\",\"default\":false,\"lang\":\"pl-PL\",\"is_remote\":true,\"voice_uri\":\"Google polski\"},{\"name\":\"Google \u0440\u0443\u0441\u0441\u043a\u0438\u0439\",\"default\":false,\"lang\":\"ru-RU\",\"is_remote\":true,\"voice_uri\":\"Google \u0440\u0443\u0441\u0441\u043a\u0438\u0439\"},{\"name\":\"Google portugu\u00eas do Brasil\",\"default\":false,\"lang\":\"pt-BR\",\"is_remote\":true,\"voice_uri\":\"Google portugu\u00eas do Brasil\"},{\"name\":\"Google italiano\",\"default\":false,\"lang\":\"it-IT\",\"is_remote\":true,\"voice_uri\":\"Google italiano\"},{\"name\":\"Google \ud55c\uad6d\uc758\",\"default\":false,\"lang\":\"ko-KR\",\"is_remote\":true,\"voice_uri\":\"Google \ud55c\uad6d\uc758\"}]",
+      "hardwareConcurrency": "4",
+      "deviceMemory": "8",
+      "deviceInfoEnabled": true,
+      "computerName": "DESKTOP-V1CEAWLJ",
+      "macAddr": "04-D4-C4-D2-03-6C",
+      "clientRectNoiseEnabled": true,
+      "clientRectNoiseValue": 52772,
+      "doNotTrack": "1",
+      "portScanProtect": "0",
+      "portWhiteList": "",
+      "isDelete": 0,
+      "colorDepth": 24,
+      "totalDiskSpace": "947142656",
+      "devicePixelRatio": 1,
+      "disableSslCipherSuitesFlag": false,
+      "disableSslCipherSuites": null,
+      "plugins": "",
+      "enablePlugins": false,
+      "windowSizeLimit": true,
+      "createdBy": "2c9bc058931ee8a601932c65f12b6f6b",
+      "createdTime": "2024-11-15 05:54:39",
+      "isValidUsername": true,
+      "abortImage": false,
+      "abortImageMaxSize": null,
+      "abortMedia": false,
+      "stopWhileNetError": false,
+      "stopWhileCountryChange": false,
+      "syncTabs": true,
+      "syncCookies": true,
+      "syncIndexedDb": false,
+      "syncBookmarks": false,
+      "syncAuthorization": false,
+      "syncHistory": false,
+      "syncGoogleAccount": false,
+      "allowedSignin": false,
+      "syncSessions": false,
+      "workbench": "localserver",
+      "clearCacheFilesBeforeLaunch": false,
+      "clearCookiesBeforeLaunch": false,
+      "clearHistoriesBeforeLaunch": false,
+      "randomFingerprint": false,
+      "muteAudio": false,
+      "disableGpu": false,
+      "enableBackgroundMode": false,
+      "syncExtensions": false,
+      "syncUserExtensions": false,
+      "syncLocalStorage": false,
+      "credentialsEnableService": false,
+      "disableTranslatePopup": false,
+      "stopWhileIpChange": false,
+      "disableClipboard": false,
+      "disableNotifications": false,
+      "memorySaver": false,
+      "coreProduct": "chrome",
+      "webgpu": {
+        "driver": null,
+        "vendor": "amd",
+        "description": null,
+        "device": null,
+        "architecture": "gcn-5"
+      },
+      "batchRandom": false,
+      "batchUpdateFingerPrint": false,
+      "firefoxVersionMap": {
+        "120": "126,125,124,123,122,121,120,119,118,117",
+        "128": "128,127,126,125"
+      },
+      "launchArgs": null,
+      "extendOptions": null,
+      "defaultAccuracy": null
+    },
+    "createdName": null,
+    "belongUserName": null,
+    "updateName": null,
+    "agentIpCount": null,
+    "belongToMe": false,
+    "seqExport": null,
+    "groupIDs": null,
+    "browserShareID": null,
+    "share": null,
+    "shareUserName": null,
+    "isShare": 0,
+    "isValidUsername": false,
+    "createNum": 0,
+    "isRandomFinger": true,
+    "remarkType": 1,
+    "refreshProxyUrl": null,
+    "duplicateCheck": 0,
+    "ossExtend": null,
+    "randomKey": null,
+    "randomKeyUser": null,
+    "syncBrowserAccount": null,
+    "cookieBak": "",
+    "passwordBak": null,
+    "manual": 0,
+    "proxyPasswordBak": null,
+    "proxyAgreementType": "http",
+    "clearCacheWithoutExtensions": false,
+    "syncPaymentsAndAddress": false,
+    "extendIds": [],
+    "isSynOpen": 1,
+    "faSecretKey": null,
+    "coreProduct": null,
+    "ostype": null,
+    "os": null,
+    "sort": 0,
+    "checkPassword": null
+  }
+}
+2024-11-15 10:54:38,520 [INFO] bit_browser_manager.py:74 - 成功创建浏览器配置: 8c794ab618954863b52cae00cf593dc0
+2024-11-15 10:54:40,521 [INFO] bit_browser_manager.py:98 - 正在打开浏览器，请求数据: {
+  "id": "8c794ab618954863b52cae00cf593dc0",
+  "loadExtensions": false,
+  "headless": false,
+  "loadImage": true
+}
+2024-11-15 10:55:54,560 [INFO] bit_browser_manager.py:106 - API响应状态码: 200
+2024-11-15 10:55:54,560 [INFO] bit_browser_manager.py:107 - API响应头: {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '332', 'Date': 'Thu, 14 Nov 2024 21:55:54 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'}
+2024-11-15 10:55:54,560 [INFO] bit_browser_manager.py:110 - API响应内容: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:59697/devtools/browser/82fbdd66-4b33-43d3-9457-507a23c9799f",
+    "http": "127.0.0.1:59697",
+    "coreVersion": "130",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\130\\chromedriver.exe",
+    "seq": 1,
+    "name": "airbnb_browser_1731621277",
+    "remark": "Airbnb\u6570\u636e\u91c7\u96c6",
+    "pid": 23508
+  }
+}
+2024-11-15 10:55:54,561 [INFO] bit_browser_manager.py:116 - 获取到driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\130\chromedriver.exe
+2024-11-15 10:55:54,561 [INFO] bit_browser_manager.py:117 - 获取到websocket地址: 127.0.0.1:59697
+2024-11-15 10:55:54,561 [INFO] bit_browser_manager.py:124 - 设置代理URL: http://23ba352f:74024a8b@38.kookeey.info:7426
+2024-11-15 10:55:55,850 [INFO] bit_browser_manager.py:133 - 等待3秒确保浏览器启动...
+2024-11-15 10:55:58,851 [INFO] bit_browser_manager.py:136 - 正在测试代理连接...
+2024-11-15 10:56:25,282 [ERROR] bit_browser_manager.py:154 - 无法获取代理测试结果: Message: no such element: Unable to locate element: {"method":"tag name","selector":"pre"}
+  (Session info: chrome=130.0.6723.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x01251F83+24307]
+	(No symbol) [0x011D9BE4]
+	(No symbol) [0x010BC313]
+	(No symbol) [0x010FDC76]
+	(No symbol) [0x010FDEBB]
+	(No symbol) [0x0113B9E2]
+	(No symbol) [0x0111FED4]
+	(No symbol) [0x01139569]
+	(No symbol) [0x0111FC26]
+	(No symbol) [0x010F218C]
+	(No symbol) [0x010F310D]
+	GetHandleVerifier [0x01503C23+2849683]
+	GetHandleVerifier [0x01560D2E+3230878]
+	GetHandleVerifier [0x01558DE2+3198290]
+	GetHandleVerifier [0x012F3580+685296]
+	(No symbol) [0x011E2CAD]
+	(No symbol) [0x011DF8B8]
+	(No symbol) [0x011DFA55]
+	(No symbol) [0x011D2340]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 10:56:25,283 [INFO] bit_browser_manager.py:156 - 成功打开浏览器实例: 8c794ab618954863b52cae00cf593dc0
+2024-11-15 10:56:25,284 [INFO] advanced_analyzer.py:204 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 10:56:25,284 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 10:56:25,555 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 10:56:25,558 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 10:56:38,009 [INFO] airbnb_calendar_checker.py:93 - 没有找到需要关闭的模态框或关闭失败

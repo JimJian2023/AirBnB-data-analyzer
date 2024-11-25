@@ -1,0 +1,31 @@
+2024-11-14 16:34:30,382 [INFO] advanced_analyzer.py:455 - === 开始Airbnb数据收集程序 ===
+2024-11-14 16:34:30,573 [INFO] advanced_analyzer.py:50 - 成功读取 6 个房间ID
+2024-11-14 16:34:30,573 [INFO] advanced_analyzer.py:466 - 生成 6 个URL
+2024-11-14 16:34:30,574 [INFO] advanced_analyzer.py:470 - 创建数据目录: data/airbnb_data_20241114_163430
+2024-11-14 16:34:30,574 [INFO] advanced_analyzer.py:337 - === 开始批量分析房源 ===
+2024-11-14 16:34:30,574 [INFO] advanced_analyzer.py:346 - 设置并发线程数: 1
+2024-11-14 16:34:30,575 [INFO] advanced_analyzer.py:154 - GeckoDriver已存在
+2024-11-14 16:34:30,575 [INFO] advanced_analyzer.py:185 - 开始初始化 Firefox WebDriver...
+2024-11-14 16:34:30,575 [INFO] advanced_analyzer.py:201 - 代理配置信息:
+2024-11-14 16:34:30,575 [INFO] advanced_analyzer.py:202 - 主机: 38.kookeey.info
+2024-11-14 16:34:30,575 [INFO] advanced_analyzer.py:203 - 端口: 7426
+2024-11-14 16:34:30,575 [INFO] advanced_analyzer.py:204 - 用户名: 23ba352f
+2024-11-14 16:34:30,575 [INFO] advanced_analyzer.py:237 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:39:56,071 [ERROR] advanced_analyzer.py:291 - 浏览器初始化失败: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-11-14 16:39:56,072 [ERROR] advanced_analyzer.py:358 - 无法为URL https://www.airbnb.co.nz/rooms/837352260137971048 初始化WebDriver
+2024-11-14 16:39:56,072 [INFO] advanced_analyzer.py:154 - GeckoDriver已存在
+2024-11-14 16:39:56,072 [INFO] advanced_analyzer.py:185 - 开始初始化 Firefox WebDriver...
+2024-11-14 16:39:56,072 [INFO] advanced_analyzer.py:201 - 代理配置信息:
+2024-11-14 16:39:56,072 [INFO] advanced_analyzer.py:202 - 主机: 38.kookeey.info
+2024-11-14 16:39:56,072 [INFO] advanced_analyzer.py:203 - 端口: 7426
+2024-11-14 16:39:56,072 [INFO] advanced_analyzer.py:204 - 用户名: 23ba352f
+2024-11-14 16:39:56,072 [INFO] advanced_analyzer.py:237 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-11-14 16:40:00,342 [WARNING] advanced_analyzer.py:285 - 代理验证失败: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2024-11-14 16:40:20,806 [ERROR] advanced_analyzer.py:358 - 无法为URL https://www.airbnb.co.nz/rooms/43435162 初始化WebDriver
+2024-11-14 16:40:20,806 [INFO] advanced_analyzer.py:154 - GeckoDriver已存在
+2024-11-14 16:40:20,806 [INFO] advanced_analyzer.py:185 - 开始初始化 Firefox WebDriver...
+2024-11-14 16:40:20,806 [INFO] advanced_analyzer.py:201 - 代理配置信息:
+2024-11-14 16:40:20,806 [INFO] advanced_analyzer.py:202 - 主机: 38.kookeey.info
+2024-11-14 16:40:20,806 [INFO] advanced_analyzer.py:203 - 端口: 7426
+2024-11-14 16:40:20,806 [INFO] advanced_analyzer.py:204 - 用户名: 23ba352f
+2024-11-14 16:40:20,807 [INFO] advanced_analyzer.py:237 - 找到Firefox安装路径: C:\Program Files\Mozilla Firefox\firefox.exe

@@ -1,0 +1,219 @@
+2024-11-15 12:15:47,353 [INFO] advanced_analyzer.py:362 - === 开始Airbnb数据收集程序 ===
+2024-11-15 12:15:47,536 [INFO] advanced_analyzer.py:99 - 成功读取 6 个房间ID
+2024-11-15 12:15:47,536 [INFO] advanced_analyzer.py:373 - 生成 6 个URL
+2024-11-15 12:15:47,536 [INFO] advanced_analyzer.py:377 - 创建数据目录: data/airbnb_data_20241115_121547
+2024-11-15 12:15:47,537 [INFO] advanced_analyzer.py:231 - === 开始批量分析房源 ===
+2024-11-15 12:15:47,537 [INFO] advanced_analyzer.py:240 - 设置并发线程数: 3
+2024-11-15 12:15:47,571 [INFO] bit_browser_manager.py:43 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 31680
+  }
+}
+2024-11-15 12:15:47,572 [INFO] bit_browser_manager.py:51 - 找到活动浏览器 ID: cf51683770d94ff3931408fce73c90f3, PID: 31680
+2024-11-15 12:15:47,573 [INFO] bit_browser_manager.py:43 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 31680
+  }
+}
+2024-11-15 12:15:47,573 [INFO] bit_browser_manager.py:51 - 找到活动浏览器 ID: cf51683770d94ff3931408fce73c90f3, PID: 31680
+2024-11-15 12:15:47,575 [INFO] bit_browser_manager.py:130 - 打开浏览器响应: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:64147/devtools/browser/ad368a18-6d69-44f4-872a-1459059a9415",
+    "http": "127.0.0.1:64147",
+    "coreVersion": "126",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\126\\chromedriver.exe",
+    "seq": 1,
+    "name": "",
+    "remark": "",
+    "pid": 31680
+  }
+}
+2024-11-15 12:15:47,575 [INFO] bit_browser_manager.py:137 - 调试地址: 127.0.0.1:64147
+2024-11-15 12:15:47,575 [INFO] bit_browser_manager.py:138 - Driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\126\chromedriver.exe
+2024-11-15 12:15:47,577 [INFO] bit_browser_manager.py:43 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 31680
+  }
+}
+2024-11-15 12:15:47,577 [INFO] bit_browser_manager.py:130 - 打开浏览器响应: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:64147/devtools/browser/ad368a18-6d69-44f4-872a-1459059a9415",
+    "http": "127.0.0.1:64147",
+    "coreVersion": "126",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\126\\chromedriver.exe",
+    "seq": 1,
+    "name": "",
+    "remark": "",
+    "pid": 31680
+  }
+}
+2024-11-15 12:15:47,577 [INFO] bit_browser_manager.py:51 - 找到活动浏览器 ID: cf51683770d94ff3931408fce73c90f3, PID: 31680
+2024-11-15 12:15:47,577 [INFO] bit_browser_manager.py:137 - 调试地址: 127.0.0.1:64147
+2024-11-15 12:15:47,577 [INFO] bit_browser_manager.py:138 - Driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\126\chromedriver.exe
+2024-11-15 12:15:47,581 [INFO] bit_browser_manager.py:130 - 打开浏览器响应: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:64147/devtools/browser/ad368a18-6d69-44f4-872a-1459059a9415",
+    "http": "127.0.0.1:64147",
+    "coreVersion": "126",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\126\\chromedriver.exe",
+    "seq": 1,
+    "name": "",
+    "remark": "",
+    "pid": 31680
+  }
+}
+2024-11-15 12:15:47,581 [INFO] bit_browser_manager.py:137 - 调试地址: 127.0.0.1:64147
+2024-11-15 12:15:47,581 [INFO] bit_browser_manager.py:138 - Driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\126\chromedriver.exe
+2024-11-15 12:15:48,155 [INFO] bit_browser_manager.py:161 - 正在导航到: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:15:48,158 [INFO] bit_browser_manager.py:161 - 正在导航到: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:15:48,171 [INFO] bit_browser_manager.py:161 - 正在导航到: https://www.airbnb.co.nz/rooms/43435162
+2024-11-15 12:15:48,323 [INFO] bit_browser_manager.py:163 - 成功加载页面: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:15:48,458 [INFO] bit_browser_manager.py:163 - 成功加载页面: https://www.airbnb.co.nz/rooms/43435162
+2024-11-15 12:15:48,458 [INFO] bit_browser_manager.py:163 - 成功加载页面: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:15:53,324 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:15:53,324 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:15:53,410 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:15:53,412 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:15:53,458 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:15:53,458 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/43435162
+2024-11-15 12:15:53,459 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:15:53,459 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/43435162
+2024-11-15 12:15:53,542 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:15:53,543 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:15:53,545 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:15:53,545 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:17:53,669 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 12:17:53,672 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 12:17:53,790 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 12:17:53,790 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 12:17:53,792 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 12:17:53,793 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 12:17:54,672 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 12:17:54,793 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 12:17:54,793 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 12:17:54,851 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 12:17:56,023 [INFO] airbnb_calendar_checker.py:153 - JavaScript点击日历按钮成功
+2024-11-15 12:17:56,023 [INFO] airbnb_calendar_checker.py:153 - JavaScript点击日历按钮成功
+2024-11-15 12:18:35,025 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 12:18:35,041 [INFO] airbnb_calendar_checker.py:199 - 找到 92 个日期单元格
+2024-11-15 12:18:35,122 [INFO] airbnb_calendar_checker.py:211 - 找到 92 个日期单元格
+2024-11-15 12:18:35,123 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 92
+2024-11-15 12:18:35,124 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 92
+2024-11-15 12:18:35,124 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 92
+2024-11-15 12:18:35,124 [INFO] airbnb_calendar_checker.py:262 - 收集到 92 条有效日历数据
+2024-11-15 12:18:35,124 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 12:18:35,124 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 837352260137971048
+2024-11-15 12:18:35,124 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_837352260137971048_20241115_121835.xlsx
+2024-11-15 12:18:35,125 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 92 行数据
+2024-11-15 12:18:35,148 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_837352260137971048_20241115_121835.xlsx
+2024-11-15 12:18:35,148 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 8.14 KB
+2024-11-15 12:18:35,149 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_837352260137971048_20241115_121835.xlsx
+2024-11-15 12:18:35,149 [INFO] advanced_analyzer.py:205 - 成功获取日历数据: 92 条记录
+2024-11-15 12:18:35,149 [INFO] price_checker.py:537 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:18:35,149 [INFO] price_checker.py:530 - 找到 29 个可预订日期
+2024-11-15 12:18:35,149 [INFO] price_checker.py:553 - [1/29] 处理日期: 17/11/2024
+2024-11-15 12:18:35,149 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 12:18:35,149 [INFO] price_checker.py:255 - 入住日期: 17/11/2024
+2024-11-15 12:18:37,155 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 12:18:37,155 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 12:18:38,009 [INFO] airbnb_calendar_checker.py:199 - 找到 9 个日期单元格
+2024-11-15 12:18:38,009 [INFO] airbnb_calendar_checker.py:199 - 找到 9 个日期单元格
+2024-11-15 12:18:38,068 [INFO] airbnb_calendar_checker.py:211 - 找到 12 个日期单元格
+2024-11-15 12:18:38,068 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 12
+2024-11-15 12:18:38,077 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 12
+2024-11-15 12:18:38,099 [INFO] airbnb_calendar_checker.py:211 - 找到 12 个日期单元格
+2024-11-15 12:18:38,099 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 12
+2024-11-15 12:18:38,099 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 12
+2024-11-15 12:18:38,099 [INFO] airbnb_calendar_checker.py:262 - 收集到 12 条有效日历数据
+2024-11-15 12:18:38,099 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 12
+2024-11-15 12:18:38,099 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 12:18:38,099 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 12
+2024-11-15 12:18:38,100 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 830193102361409290
+2024-11-15 12:18:38,100 [INFO] airbnb_calendar_checker.py:262 - 收集到 12 条有效日历数据
+2024-11-15 12:18:38,100 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_830193102361409290_20241115_121838.xlsx
+2024-11-15 12:18:38,100 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 12:18:38,100 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 12 行数据
+2024-11-15 12:18:38,101 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 43435162
+2024-11-15 12:18:38,101 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_43435162_20241115_121838.xlsx
+2024-11-15 12:18:38,101 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 12 行数据
+2024-11-15 12:18:38,118 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_43435162_20241115_121838.xlsx
+2024-11-15 12:18:38,119 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_830193102361409290_20241115_121838.xlsx
+2024-11-15 12:18:38,119 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 5.47 KB
+2024-11-15 12:18:38,119 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 5.47 KB
+2024-11-15 12:18:38,119 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_43435162_20241115_121838.xlsx
+2024-11-15 12:18:38,119 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_830193102361409290_20241115_121838.xlsx
+2024-11-15 12:18:38,119 [INFO] advanced_analyzer.py:205 - 成功获取日历数据: 12 条记录
+2024-11-15 12:18:38,119 [INFO] advanced_analyzer.py:205 - 成功获取日历数据: 12 条记录
+2024-11-15 12:18:38,119 [INFO] price_checker.py:537 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/43435162
+2024-11-15 12:18:38,119 [INFO] price_checker.py:537 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:18:38,119 [INFO] price_checker.py:530 - 找到 0 个可预订日期
+2024-11-15 12:18:38,120 [INFO] price_checker.py:530 - 找到 0 个可预订日期
+2024-11-15 12:18:38,120 [ERROR] price_checker.py:543 - 房 https://www.airbnb.co.nz/rooms/43435162 未找到可预订日期
+2024-11-15 12:18:38,120 [ERROR] price_checker.py:543 - 房 https://www.airbnb.co.nz/rooms/830193102361409290 未找到可预订日期
+2024-11-15 12:18:38,120 [ERROR] advanced_analyzer.py:210 - 获取格数据失败: https://www.airbnb.co.nz/rooms/43435162
+2024-11-15 12:18:38,120 [ERROR] advanced_analyzer.py:210 - 获取格数据失败: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-11-15 12:18:38,121 [INFO] bit_browser_manager.py:191 - 保留最后一个标签页
+2024-11-15 12:18:38,121 [INFO] bit_browser_manager.py:191 - 保留最后一个标签页
+2024-11-15 12:18:38,183 [INFO] bit_browser_manager.py:91 - 创建新标签页
+2024-11-15 12:18:38,190 [INFO] advanced_analyzer.py:293 - 完成 1/6 - 43435162
+2024-11-15 12:18:40,193 [INFO] advanced_analyzer.py:293 - 完成 2/6 - 830193102361409290
+2024-11-15 12:18:40,257 [INFO] bit_browser_manager.py:91 - 创建新标签页
+2024-11-15 12:18:40,264 [INFO] bit_browser_manager.py:98 - 切换到新标签页
+2024-11-15 12:18:40,264 [INFO] bit_browser_manager.py:102 - 正在导航到: https://www.airbnb.co.nz/rooms/49525472
+2024-11-15 12:18:40,347 [INFO] bit_browser_manager.py:104 - 成功加载页面: https://www.airbnb.co.nz/rooms/49525472
+2024-11-15 12:18:40,354 [INFO] price_checker.py:271 - 开始检查日期 17/11/2024 的最小入住要求...
+2024-11-15 12:18:40,400 [INFO] price_checker.py:152 - 初始元素HTML: <td class="_1sdi7rgz" role="button" aria-disabled="true" aria-label="17, Sunday, November 2024. Unavailable " tabindex="-1" style="width: 78px; height: 78px;"><div class="_emqv0i7 notranslate" data-testid="calendar-day-17/11/2024" data-is-day-blocked="true" style="width: 78px; height: 78px;">17</div></td>
+2024-11-15 12:18:40,413 [INFO] price_checker.py:158 - 找到日期: 17/11/2024
+2024-11-15 12:18:40,413 [INFO] price_checker.py:164 - 点击日期元素...
+2024-11-15 12:18:41,456 [INFO] price_checker.py:174 - 移动到日期元素...
+2024-11-15 12:18:42,259 [INFO] bit_browser_manager.py:98 - 切换到新标签页
+2024-11-15 12:18:42,259 [INFO] bit_browser_manager.py:102 - 正在导航到: https://www.airbnb.co.nz/rooms/716883705085875481
+2024-11-15 12:18:42,352 [INFO] bit_browser_manager.py:104 - 成功加载页面: https://www.airbnb.co.nz/rooms/716883705085875481
+2024-11-15 12:18:45,348 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/49525472
+2024-11-15 12:18:45,348 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/49525472
+2024-11-15 12:18:45,432 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:18:45,435 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:18:46,783 [INFO] price_checker.py:210 - 更新后元素HTML: <td class="_1sdi7rgz" role="button" aria-disabled="true" aria-label="17, Sunday, November 2024. Unavailable " tabindex="-1" style="width: 78px; height: 78px;"><div class="_emqv0i7 notranslate" data-testid="calendar-day-17/11/2024" data-is-day-blocked="true" style="width: 78px; height: 78px;">17</div></td>
+2024-11-15 12:18:46,793 [INFO] price_checker.py:217 - 更新后元素属性:
+2024-11-15 12:18:46,793 [INFO] price_checker.py:218 - - aria-label: 17, Sunday, November 2024. Unavailable 
+2024-11-15 12:18:46,794 [INFO] price_checker.py:219 - - aria-disabled: true
+2024-11-15 12:18:46,794 [INFO] price_checker.py:220 - - data-is-day-blocked: None
+2024-11-15 12:18:46,794 [INFO] price_checker.py:238 - 未在aria-label中找到最小入住要求
+2024-11-15 12:18:46,794 [WARNING] price_checker.py:241 - ⚠ 未找到最小入住要求，使用默认值1晚
+2024-11-15 12:18:46,794 [INFO] price_checker.py:273 - 最终使用的最小入住天数: 1晚 (自动检测)
+2024-11-15 12:18:46,794 [INFO] price_checker.py:296 - 访问URL: https://www.airbnb.co.nz/rooms/837352260137971048?check_in=2024-11-17&check_out=2024-11-18&adults=3&children=0&infants=0
+2024-11-15 12:18:47,352 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/716883705085875481
+2024-11-15 12:18:47,352 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/716883705085875481
+2024-11-15 12:18:51,919 [INFO] price_checker.py:303 - 检查页面状态...
+2024-11-15 12:18:51,922 [INFO] price_checker.py:305 - 页面状态: complete
+2024-11-15 12:18:53,934 [INFO] price_checker.py:318 - 价格容器已加载并可见
+2024-11-15 12:18:53,935 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:19:05,538 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:19:13,994 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-15 12:19:13,995 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:19:25,552 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:19:34,031 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-15 12:19:34,031 [INFO] price_checker.py:327 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:19:54,088 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-15 12:19:54,089 [INFO] price_checker.py:327 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:20:14,139 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-15 12:20:14,139 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:20:34,191 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-15 12:20:34,191 [INFO] price_checker.py:369 - 开始获取价格详情...
+2024-11-15 12:20:54,241 [WARNING] price_checker.py:384 - 等待价格详情容器超时
+2024-11-15 12:20:54,241 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:21:14,277 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:21:34,339 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:21:46,116 [WARNING] price_checker.py:426 - 使用选择器 //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')] 获取价格详情时出错: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2024-11-15 12:21:46,116 [INFO] price_checker.py:389 - 尝试使用选择器获取价格详情: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]

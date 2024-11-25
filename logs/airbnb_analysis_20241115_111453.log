@@ -1,0 +1,43 @@
+2024-11-15 11:14:53,513 [INFO] advanced_analyzer.py:357 - === 开始Airbnb数据收集程序 ===
+2024-11-15 11:14:53,685 [INFO] advanced_analyzer.py:99 - 成功读取 6 个房间ID
+2024-11-15 11:14:53,685 [INFO] advanced_analyzer.py:368 - 生成 6 个URL
+2024-11-15 11:14:53,685 [INFO] advanced_analyzer.py:372 - 创建数据目录: data/airbnb_data_20241115_111453
+2024-11-15 11:14:53,686 [INFO] advanced_analyzer.py:238 - === 开始批量分析房源 ===
+2024-11-15 11:14:53,686 [INFO] advanced_analyzer.py:247 - 设置并发线程数: 1
+2024-11-15 11:14:53,686 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 11:14:53,690 [INFO] bit_browser_manager.py:32 - API响应状态码: 404
+2024-11-15 11:14:53,690 [INFO] bit_browser_manager.py:33 - API响应头: {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '9', 'Date': 'Thu, 14 Nov 2024 22:14:53 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'}
+2024-11-15 11:14:53,690 [ERROR] bit_browser_manager.py:36 - 获取浏览器列表失败，状态码: 404
+2024-11-15 11:14:53,690 [ERROR] advanced_analyzer.py:176 - 未找到活动的BitBrowser实例
+2024-11-15 11:14:53,690 [ERROR] advanced_analyzer.py:258 - 无法为URL https://www.airbnb.co.nz/rooms/837352260137971048 初始化BitBrowser
+2024-11-15 11:14:53,690 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 11:14:53,692 [INFO] bit_browser_manager.py:32 - API响应状态码: 404
+2024-11-15 11:14:53,692 [INFO] bit_browser_manager.py:33 - API响应头: {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '9', 'Date': 'Thu, 14 Nov 2024 22:14:53 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'}
+2024-11-15 11:14:53,692 [ERROR] bit_browser_manager.py:36 - 获取浏览器列表失败，状态码: 404
+2024-11-15 11:14:53,693 [ERROR] advanced_analyzer.py:176 - 未找到活动的BitBrowser实例
+2024-11-15 11:14:53,693 [ERROR] advanced_analyzer.py:258 - 无法为URL https://www.airbnb.co.nz/rooms/43435162 初始化BitBrowser
+2024-11-15 11:14:53,693 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 11:14:53,695 [INFO] bit_browser_manager.py:32 - API响应状态码: 404
+2024-11-15 11:14:53,695 [INFO] bit_browser_manager.py:33 - API响应头: {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '9', 'Date': 'Thu, 14 Nov 2024 22:14:53 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'}
+2024-11-15 11:14:53,695 [ERROR] bit_browser_manager.py:36 - 获取浏览器列表失败，状态码: 404
+2024-11-15 11:14:53,695 [ERROR] advanced_analyzer.py:176 - 未找到活动的BitBrowser实例
+2024-11-15 11:14:53,695 [ERROR] advanced_analyzer.py:258 - 无法为URL https://www.airbnb.co.nz/rooms/830193102361409290 初始化BitBrowser
+2024-11-15 11:14:53,695 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 11:14:53,697 [INFO] bit_browser_manager.py:32 - API响应状态码: 404
+2024-11-15 11:14:53,697 [INFO] bit_browser_manager.py:33 - API响应头: {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '9', 'Date': 'Thu, 14 Nov 2024 22:14:53 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'}
+2024-11-15 11:14:53,697 [ERROR] bit_browser_manager.py:36 - 获取浏览器列表失败，状态码: 404
+2024-11-15 11:14:53,697 [ERROR] advanced_analyzer.py:176 - 未找到活动的BitBrowser实例
+2024-11-15 11:14:53,697 [ERROR] advanced_analyzer.py:258 - 无法为URL https://www.airbnb.co.nz/rooms/49525472 初始化BitBrowser
+2024-11-15 11:14:53,698 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 11:14:53,699 [INFO] bit_browser_manager.py:32 - API响应状态码: 404
+2024-11-15 11:14:53,699 [INFO] bit_browser_manager.py:33 - API响应头: {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '9', 'Date': 'Thu, 14 Nov 2024 22:14:53 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'}
+2024-11-15 11:14:53,699 [ERROR] bit_browser_manager.py:36 - 获取浏览器列表失败，状态码: 404
+2024-11-15 11:14:53,699 [ERROR] advanced_analyzer.py:176 - 未找到活动的BitBrowser实例
+2024-11-15 11:14:53,699 [ERROR] advanced_analyzer.py:258 - 无法为URL https://www.airbnb.co.nz/rooms/716883705085875481 初始化BitBrowser
+2024-11-15 11:14:53,700 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 11:14:53,701 [INFO] bit_browser_manager.py:32 - API响应状态码: 404
+2024-11-15 11:14:53,701 [INFO] bit_browser_manager.py:33 - API响应头: {'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '9', 'Date': 'Thu, 14 Nov 2024 22:14:53 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'}
+2024-11-15 11:14:53,701 [ERROR] bit_browser_manager.py:36 - 获取浏览器列表失败，状态码: 404
+2024-11-15 11:14:53,701 [ERROR] advanced_analyzer.py:176 - 未找到活动的BitBrowser实例
+2024-11-15 11:14:53,701 [ERROR] advanced_analyzer.py:258 - 无法为URL https://www.airbnb.co.nz/rooms/969823904189469776 初始化BitBrowser
+2024-11-15 11:14:53,702 [INFO] advanced_analyzer.py:427 - === 程序执行完成 ===

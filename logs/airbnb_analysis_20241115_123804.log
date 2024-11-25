@@ -1,0 +1,2914 @@
+2024-11-15 12:38:04,947 [INFO] advanced_analyzer.py:391 - === 开始Airbnb数据收集程序 ===
+2024-11-15 12:38:05,127 [INFO] advanced_analyzer.py:100 - 成功读取 6 个房间ID
+2024-11-15 12:38:05,127 [INFO] advanced_analyzer.py:402 - 生成 6 个URL
+2024-11-15 12:38:05,127 [INFO] advanced_analyzer.py:406 - 创建数据目录: data/airbnb_data_20241115_123805
+2024-11-15 12:38:05,127 [INFO] advanced_analyzer.py:232 - === 开始批量分析房源 ===
+2024-11-15 12:38:05,128 [INFO] advanced_analyzer.py:241 - 设置并发线程数: 1
+2024-11-15 12:38:05,154 [INFO] bit_browser_manager.py:38 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 38384,
+    "fa23ba7669ce4064b2fafb611daa22a3": 23592
+  }
+}
+2024-11-15 12:38:07,672 [INFO] bit_browser_manager.py:63 - 找到 2 个活动浏览器
+2024-11-15 12:38:07,672 [INFO] advanced_analyzer.py:257 - 
+=== 可用的浏览器实例 ===
+2024-11-15 12:38:07,672 [INFO] advanced_analyzer.py:259 - ID: cf51683770d94ff3931408fce73c90f3
+2024-11-15 12:38:07,672 [INFO] advanced_analyzer.py:260 - 名称: 
+2024-11-15 12:38:07,673 [INFO] advanced_analyzer.py:261 - 备注: 
+2024-11-15 12:38:07,673 [INFO] advanced_analyzer.py:262 - PID: 38384
+
+2024-11-15 12:38:07,673 [INFO] advanced_analyzer.py:275 - 线程 23456 使用浏览器 cf51683770d94ff3931408fce73c90f3
+2024-11-15 12:38:08,791 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:38:09,104 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:38:09,104 [INFO] advanced_analyzer.py:197 - 
+开始分析房源: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:38:09,104 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:38:09,301 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:38:09,304 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:39:09,503 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 12:39:09,506 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 12:39:10,507 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 12:39:10,645 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 12:39:30,761 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 12:39:30,773 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-15 12:39:30,864 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-15 12:39:30,865 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-15 12:39:30,865 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-15 12:39:30,865 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-15 12:39:30,865 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-15 12:39:30,865 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 12:39:30,866 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 837352260137971048
+2024-11-15 12:39:30,866 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_837352260137971048_20241115_123930.xlsx
+2024-11-15 12:39:30,866 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-15 12:39:30,892 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_837352260137971048_20241115_123930.xlsx
+2024-11-15 12:39:30,892 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 9.17 KB
+2024-11-15 12:39:30,893 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_837352260137971048_20241115_123930.xlsx
+2024-11-15 12:39:30,893 [INFO] advanced_analyzer.py:206 - 成功获取日历数据: 123 条记录
+2024-11-15 12:39:30,893 [INFO] price_checker.py:479 - 开始检查房源价格: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:39:30,893 [INFO] price_checker.py:472 - 找到 37 个可预订日期
+2024-11-15 12:39:30,893 [INFO] price_checker.py:495 - [1/37] 处理日期: 11/18/2024
+2024-11-15 12:39:30,893 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:39:30,893 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:39:30,893 [INFO] price_checker.py:256 - 入住日期: 11/18/2024
+2024-11-15 12:39:30,893 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:39:30,893 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:39:30,894 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-18
+2024-11-15 12:39:30,894 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-18
+2024-11-15 12:39:30,894 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:39:31,018 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 12:39:31,019 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:39:32,670 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:39:33,185 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:39:33,185 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:39:43,198 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:39:53,224 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:40:03,251 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:40:13,293 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:40:23,317 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:40:23,317 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:40:33,338 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:40:43,358 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:40:53,381 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:41:03,401 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:41:13,419 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:41:23,454 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:41:33,478 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:41:43,506 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:41:43,506 [INFO] price_checker.py:393 - ✓ check_in: 11/18/2024
+2024-11-15 12:41:43,506 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:41:43,506 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:41:43,506 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:41:43,506 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:41:43,507 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:41:43,507 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:41:43,507 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:41:43,507 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:41:43,507 [INFO] price_checker.py:501 - ✓ 成功获取 11/18/2024 的价格信息
+2024-11-15 12:41:43,507 [INFO] price_checker.py:495 - [2/37] 处理日期: 11/27/2024
+2024-11-15 12:41:43,507 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:41:43,507 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:41:43,507 [INFO] price_checker.py:256 - 入住日期: 11/27/2024
+2024-11-15 12:41:43,507 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:41:43,507 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:41:43,507 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-27
+2024-11-15 12:41:43,507 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-27
+2024-11-15 12:41:43,508 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:41:43,617 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 12:41:43,617 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:41:45,432 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:41:45,942 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:41:45,942 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:41:55,991 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:42:06,011 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:42:16,035 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:42:26,062 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:42:36,069 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:42:36,069 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:42:39,344 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:42:39,345 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:42:39,345 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:42:39,346 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:42:39,346 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:42:39,347 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:42:39,347 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:42:39,348 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:42:39,348 [INFO] price_checker.py:393 - ✓ check_in: 11/27/2024
+2024-11-15 12:42:39,348 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:42:39,348 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:42:39,348 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:42:39,348 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:42:39,349 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:42:39,349 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:42:39,349 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:42:39,349 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:42:39,349 [INFO] price_checker.py:501 - ✓ 成功获取 11/27/2024 的价格信息
+2024-11-15 12:42:39,349 [INFO] price_checker.py:495 - [3/37] 处理日期: 11/28/2024
+2024-11-15 12:42:39,349 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:39,349 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:39,349 [INFO] price_checker.py:256 - 入住日期: 11/28/2024
+2024-11-15 12:42:39,349 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:39,349 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:39,349 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-28
+2024-11-15 12:42:39,349 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-28
+2024-11-15 12:42:39,350 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:39,350 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:39,352 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:39,353 [WARNING] price_checker.py:511 - ✗ 获取 11/28/2024 的价格信息失败
+2024-11-15 12:42:39,353 [INFO] price_checker.py:495 - [4/37] 处理日期: 11/29/2024
+2024-11-15 12:42:39,353 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:39,353 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:39,353 [INFO] price_checker.py:256 - 入住日期: 11/29/2024
+2024-11-15 12:42:39,353 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:39,353 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:39,353 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-29
+2024-11-15 12:42:39,353 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-29
+2024-11-15 12:42:39,353 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:39,354 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:39,355 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:39,355 [WARNING] price_checker.py:511 - ✗ 获取 11/29/2024 的价格信息失败
+2024-11-15 12:42:39,355 [INFO] price_checker.py:495 - [5/37] 处理日期: 11/30/2024
+2024-11-15 12:42:39,355 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:39,356 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:39,356 [INFO] price_checker.py:256 - 入住日期: 11/30/2024
+2024-11-15 12:42:39,356 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:39,356 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:39,356 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-30
+2024-11-15 12:42:39,356 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-30
+2024-11-15 12:42:39,356 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:39,357 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:39,357 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:39,358 [WARNING] price_checker.py:511 - ✗ 获取 11/30/2024 的价格信息失败
+2024-11-15 12:42:39,358 [INFO] price_checker.py:515 - 已完成 5/37 个日期的处理
+2024-11-15 12:42:42,358 [INFO] price_checker.py:495 - [6/37] 处理日期: 12/01/2024
+2024-11-15 12:42:42,358 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:42,358 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:42,358 [INFO] price_checker.py:256 - 入住日期: 12/01/2024
+2024-11-15 12:42:42,359 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:42,359 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:42,359 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-01
+2024-11-15 12:42:42,359 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-01
+2024-11-15 12:42:42,359 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:42,360 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:42,361 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:42,361 [WARNING] price_checker.py:511 - ✗ 获取 12/01/2024 的价格信息失败
+2024-11-15 12:42:42,361 [INFO] price_checker.py:495 - [7/37] 处理日期: 12/02/2024
+2024-11-15 12:42:42,361 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:42,361 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:42,361 [INFO] price_checker.py:256 - 入住日期: 12/02/2024
+2024-11-15 12:42:42,361 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:42,361 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:42,362 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-02
+2024-11-15 12:42:42,362 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-02
+2024-11-15 12:42:42,362 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:42,362 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:42,363 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:42,364 [WARNING] price_checker.py:511 - ✗ 获取 12/02/2024 的价格信息失败
+2024-11-15 12:42:42,364 [INFO] price_checker.py:495 - [8/37] 处理日期: 12/03/2024
+2024-11-15 12:42:42,364 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:42,364 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:42,364 [INFO] price_checker.py:256 - 入住日期: 12/03/2024
+2024-11-15 12:42:42,364 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:42,364 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:42,364 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-03
+2024-11-15 12:42:42,364 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-03
+2024-11-15 12:42:42,364 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:42,365 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:42,366 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:42,366 [WARNING] price_checker.py:511 - ✗ 获取 12/03/2024 的价格信息失败
+2024-11-15 12:42:42,366 [INFO] price_checker.py:495 - [9/37] 处理日期: 12/04/2024
+2024-11-15 12:42:42,366 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:42,366 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:42,366 [INFO] price_checker.py:256 - 入住日期: 12/04/2024
+2024-11-15 12:42:42,366 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:42,367 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:42,367 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-04
+2024-11-15 12:42:42,367 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-04
+2024-11-15 12:42:42,367 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:42,367 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:42,368 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:42,369 [WARNING] price_checker.py:511 - ✗ 获取 12/04/2024 的价格信息失败
+2024-11-15 12:42:42,369 [INFO] price_checker.py:495 - [10/37] 处理日期: 12/05/2024
+2024-11-15 12:42:42,369 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:42,369 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:42,369 [INFO] price_checker.py:256 - 入住日期: 12/05/2024
+2024-11-15 12:42:42,369 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:42,369 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:42,369 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-05
+2024-11-15 12:42:42,369 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-05
+2024-11-15 12:42:42,369 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:42,370 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:42,371 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:42,371 [WARNING] price_checker.py:511 - ✗ 获取 12/05/2024 的价格信息失败
+2024-11-15 12:42:42,372 [INFO] price_checker.py:515 - 已完成 10/37 个日期的处理
+2024-11-15 12:42:45,372 [INFO] price_checker.py:495 - [11/37] 处理日期: 12/06/2024
+2024-11-15 12:42:45,372 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:45,372 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:45,373 [INFO] price_checker.py:256 - 入住日期: 12/06/2024
+2024-11-15 12:42:45,373 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:45,373 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:45,373 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-06
+2024-11-15 12:42:45,373 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-06
+2024-11-15 12:42:45,373 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:45,374 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:45,375 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:45,375 [WARNING] price_checker.py:511 - ✗ 获取 12/06/2024 的价格信息失败
+2024-11-15 12:42:45,375 [INFO] price_checker.py:495 - [12/37] 处理日期: 12/07/2024
+2024-11-15 12:42:45,375 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:45,375 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:45,375 [INFO] price_checker.py:256 - 入住日期: 12/07/2024
+2024-11-15 12:42:45,376 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:45,376 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:45,376 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-07
+2024-11-15 12:42:45,376 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-07
+2024-11-15 12:42:45,376 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:45,377 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:45,378 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:45,378 [WARNING] price_checker.py:511 - ✗ 获取 12/07/2024 的价格信息失败
+2024-11-15 12:42:45,378 [INFO] price_checker.py:495 - [13/37] 处理日期: 12/08/2024
+2024-11-15 12:42:45,378 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:45,378 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:45,378 [INFO] price_checker.py:256 - 入住日期: 12/08/2024
+2024-11-15 12:42:45,378 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:45,379 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:45,379 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-08
+2024-11-15 12:42:45,379 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-08
+2024-11-15 12:42:45,379 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:45,380 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:45,381 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:45,381 [WARNING] price_checker.py:511 - ✗ 获取 12/08/2024 的价格信息失败
+2024-11-15 12:42:45,381 [INFO] price_checker.py:495 - [14/37] 处理日期: 12/09/2024
+2024-11-15 12:42:45,381 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:45,381 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:45,381 [INFO] price_checker.py:256 - 入住日期: 12/09/2024
+2024-11-15 12:42:45,381 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:45,381 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:45,381 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-09
+2024-11-15 12:42:45,381 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-09
+2024-11-15 12:42:45,382 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:45,382 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:45,383 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:45,383 [WARNING] price_checker.py:511 - ✗ 获取 12/09/2024 的价格信息失败
+2024-11-15 12:42:45,383 [INFO] price_checker.py:495 - [15/37] 处理日期: 12/10/2024
+2024-11-15 12:42:45,384 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:45,384 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:45,384 [INFO] price_checker.py:256 - 入住日期: 12/10/2024
+2024-11-15 12:42:45,384 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:45,384 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:45,384 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-10
+2024-11-15 12:42:45,384 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-10
+2024-11-15 12:42:45,384 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:45,385 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:45,386 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:45,386 [WARNING] price_checker.py:511 - ✗ 获取 12/10/2024 的价格信息失败
+2024-11-15 12:42:45,386 [INFO] price_checker.py:515 - 已完成 15/37 个日期的处理
+2024-11-15 12:42:48,387 [INFO] price_checker.py:495 - [16/37] 处理日期: 12/11/2024
+2024-11-15 12:42:48,387 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:48,387 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:48,387 [INFO] price_checker.py:256 - 入住日期: 12/11/2024
+2024-11-15 12:42:48,387 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:48,387 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:48,387 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-11
+2024-11-15 12:42:48,387 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-11
+2024-11-15 12:42:48,387 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:48,388 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:48,389 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:48,389 [WARNING] price_checker.py:511 - ✗ 获取 12/11/2024 的价格信息失败
+2024-11-15 12:42:48,389 [INFO] price_checker.py:495 - [17/37] 处理日期: 12/12/2024
+2024-11-15 12:42:48,390 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:48,390 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:48,390 [INFO] price_checker.py:256 - 入住日期: 12/12/2024
+2024-11-15 12:42:48,390 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:48,390 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:48,390 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-12
+2024-11-15 12:42:48,390 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-12
+2024-11-15 12:42:48,390 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:48,391 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:48,392 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:48,392 [WARNING] price_checker.py:511 - ✗ 获取 12/12/2024 的价格信息失败
+2024-11-15 12:42:48,392 [INFO] price_checker.py:495 - [18/37] 处理日期: 12/13/2024
+2024-11-15 12:42:48,392 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:48,392 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:48,392 [INFO] price_checker.py:256 - 入住日期: 12/13/2024
+2024-11-15 12:42:48,392 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:48,392 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:48,393 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-13
+2024-11-15 12:42:48,393 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-13
+2024-11-15 12:42:48,393 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:48,393 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:48,394 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:48,394 [WARNING] price_checker.py:511 - ✗ 获取 12/13/2024 的价格信息失败
+2024-11-15 12:42:48,394 [INFO] price_checker.py:495 - [19/37] 处理日期: 12/14/2024
+2024-11-15 12:42:48,395 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:48,395 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:48,395 [INFO] price_checker.py:256 - 入住日期: 12/14/2024
+2024-11-15 12:42:48,395 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:48,395 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:48,395 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-14
+2024-11-15 12:42:48,395 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-14
+2024-11-15 12:42:48,395 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:48,396 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:48,396 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:48,397 [WARNING] price_checker.py:511 - ✗ 获取 12/14/2024 的价格信息失败
+2024-11-15 12:42:48,397 [INFO] price_checker.py:495 - [20/37] 处理日期: 12/30/2024
+2024-11-15 12:42:48,397 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:48,397 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:48,397 [INFO] price_checker.py:256 - 入住日期: 12/30/2024
+2024-11-15 12:42:48,397 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:48,397 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:48,397 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-30
+2024-11-15 12:42:48,397 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-30
+2024-11-15 12:42:48,397 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:48,398 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:48,399 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:48,399 [WARNING] price_checker.py:511 - ✗ 获取 12/30/2024 的价格信息失败
+2024-11-15 12:42:48,399 [INFO] price_checker.py:515 - 已完成 20/37 个日期的处理
+2024-11-15 12:42:51,400 [INFO] price_checker.py:495 - [21/37] 处理日期: 12/31/2024
+2024-11-15 12:42:51,400 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:51,400 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:51,400 [INFO] price_checker.py:256 - 入住日期: 12/31/2024
+2024-11-15 12:42:51,400 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:51,400 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:51,400 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-31
+2024-11-15 12:42:51,400 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-31
+2024-11-15 12:42:51,400 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:51,401 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:51,402 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:51,402 [WARNING] price_checker.py:511 - ✗ 获取 12/31/2024 的价格信息失败
+2024-11-15 12:42:51,402 [INFO] price_checker.py:495 - [22/37] 处理日期: 01/01/2025
+2024-11-15 12:42:51,402 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:51,402 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:51,403 [INFO] price_checker.py:256 - 入住日期: 01/01/2025
+2024-11-15 12:42:51,403 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:51,403 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:51,403 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-01
+2024-11-15 12:42:51,403 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-01
+2024-11-15 12:42:51,403 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:51,404 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:51,404 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:51,405 [WARNING] price_checker.py:511 - ✗ 获取 01/01/2025 的价格信息失败
+2024-11-15 12:42:51,405 [INFO] price_checker.py:495 - [23/37] 处理日期: 01/02/2025
+2024-11-15 12:42:51,405 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:51,405 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:51,405 [INFO] price_checker.py:256 - 入住日期: 01/02/2025
+2024-11-15 12:42:51,405 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:51,405 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:51,405 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-02
+2024-11-15 12:42:51,405 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-02
+2024-11-15 12:42:51,405 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:51,406 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:51,407 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:51,407 [WARNING] price_checker.py:511 - ✗ 获取 01/02/2025 的价格信息失败
+2024-11-15 12:42:51,407 [INFO] price_checker.py:495 - [24/37] 处理日期: 01/08/2025
+2024-11-15 12:42:51,407 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:51,407 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:51,407 [INFO] price_checker.py:256 - 入住日期: 01/08/2025
+2024-11-15 12:42:51,407 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:51,408 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:51,408 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-08
+2024-11-15 12:42:51,408 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-08
+2024-11-15 12:42:51,408 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:51,408 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:51,409 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:51,410 [WARNING] price_checker.py:511 - ✗ 获取 01/08/2025 的价格信息失败
+2024-11-15 12:42:51,410 [INFO] price_checker.py:495 - [25/37] 处理日期: 01/09/2025
+2024-11-15 12:42:51,410 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:51,410 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:51,410 [INFO] price_checker.py:256 - 入住日期: 01/09/2025
+2024-11-15 12:42:51,410 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:51,410 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:51,410 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-09
+2024-11-15 12:42:51,410 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-09
+2024-11-15 12:42:51,410 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:51,411 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:51,412 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:51,412 [WARNING] price_checker.py:511 - ✗ 获取 01/09/2025 的价格信息失败
+2024-11-15 12:42:51,412 [INFO] price_checker.py:515 - 已完成 25/37 个日期的处理
+2024-11-15 12:42:54,413 [INFO] price_checker.py:495 - [26/37] 处理日期: 01/10/2025
+2024-11-15 12:42:54,413 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:54,413 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:54,413 [INFO] price_checker.py:256 - 入住日期: 01/10/2025
+2024-11-15 12:42:54,413 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:54,413 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:54,413 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-10
+2024-11-15 12:42:54,413 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-10
+2024-11-15 12:42:54,413 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:54,414 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:54,415 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:54,415 [WARNING] price_checker.py:511 - ✗ 获取 01/10/2025 的价格信息失败
+2024-11-15 12:42:54,415 [INFO] price_checker.py:495 - [27/37] 处理日期: 01/11/2025
+2024-11-15 12:42:54,415 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:54,415 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:54,416 [INFO] price_checker.py:256 - 入住日期: 01/11/2025
+2024-11-15 12:42:54,416 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:54,416 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:54,416 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-11
+2024-11-15 12:42:54,416 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-11
+2024-11-15 12:42:54,416 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:54,417 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:54,417 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:54,418 [WARNING] price_checker.py:511 - ✗ 获取 01/11/2025 的价格信息失败
+2024-11-15 12:42:54,418 [INFO] price_checker.py:495 - [28/37] 处理日期: 01/12/2025
+2024-11-15 12:42:54,418 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:54,418 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:54,418 [INFO] price_checker.py:256 - 入住日期: 01/12/2025
+2024-11-15 12:42:54,418 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:54,418 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:54,418 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-12
+2024-11-15 12:42:54,418 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-12
+2024-11-15 12:42:54,418 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:54,419 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:54,420 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:54,420 [WARNING] price_checker.py:511 - ✗ 获取 01/12/2025 的价格信息失败
+2024-11-15 12:42:54,420 [INFO] price_checker.py:495 - [29/37] 处理日期: 01/13/2025
+2024-11-15 12:42:54,420 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:54,420 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:54,421 [INFO] price_checker.py:256 - 入住日期: 01/13/2025
+2024-11-15 12:42:54,421 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:54,421 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:54,421 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-13
+2024-11-15 12:42:54,421 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-13
+2024-11-15 12:42:54,421 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:54,421 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:54,422 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:54,423 [WARNING] price_checker.py:511 - ✗ 获取 01/13/2025 的价格信息失败
+2024-11-15 12:42:54,423 [INFO] price_checker.py:495 - [30/37] 处理日期: 01/14/2025
+2024-11-15 12:42:54,423 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:54,423 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:54,423 [INFO] price_checker.py:256 - 入住日期: 01/14/2025
+2024-11-15 12:42:54,423 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:54,423 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:54,423 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-14
+2024-11-15 12:42:54,423 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-14
+2024-11-15 12:42:54,423 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:54,424 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:54,425 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:54,425 [WARNING] price_checker.py:511 - ✗ 获取 01/14/2025 的价格信息失败
+2024-11-15 12:42:54,425 [INFO] price_checker.py:515 - 已完成 30/37 个日期的处理
+2024-11-15 12:42:57,425 [INFO] price_checker.py:495 - [31/37] 处理日期: 01/15/2025
+2024-11-15 12:42:57,426 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:57,426 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:57,426 [INFO] price_checker.py:256 - 入住日期: 01/15/2025
+2024-11-15 12:42:57,426 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:57,426 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:57,426 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-15
+2024-11-15 12:42:57,426 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-15
+2024-11-15 12:42:57,426 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:57,427 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:57,428 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:57,428 [WARNING] price_checker.py:511 - ✗ 获取 01/15/2025 的价格信息失败
+2024-11-15 12:42:57,428 [INFO] price_checker.py:495 - [32/37] 处理日期: 01/16/2025
+2024-11-15 12:42:57,428 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:57,428 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:57,429 [INFO] price_checker.py:256 - 入住日期: 01/16/2025
+2024-11-15 12:42:57,429 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:57,429 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:57,429 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-16
+2024-11-15 12:42:57,429 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-16
+2024-11-15 12:42:57,429 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:57,430 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:57,430 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:57,431 [WARNING] price_checker.py:511 - ✗ 获取 01/16/2025 的价格信息失败
+2024-11-15 12:42:57,431 [INFO] price_checker.py:495 - [33/37] 处理日期: 01/17/2025
+2024-11-15 12:42:57,431 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:57,431 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:57,431 [INFO] price_checker.py:256 - 入住日期: 01/17/2025
+2024-11-15 12:42:57,431 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:57,431 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:57,431 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-17
+2024-11-15 12:42:57,431 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-17
+2024-11-15 12:42:57,431 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:57,432 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:57,433 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:57,433 [WARNING] price_checker.py:511 - ✗ 获取 01/17/2025 的价格信息失败
+2024-11-15 12:42:57,433 [INFO] price_checker.py:495 - [34/37] 处理日期: 01/23/2025
+2024-11-15 12:42:57,433 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:57,433 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:57,433 [INFO] price_checker.py:256 - 入住日期: 01/23/2025
+2024-11-15 12:42:57,433 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:57,434 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:57,434 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-23
+2024-11-15 12:42:57,434 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-23
+2024-11-15 12:42:57,434 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:57,434 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:57,435 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:57,435 [WARNING] price_checker.py:511 - ✗ 获取 01/23/2025 的价格信息失败
+2024-11-15 12:42:57,436 [INFO] price_checker.py:495 - [35/37] 处理日期: 01/24/2025
+2024-11-15 12:42:57,436 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:42:57,436 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:42:57,436 [INFO] price_checker.py:256 - 入住日期: 01/24/2025
+2024-11-15 12:42:57,436 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:42:57,436 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:42:57,436 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-24
+2024-11-15 12:42:57,436 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-24
+2024-11-15 12:42:57,436 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:42:57,437 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:42:57,438 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:42:57,438 [WARNING] price_checker.py:511 - ✗ 获取 01/24/2025 的价格信息失败
+2024-11-15 12:42:57,438 [INFO] price_checker.py:515 - 已完成 35/37 个日期的处理
+2024-11-15 12:43:00,438 [INFO] price_checker.py:495 - [36/37] 处理日期: 01/25/2025
+2024-11-15 12:43:00,439 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:43:00,439 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:43:00,439 [INFO] price_checker.py:256 - 入住日期: 01/25/2025
+2024-11-15 12:43:00,439 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:43:00,439 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:43:00,439 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-25
+2024-11-15 12:43:00,439 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-25
+2024-11-15 12:43:00,439 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:43:00,440 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:43:00,441 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:43:00,441 [WARNING] price_checker.py:511 - ✗ 获取 01/25/2025 的价格信息失败
+2024-11-15 12:43:00,441 [INFO] price_checker.py:495 - [37/37] 处理日期: 01/26/2025
+2024-11-15 12:43:00,441 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:43:00,441 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:43:00,441 [INFO] price_checker.py:256 - 入住日期: 01/26/2025
+2024-11-15 12:43:00,442 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:43:00,442 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:43:00,442 [INFO] price_checker.py:276 - 转换后的日期格式: 2025-01-26
+2024-11-15 12:43:00,442 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2025-01-26
+2024-11-15 12:43:00,442 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:43:00,443 [ERROR] price_checker.py:405 - 处理价格信息时发生错误: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:43:00,443 [ERROR] price_checker.py:406 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 289, in get_price_info
+    driver.get(url_with_dates)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 12:43:00,444 [WARNING] price_checker.py:511 - ✗ 获取 01/26/2025 的价格信息失败
+2024-11-15 12:43:00,444 [INFO] price_checker.py:524 - 
+=== 价格数据收集统计 ===
+2024-11-15 12:43:00,444 [INFO] price_checker.py:525 - 总可预订日期: 37
+2024-11-15 12:43:00,444 [INFO] price_checker.py:526 - 成功收集: 2
+2024-11-15 12:43:00,444 [INFO] price_checker.py:527 - 失败日期: 35
+2024-11-15 12:43:00,444 [WARNING] price_checker.py:530 - 失败日期列表:
+2024-11-15 12:43:00,444 [WARNING] price_checker.py:532 - - 11/28/2024
+2024-11-15 12:43:00,444 [WARNING] price_checker.py:532 - - 11/29/2024
+2024-11-15 12:43:00,444 [WARNING] price_checker.py:532 - - 11/30/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/01/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/02/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/03/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/04/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/05/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/06/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/07/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/08/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/09/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/10/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/11/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/12/2024
+2024-11-15 12:43:00,445 [WARNING] price_checker.py:532 - - 12/13/2024
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 12/14/2024
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 12/30/2024
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 12/31/2024
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/01/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/02/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/08/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/09/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/10/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/11/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/12/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/13/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/14/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/15/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/16/2025
+2024-11-15 12:43:00,446 [WARNING] price_checker.py:532 - - 01/17/2025
+2024-11-15 12:43:00,447 [WARNING] price_checker.py:532 - - 01/23/2025
+2024-11-15 12:43:00,447 [WARNING] price_checker.py:532 - - 01/24/2025
+2024-11-15 12:43:00,447 [WARNING] price_checker.py:532 - - 01/25/2025
+2024-11-15 12:43:00,447 [WARNING] price_checker.py:532 - - 01/26/2025
+2024-11-15 12:43:00,467 [INFO] price_checker.py:438 - 价格数据已保存到日期目录: data/20241115_124300/airbnb_price_837352260137971048.xlsx
+2024-11-15 12:43:00,468 [INFO] price_checker.py:439 - 价格数据已保存到房间目录: data/room_837352260137971048/airbnb_price_20241115_124300.xlsx
+2024-11-15 12:43:00,468 [INFO] price_checker.py:443 - 共导出 2 条价格记录
+2024-11-15 12:43:00,468 [INFO] price_checker.py:538 - ✓ 所有价格数据已导出到日期目录: data/20241115_124300/airbnb_price_837352260137971048.xlsx
+2024-11-15 12:43:00,468 [INFO] price_checker.py:539 - ✓ 所有价格数据已导出到房间目录: data/room_837352260137971048/airbnb_price_20241115_124300.xlsx
+2024-11-15 12:43:00,468 [INFO] advanced_analyzer.py:213 - 成功获取价格数据
+2024-11-15 12:43:00,468 [ERROR] advanced_analyzer.py:299 - 处理URL失败: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-11-15 12:43:00,468 [INFO] advanced_analyzer.py:275 - 线程 23456 使用浏览器 cf51683770d94ff3931408fce73c90f3
+2024-11-15 12:43:00,469 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:43:00,469 [ERROR] advanced_analyzer.py:287 - 无法在浏览器 cf51683770d94ff3931408fce73c90f3 中打开URL https://www.airbnb.com/rooms/43435162
+2024-11-15 12:43:00,469 [INFO] advanced_analyzer.py:275 - 线程 23456 使用浏览器 cf51683770d94ff3931408fce73c90f3
+2024-11-15 12:43:00,470 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:43:00,470 [ERROR] advanced_analyzer.py:287 - 无法在浏览器 cf51683770d94ff3931408fce73c90f3 中打开URL https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:43:00,470 [INFO] advanced_analyzer.py:275 - 线程 23456 使用浏览器 cf51683770d94ff3931408fce73c90f3
+2024-11-15 12:43:00,471 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:43:00,471 [ERROR] advanced_analyzer.py:287 - 无法在浏览器 cf51683770d94ff3931408fce73c90f3 中打开URL https://www.airbnb.com/rooms/49525472
+2024-11-15 12:43:00,471 [INFO] advanced_analyzer.py:275 - 线程 23456 使用浏览器 cf51683770d94ff3931408fce73c90f3
+2024-11-15 12:43:00,472 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:43:00,472 [ERROR] advanced_analyzer.py:287 - 无法在浏览器 cf51683770d94ff3931408fce73c90f3 中打开URL https://www.airbnb.com/rooms/716883705085875481
+2024-11-15 12:43:00,472 [INFO] advanced_analyzer.py:275 - 线程 23456 使用浏览器 cf51683770d94ff3931408fce73c90f3
+2024-11-15 12:43:00,473 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008EE483]
+	(No symbol) [0x00979FCF]
+	(No symbol) [0x0098C336]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 12:43:00,473 [ERROR] advanced_analyzer.py:287 - 无法在浏览器 cf51683770d94ff3931408fce73c90f3 中打开URL https://www.airbnb.com/rooms/969823904189469776

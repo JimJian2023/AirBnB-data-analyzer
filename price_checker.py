@@ -647,7 +647,7 @@ def parse_price(self, container):
         return None
 
 def check_page_state(driver):
-    """检查页���状态和可能的错误"""
+    """检查页面状态和可能的错误"""
     logger = get_logger()
     try:
         # 检查是否有误消息

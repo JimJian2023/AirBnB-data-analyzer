@@ -1,0 +1,1943 @@
+2024-11-15 12:43:51,266 [INFO] advanced_analyzer.py:391 - === 开始Airbnb数据收集程序 ===
+2024-11-15 12:43:51,441 [INFO] advanced_analyzer.py:100 - 成功读取 6 个房间ID
+2024-11-15 12:43:51,441 [INFO] advanced_analyzer.py:402 - 生成 6 个URL
+2024-11-15 12:43:51,441 [INFO] advanced_analyzer.py:406 - 创建数据目录: data/airbnb_data_20241115_124351
+2024-11-15 12:43:51,441 [INFO] advanced_analyzer.py:232 - === 开始批量分析房源 ===
+2024-11-15 12:43:51,442 [INFO] advanced_analyzer.py:241 - 设置并发线程数: 3
+2024-11-15 12:43:51,470 [INFO] bit_browser_manager.py:38 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "fa23ba7669ce4064b2fafb611daa22a3": 23592,
+    "cf51683770d94ff3931408fce73c90f3": 38604,
+    "cd272b4525344db49309c826255465b8": 26068
+  }
+}
+2024-11-15 12:43:55,355 [INFO] bit_browser_manager.py:63 - 找到 3 个活动浏览器
+2024-11-15 12:43:55,355 [INFO] advanced_analyzer.py:257 - 
+=== 可用的浏览器实例 ===
+2024-11-15 12:43:55,355 [INFO] advanced_analyzer.py:259 - ID: fa23ba7669ce4064b2fafb611daa22a3
+2024-11-15 12:43:55,355 [INFO] advanced_analyzer.py:260 - 名称: _1
+2024-11-15 12:43:55,355 [INFO] advanced_analyzer.py:261 - 备注: 
+2024-11-15 12:43:55,355 [INFO] advanced_analyzer.py:262 - PID: 23592
+
+2024-11-15 12:43:55,355 [INFO] advanced_analyzer.py:259 - ID: cf51683770d94ff3931408fce73c90f3
+2024-11-15 12:43:55,355 [INFO] advanced_analyzer.py:260 - 名称: 
+2024-11-15 12:43:55,355 [INFO] advanced_analyzer.py:261 - 备注: 
+2024-11-15 12:43:55,356 [INFO] advanced_analyzer.py:262 - PID: 38604
+
+2024-11-15 12:43:55,356 [INFO] advanced_analyzer.py:259 - ID: cd272b4525344db49309c826255465b8
+2024-11-15 12:43:55,356 [INFO] advanced_analyzer.py:260 - 名称: _2
+2024-11-15 12:43:55,356 [INFO] advanced_analyzer.py:261 - 备注: 
+2024-11-15 12:43:55,356 [INFO] advanced_analyzer.py:262 - PID: 26068
+
+2024-11-15 12:43:55,356 [INFO] advanced_analyzer.py:275 - 线程 39148 使用浏览器 fa23ba7669ce4064b2fafb611daa22a3
+2024-11-15 12:43:55,356 [INFO] advanced_analyzer.py:275 - 线程 39152 使用浏览器 cf51683770d94ff3931408fce73c90f3
+2024-11-15 12:43:55,357 [INFO] advanced_analyzer.py:275 - 线程 39156 使用浏览器 cd272b4525344db49309c826255465b8
+2024-11-15 12:43:56,483 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:43:56,484 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:43:56,486 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:43:56,679 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:43:56,679 [INFO] advanced_analyzer.py:197 - 
+开始分析房源: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:43:56,679 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:43:56,780 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:43:56,783 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:43:57,917 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:43:57,918 [INFO] advanced_analyzer.py:197 - 
+开始分析房源: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:43:57,918 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:43:58,078 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:43:58,211 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:44:03,577 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:44:03,577 [INFO] advanced_analyzer.py:197 - 
+开始分析房源: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:44:03,577 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:44:04,983 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 12:44:04,986 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 12:44:56,885 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 12:44:56,888 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 12:44:57,888 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 12:44:58,026 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 12:44:58,337 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 12:44:58,340 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 12:44:59,340 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 12:44:59,463 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 12:45:05,125 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 12:45:05,129 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 12:45:06,129 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 12:45:06,246 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 12:45:18,146 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 12:45:18,157 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-15 12:45:18,264 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-15 12:45:18,265 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-15 12:45:18,265 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-15 12:45:18,265 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-15 12:45:18,265 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-15 12:45:18,265 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 12:45:18,266 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 43435162
+2024-11-15 12:45:18,266 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_43435162_20241115_124518.xlsx
+2024-11-15 12:45:18,266 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-15 12:45:18,292 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_43435162_20241115_124518.xlsx
+2024-11-15 12:45:18,293 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 9.14 KB
+2024-11-15 12:45:18,293 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_43435162_20241115_124518.xlsx
+2024-11-15 12:45:18,293 [INFO] advanced_analyzer.py:206 - 成功获取日历数据: 123 条记录
+2024-11-15 12:45:18,293 [INFO] price_checker.py:479 - 开始检查房源价格: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:45:18,293 [INFO] price_checker.py:472 - 找到 39 个可预订日期
+2024-11-15 12:45:18,293 [INFO] price_checker.py:495 - [1/39] 处理日期: 11/17/2024
+2024-11-15 12:45:18,293 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:45:18,293 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:45:18,293 [INFO] price_checker.py:256 - 入住日期: 11/17/2024
+2024-11-15 12:45:18,293 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:45:18,294 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:45:18,294 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-17
+2024-11-15 12:45:18,294 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-11-17
+2024-11-15 12:45:18,294 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:45:18,405 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 12:45:18,405 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:45:19,535 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 12:45:19,547 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-15 12:45:19,652 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-15 12:45:19,653 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-15 12:45:19,653 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-15 12:45:19,654 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-15 12:45:19,654 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-15 12:45:19,654 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 12:45:19,654 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 837352260137971048
+2024-11-15 12:45:19,654 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_837352260137971048_20241115_124519.xlsx
+2024-11-15 12:45:19,655 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-15 12:45:19,679 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_837352260137971048_20241115_124519.xlsx
+2024-11-15 12:45:19,679 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 9.17 KB
+2024-11-15 12:45:19,679 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_837352260137971048_20241115_124519.xlsx
+2024-11-15 12:45:19,679 [INFO] advanced_analyzer.py:206 - 成功获取日历数据: 123 条记录
+2024-11-15 12:45:19,679 [INFO] price_checker.py:479 - 开始检查房源价格: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:45:19,679 [INFO] price_checker.py:472 - 找到 37 个可预订日期
+2024-11-15 12:45:19,679 [INFO] price_checker.py:495 - [1/37] 处理日期: 11/18/2024
+2024-11-15 12:45:19,680 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:45:19,680 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:45:19,680 [INFO] price_checker.py:256 - 入住日期: 11/18/2024
+2024-11-15 12:45:19,680 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:45:19,680 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:45:19,680 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-18
+2024-11-15 12:45:19,680 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-18
+2024-11-15 12:45:19,680 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:45:19,845 [INFO] price_checker.py:291 - 页面加载耗时: 0.16秒
+2024-11-15 12:45:19,845 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:45:20,481 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:45:21,008 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:45:21,008 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:45:21,409 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:45:21,918 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:45:21,918 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:45:26,362 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 12:45:26,374 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-15 12:45:26,499 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-15 12:45:26,500 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-15 12:45:26,500 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-15 12:45:26,500 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-15 12:45:26,500 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-15 12:45:26,500 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 12:45:26,500 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 830193102361409290
+2024-11-15 12:45:26,501 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_830193102361409290_20241115_124526.xlsx
+2024-11-15 12:45:26,501 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-15 12:45:26,523 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_830193102361409290_20241115_124526.xlsx
+2024-11-15 12:45:26,524 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 8.93 KB
+2024-11-15 12:45:26,524 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_830193102361409290_20241115_124526.xlsx
+2024-11-15 12:45:26,524 [INFO] advanced_analyzer.py:206 - 成功获取日历数据: 123 条记录
+2024-11-15 12:45:26,524 [INFO] price_checker.py:479 - 开始检查房源价格: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:45:26,524 [INFO] price_checker.py:472 - 找到 72 个可预订日期
+2024-11-15 12:45:26,524 [INFO] price_checker.py:495 - [1/72] 处理日期: 11/18/2024
+2024-11-15 12:45:26,524 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:45:26,524 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:45:26,524 [INFO] price_checker.py:256 - 入住日期: 11/18/2024
+2024-11-15 12:45:26,524 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:45:26,525 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:45:26,525 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-18
+2024-11-15 12:45:26,525 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-18
+2024-11-15 12:45:26,525 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:45:26,962 [INFO] price_checker.py:291 - 页面加载耗时: 0.44秒
+2024-11-15 12:45:26,962 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:45:30,384 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:45:30,891 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:45:30,891 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:45:31,060 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:45:31,956 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:45:40,893 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:45:41,061 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:45:41,975 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:45:50,912 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:45:51,082 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:45:52,010 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:46:00,937 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:46:01,108 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:46:02,035 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:46:10,959 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:46:11,131 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:46:11,131 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:12,058 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:46:12,058 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:20,979 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:46:20,979 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:21,150 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:22,079 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:30,999 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:31,168 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:32,096 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:41,020 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:41,189 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:42,117 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:51,036 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:51,207 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:46:52,135 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:47:01,079 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:47:01,234 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:47:02,164 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:47:11,097 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:47:11,252 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:47:12,180 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:47:21,115 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:47:21,270 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:47:22,196 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:47:31,140 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:47:31,296 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:47:31,296 [INFO] price_checker.py:393 - ✓ check_in: 11/17/2024
+2024-11-15 12:47:31,296 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:47:31,296 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:47:31,296 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:47:31,296 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:47:31,297 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:47:31,297 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:47:31,297 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:47:31,297 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:47:31,297 [INFO] price_checker.py:501 - ✓ 成功获取 11/17/2024 的价格信息
+2024-11-15 12:47:31,297 [INFO] price_checker.py:495 - [2/39] 处理日期: 11/18/2024
+2024-11-15 12:47:31,297 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:47:31,297 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:47:31,297 [INFO] price_checker.py:256 - 入住日期: 11/18/2024
+2024-11-15 12:47:31,297 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:47:31,298 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:47:31,298 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-18
+2024-11-15 12:47:31,298 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-11-18
+2024-11-15 12:47:31,298 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:47:31,414 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 12:47:31,414 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:47:32,224 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:47:32,224 [INFO] price_checker.py:393 - ✓ check_in: 11/18/2024
+2024-11-15 12:47:32,224 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:47:32,224 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:47:32,224 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:47:32,224 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:47:32,224 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:47:32,224 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:47:32,224 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:47:32,224 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:47:32,224 [INFO] price_checker.py:501 - ✓ 成功获取 11/18/2024 的价格信息
+2024-11-15 12:47:32,225 [INFO] price_checker.py:495 - [2/37] 处理日期: 11/27/2024
+2024-11-15 12:47:32,225 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:47:32,225 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:47:32,225 [INFO] price_checker.py:256 - 入住日期: 11/27/2024
+2024-11-15 12:47:32,225 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:47:32,225 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:47:32,225 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-27
+2024-11-15 12:47:32,225 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-27
+2024-11-15 12:47:32,225 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:47:32,358 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 12:47:32,358 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:47:33,226 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:47:33,764 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:47:33,764 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:47:35,434 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:47:35,999 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:47:35,999 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:47:41,200 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:47:41,201 [INFO] price_checker.py:393 - ✓ check_in: 11/18/2024
+2024-11-15 12:47:41,201 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:47:41,201 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:47:41,201 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:47:41,201 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:47:41,201 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:47:41,201 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:47:41,201 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:47:41,201 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:47:41,201 [INFO] price_checker.py:501 - ✓ 成功获取 11/18/2024 的价格信息
+2024-11-15 12:47:41,201 [INFO] price_checker.py:495 - [2/72] 处理日期: 11/19/2024
+2024-11-15 12:47:41,201 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:47:41,202 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:47:41,202 [INFO] price_checker.py:256 - 入住日期: 11/19/2024
+2024-11-15 12:47:41,202 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:47:41,202 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:47:41,202 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-19
+2024-11-15 12:47:41,202 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-19
+2024-11-15 12:47:41,202 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:47:41,334 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 12:47:41,334 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:47:42,998 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:47:43,510 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:47:43,510 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:47:43,808 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:47:46,036 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:47:53,549 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:47:53,828 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:47:56,055 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:48:03,572 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:48:03,845 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:48:06,074 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:48:13,601 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:48:13,864 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:48:16,089 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:48:23,618 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:48:23,881 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:48:23,881 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:26,109 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:48:26,109 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:33,641 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:48:33,641 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:33,903 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:36,130 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:43,660 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:43,922 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:46,146 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:53,676 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:53,937 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:48:56,181 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:49:03,697 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:49:03,959 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:49:06,202 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:49:13,720 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:49:13,981 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:49:16,223 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:49:23,740 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:49:24,003 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:49:26,247 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:49:33,767 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:49:34,031 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:49:36,275 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:49:43,793 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:49:44,056 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:49:44,056 [INFO] price_checker.py:393 - ✓ check_in: 11/18/2024
+2024-11-15 12:49:44,056 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:49:44,056 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:49:44,056 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:49:44,056 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:49:44,056 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:49:44,056 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:49:44,056 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:49:44,057 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:49:44,057 [INFO] price_checker.py:501 - ✓ 成功获取 11/18/2024 的价格信息
+2024-11-15 12:49:44,057 [INFO] price_checker.py:495 - [3/39] 处理日期: 11/19/2024
+2024-11-15 12:49:44,057 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:49:44,057 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:49:44,057 [INFO] price_checker.py:256 - 入住日期: 11/19/2024
+2024-11-15 12:49:44,057 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:49:44,057 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:49:44,057 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-19
+2024-11-15 12:49:44,057 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-11-19
+2024-11-15 12:49:44,057 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:49:44,195 [INFO] price_checker.py:291 - 页面加载耗时: 0.14秒
+2024-11-15 12:49:44,196 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:49:46,295 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:49:46,295 [INFO] price_checker.py:393 - ✓ check_in: 11/27/2024
+2024-11-15 12:49:46,295 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:49:46,295 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:49:46,295 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:49:46,295 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:49:46,295 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:49:46,296 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:49:46,296 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:49:46,296 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:49:46,296 [INFO] price_checker.py:501 - ✓ 成功获取 11/27/2024 的价格信息
+2024-11-15 12:49:46,296 [INFO] price_checker.py:495 - [3/37] 处理日期: 11/28/2024
+2024-11-15 12:49:46,296 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:49:46,296 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:49:46,296 [INFO] price_checker.py:256 - 入住日期: 11/28/2024
+2024-11-15 12:49:46,296 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:49:46,296 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:49:46,296 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-28
+2024-11-15 12:49:46,296 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-28
+2024-11-15 12:49:46,296 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:49:46,421 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:49:46,436 [INFO] price_checker.py:291 - 页面加载耗时: 0.14秒
+2024-11-15 12:49:46,436 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:49:46,933 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:49:46,933 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:49:48,089 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:49:48,602 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:49:48,603 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:49:53,853 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:49:53,853 [INFO] price_checker.py:393 - ✓ check_in: 11/19/2024
+2024-11-15 12:49:53,853 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:49:53,853 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:49:53,853 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:49:53,853 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:49:53,853 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:49:53,853 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:49:53,853 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:49:53,853 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:49:53,853 [INFO] price_checker.py:501 - ✓ 成功获取 11/19/2024 的价格信息
+2024-11-15 12:49:53,854 [INFO] price_checker.py:495 - [3/72] 处理日期: 11/20/2024
+2024-11-15 12:49:53,854 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:49:53,854 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:49:53,854 [INFO] price_checker.py:256 - 入住日期: 11/20/2024
+2024-11-15 12:49:53,854 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:49:53,854 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:49:53,854 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-20
+2024-11-15 12:49:53,854 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-20
+2024-11-15 12:49:53,854 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:49:54,004 [INFO] price_checker.py:291 - 页面加载耗时: 0.15秒
+2024-11-15 12:49:54,005 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:49:55,703 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:49:56,212 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:49:56,212 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:49:56,972 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:49:58,640 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:50:06,260 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:50:06,988 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:50:08,656 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:50:16,279 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:50:17,004 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:50:18,690 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:50:26,295 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:50:27,022 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:50:28,708 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:50:36,314 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:50:37,041 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:50:37,041 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:50:38,727 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:50:38,727 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:50:46,337 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:50:46,338 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:50:47,064 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:50:48,748 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:50:56,359 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:50:57,085 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:50:58,771 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:06,376 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:07,103 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:08,791 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:16,402 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:17,131 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:18,817 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:26,426 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:27,153 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:28,842 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:36,466 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:51:37,191 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:51:38,884 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:51:46,494 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:51:47,220 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:51:48,907 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:51:56,513 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:51:57,239 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:51:57,239 [INFO] price_checker.py:393 - ✓ check_in: 11/19/2024
+2024-11-15 12:51:57,239 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:51:57,239 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:51:57,239 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:51:57,239 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:51:57,239 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:51:57,239 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:51:57,239 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:51:57,239 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:51:57,239 [INFO] price_checker.py:501 - ✓ 成功获取 11/19/2024 的价格信息
+2024-11-15 12:51:57,239 [INFO] price_checker.py:495 - [4/39] 处理日期: 11/20/2024
+2024-11-15 12:51:57,240 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:51:57,240 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:51:57,240 [INFO] price_checker.py:256 - 入住日期: 11/20/2024
+2024-11-15 12:51:57,240 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:51:57,240 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:51:57,240 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-20
+2024-11-15 12:51:57,240 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-11-20
+2024-11-15 12:51:57,240 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:51:57,349 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 12:51:57,350 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:51:58,926 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:51:58,926 [INFO] price_checker.py:393 - ✓ check_in: 11/28/2024
+2024-11-15 12:51:58,926 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:51:58,926 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:51:58,926 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:51:58,926 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:51:58,926 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:51:58,927 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:51:58,927 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:51:58,927 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:51:58,927 [INFO] price_checker.py:501 - ✓ 成功获取 11/28/2024 的价格信息
+2024-11-15 12:51:58,927 [INFO] price_checker.py:495 - [4/37] 处理日期: 11/29/2024
+2024-11-15 12:51:58,927 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:51:58,927 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:51:58,927 [INFO] price_checker.py:256 - 入住日期: 11/29/2024
+2024-11-15 12:51:58,927 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:51:58,927 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:51:58,927 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-29
+2024-11-15 12:51:58,927 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-29
+2024-11-15 12:51:58,928 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:51:59,070 [INFO] price_checker.py:291 - 页面加载耗时: 0.14秒
+2024-11-15 12:51:59,071 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:51:59,408 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:51:59,940 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:51:59,940 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:52:01,194 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:52:01,715 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:52:01,715 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:52:06,566 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:52:06,566 [INFO] price_checker.py:393 - ✓ check_in: 11/20/2024
+2024-11-15 12:52:06,566 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:52:06,566 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:52:06,566 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:52:06,566 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:52:06,566 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:52:06,567 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:52:06,567 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:52:06,567 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:52:06,567 [INFO] price_checker.py:501 - ✓ 成功获取 11/20/2024 的价格信息
+2024-11-15 12:52:06,567 [INFO] price_checker.py:495 - [4/72] 处理日期: 11/21/2024
+2024-11-15 12:52:06,567 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:52:06,567 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:52:06,567 [INFO] price_checker.py:256 - 入住日期: 11/21/2024
+2024-11-15 12:52:06,567 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:52:06,567 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:52:06,567 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-21
+2024-11-15 12:52:06,567 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-21
+2024-11-15 12:52:06,567 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:52:06,696 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 12:52:06,696 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:52:08,562 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:52:09,089 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:52:09,090 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:52:09,959 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:52:11,736 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:52:19,095 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:52:19,975 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:52:21,758 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:52:29,120 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:52:29,999 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:52:31,777 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:52:39,140 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:52:40,019 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:52:41,798 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:52:49,156 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:52:50,037 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:52:50,037 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:52:51,816 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:52:51,816 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:52:59,176 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:52:59,176 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:00,056 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:01,835 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:09,198 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:10,077 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:11,857 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:19,222 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:20,104 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:21,884 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:29,248 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:30,131 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:31,910 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:39,271 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:40,152 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:41,931 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:49,292 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:53:50,174 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:53:51,956 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:53:59,320 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:54:00,201 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:54:01,973 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:54:09,330 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:54:10,210 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:54:10,210 [INFO] price_checker.py:393 - ✓ check_in: 11/20/2024
+2024-11-15 12:54:10,210 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:54:10,210 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:54:10,210 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:54:10,210 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:54:10,210 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:54:10,211 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:54:10,211 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:54:10,211 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:54:10,211 [INFO] price_checker.py:501 - ✓ 成功获取 11/20/2024 的价格信息
+2024-11-15 12:54:10,211 [INFO] price_checker.py:495 - [5/39] 处理日期: 11/21/2024
+2024-11-15 12:54:10,211 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:54:10,211 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:54:10,211 [INFO] price_checker.py:256 - 入住日期: 11/21/2024
+2024-11-15 12:54:10,211 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:54:10,211 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:54:10,211 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-21
+2024-11-15 12:54:10,211 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-11-21
+2024-11-15 12:54:10,212 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:54:10,323 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 12:54:10,323 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:54:11,935 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:54:11,986 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:54:11,986 [INFO] price_checker.py:393 - ✓ check_in: 11/29/2024
+2024-11-15 12:54:11,986 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:54:11,986 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:54:11,986 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:54:11,986 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:54:11,986 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:54:11,986 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:54:11,986 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:54:11,986 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:54:11,987 [INFO] price_checker.py:501 - ✓ 成功获取 11/29/2024 的价格信息
+2024-11-15 12:54:11,987 [INFO] price_checker.py:495 - [5/37] 处理日期: 11/30/2024
+2024-11-15 12:54:11,987 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:54:11,987 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:54:11,987 [INFO] price_checker.py:256 - 入住日期: 11/30/2024
+2024-11-15 12:54:11,987 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:54:11,987 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:54:11,987 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-30
+2024-11-15 12:54:11,987 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-11-30
+2024-11-15 12:54:11,987 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:54:12,107 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 12:54:12,107 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:54:12,454 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:54:12,455 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:54:13,785 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:54:14,293 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:54:14,294 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:54:19,334 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:54:19,334 [INFO] price_checker.py:393 - ✓ check_in: 11/21/2024
+2024-11-15 12:54:19,334 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:54:19,334 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:54:19,334 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:54:19,334 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:54:19,335 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:54:19,335 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:54:19,335 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:54:19,335 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:54:19,335 [INFO] price_checker.py:501 - ✓ 成功获取 11/21/2024 的价格信息
+2024-11-15 12:54:19,335 [INFO] price_checker.py:495 - [5/72] 处理日期: 11/22/2024
+2024-11-15 12:54:19,335 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:54:19,335 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:54:19,335 [INFO] price_checker.py:256 - 入住日期: 11/22/2024
+2024-11-15 12:54:19,335 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:54:19,335 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:54:19,335 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-22
+2024-11-15 12:54:19,335 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-22
+2024-11-15 12:54:19,335 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:54:19,463 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 12:54:19,464 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:54:21,762 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:54:22,277 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:54:22,278 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:54:22,477 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:54:24,332 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:54:32,304 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:54:32,506 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:54:34,348 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:54:42,334 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:54:42,535 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:54:44,374 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:54:52,352 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:54:52,553 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:54:54,394 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:55:02,374 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:55:02,577 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:55:02,577 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:04,418 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:55:04,418 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:12,406 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:55:12,406 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:12,607 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:14,448 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:22,428 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:22,626 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:24,469 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:32,455 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:32,654 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:34,497 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:42,479 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:42,679 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:44,521 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:52,510 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:52,710 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:55:54,551 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:56:02,531 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:56:02,731 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:56:04,572 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:56:12,554 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:56:12,754 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:56:14,597 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:56:22,578 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:56:22,778 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:56:22,778 [INFO] price_checker.py:393 - ✓ check_in: 11/21/2024
+2024-11-15 12:56:22,778 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:56:22,778 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:56:22,779 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:56:22,779 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:56:22,779 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:56:22,779 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:56:22,779 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:56:22,779 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:56:22,779 [INFO] price_checker.py:501 - ✓ 成功获取 11/21/2024 的价格信息
+2024-11-15 12:56:22,779 [INFO] price_checker.py:515 - 已完成 5/39 个日期的处理
+2024-11-15 12:56:24,619 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:56:24,619 [INFO] price_checker.py:393 - ✓ check_in: 11/30/2024
+2024-11-15 12:56:24,620 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:56:24,620 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:56:24,620 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:56:24,620 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:56:24,620 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:56:24,620 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:56:24,620 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:56:24,620 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:56:24,620 [INFO] price_checker.py:501 - ✓ 成功获取 11/30/2024 的价格信息
+2024-11-15 12:56:24,620 [INFO] price_checker.py:515 - 已完成 5/37 个日期的处理
+2024-11-15 12:56:25,780 [INFO] price_checker.py:495 - [6/39] 处理日期: 11/22/2024
+2024-11-15 12:56:25,780 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:56:25,780 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:56:25,780 [INFO] price_checker.py:256 - 入住日期: 11/22/2024
+2024-11-15 12:56:25,780 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:56:25,781 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:56:25,781 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-22
+2024-11-15 12:56:25,781 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-11-22
+2024-11-15 12:56:25,781 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:56:25,911 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 12:56:25,911 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:56:27,621 [INFO] price_checker.py:495 - [6/37] 处理日期: 12/01/2024
+2024-11-15 12:56:27,621 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:56:27,621 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:56:27,621 [INFO] price_checker.py:256 - 入住日期: 12/01/2024
+2024-11-15 12:56:27,621 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:56:27,621 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:56:27,621 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-01
+2024-11-15 12:56:27,621 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-01
+2024-11-15 12:56:27,621 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:56:27,741 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 12:56:27,741 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:56:27,838 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:56:28,345 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:56:28,345 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:56:29,316 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:56:29,826 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:56:29,826 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:56:32,582 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:56:32,582 [INFO] price_checker.py:393 - ✓ check_in: 11/22/2024
+2024-11-15 12:56:32,582 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:56:32,582 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:56:32,582 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:56:32,582 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:56:32,582 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:56:32,583 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:56:32,583 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:56:32,583 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:56:32,583 [INFO] price_checker.py:501 - ✓ 成功获取 11/22/2024 的价格信息
+2024-11-15 12:56:32,583 [INFO] price_checker.py:515 - 已完成 5/72 个日期的处理
+2024-11-15 12:56:35,583 [INFO] price_checker.py:495 - [6/72] 处理日期: 11/24/2024
+2024-11-15 12:56:35,583 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:56:35,583 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:56:35,584 [INFO] price_checker.py:256 - 入住日期: 11/24/2024
+2024-11-15 12:56:35,584 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:56:35,584 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:56:35,584 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-24
+2024-11-15 12:56:35,584 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-24
+2024-11-15 12:56:35,584 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:56:35,715 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 12:56:35,715 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:56:38,287 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:56:38,352 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:56:38,820 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:56:38,821 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:56:39,881 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:56:48,380 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:56:48,827 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:56:49,894 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:56:58,409 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:56:58,841 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:56:59,908 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:57:08,428 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:57:08,860 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:57:09,926 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:57:18,446 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:57:18,446 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:18,877 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:57:19,946 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:57:19,946 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:28,470 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:28,904 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:57:28,905 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:29,971 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:38,495 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:38,929 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:39,996 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:48,517 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:48,950 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:50,018 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:58,541 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:57:58,974 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:58:00,042 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:58:08,558 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:58:08,991 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:58:10,058 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:58:18,581 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:58:19,014 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:58:20,082 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:58:28,605 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:58:29,039 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 12:58:30,105 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:58:38,626 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:58:38,626 [INFO] price_checker.py:393 - ✓ check_in: 11/22/2024
+2024-11-15 12:58:38,627 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:58:38,627 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:58:38,627 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:58:38,627 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:58:38,627 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:58:38,627 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:58:38,627 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:58:38,627 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:58:38,627 [INFO] price_checker.py:501 - ✓ 成功获取 11/22/2024 的价格信息
+2024-11-15 12:58:38,627 [INFO] price_checker.py:495 - [7/39] 处理日期: 11/23/2024
+2024-11-15 12:58:38,627 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:58:38,627 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 12:58:38,627 [INFO] price_checker.py:256 - 入住日期: 11/23/2024
+2024-11-15 12:58:38,628 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:58:38,628 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:58:38,628 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-23
+2024-11-15 12:58:38,628 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-11-23
+2024-11-15 12:58:38,628 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:58:38,738 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 12:58:38,738 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:58:39,058 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 12:58:40,125 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:58:40,125 [INFO] price_checker.py:393 - ✓ check_in: 12/01/2024
+2024-11-15 12:58:40,125 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:58:40,126 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:58:40,126 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:58:40,126 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:58:40,126 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:58:40,126 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:58:40,126 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:58:40,126 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:58:40,126 [INFO] price_checker.py:501 - ✓ 成功获取 12/01/2024 的价格信息
+2024-11-15 12:58:40,126 [INFO] price_checker.py:495 - [7/37] 处理日期: 12/02/2024
+2024-11-15 12:58:40,126 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:58:40,126 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 12:58:40,126 [INFO] price_checker.py:256 - 入住日期: 12/02/2024
+2024-11-15 12:58:40,126 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:58:40,126 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:58:40,127 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-02
+2024-11-15 12:58:40,127 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-02
+2024-11-15 12:58:40,127 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:58:40,246 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 12:58:40,246 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:58:40,941 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:58:41,462 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:58:41,462 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:58:42,683 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:58:43,206 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:58:43,206 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:58:49,119 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 12:58:49,119 [INFO] price_checker.py:393 - ✓ check_in: 11/24/2024
+2024-11-15 12:58:49,119 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 12:58:49,119 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 12:58:49,119 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 12:58:49,119 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 12:58:49,119 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 12:58:49,119 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 12:58:49,120 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 12:58:49,120 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 12:58:49,120 [INFO] price_checker.py:501 - ✓ 成功获取 11/24/2024 的价格信息
+2024-11-15 12:58:49,120 [INFO] price_checker.py:495 - [7/72] 处理日期: 11/25/2024
+2024-11-15 12:58:49,120 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 12:58:49,120 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 12:58:49,120 [INFO] price_checker.py:256 - 入住日期: 11/25/2024
+2024-11-15 12:58:49,120 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 12:58:49,120 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 12:58:49,120 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-25
+2024-11-15 12:58:49,120 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-25
+2024-11-15 12:58:49,120 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 12:58:49,262 [INFO] price_checker.py:291 - 页面加载耗时: 0.14秒
+2024-11-15 12:58:49,262 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 12:58:51,468 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:58:51,870 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 12:58:52,392 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 12:58:52,393 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 12:58:53,209 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:59:01,481 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:59:02,408 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 12:59:03,227 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:59:11,502 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:59:12,432 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 12:59:13,252 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:59:21,525 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:59:22,454 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 12:59:23,274 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:59:31,561 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:59:31,561 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:59:32,489 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 12:59:33,294 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:59:33,294 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:59:41,579 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:59:42,508 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 12:59:42,508 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:59:43,313 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:59:51,601 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:59:52,528 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 12:59:53,331 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:01,621 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:02,547 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:03,350 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:11,636 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:12,563 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:13,367 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:21,660 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:22,587 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:23,392 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:31,685 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:00:32,611 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:00:33,418 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:00:41,710 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:00:42,638 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:00:43,444 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:00:51,728 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:00:51,728 [INFO] price_checker.py:393 - ✓ check_in: 11/23/2024
+2024-11-15 13:00:51,728 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:00:51,728 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:00:51,728 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:00:51,728 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:00:51,728 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:00:51,728 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:00:51,728 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:00:51,728 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:00:51,728 [INFO] price_checker.py:501 - ✓ 成功获取 11/23/2024 的价格信息
+2024-11-15 13:00:51,729 [INFO] price_checker.py:495 - [8/39] 处理日期: 11/29/2024
+2024-11-15 13:00:51,729 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:00:51,729 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:00:51,729 [INFO] price_checker.py:256 - 入住日期: 11/29/2024
+2024-11-15 13:00:51,729 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:00:51,729 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:00:51,729 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-29
+2024-11-15 13:00:51,729 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-11-29
+2024-11-15 13:00:51,729 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:00:51,838 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 13:00:51,838 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:00:52,655 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:00:53,455 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:00:53,455 [INFO] price_checker.py:393 - ✓ check_in: 12/02/2024
+2024-11-15 13:00:53,455 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:00:53,455 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:00:53,455 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:00:53,455 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:00:53,456 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:00:53,456 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:00:53,456 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:00:53,456 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:00:53,456 [INFO] price_checker.py:501 - ✓ 成功获取 12/02/2024 的价格信息
+2024-11-15 13:00:53,456 [INFO] price_checker.py:495 - [8/37] 处理日期: 12/03/2024
+2024-11-15 13:00:53,456 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:00:53,456 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:00:53,456 [INFO] price_checker.py:256 - 入住日期: 12/03/2024
+2024-11-15 13:00:53,456 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:00:53,457 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:00:53,457 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-03
+2024-11-15 13:00:53,457 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-03
+2024-11-15 13:00:53,457 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:00:53,579 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 13:00:53,579 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:00:53,635 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:00:54,151 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:00:54,151 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:00:55,447 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:00:55,977 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:00:55,977 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:01:02,706 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:01:02,706 [INFO] price_checker.py:393 - ✓ check_in: 11/25/2024
+2024-11-15 13:01:02,706 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:01:02,706 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:01:02,706 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:01:02,706 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:01:02,706 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:01:02,706 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:01:02,706 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:01:02,706 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:01:02,707 [INFO] price_checker.py:501 - ✓ 成功获取 11/25/2024 的价格信息
+2024-11-15 13:01:02,707 [INFO] price_checker.py:495 - [8/72] 处理日期: 11/26/2024
+2024-11-15 13:01:02,707 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:01:02,707 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:01:02,707 [INFO] price_checker.py:256 - 入住日期: 11/26/2024
+2024-11-15 13:01:02,707 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:01:02,707 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:01:02,707 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-26
+2024-11-15 13:01:02,707 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-26
+2024-11-15 13:01:02,707 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:01:02,837 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 13:01:02,837 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:01:04,171 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:01:04,544 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:01:05,065 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:01:05,065 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:01:06,040 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:01:14,183 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:01:15,110 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:01:16,049 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:01:24,194 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:01:25,122 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:01:26,063 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:01:34,216 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:01:35,160 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:01:36,087 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:01:44,239 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:01:44,239 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:01:45,183 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:01:46,112 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:01:46,112 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:01:54,260 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:01:55,203 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:01:55,203 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:01:56,132 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:04,283 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:05,223 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:06,152 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:14,299 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:15,242 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:16,170 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:24,316 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:25,261 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:26,188 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:34,339 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:35,283 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:36,212 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:44,361 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:02:45,304 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:02:46,231 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:02:54,382 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:02:55,324 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:02:56,252 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:03:04,402 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:03:04,403 [INFO] price_checker.py:393 - ✓ check_in: 11/29/2024
+2024-11-15 13:03:04,403 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:03:04,403 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:03:04,403 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:03:04,403 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:03:04,403 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:03:04,403 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:03:04,403 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:03:04,403 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:03:04,403 [INFO] price_checker.py:501 - ✓ 成功获取 11/29/2024 的价格信息
+2024-11-15 13:03:04,403 [INFO] price_checker.py:495 - [9/39] 处理日期: 11/30/2024
+2024-11-15 13:03:04,404 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:03:04,404 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:03:04,404 [INFO] price_checker.py:256 - 入住日期: 11/30/2024
+2024-11-15 13:03:04,404 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:03:04,404 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:03:04,404 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-30
+2024-11-15 13:03:04,404 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-11-30
+2024-11-15 13:03:04,404 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:03:04,512 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 13:03:04,513 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:03:05,345 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:03:06,169 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:03:06,270 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:03:06,271 [INFO] price_checker.py:393 - ✓ check_in: 12/03/2024
+2024-11-15 13:03:06,271 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:03:06,271 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:03:06,271 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:03:06,271 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:03:06,271 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:03:06,271 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:03:06,271 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:03:06,271 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:03:06,271 [INFO] price_checker.py:501 - ✓ 成功获取 12/03/2024 的价格信息
+2024-11-15 13:03:06,271 [INFO] price_checker.py:495 - [9/37] 处理日期: 12/04/2024
+2024-11-15 13:03:06,271 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:03:06,272 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:03:06,272 [INFO] price_checker.py:256 - 入住日期: 12/04/2024
+2024-11-15 13:03:06,272 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:03:06,272 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:03:06,272 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-04
+2024-11-15 13:03:06,272 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-04
+2024-11-15 13:03:06,272 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:03:06,394 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 13:03:06,395 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:03:06,689 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:03:06,689 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:03:07,957 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:03:08,470 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:03:08,470 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:03:15,348 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:03:15,348 [INFO] price_checker.py:393 - ✓ check_in: 11/26/2024
+2024-11-15 13:03:15,348 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:03:15,349 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:03:15,349 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:03:15,349 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:03:15,349 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:03:15,349 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:03:15,349 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:03:15,349 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:03:15,349 [INFO] price_checker.py:501 - ✓ 成功获取 11/26/2024 的价格信息
+2024-11-15 13:03:15,349 [INFO] price_checker.py:495 - [9/72] 处理日期: 11/27/2024
+2024-11-15 13:03:15,349 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:03:15,349 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:03:15,349 [INFO] price_checker.py:256 - 入住日期: 11/27/2024
+2024-11-15 13:03:15,349 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:03:15,349 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:03:15,350 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-27
+2024-11-15 13:03:15,350 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-27
+2024-11-15 13:03:15,350 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:03:15,512 [INFO] price_checker.py:291 - 页面加载耗时: 0.16秒
+2024-11-15 13:03:15,512 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:03:16,718 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:03:17,625 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:03:18,149 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:03:18,149 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:03:18,524 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:03:26,730 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:03:28,156 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:03:28,541 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:03:36,750 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:03:38,175 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:03:38,562 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:03:46,773 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:03:48,196 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:03:48,583 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:03:56,792 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:03:56,792 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:03:58,214 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:03:58,601 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:03:58,602 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:06,812 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:08,237 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:04:08,237 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:08,621 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:16,830 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:18,269 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:18,641 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:26,855 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:28,294 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:28,666 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:36,873 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:38,311 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:38,683 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:46,891 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:48,327 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:48,699 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:56,913 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:04:58,351 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:04:58,722 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:05:06,938 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:05:08,378 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:05:08,749 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:05:16,962 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:05:16,962 [INFO] price_checker.py:393 - ✓ check_in: 11/30/2024
+2024-11-15 13:05:16,962 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:05:16,962 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:05:16,963 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:05:16,963 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:05:16,963 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:05:16,963 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:05:16,963 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:05:16,963 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:05:16,963 [INFO] price_checker.py:501 - ✓ 成功获取 11/30/2024 的价格信息
+2024-11-15 13:05:16,963 [INFO] price_checker.py:495 - [10/39] 处理日期: 12/01/2024
+2024-11-15 13:05:16,963 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:05:16,963 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:05:16,963 [INFO] price_checker.py:256 - 入住日期: 12/01/2024
+2024-11-15 13:05:16,963 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:05:16,963 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:05:16,964 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-01
+2024-11-15 13:05:16,964 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-12-01
+2024-11-15 13:05:16,964 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:05:17,097 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 13:05:17,097 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:05:18,413 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:05:18,768 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:05:18,768 [INFO] price_checker.py:393 - ✓ check_in: 12/04/2024
+2024-11-15 13:05:18,768 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:05:18,768 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:05:18,768 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:05:18,769 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:05:18,769 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:05:18,769 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:05:18,769 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:05:18,769 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:05:18,769 [INFO] price_checker.py:501 - ✓ 成功获取 12/04/2024 的价格信息
+2024-11-15 13:05:18,769 [INFO] price_checker.py:495 - [10/37] 处理日期: 12/05/2024
+2024-11-15 13:05:18,769 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:05:18,769 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:05:18,769 [INFO] price_checker.py:256 - 入住日期: 12/05/2024
+2024-11-15 13:05:18,769 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:05:18,769 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:05:18,770 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-05
+2024-11-15 13:05:18,770 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-05
+2024-11-15 13:05:18,770 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:05:18,890 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 13:05:18,890 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:05:19,023 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:05:19,539 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:05:19,539 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:05:20,565 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:05:21,078 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:05:21,078 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:05:28,428 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:05:28,428 [INFO] price_checker.py:393 - ✓ check_in: 11/27/2024
+2024-11-15 13:05:28,429 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:05:28,429 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:05:28,429 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:05:28,429 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:05:28,429 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:05:28,429 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:05:28,429 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:05:28,429 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:05:28,429 [INFO] price_checker.py:501 - ✓ 成功获取 11/27/2024 的价格信息
+2024-11-15 13:05:28,429 [INFO] price_checker.py:495 - [10/72] 处理日期: 11/28/2024
+2024-11-15 13:05:28,429 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:05:28,429 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:05:28,429 [INFO] price_checker.py:256 - 入住日期: 11/28/2024
+2024-11-15 13:05:28,429 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:05:28,430 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:05:28,430 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-28
+2024-11-15 13:05:28,430 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-28
+2024-11-15 13:05:28,430 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:05:28,563 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 13:05:28,563 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:05:29,585 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:05:31,127 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:05:31,697 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:05:32,219 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:05:32,219 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:05:39,602 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:05:41,147 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:05:42,244 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:05:49,623 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:05:51,165 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:05:52,263 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:05:59,639 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:06:01,181 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:06:02,279 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:06:09,652 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:06:09,653 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:11,199 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:06:11,200 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:12,297 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:06:19,675 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:21,222 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:22,320 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:06:22,320 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:29,700 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:31,246 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:32,344 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:39,722 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:41,269 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:42,369 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:49,748 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:51,293 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:52,407 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:06:59,766 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:07:01,327 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:07:02,425 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:07:09,787 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:07:11,350 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:07:12,448 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:07:19,806 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:07:21,369 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:07:22,467 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:07:29,831 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:07:29,831 [INFO] price_checker.py:393 - ✓ check_in: 12/01/2024
+2024-11-15 13:07:29,831 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:07:29,832 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:07:29,832 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:07:29,832 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:07:29,832 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:07:29,832 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:07:29,832 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:07:29,832 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:07:29,832 [INFO] price_checker.py:501 - ✓ 成功获取 12/01/2024 的价格信息
+2024-11-15 13:07:29,832 [INFO] price_checker.py:515 - 已完成 10/39 个日期的处理
+2024-11-15 13:07:31,393 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:07:31,393 [INFO] price_checker.py:393 - ✓ check_in: 12/05/2024
+2024-11-15 13:07:31,393 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:07:31,393 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:07:31,393 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:07:31,393 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:07:31,393 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:07:31,393 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:07:31,393 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:07:31,393 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:07:31,393 [INFO] price_checker.py:501 - ✓ 成功获取 12/05/2024 的价格信息
+2024-11-15 13:07:31,393 [INFO] price_checker.py:515 - 已完成 10/37 个日期的处理
+2024-11-15 13:07:32,491 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:07:32,833 [INFO] price_checker.py:495 - [11/39] 处理日期: 12/02/2024
+2024-11-15 13:07:32,833 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:07:32,833 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:07:32,833 [INFO] price_checker.py:256 - 入住日期: 12/02/2024
+2024-11-15 13:07:32,833 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:07:32,833 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:07:32,833 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-02
+2024-11-15 13:07:32,833 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-12-02
+2024-11-15 13:07:32,833 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:07:32,941 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 13:07:32,941 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:07:34,394 [INFO] price_checker.py:495 - [11/37] 处理日期: 12/06/2024
+2024-11-15 13:07:34,394 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:07:34,394 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:07:34,394 [INFO] price_checker.py:256 - 入住日期: 12/06/2024
+2024-11-15 13:07:34,394 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:07:34,395 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:07:34,395 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-06
+2024-11-15 13:07:34,395 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-06
+2024-11-15 13:07:34,395 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:07:34,507 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:07:34,542 [INFO] price_checker.py:291 - 页面加载耗时: 0.15秒
+2024-11-15 13:07:34,543 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:07:35,031 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:07:35,031 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:07:36,191 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:07:36,702 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:07:36,703 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:07:42,545 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:07:42,546 [INFO] price_checker.py:393 - ✓ check_in: 11/28/2024
+2024-11-15 13:07:42,546 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:07:42,546 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:07:42,546 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:07:42,546 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:07:42,546 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:07:42,546 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:07:42,546 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:07:42,546 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:07:42,546 [INFO] price_checker.py:501 - ✓ 成功获取 11/28/2024 的价格信息
+2024-11-15 13:07:42,546 [INFO] price_checker.py:515 - 已完成 10/72 个日期的处理
+2024-11-15 13:07:45,035 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:07:45,547 [INFO] price_checker.py:495 - [11/72] 处理日期: 11/29/2024
+2024-11-15 13:07:45,547 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:07:45,547 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:07:45,547 [INFO] price_checker.py:256 - 入住日期: 11/29/2024
+2024-11-15 13:07:45,547 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:07:45,547 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:07:45,547 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-29
+2024-11-15 13:07:45,547 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-29
+2024-11-15 13:07:45,548 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:07:45,692 [INFO] price_checker.py:291 - 页面加载耗时: 0.14秒
+2024-11-15 13:07:45,693 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:07:46,747 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:07:47,405 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:07:47,925 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:07:47,925 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:07:55,097 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:07:56,751 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:07:57,974 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:08:05,115 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:08:06,787 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:08:07,994 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:08:15,141 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:08:16,811 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:08:18,017 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:08:25,168 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:08:25,169 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:26,838 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:08:26,838 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:28,044 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:08:35,182 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:36,853 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:38,059 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:08:38,059 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:45,204 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:46,872 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:48,074 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:55,222 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:56,890 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:08:58,096 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:09:05,244 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:09:06,916 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:09:08,120 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:09:15,265 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:09:16,934 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:09:18,141 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:09:25,281 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:09:26,951 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:09:28,158 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:09:35,302 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:09:36,972 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:09:38,177 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:09:45,328 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:09:45,329 [INFO] price_checker.py:393 - ✓ check_in: 12/02/2024
+2024-11-15 13:09:45,329 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:09:45,329 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:09:45,329 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:09:45,329 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:09:45,329 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:09:45,329 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:09:45,329 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:09:45,329 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:09:45,329 [INFO] price_checker.py:501 - ✓ 成功获取 12/02/2024 的价格信息
+2024-11-15 13:09:45,329 [INFO] price_checker.py:495 - [12/39] 处理日期: 12/03/2024
+2024-11-15 13:09:45,330 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:09:45,330 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:09:45,330 [INFO] price_checker.py:256 - 入住日期: 12/03/2024
+2024-11-15 13:09:45,330 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:09:45,330 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:09:45,330 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-03
+2024-11-15 13:09:45,330 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-12-03
+2024-11-15 13:09:45,330 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:09:45,438 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 13:09:45,438 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:09:47,016 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:09:47,016 [INFO] price_checker.py:393 - ✓ check_in: 12/06/2024
+2024-11-15 13:09:47,016 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:09:47,016 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:09:47,016 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:09:47,016 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:09:47,016 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:09:47,016 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:09:47,016 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:09:47,016 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:09:47,016 [INFO] price_checker.py:501 - ✓ 成功获取 12/06/2024 的价格信息
+2024-11-15 13:09:47,017 [INFO] price_checker.py:495 - [12/37] 处理日期: 12/07/2024
+2024-11-15 13:09:47,017 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:09:47,017 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:09:47,017 [INFO] price_checker.py:256 - 入住日期: 12/07/2024
+2024-11-15 13:09:47,017 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:09:47,017 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:09:47,017 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-07
+2024-11-15 13:09:47,017 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-07
+2024-11-15 13:09:47,017 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:09:47,134 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 13:09:47,134 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:09:47,576 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:09:48,085 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:09:48,085 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:09:48,201 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:09:49,643 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:09:50,154 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:09:50,154 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:09:58,092 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:09:58,261 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:09:58,262 [INFO] price_checker.py:393 - ✓ check_in: 11/29/2024
+2024-11-15 13:09:58,262 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:09:58,262 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:09:58,262 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:09:58,262 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:09:58,262 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:09:58,262 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:09:58,262 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:09:58,262 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:09:58,262 [INFO] price_checker.py:501 - ✓ 成功获取 11/29/2024 的价格信息
+2024-11-15 13:09:58,262 [INFO] price_checker.py:495 - [12/72] 处理日期: 11/30/2024
+2024-11-15 13:09:58,262 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:09:58,262 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:09:58,262 [INFO] price_checker.py:256 - 入住日期: 11/30/2024
+2024-11-15 13:09:58,262 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:09:58,263 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:09:58,263 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-11-30
+2024-11-15 13:09:58,263 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-11-30
+2024-11-15 13:09:58,263 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:09:58,414 [INFO] price_checker.py:291 - 页面加载耗时: 0.15秒
+2024-11-15 13:09:58,414 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:10:00,112 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:10:00,201 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:10:00,634 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:10:00,634 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:10:08,153 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:10:10,209 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:10:10,689 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:10:18,172 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:10:20,225 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:10:20,705 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:10:28,182 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:10:30,242 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:10:30,719 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:10:38,205 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:10:38,205 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:10:40,264 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:10:40,264 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:10:40,742 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:10:48,222 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:10:50,280 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:10:50,760 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:10:50,760 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:10:58,245 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:00,298 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:00,778 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:08,263 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:10,320 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:10,800 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:18,298 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:20,356 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:20,837 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:28,319 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:30,379 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:30,859 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:38,345 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:11:40,403 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:11:40,880 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:11:48,367 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:11:50,426 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:11:50,902 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:11:58,391 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:11:58,391 [INFO] price_checker.py:393 - ✓ check_in: 12/03/2024
+2024-11-15 13:11:58,391 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:11:58,391 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:11:58,392 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:11:58,392 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:11:58,392 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:11:58,392 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:11:58,392 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:11:58,392 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:11:58,392 [INFO] price_checker.py:501 - ✓ 成功获取 12/03/2024 的价格信息
+2024-11-15 13:11:58,392 [INFO] price_checker.py:495 - [13/39] 处理日期: 12/04/2024
+2024-11-15 13:11:58,392 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:11:58,392 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:11:58,392 [INFO] price_checker.py:256 - 入住日期: 12/04/2024
+2024-11-15 13:11:58,392 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:11:58,392 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:11:58,393 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-04
+2024-11-15 13:11:58,393 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-12-04
+2024-11-15 13:11:58,393 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:11:58,504 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 13:11:58,504 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:12:00,212 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:12:00,462 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:12:00,462 [INFO] price_checker.py:393 - ✓ check_in: 12/07/2024
+2024-11-15 13:12:00,462 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:12:00,462 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:12:00,462 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:12:00,462 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:12:00,462 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:12:00,462 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:12:00,462 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:12:00,462 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:12:00,462 [INFO] price_checker.py:501 - ✓ 成功获取 12/07/2024 的价格信息
+2024-11-15 13:12:00,463 [INFO] price_checker.py:495 - [13/37] 处理日期: 12/08/2024
+2024-11-15 13:12:00,463 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:12:00,463 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:12:00,463 [INFO] price_checker.py:256 - 入住日期: 12/08/2024
+2024-11-15 13:12:00,463 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:12:00,463 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:12:00,463 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-08
+2024-11-15 13:12:00,463 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-08
+2024-11-15 13:12:00,463 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:12:00,600 [INFO] price_checker.py:291 - 页面加载耗时: 0.14秒
+2024-11-15 13:12:00,600 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:12:00,724 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:12:00,724 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:12:00,927 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:12:02,467 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:12:02,978 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:12:02,978 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:12:10,747 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:12:10,932 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:12:10,933 [INFO] price_checker.py:393 - ✓ check_in: 11/30/2024
+2024-11-15 13:12:10,933 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:12:10,933 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:12:10,933 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:12:10,933 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:12:10,933 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:12:10,933 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:12:10,933 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:12:10,933 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:12:10,933 [INFO] price_checker.py:501 - ✓ 成功获取 11/30/2024 的价格信息
+2024-11-15 13:12:10,933 [INFO] price_checker.py:495 - [13/72] 处理日期: 12/01/2024
+2024-11-15 13:12:10,933 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:12:10,934 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:12:10,934 [INFO] price_checker.py:256 - 入住日期: 12/01/2024
+2024-11-15 13:12:10,934 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:12:10,934 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:12:10,934 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-01
+2024-11-15 13:12:10,934 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-12-01
+2024-11-15 13:12:10,934 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:12:11,083 [INFO] price_checker.py:291 - 页面加载耗时: 0.15秒
+2024-11-15 13:12:11,083 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:12:12,792 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:12:13,001 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:12:13,313 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:12:13,313 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:12:20,759 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:12:23,017 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:12:23,325 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:12:30,776 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:12:33,033 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:12:33,342 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:12:40,795 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:12:43,054 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:12:43,362 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:12:50,816 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:12:50,817 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:12:53,074 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:12:53,074 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:12:53,383 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:13:00,834 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:03,093 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:03,403 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:13:03,403 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:10,859 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:13,118 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:13,427 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:20,881 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:23,139 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:23,447 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:30,901 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:33,159 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:33,468 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:40,920 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:43,179 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:43,488 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:13:50,944 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:13:53,203 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:13:53,512 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:14:00,966 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:14:03,222 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:14:03,531 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:14:10,985 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:14:10,985 [INFO] price_checker.py:393 - ✓ check_in: 12/04/2024
+2024-11-15 13:14:10,985 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:14:10,985 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:14:10,986 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:14:10,986 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:14:10,986 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:14:10,986 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:14:10,986 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:14:10,986 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:14:10,986 [INFO] price_checker.py:501 - ✓ 成功获取 12/04/2024 的价格信息
+2024-11-15 13:14:10,986 [INFO] price_checker.py:495 - [14/39] 处理日期: 12/05/2024
+2024-11-15 13:14:10,986 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:14:10,986 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:14:10,986 [INFO] price_checker.py:256 - 入住日期: 12/05/2024
+2024-11-15 13:14:10,986 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:14:10,986 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:14:10,987 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-05
+2024-11-15 13:14:10,987 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-12-05
+2024-11-15 13:14:10,987 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:14:11,094 [INFO] price_checker.py:291 - 页面加载耗时: 0.11秒
+2024-11-15 13:14:11,094 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:14:12,698 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:14:13,220 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:14:13,221 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:14:13,242 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:14:13,242 [INFO] price_checker.py:393 - ✓ check_in: 12/08/2024
+2024-11-15 13:14:13,242 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:14:13,242 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:14:13,242 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:14:13,242 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:14:13,242 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:14:13,242 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:14:13,243 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:14:13,243 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:14:13,243 [INFO] price_checker.py:501 - ✓ 成功获取 12/08/2024 的价格信息
+2024-11-15 13:14:13,243 [INFO] price_checker.py:495 - [14/37] 处理日期: 12/09/2024
+2024-11-15 13:14:13,243 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:14:13,243 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:14:13,243 [INFO] price_checker.py:256 - 入住日期: 12/09/2024
+2024-11-15 13:14:13,243 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:14:13,243 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:14:13,243 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-09
+2024-11-15 13:14:13,243 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-09
+2024-11-15 13:14:13,243 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:14:13,358 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 13:14:13,359 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:14:13,549 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:14:15,966 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:14:16,488 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:14:16,488 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:14:23,250 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:14:23,607 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:14:23,607 [INFO] price_checker.py:393 - ✓ check_in: 12/01/2024
+2024-11-15 13:14:23,607 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:14:23,607 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:14:23,607 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:14:23,607 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:14:23,607 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:14:23,607 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:14:23,607 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:14:23,607 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:14:23,607 [INFO] price_checker.py:501 - ✓ 成功获取 12/01/2024 的价格信息
+2024-11-15 13:14:23,607 [INFO] price_checker.py:495 - [14/72] 处理日期: 12/02/2024
+2024-11-15 13:14:23,608 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:14:23,608 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:14:23,608 [INFO] price_checker.py:256 - 入住日期: 12/02/2024
+2024-11-15 13:14:23,608 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:14:23,608 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:14:23,608 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-02
+2024-11-15 13:14:23,608 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-12-02
+2024-11-15 13:14:23,608 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:14:23,762 [INFO] price_checker.py:291 - 页面加载耗时: 0.15秒
+2024-11-15 13:14:23,762 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:14:26,333 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:14:26,493 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:14:26,842 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:14:26,842 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:14:33,313 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:14:36,497 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:14:36,900 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:14:43,337 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:14:46,524 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:14:46,928 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:14:53,368 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:14:56,554 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:14:56,957 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 13:15:03,418 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:15:03,418 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:06,596 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:15:06,597 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:06,984 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 13:15:13,432 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:16,614 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:17,001 [INFO] price_checker.py:354 - 
+=== 开始获取价格详情 ===
+2024-11-15 13:15:17,001 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Cleaning fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:23,449 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:26,634 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:27,020 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'Cleaning fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:33,483 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:36,653 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:37,025 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Airbnb service fee']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:43,528 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:46,682 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:47,053 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'service fee')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:53,550 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:56,706 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:15:57,076 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[text()='Taxes']]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:16:03,576 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:16:06,733 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:16:07,102 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_14omvfj')][.//div[contains(text(), 'tax')]]//span[contains(@class, '_1k4xcdh')]
+2024-11-15 13:16:13,601 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:16:16,755 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:16:17,127 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_j1kt73')]
+2024-11-15 13:16:23,642 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:16:23,643 [INFO] price_checker.py:393 - ✓ check_in: 12/05/2024
+2024-11-15 13:16:23,643 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:16:23,643 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:16:23,643 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:16:23,643 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:16:23,643 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:16:23,643 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:16:23,643 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:16:23,643 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:16:23,643 [INFO] price_checker.py:501 - ✓ 成功获取 12/05/2024 的价格信息
+2024-11-15 13:16:23,643 [INFO] price_checker.py:495 - [15/39] 处理日期: 12/06/2024
+2024-11-15 13:16:23,644 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:16:23,644 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/43435162
+2024-11-15 13:16:23,644 [INFO] price_checker.py:256 - 入住日期: 12/06/2024
+2024-11-15 13:16:23,644 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:16:23,644 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:16:23,644 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-06
+2024-11-15 13:16:23,644 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/43435162?check_in=2024-12-06
+2024-11-15 13:16:23,644 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:16:23,749 [INFO] price_checker.py:291 - 页面加载耗时: 0.10秒
+2024-11-15 13:16:23,749 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:16:25,811 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:16:26,327 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:16:26,327 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:16:26,776 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:16:26,776 [INFO] price_checker.py:393 - ✓ check_in: 12/09/2024
+2024-11-15 13:16:26,776 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:16:26,776 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:16:26,776 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:16:26,776 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:16:26,776 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:16:26,777 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:16:26,777 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:16:26,777 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:16:26,777 [INFO] price_checker.py:501 - ✓ 成功获取 12/09/2024 的价格信息
+2024-11-15 13:16:26,777 [INFO] price_checker.py:495 - [15/37] 处理日期: 12/10/2024
+2024-11-15 13:16:26,777 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:16:26,777 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/837352260137971048
+2024-11-15 13:16:26,777 [INFO] price_checker.py:256 - 入住日期: 12/10/2024
+2024-11-15 13:16:26,777 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:16:26,777 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:16:26,777 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-10
+2024-11-15 13:16:26,777 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/837352260137971048?check_in=2024-12-10
+2024-11-15 13:16:26,777 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:16:26,902 [INFO] price_checker.py:291 - 页面加载耗时: 0.12秒
+2024-11-15 13:16:26,903 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:16:27,147 [INFO] price_checker.py:357 - 尝试详情选择器: //div[contains(@class, '_1avmy66')]//span[contains(@class, '_1qs94rc')]//span
+2024-11-15 13:16:28,741 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:16:29,251 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:16:29,251 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:16:36,358 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:16:37,163 [INFO] price_checker.py:390 - 
+=== 价格信息完整性验证 ===
+2024-11-15 13:16:37,163 [INFO] price_checker.py:393 - ✓ check_in: 12/02/2024
+2024-11-15 13:16:37,163 [WARNING] price_checker.py:395 - ✗ check_out 未获取到
+2024-11-15 13:16:37,163 [INFO] price_checker.py:393 - ✓ min_nights: 1
+2024-11-15 13:16:37,163 [INFO] price_checker.py:393 - ✓ guests: 3
+2024-11-15 13:16:37,163 [WARNING] price_checker.py:395 - ✗ nightly_price 未获取到
+2024-11-15 13:16:37,163 [WARNING] price_checker.py:395 - ✗ cleaning_fee 未获取到
+2024-11-15 13:16:37,163 [WARNING] price_checker.py:395 - ✗ service_fee 未获取到
+2024-11-15 13:16:37,163 [WARNING] price_checker.py:395 - ✗ taxes 未获取到
+2024-11-15 13:16:37,163 [WARNING] price_checker.py:395 - ✗ total 未获取到
+2024-11-15 13:16:37,164 [INFO] price_checker.py:501 - ✓ 成功获取 12/02/2024 的价格信息
+2024-11-15 13:16:37,164 [INFO] price_checker.py:495 - [15/72] 处理日期: 12/03/2024
+2024-11-15 13:16:37,164 [INFO] price_checker.py:254 - 
+=== 开始获取价格信息 ===
+2024-11-15 13:16:37,164 [INFO] price_checker.py:255 - URL: https://www.airbnb.com/rooms/830193102361409290
+2024-11-15 13:16:37,164 [INFO] price_checker.py:256 - 入住日期: 12/03/2024
+2024-11-15 13:16:37,164 [INFO] price_checker.py:257 - 指定最小入住天数: 自动检测
+2024-11-15 13:16:37,164 [INFO] price_checker.py:264 - 使用 MM/DD/YYYY 格式解析日期成功
+2024-11-15 13:16:37,164 [INFO] price_checker.py:276 - 转换后的日期格式: 2024-12-03
+2024-11-15 13:16:37,164 [INFO] price_checker.py:284 - 完整URL: https://www.airbnb.com/rooms/830193102361409290?check_in=2024-12-03
+2024-11-15 13:16:37,164 [INFO] price_checker.py:287 - 正在加载页面...
+2024-11-15 13:16:37,299 [INFO] price_checker.py:291 - 页面加载耗时: 0.13秒
+2024-11-15 13:16:37,299 [INFO] price_checker.py:298 - 等待价格容器加载...
+2024-11-15 13:16:39,150 [INFO] price_checker.py:302 - 价格容器加载成功
+2024-11-15 13:16:39,291 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:16:39,690 [INFO] price_checker.py:326 - 
+=== 开始获取每晚价格 ===
+2024-11-15 13:16:39,690 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 13:16:46,390 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:16:49,299 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 13:16:49,733 [INFO] price_checker.py:329 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 13:16:56,411 [INFO] price_checker.py:329 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2

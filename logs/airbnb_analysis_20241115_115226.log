@@ -1,0 +1,426 @@
+2024-11-15 11:52:26,621 [INFO] advanced_analyzer.py:350 - === 开始Airbnb数据收集程序 ===
+2024-11-15 11:52:26,792 [INFO] advanced_analyzer.py:99 - 成功读取 6 个房间ID
+2024-11-15 11:52:26,792 [INFO] advanced_analyzer.py:361 - 生成 6 个URL
+2024-11-15 11:52:26,792 [INFO] advanced_analyzer.py:365 - 创建数据目录: data/airbnb_data_20241115_115226
+2024-11-15 11:52:26,792 [INFO] advanced_analyzer.py:231 - === 开始批量分析房源 ===
+2024-11-15 11:52:26,793 [INFO] advanced_analyzer.py:240 - 设置并发线程数: 1
+2024-11-15 11:52:26,793 [INFO] advanced_analyzer.py:168 - 开始初始化BitBrowser...
+2024-11-15 11:52:26,859 [INFO] bit_browser_manager.py:34 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "cf51683770d94ff3931408fce73c90f3": 32188
+  }
+}
+2024-11-15 11:52:26,859 [INFO] bit_browser_manager.py:42 - 找到活动浏览器 ID: cf51683770d94ff3931408fce73c90f3, PID: 32188
+2024-11-15 11:52:35,589 [INFO] bit_browser_manager.py:93 - 打开浏览器响应: {
+  "success": true,
+  "data": {
+    "ws": "ws://127.0.0.1:60561/devtools/browser/be8befb9-64d5-4035-a62a-8893a8ded032",
+    "http": "127.0.0.1:60561",
+    "coreVersion": "126",
+    "driver": "C:\\Users\\jiann\\AppData\\Roaming\\BitBrowser\\chromedriver\\126\\chromedriver.exe",
+    "seq": 1,
+    "name": "",
+    "remark": "",
+    "pid": 32188
+  }
+}
+2024-11-15 11:52:35,589 [INFO] bit_browser_manager.py:100 - 调试地址: 127.0.0.1:60561
+2024-11-15 11:52:35,589 [INFO] bit_browser_manager.py:101 - Driver路径: C:\Users\jiann\AppData\Roaming\BitBrowser\chromedriver\126\chromedriver.exe
+2024-11-15 11:52:36,265 [INFO] bit_browser_manager.py:120 - 当前页面: https://console.bitbrowser.net/?id=cf51683770d94ff3931408fce73c90f3&locale=en&port=54345
+2024-11-15 11:52:36,266 [INFO] advanced_analyzer.py:196 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 11:52:36,266 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 11:52:38,919 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-15 11:52:38,922 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-15 11:54:39,146 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-15 11:54:39,149 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-15 11:54:40,149 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-15 11:54:40,268 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-15 11:55:20,338 [INFO] airbnb_calendar_checker.py:184 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-11-15 11:55:20,350 [INFO] airbnb_calendar_checker.py:199 - 找到 123 个日期单元格
+2024-11-15 11:55:20,443 [INFO] airbnb_calendar_checker.py:211 - 找到 123 个日期单元格
+2024-11-15 11:55:20,445 [INFO] airbnb_calendar_checker.py:256 - 原始单元格数量: 123
+2024-11-15 11:55:20,445 [INFO] airbnb_calendar_checker.py:257 - 去重后数据条数: 123
+2024-11-15 11:55:20,445 [INFO] airbnb_calendar_checker.py:258 - 处理的唯一日期数: 123
+2024-11-15 11:55:20,445 [INFO] airbnb_calendar_checker.py:262 - 收集到 123 条有效日历数据
+2024-11-15 11:55:20,445 [INFO] airbnb_calendar_checker.py:22 - 开始导出数据到Excel...
+2024-11-15 11:55:20,445 [INFO] airbnb_calendar_checker.py:32 - 处理房源ID: 837352260137971048
+2024-11-15 11:55:20,445 [INFO] airbnb_calendar_checker.py:37 - 将创建文件: data/airbnb_calendar_837352260137971048_20241115_115520.xlsx
+2024-11-15 11:55:20,446 [INFO] airbnb_calendar_checker.py:41 - 创建DataFrame，共 123 行数据
+2024-11-15 11:55:20,478 [INFO] airbnb_calendar_checker.py:52 - 数据已成功导出到Excel文件: data/airbnb_calendar_837352260137971048_20241115_115520.xlsx
+2024-11-15 11:55:20,479 [INFO] airbnb_calendar_checker.py:57 - 文件创建成功，大小: 9.12 KB
+2024-11-15 11:55:20,479 [INFO] airbnb_calendar_checker.py:265 - 日历数据已成功导出到: data/airbnb_calendar_837352260137971048_20241115_115520.xlsx
+2024-11-15 11:55:20,479 [INFO] advanced_analyzer.py:205 - 成功获取日历数据: 123 条记录
+2024-11-15 11:55:20,479 [INFO] price_checker.py:537 - 开始检查房源价格: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 11:55:20,479 [INFO] price_checker.py:530 - 找到 37 个可预订日期
+2024-11-15 11:55:20,479 [INFO] price_checker.py:553 - [1/37] 处理日期: 18/11/2024
+2024-11-15 11:55:20,479 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 11:55:20,479 [INFO] price_checker.py:255 - 入住日期: 18/11/2024
+2024-11-15 11:56:20,488 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: Message: timeout: Timed out receiving message from renderer: -0.000
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008FDAD6]
+	(No symbol) [0x008FD931]
+	(No symbol) [0x008FBD79]
+	(No symbol) [0x008FC35D]
+	(No symbol) [0x0090866A]
+	(No symbol) [0x0091C7B1]
+	(No symbol) [0x00920C56]
+	(No symbol) [0x008FC9CC]
+	(No symbol) [0x0091C652]
+	(No symbol) [0x0098C99C]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+2024-11-15 11:56:20,488 [ERROR] price_checker.py:463 - 错误详情: TimeoutException
+2024-11-15 11:56:20,490 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 259, in get_price_info
+    driver.get(url)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: -0.000
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x00A7FD33+27651]
+	(No symbol) [0x00A15554]
+	(No symbol) [0x00911ADF]
+	(No symbol) [0x008FDAD6]
+	(No symbol) [0x008FD931]
+	(No symbol) [0x008FBD79]
+	(No symbol) [0x008FC35D]
+	(No symbol) [0x0090866A]
+	(No symbol) [0x0091C7B1]
+	(No symbol) [0x00920C56]
+	(No symbol) [0x008FC9CC]
+	(No symbol) [0x0091C652]
+	(No symbol) [0x0098C99C]
+	(No symbol) [0x009736A6]
+	(No symbol) [0x009474E1]
+	(No symbol) [0x0094805D]
+	GetHandleVerifier [0x00D36613+2872547]
+	GetHandleVerifier [0x00D8BADD+3221933]
+	GetHandleVerifier [0x00B02A94+563556]
+	GetHandleVerifier [0x00B09DCC+593052]
+	(No symbol) [0x00A1E3A4]
+	(No symbol) [0x00A1AE08]
+	(No symbol) [0x00A1AFA7]
+	(No symbol) [0x00A0D0AE]
+	BaseThreadInitThunk [0x74D37BA9+25]
+	RtlInitializeExceptionChain [0x7704C0CB+107]
+	RtlClearBits [0x7704C04F+191]
+
+
+2024-11-15 11:56:20,490 [WARNING] price_checker.py:569 - ✗ 获取 18/11/2024 的价格信息失败
+2024-11-15 11:56:20,490 [INFO] price_checker.py:553 - [2/37] 处理日期: 27/11/2024
+2024-11-15 11:56:20,490 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 11:56:20,490 [INFO] price_checker.py:255 - 入住日期: 27/11/2024
+2024-11-15 11:56:28,127 [INFO] price_checker.py:271 - 开始检查日期 27/11/2024 的最小入住要求...
+2024-11-15 11:56:28,177 [INFO] price_checker.py:152 - 初始元素HTML: <td class="_2byvyib" role="button" aria-disabled="false" aria-label="27, Wednesday, November 2024. Available There is a 1 night minimum stay requirement. Select as check-in date. " tabindex="-1" style="width: 41px; height: 41px;"><div class="_697u988 notranslate" data-testid="calendar-day-27/11/2024" data-is-day-blocked="false" style="width: 41px; height: 41px;">27</div></td>
+2024-11-15 11:56:28,187 [INFO] price_checker.py:158 - 找到日期: 27/11/2024
+2024-11-15 11:56:28,188 [INFO] price_checker.py:164 - 点击日期元素...
+2024-11-15 11:56:29,310 [INFO] price_checker.py:174 - 移动到日期元素...
+2024-11-15 11:56:30,606 [INFO] price_checker.py:210 - 更新后元素HTML: <td class="_1fmu67uy" role="button" aria-disabled="true" aria-label="27, Wednesday, November 2024. Selected check-in date There is a 3 night minimum stay requirement. " tabindex="-1" style="width: 41px; height: 41px;"><div class="_ox7af8h notranslate" data-testid="calendar-day-27/11/2024" data-is-day-blocked="true" style="width: 41px; height: 41px;">27</div></td>
+2024-11-15 11:56:30,616 [INFO] price_checker.py:217 - 更新后元素属性:
+2024-11-15 11:56:30,616 [INFO] price_checker.py:218 - - aria-label: 27, Wednesday, November 2024. Selected check-in date There is a 3 night minimum stay requirement. 
+2024-11-15 11:56:30,617 [INFO] price_checker.py:219 - - aria-disabled: true
+2024-11-15 11:56:30,617 [INFO] price_checker.py:220 - - data-is-day-blocked: None
+2024-11-15 11:56:30,617 [INFO] price_checker.py:235 - ✓ 成功找到最小入住要求: 3晚 (匹配模式: (\d+)\s*night minimum stay)
+2024-11-15 11:56:30,617 [INFO] price_checker.py:273 - 最终使用的最小入住天数: 3晚 (自动检测)
+2024-11-15 11:56:30,617 [INFO] price_checker.py:296 - 访问URL: https://www.airbnb.co.nz/rooms/837352260137971048?check_in=2024-11-27&check_out=2024-11-30&adults=3&children=0&infants=0
+2024-11-15 11:56:35,828 [INFO] price_checker.py:303 - 检查页面状态...
+2024-11-15 11:56:35,831 [INFO] price_checker.py:305 - 页面状态: complete
+2024-11-15 11:56:37,842 [INFO] price_checker.py:318 - 价格容器已加载并可见
+2024-11-15 11:56:37,842 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_1y74zjx')]
+2024-11-15 11:56:57,855 [INFO] price_checker.py:332 - 找到 0 个价格元素
+2024-11-15 11:56:57,856 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')]
+2024-11-15 11:57:05,955 [WARNING] price_checker.py:345 - 使用选择器 //div[@data-testid='book-it-default']//span[contains(@class, '_tyxjp1')] 时出错: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2024-11-15 11:57:05,955 [INFO] price_checker.py:327 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w span._1qgfaxb1
+2024-11-15 11:57:22,288 [WARNING] price_checker.py:345 - 使用选择器 div._wgmchy div._1k1ce2w span._1qgfaxb1 时出错: HTTPConnectionPool(host='localhost', port=63284): Max retries exceeded with url: /session/cc8687459349042700962ba142c74190/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017752F5E9C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-11-15 11:57:22,288 [INFO] price_checker.py:327 - 尝试价格选择器: css - div._wgmchy div._1k1ce2w ._11jcbg2
+2024-11-15 11:57:38,625 [WARNING] price_checker.py:345 - 使用选择器 div._wgmchy div._1k1ce2w ._11jcbg2 时出错: HTTPConnectionPool(host='localhost', port=63284): Max retries exceeded with url: /session/cc8687459349042700962ba142c74190/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017752F5F350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-11-15 11:57:38,625 [INFO] price_checker.py:327 - 尝试价格选择器: xpath - //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')]
+2024-11-15 11:57:54,963 [WARNING] price_checker.py:345 - 使用选择器 //div[contains(@class, '_wgmchy')]//span[contains(text(), '$') and contains(text(), 'NZD')] 时出错: HTTPConnectionPool(host='localhost', port=63284): Max retries exceeded with url: /session/cc8687459349042700962ba142c74190/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017752F5FCE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-11-15 11:57:54,963 [INFO] price_checker.py:369 - 开始获取价格详情...
+2024-11-15 11:58:11,290 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: HTTPConnectionPool(host='localhost', port=63284): Max retries exceeded with url: /session/cc8687459349042700962ba142c74190/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000177535E06B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-11-15 11:58:11,291 [ERROR] price_checker.py:463 - 错误详情: MaxRetryError
+2024-11-15 11:58:11,337 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 441, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1091, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1035, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 279, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000177535E06B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 374, in get_price_info
+    price_container = WebDriverWait(driver, 3).until(
+        EC.presence_of_element_located((By.CLASS_NAME, "_1n7cvm7"))
+    )
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 766, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=63284): Max retries exceeded with url: /session/cc8687459349042700962ba142c74190/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000177535E06B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+2024-11-15 11:58:11,338 [WARNING] price_checker.py:569 - ✗ 获取 27/11/2024 的价格信息失败
+2024-11-15 11:58:11,338 [INFO] price_checker.py:553 - [3/37] 处理日期: 28/11/2024
+2024-11-15 11:58:11,338 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 11:58:11,338 [INFO] price_checker.py:255 - 入住日期: 28/11/2024
+2024-11-15 11:58:27,675 [ERROR] price_checker.py:462 - 获取价格信息时发生错误: HTTPConnectionPool(host='localhost', port=63284): Max retries exceeded with url: /session/cc8687459349042700962ba142c74190/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017752F5F570>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-11-15 11:58:27,675 [ERROR] price_checker.py:463 - 错误详情: MaxRetryError
+2024-11-15 11:58:27,679 [ERROR] price_checker.py:464 - 错误堆栈: Traceback (most recent call last):
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 495, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 441, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1091, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1035, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 279, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017752F5F570>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\price_checker.py", line 259, in get_price_info
+    driver.get(url)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\jiann\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=63284): Max retries exceeded with url: /session/cc8687459349042700962ba142c74190/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017752F5F570>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+2024-11-15 11:58:27,679 [WARNING] price_checker.py:569 - ✗ 获取 28/11/2024 的价格信息失败
+2024-11-15 11:58:27,680 [INFO] price_checker.py:553 - [4/37] 处理日期: 29/11/2024
+2024-11-15 11:58:27,680 [INFO] price_checker.py:254 - 开始获取价格信息: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-15 11:58:27,680 [INFO] price_checker.py:255 - 入住日期: 29/11/2024

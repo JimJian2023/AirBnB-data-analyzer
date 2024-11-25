@@ -1,0 +1,15 @@
+2024-11-13 13:46:58,264 [INFO] advanced_analyzer.py:239 - === 开始Airbnb数据收集程序 ===
+2024-11-13 13:46:58,566 [INFO] advanced_analyzer.py:36 - 成功读取 6 个房间ID
+2024-11-13 13:46:58,567 [INFO] advanced_analyzer.py:250 - 生成 6 个URL
+2024-11-13 13:46:58,567 [INFO] advanced_analyzer.py:254 - 创建数据目录: data/airbnb_data_20241113_134658
+2024-11-13 13:46:58,567 [INFO] advanced_analyzer.py:141 - === 开始批量分析房源 ===
+2024-11-13 13:46:58,568 [ERROR] advanced_analyzer.py:97 - 初始化WebDriver失败: ChromeDriverManager.__init__() got an unexpected keyword argument 'path'
+2024-11-13 13:46:58,568 [ERROR] advanced_analyzer.py:98 - 错误类型: TypeError
+2024-11-13 13:46:58,569 [ERROR] advanced_analyzer.py:99 - 错误堆栈: Traceback (most recent call last):
+  File "C:\GitWork\Airbnb data Analyst\advanced_analyzer.py", line 85, in initialize_driver
+    ChromeDriverManager(path=cache_dir).install()
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: ChromeDriverManager.__init__() got an unexpected keyword argument 'path'
+
+2024-11-13 13:46:58,569 [ERROR] advanced_analyzer.py:307 - 程序执行过程中发生错误: WebDriver初始化失败
+2024-11-13 13:46:58,569 [INFO] advanced_analyzer.py:309 - === 程序执行完成 ===

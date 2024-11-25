@@ -1,0 +1,22 @@
+2024-11-14 10:25:21,195 [INFO] advanced_analyzer.py:249 - === 开始Airbnb数据收集程序 ===
+2024-11-14 10:25:21,370 [INFO] advanced_analyzer.py:36 - 成功读取 6 个房间ID
+2024-11-14 10:25:21,370 [INFO] advanced_analyzer.py:260 - 生成 6 个URL
+2024-11-14 10:25:21,371 [INFO] advanced_analyzer.py:264 - 创建数据目录: data/airbnb_data_20241114_102521
+2024-11-14 10:25:21,371 [INFO] advanced_analyzer.py:151 - === 开始批量分析房源 ===
+2024-11-14 10:25:21,372 [INFO] advanced_analyzer.py:72 - 开始初始化 Firefox WebDriver...
+2024-11-14 10:25:21,372 [INFO] advanced_analyzer.py:87 - 正在安装 GeckoDriver...
+2024-11-14 10:25:22,472 [INFO] advanced_analyzer.py:89 - GeckoDriver 安装路径: C:\Users\jiann\.wdm\drivers\geckodriver\win64\v0.35.0\geckodriver.exe
+2024-11-14 10:25:22,472 [INFO] advanced_analyzer.py:94 - 正在启动 Firefox 浏览器...
+2024-11-14 10:25:26,548 [INFO] advanced_analyzer.py:100 - Firefox WebDriver 初始化成功
+2024-11-14 10:25:26,548 [INFO] advanced_analyzer.py:164 - 
+处理第 1/6 个房源
+2024-11-14 10:25:26,548 [INFO] advanced_analyzer.py:116 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-14 10:25:26,548 [INFO] airbnb_calendar_checker.py:70 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-11-14 10:25:27,458 [INFO] airbnb_calendar_checker.py:75 - 页面加载中...
+2024-11-14 10:25:27,467 [INFO] airbnb_calendar_checker.py:82 - 页面基本加载完成
+2024-11-14 10:25:42,551 [INFO] airbnb_calendar_checker.py:120 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-11-14 10:25:42,553 [INFO] airbnb_calendar_checker.py:134 - 已滚动到日历按钮位置
+2024-11-14 10:25:43,554 [INFO] airbnb_calendar_checker.py:139 - 日历按钮已准备就绪
+2024-11-14 10:25:43,893 [INFO] airbnb_calendar_checker.py:148 - 直接点击日历按钮成功
+2024-11-14 10:25:48,557 [INFO] advanced_analyzer.py:319 - === 程序执行完成 ===
