@@ -1,0 +1,83 @@
+2024-12-05 11:08:39,222 [INFO] data_export.py:53 - 创建基础目录: data
+2024-12-05 11:08:39,222 [INFO] data_export.py:58 - 创建date目录: data\by_date
+2024-12-05 11:08:39,222 [INFO] data_export.py:58 - 创建room目录: data\by_room
+2024-12-05 11:08:39,229 [INFO] advanced_analyzer.py:424 - === 开始Airbnb数据收集程序 ===
+2024-12-05 11:08:39,396 [INFO] advanced_analyzer.py:101 - 成功读取 1 个房间ID
+2024-12-05 11:08:39,396 [INFO] advanced_analyzer.py:435 - 生成 1 个URL
+2024-12-05 11:08:39,396 [INFO] advanced_analyzer.py:439 - 创建数据目录: data/airbnb_data_20241205_110839
+2024-12-05 11:08:39,397 [INFO] advanced_analyzer.py:295 - === 开始批量分析房源 ===
+2024-12-05 11:08:39,422 [INFO] bit_browser_manager.py:103 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "34dc763412e34341a759c1ef1ec38580": 22328
+  }
+}
+2024-12-05 11:08:40,270 [INFO] bit_browser_manager.py:128 - 找到 1 个活动浏览器
+2024-12-05 11:08:40,820 [INFO] bit_browser_manager.py:53 - 开始设置语言偏好
+2024-12-05 11:08:40,823 [INFO] bit_browser_manager.py:65 - 设置语言为: en-US
+2024-12-05 11:08:40,826 [ERROR] bit_browser_manager.py:91 - 设置语言偏好时发生错误: Message: invalid cookie domain: Cookie 'domain' mismatch
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0023C9C8]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 11:08:40,826 [INFO] advanced_analyzer.py:313 - 成功连接到浏览器: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 11:08:40,826 [INFO] advanced_analyzer.py:322 - 设置并发线程数: 1
+2024-12-05 11:08:40,826 [INFO] advanced_analyzer.py:337 - 
+=== URL分配情况 ===
+2024-12-05 11:08:40,827 [INFO] advanced_analyzer.py:339 - 线程 1 分配到 1 个URL:
+2024-12-05 11:08:40,827 [INFO] advanced_analyzer.py:342 -   - Room ID: 837352260137971048
+2024-12-05 11:08:40,827 [INFO] advanced_analyzer.py:200 - 初始化 AdvancedAnalyzer 实例
+2024-12-05 11:08:40,827 [INFO] advanced_analyzer.py:204 - === 进入 analyze_listing 方法 ===
+2024-12-05 11:08:40,827 [INFO] advanced_analyzer.py:205 - 参数: browser_id=34dc763412e34341a759c1ef1ec38580, url=https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 11:08:53,170 [WARNING] bit_browser_manager.py:333 - 未找到翻译提示框关闭按钮
+2024-12-05 11:08:53,170 [INFO] advanced_analyzer.py:218 - 解析得到 Room ID: 837352260137971048
+2024-12-05 11:08:53,170 [INFO] advanced_analyzer.py:221 - 开始获取日历数据
+2024-12-05 11:08:53,170 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 11:08:53,170 [INFO] bit_browser_manager.py:53 - 开始设置语言偏好
+2024-12-05 11:08:53,170 [INFO] bit_browser_manager.py:58 - 该浏览器实例已设置过语言，跳过设置
+2024-12-05 11:08:53,299 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 11:09:05,487 [WARNING] bit_browser_manager.py:333 - 未找到翻译提示框关闭按钮
+2024-12-05 11:09:05,489 [INFO] airbnb_calendar_checker.py:45 - 页面基本加载完成
+2024-12-05 11:09:23,684 [INFO] airbnb_calendar_checker.py:83 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-12-05 11:09:23,687 [INFO] airbnb_calendar_checker.py:97 - 已滚动到日历按钮位置
+2024-12-05 11:09:24,687 [INFO] airbnb_calendar_checker.py:102 - 日历按钮已准备就绪
+2024-12-05 11:09:24,762 [INFO] airbnb_calendar_checker.py:111 - 直接点击日历按钮成功
+2024-12-05 11:09:37,898 [INFO] airbnb_calendar_checker.py:147 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-12-05 11:09:37,920 [INFO] airbnb_calendar_checker.py:162 - 找到 120 个日期单元格
+2024-12-05 11:09:38,026 [INFO] airbnb_calendar_checker.py:174 - 找到 120 个日期单元格
+2024-12-05 11:09:38,027 [INFO] airbnb_calendar_checker.py:219 - 原始单元格数量: 120
+2024-12-05 11:09:38,028 [INFO] airbnb_calendar_checker.py:220 - 去重后数据条数: 120
+2024-12-05 11:09:38,028 [INFO] airbnb_calendar_checker.py:221 - 处理的唯一日期数: 120
+2024-12-05 11:09:38,028 [INFO] airbnb_calendar_checker.py:225 - 收集到 120 条有效日历数据
+2024-12-05 11:09:38,054 [INFO] data_export.py:140 - calendar数据已导出到日期目录: data\by_date\calendar_837352260137971048_20241205_110938.xlsx
+2024-12-05 11:09:38,076 [INFO] data_export.py:145 - calendar数据已导出到房间目录: data\by_room\837352260137971048\calendar_20241205_110938.xlsx
+2024-12-05 11:09:38,076 [INFO] airbnb_calendar_checker.py:229 - 日历数据已成功导出到: data\by_date\calendar_837352260137971048_20241205_110938.xlsx
+2024-12-05 11:09:38,076 [ERROR] advanced_analyzer.py:236 - 处理 Room ID 837352260137971048 时发生错误: too many values to unpack (expected 2)
+2024-12-05 11:09:38,077 [ERROR] advanced_analyzer.py:237 - 错误类型: ValueError
+2024-12-05 11:09:38,077 [ERROR] advanced_analyzer.py:238 - 错误堆栈:
+Traceback (most recent call last):
+  File "C:\GitWork\AirBnB-data-analyzer\advanced_analyzer.py", line 222, in analyze_listing
+    calendar_data, excel_file = check_calendar_availability(url, driver)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-05 11:09:38,077 [INFO] advanced_analyzer.py:455 - === 程序执行完成 ===

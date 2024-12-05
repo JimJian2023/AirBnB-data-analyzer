@@ -1,0 +1,126 @@
+2024-12-05 10:34:31,541 [INFO] data_export.py:53 - 创建基础目录: data
+2024-12-05 10:34:31,542 [INFO] data_export.py:58 - 创建date目录: data\by_date
+2024-12-05 10:34:31,542 [INFO] data_export.py:58 - 创建room目录: data\by_room
+2024-12-05 10:34:31,548 [INFO] advanced_analyzer.py:400 - === 开始Airbnb数据收集程序 ===
+2024-12-05 10:34:31,717 [INFO] advanced_analyzer.py:101 - 成功读取 1 个房间ID
+2024-12-05 10:34:31,717 [INFO] advanced_analyzer.py:411 - 生成 1 个URL
+2024-12-05 10:34:31,717 [INFO] advanced_analyzer.py:415 - 创建数据目录: data/airbnb_data_20241205_103431
+2024-12-05 10:34:31,718 [INFO] advanced_analyzer.py:237 - === 开始批量分析房源 ===
+2024-12-05 10:34:31,718 [INFO] advanced_analyzer.py:246 - 设置并发线程数: 1
+2024-12-05 10:34:31,743 [INFO] bit_browser_manager.py:89 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "34dc763412e34341a759c1ef1ec38580": 9600
+  }
+}
+2024-12-05 10:34:33,101 [INFO] bit_browser_manager.py:114 - 找到 1 个活动浏览器
+2024-12-05 10:34:33,101 [INFO] advanced_analyzer.py:262 - 
+=== 可用的浏览器实例 ===
+2024-12-05 10:34:33,101 [INFO] advanced_analyzer.py:264 - ID: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:34:33,101 [INFO] advanced_analyzer.py:265 - 名称: AirBnB01
+2024-12-05 10:34:33,101 [INFO] advanced_analyzer.py:266 - 备注: 
+2024-12-05 10:34:33,101 [INFO] advanced_analyzer.py:267 - PID: 9600
+
+2024-12-05 10:34:33,101 [INFO] advanced_analyzer.py:282 - 
+=== URL分配情况 ===
+2024-12-05 10:34:33,101 [INFO] advanced_analyzer.py:284 - 线程 1 分配到 1 个URL:
+2024-12-05 10:34:33,101 [INFO] advanced_analyzer.py:287 -   - Room ID: 837352260137971048
+2024-12-05 10:34:33,102 [INFO] advanced_analyzer.py:298 - 线程 12200 (#1) 使用浏览器 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:34:33,655 [WARNING] bit_browser_manager.py:46 - 清除现有语言设置失败: Message: unknown command: 'Emulation.clearLocaleOverride' wasn't found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:34:33,658 [INFO] bit_browser_manager.py:70 - 成功设置 locale cookie
+2024-12-05 10:34:33,661 [INFO] bit_browser_manager.py:70 - 成功设置 currency cookie
+2024-12-05 10:34:33,661 [INFO] advanced_analyzer.py:311 - 线程 #1 开始处理 Room ID: 837352260137971048
+2024-12-05 10:34:34,700 [WARNING] bit_browser_manager.py:46 - 清除现有语言设置失败: Message: unknown command: 'Emulation.clearLocaleOverride' wasn't found
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:34:34,702 [ERROR] bit_browser_manager.py:77 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:34:34,702 [INFO] bit_browser_manager.py:249 - 正在导航到: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:34:34,702 [INFO] bit_browser_manager.py:365 - 正在加载页面: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:34:34,869 [INFO] bit_browser_manager.py:386 - 页面加载完成
+2024-12-05 10:34:34,870 [ERROR] advanced_analyzer.py:330 - 处理 Room ID 837352260137971048 时发生错误: name 'browser_manager' is not defined
+2024-12-05 10:34:36,917 [INFO] advanced_analyzer.py:431 - === 程序执行完成 ===

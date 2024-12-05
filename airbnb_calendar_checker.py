@@ -13,6 +13,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
 from webdriver_manager.chrome import ChromeDriverManager
 from logger_config import get_logger
+from data_export import exporter
 
 __all__ = ['check_calendar_availability', 'export_to_excel']
 
@@ -64,7 +65,7 @@ def export_to_excel(calendar_data, url):
         logger.error(f"导出数据到Excel时发生错误: {str(e)}")
         raise
 
-def check_calendar_availability(url, driver):
+def check_calendar_availability(url, driver=None):
     """检查房源日历可用性"""
     logger = get_logger()
     logger.info(f"开始检查房源日历: {url}")
@@ -76,7 +77,7 @@ def check_calendar_availability(url, driver):
         
         # 等待页面基本元素加载
         try:
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 3).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
             )
             logger.info("页面基本加载完成")
@@ -109,7 +110,7 @@ def check_calendar_availability(url, driver):
             try:
                 logger.debug(f"尝试选择器: {selector_type} - {selector}")
                 if selector_type == "XPATH":
-                    calendar_button = WebDriverWait(driver, 3).until(
+                    calendar_button = WebDriverWait(driver, 1).until(
                         EC.presence_of_element_located((By.XPATH, selector))
                     )
                 else:
@@ -261,13 +262,17 @@ def check_calendar_availability(url, driver):
         if calendar_data:
             logger.info(f"收集到 {len(calendar_data)} 条有效日历数据")
             try:
-                excel_file = export_to_excel(calendar_data, url)
-                logger.info(f"日历数据已成功导出到: {excel_file}")
+                export_result = exporter.export_calendar_data(calendar_data, url)
+                if not export_result:
+                    logger.error("日历数据导出失败")
+                    return None, None, driver
+                
+                return calendar_data, export_result['date_file'], driver
             except Exception as e:
                 logger.error(f"导出Excel失败: {str(e)}")
         
         # 返回数据、Excel文件路径和driver
-        return calendar_data, excel_file, driver
+        return calendar_data, None, driver
         
     except Exception as e:
         logger.error(f"检查日历时发生错误: {str(e)}")

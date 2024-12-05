@@ -1,0 +1,32 @@
+2024-12-05 10:55:19,848 [INFO] data_export.py:53 - 创建基础目录: data
+2024-12-05 10:55:19,848 [INFO] data_export.py:58 - 创建date目录: data\by_date
+2024-12-05 10:55:19,848 [INFO] data_export.py:58 - 创建room目录: data\by_room
+2024-12-05 10:55:19,852 [INFO] advanced_analyzer.py:430 - === 开始Airbnb数据收集程序 ===
+2024-12-05 10:55:20,013 [INFO] advanced_analyzer.py:101 - 成功读取 1 个房间ID
+2024-12-05 10:55:20,013 [INFO] advanced_analyzer.py:441 - 生成 1 个URL
+2024-12-05 10:55:20,014 [INFO] advanced_analyzer.py:445 - 创建数据目录: data/airbnb_data_20241205_105520
+2024-12-05 10:55:20,014 [INFO] advanced_analyzer.py:295 - === 开始批量分析房源 ===
+2024-12-05 10:55:20,014 [INFO] advanced_analyzer.py:304 - 设置并发线程数: 1
+2024-12-05 10:55:20,039 [INFO] bit_browser_manager.py:92 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "34dc763412e34341a759c1ef1ec38580": 22328
+  }
+}
+2024-12-05 10:55:20,929 [INFO] bit_browser_manager.py:117 - 找到 1 个活动浏览器
+2024-12-05 10:55:20,929 [INFO] advanced_analyzer.py:320 - 
+=== 可用的浏览器实例 ===
+2024-12-05 10:55:20,929 [INFO] advanced_analyzer.py:322 - ID: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:55:20,930 [INFO] advanced_analyzer.py:323 - 名称: AirBnB01
+2024-12-05 10:55:20,930 [INFO] advanced_analyzer.py:324 - 备注: 
+2024-12-05 10:55:20,930 [INFO] advanced_analyzer.py:325 - PID: 22328
+
+2024-12-05 10:55:20,930 [INFO] advanced_analyzer.py:340 - 
+=== URL分配情况 ===
+2024-12-05 10:55:20,930 [INFO] advanced_analyzer.py:342 - 线程 1 分配到 1 个URL:
+2024-12-05 10:55:20,930 [INFO] advanced_analyzer.py:345 -   - Room ID: 837352260137971048
+2024-12-05 10:55:20,930 [INFO] advanced_analyzer.py:200 - 初始化 AdvancedAnalyzer 实例
+2024-12-05 10:55:20,930 [INFO] advanced_analyzer.py:204 - === 进入 analyze_listing 方法 ===
+2024-12-05 10:55:20,930 [INFO] advanced_analyzer.py:205 - 参数: browser_id=34dc763412e34341a759c1ef1ec38580, url=https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:55:20,930 [ERROR] advanced_analyzer.py:210 - 找不到浏览器实例: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:55:20,931 [INFO] advanced_analyzer.py:461 - === 程序执行完成 ===

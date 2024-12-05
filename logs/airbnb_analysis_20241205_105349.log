@@ -1,0 +1,30 @@
+2024-12-05 10:53:49,194 [INFO] data_export.py:53 - 创建基础目录: data
+2024-12-05 10:53:49,194 [INFO] data_export.py:58 - 创建date目录: data\by_date
+2024-12-05 10:53:49,194 [INFO] data_export.py:58 - 创建room目录: data\by_room
+2024-12-05 10:53:49,198 [INFO] advanced_analyzer.py:469 - === 开始Airbnb数据收集程序 ===
+2024-12-05 10:53:49,368 [INFO] advanced_analyzer.py:101 - 成功读取 1 个房间ID
+2024-12-05 10:53:49,368 [INFO] advanced_analyzer.py:480 - 生成 1 个URL
+2024-12-05 10:53:49,368 [INFO] advanced_analyzer.py:484 - 创建数据目录: data/airbnb_data_20241205_105349
+2024-12-05 10:53:49,369 [INFO] advanced_analyzer.py:303 - === 开始批量分析房源 ===
+2024-12-05 10:53:49,369 [INFO] advanced_analyzer.py:312 - 设置并发线程数: 1
+2024-12-05 10:53:49,398 [INFO] bit_browser_manager.py:92 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "34dc763412e34341a759c1ef1ec38580": 9600
+  }
+}
+2024-12-05 10:53:50,700 [INFO] bit_browser_manager.py:117 - 找到 1 个活动浏览器
+2024-12-05 10:53:50,700 [INFO] advanced_analyzer.py:328 - 
+=== 可用的浏览器实例 ===
+2024-12-05 10:53:50,700 [INFO] advanced_analyzer.py:330 - ID: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:53:50,700 [INFO] advanced_analyzer.py:331 - 名称: AirBnB01
+2024-12-05 10:53:50,700 [INFO] advanced_analyzer.py:332 - 备注: 
+2024-12-05 10:53:50,700 [INFO] advanced_analyzer.py:333 - PID: 9600
+
+2024-12-05 10:53:50,700 [INFO] advanced_analyzer.py:348 - 
+=== URL分配情况 ===
+2024-12-05 10:53:50,701 [INFO] advanced_analyzer.py:350 - 线程 1 分配到 1 个URL:
+2024-12-05 10:53:50,701 [INFO] advanced_analyzer.py:353 -   - Room ID: 837352260137971048
+2024-12-05 10:53:50,701 [INFO] advanced_analyzer.py:364 - 线程 24052 (#1) 使用浏览器 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:53:50,701 [ERROR] advanced_analyzer.py:405 - 线程 #1 发生错误: cannot access local variable 'browser_manager' where it is not associated with a value
+2024-12-05 10:53:50,701 [INFO] advanced_analyzer.py:500 - === 程序执行完成 ===

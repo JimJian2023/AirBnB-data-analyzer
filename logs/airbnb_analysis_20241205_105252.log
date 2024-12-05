@@ -1,0 +1,44 @@
+2024-12-05 10:52:52,876 [INFO] data_export.py:53 - 创建基础目录: data
+2024-12-05 10:52:52,876 [INFO] data_export.py:58 - 创建date目录: data\by_date
+2024-12-05 10:52:52,876 [INFO] data_export.py:58 - 创建room目录: data\by_room
+2024-12-05 10:52:52,880 [INFO] advanced_analyzer.py:465 - === 开始Airbnb数据收集程序 ===
+2024-12-05 10:52:53,069 [INFO] advanced_analyzer.py:101 - 成功读取 1 个房间ID
+2024-12-05 10:52:53,069 [INFO] advanced_analyzer.py:476 - 生成 1 个URL
+2024-12-05 10:52:53,069 [INFO] advanced_analyzer.py:480 - 创建数据目录: data/airbnb_data_20241205_105253
+2024-12-05 10:52:53,070 [INFO] advanced_analyzer.py:301 - === 开始批量分析房源 ===
+2024-12-05 10:52:53,070 [INFO] advanced_analyzer.py:310 - 设置并发线程数: 1
+2024-12-05 10:52:53,128 [INFO] bit_browser_manager.py:92 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "34dc763412e34341a759c1ef1ec38580": 9600
+  }
+}
+2024-12-05 10:52:54,466 [INFO] bit_browser_manager.py:117 - 找到 1 个活动浏览器
+2024-12-05 10:52:54,466 [INFO] advanced_analyzer.py:326 - 
+=== 可用的浏览器实例 ===
+2024-12-05 10:52:54,466 [INFO] advanced_analyzer.py:328 - ID: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:52:54,466 [INFO] advanced_analyzer.py:329 - 名称: AirBnB01
+2024-12-05 10:52:54,466 [INFO] advanced_analyzer.py:330 - 备注: 
+2024-12-05 10:52:54,466 [INFO] advanced_analyzer.py:331 - PID: 9600
+
+2024-12-05 10:52:54,466 [INFO] advanced_analyzer.py:346 - 
+=== URL分配情况 ===
+2024-12-05 10:52:54,466 [INFO] advanced_analyzer.py:348 - 线程 1 分配到 1 个URL:
+2024-12-05 10:52:54,466 [INFO] advanced_analyzer.py:351 -   - Room ID: 837352260137971048
+2024-12-05 10:52:54,467 [INFO] advanced_analyzer.py:362 - 线程 4596 (#1) 使用浏览器 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:52:55,062 [INFO] bit_browser_manager.py:42 - 开始设置语言偏好
+2024-12-05 10:52:55,064 [INFO] bit_browser_manager.py:54 - 设置语言为: en
+2024-12-05 10:52:55,066 [INFO] bit_browser_manager.py:75 - 成功设置 locale cookie
+2024-12-05 10:52:55,069 [INFO] bit_browser_manager.py:75 - 成功设置 currency cookie
+2024-12-05 10:52:55,069 [INFO] advanced_analyzer.py:375 - 线程 #1 开始处理 Room ID: 837352260137971048
+2024-12-05 10:52:56,111 [INFO] bit_browser_manager.py:42 - 开始设置语言偏好
+2024-12-05 10:52:56,111 [INFO] bit_browser_manager.py:47 - 该浏览器实例已设置过语言，跳过设置
+2024-12-05 10:52:56,111 [INFO] bit_browser_manager.py:252 - 正在导航到: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:52:56,111 [INFO] bit_browser_manager.py:368 - 正在加载页面: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:52:56,392 [INFO] bit_browser_manager.py:389 - 页面加载完成
+2024-12-05 10:52:56,393 [INFO] advanced_analyzer.py:200 - 初始化 AdvancedAnalyzer 实例
+2024-12-05 10:52:56,393 [INFO] advanced_analyzer.py:204 - === 进入 analyze_listing 方法 ===
+2024-12-05 10:52:56,393 [INFO] advanced_analyzer.py:205 - 参数: browser_id=34dc763412e34341a759c1ef1ec38580, url=https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:52:56,393 [ERROR] advanced_analyzer.py:210 - 找不到浏览器实例: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:52:57,452 [INFO] bit_browser_manager.py:349 - 成功关闭标签页
+2024-12-05 10:52:59,502 [INFO] advanced_analyzer.py:496 - === 程序执行完成 ===

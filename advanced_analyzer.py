@@ -22,7 +22,7 @@ from bit_browser_manager import BitBrowserManager
 import threading
 
 # 在文件顶部添加配置变量
-MAX_CONCURRENT_THREADS = 3  # 最大并发线程数
+MAX_CONCURRENT_THREADS = 1 # 最大并发线程数
 GECKODRIVER_VERSION = "v0.33.0"  # 指定版本
 GECKODRIVER_PATH = os.path.join(os.path.dirname(__file__), "drivers", "geckodriver.exe")
 GECKODRIVER_URL = "https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-win64.zip"

@@ -1,0 +1,70 @@
+2024-12-05 10:39:43,160 [INFO] data_export.py:53 - 创建基础目录: data
+2024-12-05 10:39:43,160 [INFO] data_export.py:58 - 创建date目录: data\by_date
+2024-12-05 10:39:43,161 [INFO] data_export.py:58 - 创建room目录: data\by_room
+2024-12-05 10:39:43,167 [INFO] advanced_analyzer.py:444 - === 开始Airbnb数据收集程序 ===
+2024-12-05 10:39:43,332 [INFO] advanced_analyzer.py:101 - 成功读取 1 个房间ID
+2024-12-05 10:39:43,333 [INFO] advanced_analyzer.py:455 - 生成 1 个URL
+2024-12-05 10:39:43,333 [INFO] advanced_analyzer.py:459 - 创建数据目录: data/airbnb_data_20241205_103943
+2024-12-05 10:39:43,333 [INFO] advanced_analyzer.py:281 - === 开始批量分析房源 ===
+2024-12-05 10:39:43,334 [INFO] advanced_analyzer.py:290 - 设置并发线程数: 1
+2024-12-05 10:39:43,358 [INFO] bit_browser_manager.py:99 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "34dc763412e34341a759c1ef1ec38580": 9600
+  }
+}
+2024-12-05 10:39:44,236 [INFO] bit_browser_manager.py:124 - 找到 1 个活动浏览器
+2024-12-05 10:39:44,236 [INFO] advanced_analyzer.py:306 - 
+=== 可用的浏览器实例 ===
+2024-12-05 10:39:44,236 [INFO] advanced_analyzer.py:308 - ID: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:39:44,236 [INFO] advanced_analyzer.py:309 - 名称: AirBnB01
+2024-12-05 10:39:44,236 [INFO] advanced_analyzer.py:310 - 备注: 
+2024-12-05 10:39:44,236 [INFO] advanced_analyzer.py:311 - PID: 9600
+
+2024-12-05 10:39:44,237 [INFO] advanced_analyzer.py:326 - 
+=== URL分配情况 ===
+2024-12-05 10:39:44,237 [INFO] advanced_analyzer.py:328 - 线程 1 分配到 1 个URL:
+2024-12-05 10:39:44,237 [INFO] advanced_analyzer.py:331 -   - Room ID: 837352260137971048
+2024-12-05 10:39:44,237 [INFO] advanced_analyzer.py:342 - 线程 21844 (#1) 使用浏览器 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:39:44,794 [INFO] bit_browser_manager.py:41 - 开始设置语言偏好
+2024-12-05 10:39:44,799 [INFO] bit_browser_manager.py:53 - 设置语言为: en
+2024-12-05 10:39:44,800 [INFO] bit_browser_manager.py:61 - 设置请求头成功
+2024-12-05 10:39:44,802 [INFO] bit_browser_manager.py:80 - 成功设置 locale cookie
+2024-12-05 10:39:44,805 [INFO] bit_browser_manager.py:80 - 成功设置 currency cookie
+2024-12-05 10:39:44,805 [INFO] advanced_analyzer.py:355 - 线程 #1 开始处理 Room ID: 837352260137971048
+2024-12-05 10:39:45,844 [INFO] bit_browser_manager.py:41 - 开始设置语言偏好
+2024-12-05 10:39:45,848 [ERROR] bit_browser_manager.py:87 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:39:45,848 [INFO] bit_browser_manager.py:259 - 正在导航到: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:39:45,849 [INFO] bit_browser_manager.py:375 - 正在加载页面: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:39:46,074 [INFO] bit_browser_manager.py:396 - 页面加载完成
+2024-12-05 10:39:46,075 [ERROR] advanced_analyzer.py:374 - 处理 Room ID 837352260137971048 时发生错误: name 'analyze_listing' is not defined
+2024-12-05 10:39:48,117 [INFO] advanced_analyzer.py:475 - === 程序执行完成 ===

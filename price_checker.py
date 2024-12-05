@@ -15,6 +15,7 @@ from logger_config import get_logger
 import re
 from selenium.common.exceptions import TimeoutException
 import traceback
+from data_export import exporter
 
 # 更新价格选择器配置
 PRICE_SELECTORS = [
@@ -464,60 +465,6 @@ def get_price_info(driver, url, checkin_date, min_nights=None):
         logger.error(f"错误堆栈: {traceback.format_exc()}")
         return None
 
-def export_price_data(price_data, url):
-    """导出价格数据到Excel"""
-    logger = get_logger()
-    
-    try:
-        # 从URL中提取房源ID
-        room_id = url.split('rooms/')[-1].split('?')[0]
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        
-        # 1. 按日期存储
-        date_dir = f'data/{timestamp}'
-        os.makedirs(date_dir, exist_ok=True)
-        date_filename = f'{date_dir}/airbnb_price_{room_id}.xlsx'
-        
-        # 2. 按RoomID存储
-        room_dir = f'data/room_{room_id}'
-        os.makedirs(room_dir, exist_ok=True)
-        room_filename = f'{room_dir}/airbnb_price_{timestamp}.xlsx'
-        
-        # 创建DataFrame
-        if isinstance(price_data, list):
-            df = pd.DataFrame(price_data)
-        else:
-            df = pd.DataFrame([price_data])
-        
-        # 保存到两个位置
-        df.to_excel(date_filename, index=False)
-        df.to_excel(room_filename, index=False)
-        
-        logger.info(f"价格数据已保存到日期目录: {date_filename}")
-        logger.info(f"价格数据已保存到房间目录: {room_filename}")
-        
-        # 输出统计信息
-        if isinstance(price_data, list):
-            logger.info(f"共导出 {len(price_data)} 条价格记录")
-            
-            # 计算平均价格等统计信息
-            try:
-                nightly_prices = [float(re.search(r'\$(\d+)', p['nightly_price']).group(1)) 
-                                for p in price_data if p['nightly_price']]
-                if nightly_prices:
-                    avg_price = sum(nightly_prices) / len(nightly_prices)
-                    max_price = max(nightly_prices)
-                    min_price = min(nightly_prices)
-                    logger.info(f"价格统计: 平均={avg_price:.2f}, 最高={max_price}, 最低={min_price}")
-            except Exception as e:
-                logger.warning(f"计算价格统计信息时出错: {str(e)}")
-        
-        return {'date_file': date_filename, 'room_file': room_filename}
-        
-    except Exception as e:
-        logger.error(f"导出价格数据时发生错误: {str(e)}")
-        return None
-
 def find_all_available_dates(calendar_data):
     """查找所有可预订的日期"""
     logger = get_logger()
@@ -591,14 +538,12 @@ def check_room_price(url_info, calendar_data, driver):
         
         # 导出数据
         if all_price_info:
-            result = export_price_data(all_price_info, url)
-            if result:
-                logger.info(f"✓ 所有价格数据已导出到日期目录: {result['date_file']}")
-                logger.info(f"✓ 所有价格数据已导出到房间目录: {result['room_file']}")
-                return all_price_info
-            else:
-                logger.error("导出价格数据失败")
+            export_result = exporter.export_price_data(all_price_info, url_info['url'])
+            if not export_result:
+                logger.error("价格数据导出失败")
                 return None
+            
+            return all_price_info
         else:
             logger.error("未能获取任何价格信息")
             return None

@@ -1,0 +1,140 @@
+2024-12-05 10:10:37,695 [INFO] data_export.py:53 - 创建基础目录: data
+2024-12-05 10:10:37,695 [INFO] data_export.py:58 - 创建date目录: data\by_date
+2024-12-05 10:10:37,696 [INFO] data_export.py:58 - 创建room目录: data\by_room
+2024-12-05 10:10:37,706 [INFO] advanced_analyzer.py:396 - === 开始Airbnb数据收集程序 ===
+2024-12-05 10:10:37,950 [INFO] advanced_analyzer.py:101 - 成功读取 11 个房间ID
+2024-12-05 10:10:37,950 [INFO] advanced_analyzer.py:407 - 生成 11 个URL
+2024-12-05 10:10:37,951 [INFO] advanced_analyzer.py:411 - 创建数据目录: data/airbnb_data_20241205_101037
+2024-12-05 10:10:37,954 [INFO] advanced_analyzer.py:233 - === 开始批量分析房源 ===
+2024-12-05 10:10:37,954 [INFO] advanced_analyzer.py:242 - 设置并发线程数: 1
+2024-12-05 10:10:38,793 [INFO] bit_browser_manager.py:38 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "34dc763412e34341a759c1ef1ec38580": 9600
+  }
+}
+2024-12-05 10:10:40,688 [INFO] bit_browser_manager.py:63 - 找到 1 个活动浏览器
+2024-12-05 10:10:40,688 [INFO] advanced_analyzer.py:258 - 
+=== 可用的浏览器实例 ===
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:260 - ID: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:261 - 名称: AirBnB01
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:262 - 备注: 
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:263 - PID: 9600
+
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:278 - 
+=== URL分配情况 ===
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:280 - 线程 1 分配到 11 个URL:
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:283 -   - Room ID: 837352260137971048
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:283 -   - Room ID: 43435162
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:283 -   - Room ID: 830193102361409290
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:283 -   - Room ID: 49525472
+2024-12-05 10:10:40,689 [INFO] advanced_analyzer.py:283 -   - Room ID: 716883705085875481
+2024-12-05 10:10:40,690 [INFO] advanced_analyzer.py:283 -   - Room ID: 969823904189469776
+2024-12-05 10:10:40,690 [INFO] advanced_analyzer.py:283 -   - Room ID: 37603491
+2024-12-05 10:10:40,690 [INFO] advanced_analyzer.py:283 -   - Room ID: 635947170438929163
+2024-12-05 10:10:40,690 [INFO] advanced_analyzer.py:283 -   - Room ID: 10478001
+2024-12-05 10:10:40,690 [INFO] advanced_analyzer.py:283 -   - Room ID: 43435162
+2024-12-05 10:10:40,690 [INFO] advanced_analyzer.py:283 -   - Room ID: 1255600611300259176
+2024-12-05 10:10:40,690 [INFO] advanced_analyzer.py:294 - 线程 3828 (#1) 使用浏览器 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:10:41,317 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 837352260137971048
+2024-12-05 10:10:41,857 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:10:46,782 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:10:46,782 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:10:46,782 [INFO] airbnb_calendar_checker.py:23 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:10:51,562 [INFO] airbnb_calendar_checker.py:28 - 页面加载中...
+2024-12-05 10:10:51,570 [INFO] airbnb_calendar_checker.py:35 - 页面基本加载完成
+2024-12-05 10:11:51,651 [INFO] airbnb_calendar_checker.py:73 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-12-05 10:11:51,654 [INFO] airbnb_calendar_checker.py:87 - 已滚动到日历按钮位置
+2024-12-05 10:11:52,654 [INFO] airbnb_calendar_checker.py:92 - 日历按钮已准备就绪
+2024-12-05 10:11:53,746 [INFO] airbnb_calendar_checker.py:106 - JavaScript点击日历按钮成功
+2024-12-05 10:12:13,928 [INFO] airbnb_calendar_checker.py:137 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-12-05 10:12:13,939 [INFO] airbnb_calendar_checker.py:152 - 找到 120 个日期单元格
+2024-12-05 10:12:14,064 [INFO] airbnb_calendar_checker.py:164 - 找到 120 个日期单元格
+2024-12-05 10:12:14,065 [INFO] airbnb_calendar_checker.py:209 - 原始单元格数量: 120
+2024-12-05 10:12:14,065 [INFO] airbnb_calendar_checker.py:210 - 去重后数据条数: 120
+2024-12-05 10:12:14,065 [INFO] airbnb_calendar_checker.py:211 - 处理的唯一日期数: 120
+2024-12-05 10:12:14,065 [INFO] airbnb_calendar_checker.py:215 - 收集到 120 条有效日历数据
+2024-12-05 10:12:14,094 [INFO] data_export.py:140 - calendar数据已导出到日期目录: data\by_date\calendar_837352260137971048_20241205_101214.xlsx
+2024-12-05 10:12:14,116 [INFO] data_export.py:145 - calendar数据已导出到房间目录: data\by_room\837352260137971048\calendar_20241205_101214.xlsx
+2024-12-05 10:12:14,116 [INFO] airbnb_calendar_checker.py:219 - 日历数据已成功导出到: data\by_date\calendar_837352260137971048_20241205_101214.xlsx
+2024-12-05 10:12:14,116 [INFO] advanced_analyzer.py:207 - 成功获取日历数据: 120 条记录
+2024-12-05 10:12:14,116 [ERROR] advanced_analyzer.py:227 - 分析房源时发生错误: check_room_price() takes 2 positional arguments but 3 were given
+2024-12-05 10:12:14,116 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 837352260137971048 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:12:14,116 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 43435162
+2024-12-05 10:12:14,656 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:12:15,174 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:12:15,174 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:12:15,174 [INFO] airbnb_calendar_checker.py:23 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:12:15,851 [INFO] airbnb_calendar_checker.py:28 - 页面加载中...
+2024-12-05 10:12:15,872 [INFO] airbnb_calendar_checker.py:35 - 页面基本加载完成
+2024-12-05 10:13:16,067 [INFO] airbnb_calendar_checker.py:73 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-12-05 10:13:16,070 [INFO] airbnb_calendar_checker.py:87 - 已滚动到日历按钮位置
+2024-12-05 10:13:17,070 [INFO] airbnb_calendar_checker.py:92 - 日历按钮已准备就绪
+2024-12-05 10:13:17,222 [INFO] airbnb_calendar_checker.py:101 - 直接点击日历按钮成功
+2024-12-05 10:13:37,325 [INFO] airbnb_calendar_checker.py:137 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-12-05 10:13:37,336 [INFO] airbnb_calendar_checker.py:152 - 找到 120 个日期单元格
+2024-12-05 10:13:37,438 [INFO] airbnb_calendar_checker.py:164 - 找到 120 个日期单元格
+2024-12-05 10:13:37,439 [INFO] airbnb_calendar_checker.py:209 - 原始单元格数量: 120
+2024-12-05 10:13:37,439 [INFO] airbnb_calendar_checker.py:210 - 去重后数据条数: 120
+2024-12-05 10:13:37,439 [INFO] airbnb_calendar_checker.py:211 - 处理的唯一日期数: 120
+2024-12-05 10:13:37,439 [INFO] airbnb_calendar_checker.py:215 - 收集到 120 条有效日历数据
+2024-12-05 10:13:37,462 [INFO] data_export.py:140 - calendar数据已导出到日期目录: data\by_date\calendar_43435162_20241205_101337.xlsx
+2024-12-05 10:13:37,486 [INFO] data_export.py:145 - calendar数据已导出到房间目录: data\by_room\43435162\calendar_20241205_101337.xlsx
+2024-12-05 10:13:37,486 [INFO] airbnb_calendar_checker.py:219 - 日历数据已成功导出到: data\by_date\calendar_43435162_20241205_101337.xlsx
+2024-12-05 10:13:37,486 [INFO] advanced_analyzer.py:207 - 成功获取日历数据: 120 条记录
+2024-12-05 10:13:37,486 [ERROR] advanced_analyzer.py:227 - 分析房源时发生错误: check_room_price() takes 2 positional arguments but 3 were given
+2024-12-05 10:13:37,487 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 43435162 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:13:37,487 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 830193102361409290
+2024-12-05 10:13:38,020 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-12-05 10:13:38,217 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-12-05 10:13:38,217 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-12-05 10:13:38,217 [INFO] airbnb_calendar_checker.py:23 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-12-05 10:13:38,325 [INFO] airbnb_calendar_checker.py:28 - 页面加载中...
+2024-12-05 10:13:38,373 [INFO] airbnb_calendar_checker.py:35 - 页面基本加载完成
+2024-12-05 10:14:38,637 [INFO] airbnb_calendar_checker.py:73 - 找到日历按钮: //button[contains(@aria-label, 'Choose')]
+2024-12-05 10:14:38,640 [INFO] airbnb_calendar_checker.py:87 - 已滚动到日历按钮位置
+2024-12-05 10:14:39,640 [INFO] airbnb_calendar_checker.py:92 - 日历按钮已准备就绪
+2024-12-05 10:14:40,727 [INFO] airbnb_calendar_checker.py:106 - JavaScript点击日历按钮成功
+2024-12-05 10:15:00,766 [INFO] airbnb_calendar_checker.py:137 - 日历内容已加载: //div[contains(@data-testid, 'calendar')]
+2024-12-05 10:15:00,777 [INFO] airbnb_calendar_checker.py:152 - 找到 120 个日期单元格
+2024-12-05 10:15:00,882 [INFO] airbnb_calendar_checker.py:164 - 找到 120 个日期单元格
+2024-12-05 10:15:00,883 [INFO] airbnb_calendar_checker.py:209 - 原始单元格数量: 120
+2024-12-05 10:15:00,884 [INFO] airbnb_calendar_checker.py:210 - 去重后数据条数: 120
+2024-12-05 10:15:00,884 [INFO] airbnb_calendar_checker.py:211 - 处理的唯一日期数: 120
+2024-12-05 10:15:00,884 [INFO] airbnb_calendar_checker.py:215 - 收集到 120 条有效日历数据
+2024-12-05 10:15:00,906 [INFO] data_export.py:140 - calendar数据已导出到日期目录: data\by_date\calendar_830193102361409290_20241205_101500.xlsx
+2024-12-05 10:15:00,929 [INFO] data_export.py:145 - calendar数据已导出到房间目录: data\by_room\830193102361409290\calendar_20241205_101500.xlsx
+2024-12-05 10:15:00,929 [INFO] airbnb_calendar_checker.py:219 - 日历数据已成功导出到: data\by_date\calendar_830193102361409290_20241205_101500.xlsx
+2024-12-05 10:15:00,929 [INFO] advanced_analyzer.py:207 - 成功获取日历数据: 120 条记录
+2024-12-05 10:15:00,929 [ERROR] advanced_analyzer.py:227 - 分析房源时发生错误: check_room_price() takes 2 positional arguments but 3 were given
+2024-12-05 10:15:00,929 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 830193102361409290 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:15:00,929 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 49525472
+2024-12-05 10:15:01,471 [INFO] bit_browser_manager.py:187 - 正在导航到: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:15:01,668 [INFO] bit_browser_manager.py:195 - 成功加载页面: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:15:01,668 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:15:01,668 [INFO] airbnb_calendar_checker.py:23 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:15:01,807 [INFO] airbnb_calendar_checker.py:28 - 页面加载中...
+2024-12-05 10:15:01,853 [INFO] airbnb_calendar_checker.py:35 - 页面基本加载完成
+2024-12-05 10:16:58,947 [ERROR] airbnb_calendar_checker.py:80 - 未找到日历按钮
+2024-12-05 10:16:58,947 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:16:58,947 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 49525472 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:16:58,947 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 716883705085875481
+2024-12-05 10:17:15,249 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: HTTPConnectionPool(host='localhost', port=56795): Max retries exceeded with url: /session/93627f0be83fcd105140a2cb00b86bbf/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000195231A9150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-12-05 10:17:15,249 [ERROR] advanced_analyzer.py:313 - 无法在浏览器 34dc763412e34341a759c1ef1ec38580 中打开URL https://www.airbnb.co.nz/rooms/716883705085875481
+2024-12-05 10:17:15,249 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 969823904189469776
+2024-12-05 10:17:31,541 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: HTTPConnectionPool(host='localhost', port=56795): Max retries exceeded with url: /session/93627f0be83fcd105140a2cb00b86bbf/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000195231A9AE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-12-05 10:17:31,541 [ERROR] advanced_analyzer.py:313 - 无法在浏览器 34dc763412e34341a759c1ef1ec38580 中打开URL https://www.airbnb.co.nz/rooms/969823904189469776
+2024-12-05 10:17:31,541 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 37603491
+2024-12-05 10:17:47,808 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: HTTPConnectionPool(host='localhost', port=56795): Max retries exceeded with url: /session/93627f0be83fcd105140a2cb00b86bbf/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000195231AA470>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-12-05 10:17:47,808 [ERROR] advanced_analyzer.py:313 - 无法在浏览器 34dc763412e34341a759c1ef1ec38580 中打开URL https://www.airbnb.co.nz/rooms/37603491
+2024-12-05 10:17:47,808 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 635947170438929163
+2024-12-05 10:18:04,095 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: HTTPConnectionPool(host='localhost', port=56795): Max retries exceeded with url: /session/93627f0be83fcd105140a2cb00b86bbf/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000195231AAE00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-12-05 10:18:04,095 [ERROR] advanced_analyzer.py:313 - 无法在浏览器 34dc763412e34341a759c1ef1ec38580 中打开URL https://www.airbnb.co.nz/rooms/635947170438929163
+2024-12-05 10:18:04,095 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 10478001
+2024-12-05 10:18:20,371 [ERROR] bit_browser_manager.py:202 - 打开新标签页失败: HTTPConnectionPool(host='localhost', port=56795): Max retries exceeded with url: /session/93627f0be83fcd105140a2cb00b86bbf/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000195231AB790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-12-05 10:18:20,371 [ERROR] advanced_analyzer.py:313 - 无法在浏览器 34dc763412e34341a759c1ef1ec38580 中打开URL https://www.airbnb.co.nz/rooms/10478001
+2024-12-05 10:18:20,371 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 43435162

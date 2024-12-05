@@ -1,0 +1,1401 @@
+2024-12-05 10:18:42,117 [INFO] data_export.py:53 - 创建基础目录: data
+2024-12-05 10:18:42,117 [INFO] data_export.py:58 - 创建date目录: data\by_date
+2024-12-05 10:18:42,117 [INFO] data_export.py:58 - 创建room目录: data\by_room
+2024-12-05 10:18:42,124 [INFO] advanced_analyzer.py:396 - === 开始Airbnb数据收集程序 ===
+2024-12-05 10:18:42,300 [INFO] advanced_analyzer.py:101 - 成功读取 11 个房间ID
+2024-12-05 10:18:42,300 [INFO] advanced_analyzer.py:407 - 生成 11 个URL
+2024-12-05 10:18:42,300 [INFO] advanced_analyzer.py:411 - 创建数据目录: data/airbnb_data_20241205_101842
+2024-12-05 10:18:42,301 [INFO] advanced_analyzer.py:233 - === 开始批量分析房源 ===
+2024-12-05 10:18:42,301 [INFO] advanced_analyzer.py:242 - 设置并发线程数: 1
+2024-12-05 10:18:42,329 [INFO] bit_browser_manager.py:87 - 活动浏览器响应: {
+  "success": true,
+  "data": {
+    "34dc763412e34341a759c1ef1ec38580": 9600
+  }
+}
+2024-12-05 10:18:43,646 [INFO] bit_browser_manager.py:112 - 找到 1 个活动浏览器
+2024-12-05 10:18:43,646 [INFO] advanced_analyzer.py:258 - 
+=== 可用的浏览器实例 ===
+2024-12-05 10:18:43,646 [INFO] advanced_analyzer.py:260 - ID: 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:18:43,646 [INFO] advanced_analyzer.py:261 - 名称: AirBnB01
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:262 - 备注: 
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:263 - PID: 9600
+
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:278 - 
+=== URL分配情况 ===
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:280 - 线程 1 分配到 11 个URL:
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:283 -   - Room ID: 837352260137971048
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:283 -   - Room ID: 43435162
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:283 -   - Room ID: 830193102361409290
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:283 -   - Room ID: 49525472
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:283 -   - Room ID: 716883705085875481
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:283 -   - Room ID: 969823904189469776
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:283 -   - Room ID: 37603491
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:283 -   - Room ID: 635947170438929163
+2024-12-05 10:18:43,647 [INFO] advanced_analyzer.py:283 -   - Room ID: 10478001
+2024-12-05 10:18:43,648 [INFO] advanced_analyzer.py:283 -   - Room ID: 43435162
+2024-12-05 10:18:43,648 [INFO] advanced_analyzer.py:283 -   - Room ID: 1255600611300259176
+2024-12-05 10:18:43,648 [INFO] advanced_analyzer.py:294 - 线程 9672 (#1) 使用浏览器 34dc763412e34341a759c1ef1ec38580
+2024-12-05 10:18:44,222 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain: Cookie 'domain' mismatch
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0023C9C8]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:44,224 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain: Cookie 'domain' mismatch
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0023C9C8]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:44,227 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 837352260137971048
+2024-12-05 10:18:44,843 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:44,845 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:44,847 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:44,847 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:18:44,989 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:18:44,989 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:18:44,989 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:18:44,998 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:45,013 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:45,145 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:45,145 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:45,145 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/837352260137971048
+2024-12-05 10:18:45,146 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 837352260137971048 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:45,146 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 43435162
+2024-12-05 10:18:45,723 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:45,725 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:45,726 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:45,727 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:45,896 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:45,897 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:45,897 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:45,901 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:45,913 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:45,927 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:46,048 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:46,048 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:46,048 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:46,048 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 43435162 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:46,048 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 830193102361409290
+2024-12-05 10:18:46,655 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:46,660 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:46,662 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:46,663 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-12-05 10:18:46,836 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-12-05 10:18:46,836 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-12-05 10:18:46,836 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-12-05 10:18:46,845 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:46,850 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:46,852 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:46,969 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:46,970 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:46,970 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/830193102361409290
+2024-12-05 10:18:46,970 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 830193102361409290 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:46,970 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 49525472
+2024-12-05 10:18:47,591 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:47,593 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:47,595 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:47,595 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:18:47,809 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:18:47,809 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:18:47,809 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:18:47,827 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:47,832 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:47,835 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:47,965 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:47,965 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:47,965 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/49525472
+2024-12-05 10:18:47,965 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 49525472 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:47,966 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 716883705085875481
+2024-12-05 10:18:48,617 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:48,620 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:48,621 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:48,621 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/716883705085875481
+2024-12-05 10:18:48,818 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/716883705085875481
+2024-12-05 10:18:48,818 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/716883705085875481
+2024-12-05 10:18:48,819 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/716883705085875481
+2024-12-05 10:18:48,825 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:48,830 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:48,841 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:48,980 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:48,981 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:48,981 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/716883705085875481
+2024-12-05 10:18:48,981 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 716883705085875481 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:48,981 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 969823904189469776
+2024-12-05 10:18:49,683 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:49,685 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:49,687 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:49,687 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/969823904189469776
+2024-12-05 10:18:49,861 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/969823904189469776
+2024-12-05 10:18:49,862 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/969823904189469776
+2024-12-05 10:18:49,862 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/969823904189469776
+2024-12-05 10:18:49,895 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:49,902 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:49,910 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:50,046 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:50,046 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:50,047 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/969823904189469776
+2024-12-05 10:18:50,047 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 969823904189469776 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:50,047 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 37603491
+2024-12-05 10:18:50,806 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:50,810 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:50,813 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:50,813 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/37603491
+2024-12-05 10:18:50,997 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/37603491
+2024-12-05 10:18:50,997 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/37603491
+2024-12-05 10:18:50,997 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/37603491
+2024-12-05 10:18:51,021 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:51,037 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:51,041 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:51,200 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:51,200 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:51,200 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/37603491
+2024-12-05 10:18:51,200 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 37603491 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:51,200 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 635947170438929163
+2024-12-05 10:18:51,835 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:51,852 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:51,873 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:51,873 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/635947170438929163
+2024-12-05 10:18:52,216 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/635947170438929163
+2024-12-05 10:18:52,217 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/635947170438929163
+2024-12-05 10:18:52,217 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/635947170438929163
+2024-12-05 10:18:52,237 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:52,254 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:52,273 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:52,503 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:52,503 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:52,503 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/635947170438929163
+2024-12-05 10:18:52,503 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 635947170438929163 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:52,503 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 10478001
+2024-12-05 10:18:53,084 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:53,088 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:53,090 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:53,090 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/10478001
+2024-12-05 10:18:53,337 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/10478001
+2024-12-05 10:18:53,337 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/10478001
+2024-12-05 10:18:53,337 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/10478001
+2024-12-05 10:18:53,342 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:53,348 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:53,351 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:53,520 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:53,520 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:53,520 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/10478001
+2024-12-05 10:18:53,520 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 10478001 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:53,520 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 43435162
+2024-12-05 10:18:54,177 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:54,179 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:54,181 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:54,181 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:54,330 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:54,330 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:54,330 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:54,333 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:54,337 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:54,339 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:54,511 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:54,511 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:54,511 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/43435162
+2024-12-05 10:18:54,511 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 43435162 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:54,511 [INFO] advanced_analyzer.py:307 - 线程 #1 开始处理 Room ID: 1255600611300259176
+2024-12-05 10:18:55,120 [ERROR] bit_browser_manager.py:58 - 设置 locale cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:55,130 [ERROR] bit_browser_manager.py:58 - 设置 currency cookie失败: Message: invalid cookie domain
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B195D]
+	(No symbol) [0x0023C93E]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:55,133 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:55,133 [INFO] bit_browser_manager.py:244 - 正在导航到: https://www.airbnb.co.nz/rooms/1255600611300259176
+2024-12-05 10:18:55,405 [INFO] bit_browser_manager.py:252 - 成功加载页面: https://www.airbnb.co.nz/rooms/1255600611300259176
+2024-12-05 10:18:55,405 [INFO] advanced_analyzer.py:198 - 
+开始分析房源: https://www.airbnb.co.nz/rooms/1255600611300259176
+2024-12-05 10:18:55,406 [INFO] airbnb_calendar_checker.py:27 - 开始检查房源日历: https://www.airbnb.co.nz/rooms/1255600611300259176
+2024-12-05 10:18:55,409 [INFO] bit_browser_manager.py:56 - 成功设置 locale cookie
+2024-12-05 10:18:55,418 [INFO] bit_browser_manager.py:56 - 成功设置 currency cookie
+2024-12-05 10:18:55,425 [ERROR] bit_browser_manager.py:75 - 设置语言偏好时发生错误: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"Another locale override is already in effect"}
+  (Session info: chrome=126.0.6478.255)
+Stacktrace:
+	GetHandleVerifier [0x0031FD33+27651]
+	(No symbol) [0x002B5554]
+	(No symbol) [0x001B1ADF]
+	(No symbol) [0x0019CF7D]
+	(No symbol) [0x0019BC03]
+	(No symbol) [0x0019C35D]
+	(No symbol) [0x0019C2F8]
+	(No symbol) [0x001B4804]
+	(No symbol) [0x00237381]
+	(No symbol) [0x0021390C]
+	(No symbol) [0x0022CA7D]
+	(No symbol) [0x002136A6]
+	(No symbol) [0x001E74E1]
+	(No symbol) [0x001E805D]
+	GetHandleVerifier [0x005D6613+2872547]
+	GetHandleVerifier [0x0062BADD+3221933]
+	GetHandleVerifier [0x003A2A94+563556]
+	GetHandleVerifier [0x003A9DCC+593052]
+	(No symbol) [0x002BE3A4]
+	(No symbol) [0x002BAE08]
+	(No symbol) [0x002BAFA7]
+	(No symbol) [0x002AD0AE]
+	BaseThreadInitThunk [0x76AD7BA9+25]
+	RtlInitializeExceptionChain [0x77ADC0CB+107]
+	RtlClearBits [0x77ADC04F+191]
+	(No symbol) [0x00000000]
+
+2024-12-05 10:18:55,610 [INFO] airbnb_calendar_checker.py:35 - 页面加载中...
+2024-12-05 10:18:55,610 [ERROR] airbnb_calendar_checker.py:238 - 检查日历时发生错误: 'BitBrowserManager' object has no attribute 'close_translation_modal'
+2024-12-05 10:18:55,610 [ERROR] advanced_analyzer.py:204 - 获取日历数据失败: https://www.airbnb.co.nz/rooms/1255600611300259176
+2024-12-05 10:18:55,611 [ERROR] advanced_analyzer.py:326 - 处理 Room ID 1255600611300259176 时发生错误: 'BitBrowserManager' object has no attribute 'close_tab'
+2024-12-05 10:18:57,673 [INFO] advanced_analyzer.py:427 - === 程序执行完成 ===
